@@ -1,0 +1,505 @@
+Player,Exercise,Week,Set,Reps,Weight [lb]
+Johnson,Barbell Squat,1,1,5,255
+Johnson,Barbell Squat,1,2,5,280
+Johnson,Barbell Squat,1,3,10,320
+Johnson,Barbell Squat,2,1,3,265
+Johnson,Barbell Squat,2,2,3,290
+Johnson,Barbell Squat,2,3,8,325
+Johnson,Barbell Squat,3,1,5,280
+Johnson,Barbell Squat,3,2,3,300
+Johnson,Barbell Squat,3,3,7,335
+Johnson,High-Hang Pull,1,1,5,120
+Johnson,High-Hang Pull,2,1,4,135
+Johnson,High-Hang Pull,3,1,3,145
+Johnson,Box Bench,1,1,5,165
+Johnson,Box Bench,1,2,5,185
+Johnson,Box Bench,1,3,10,210
+Johnson,Box Bench,2,1,3,170
+Johnson,Box Bench,2,2,3,190
+Johnson,Box Bench,2,3,8,215
+Johnson,Box Bench,3,1,5,185
+Johnson,Box Bench,3,2,3,195
+Johnson,Box Bench,3,3,7,220
+Johnson,Bar RDL,1,1,5,105
+Johnson,Bar RDL,2,1,6,105
+Johnson,Bar RDL,3,1,7,105
+Johnson,Bench,1,1,5,160
+Johnson,Bench,1,2,5,175
+Johnson,Bench,1,3,10,200
+Johnson,Bench,2,1,3,165
+Johnson,Bench,2,2,3,180
+Johnson,Bench,2,3,8,205
+Johnson,Bench,3,1,5,175
+Johnson,Bench,3,2,3,185
+Johnson,Bench,3,3,7,210
+Johnson,Hex-Bar Jump,1,1,3,170
+Johnson,Hex-Bar Jump,2,1,4,170
+Johnson,Hex-Bar Jump,3,1,5,170
+Johnson,Barbell Front Squat,1,1,5,125
+Johnson,Barbell Front Squat,1,2,5,140
+Johnson,Barbell Front Squat,1,3,10,155
+Johnson,Barbell Front Squat,2,1,3,130
+Johnson,Barbell Front Squat,2,2,3,140
+Johnson,Barbell Front Squat,2,3,8,160
+Johnson,Barbell Front Squat,3,1,5,140
+Johnson,Barbell Front Squat,3,2,3,150
+Johnson,Barbell Front Squat,3,3,7,165
+Johnson,1-Arm DB Row,1,1,5,30
+Johnson,1-Arm DB Row,2,1,6,30
+Johnson,1-Arm DB Row,3,1,7,30
+Johnson,Clean,1,1,5,110
+Johnson,Clean,1,2,5,125
+Johnson,Clean,1,3,6,150
+Johnson,Clean,2,1,3,110
+Johnson,Clean,2,2,3,130
+Johnson,Clean,2,3,4,150
+Johnson,Clean,3,1,5,120
+Johnson,Clean,3,2,3,135
+Johnson,Clean,3,3,3,155
+Johnson,Barbell Push Press,1,1,5,100
+Johnson,Barbell Push Press,1,2,5,110
+Johnson,Barbell Push Press,1,3,10,120
+Johnson,Barbell Push Press,2,1,3,100
+Johnson,Barbell Push Press,2,2,3,110
+Johnson,Barbell Push Press,2,3,8,125
+Johnson,Barbell Push Press,3,1,5,110
+Johnson,Barbell Push Press,3,2,3,120
+Johnson,Barbell Push Press,3,3,7,130
+Johnson,DB Reverse Lunge Step-up,1,1,3,30
+Johnson,DB Reverse Lunge Step-up,2,1,4,30
+Johnson,DB Reverse Lunge Step-up,3,1,5,30
+Johnson,Chest-Supported DB Row,1,1,5,30
+Johnson,Chest-Supported DB Row,2,1,6,30
+Johnson,Chest-Supported DB Row,3,1,7,30
+Johnson,Hex-Bar Deadlift,1,1,5,280
+Johnson,Hex-Bar Deadlift,1,2,5,305
+Johnson,Hex-Bar Deadlift,1,3,10,345
+Johnson,Hex-Bar Deadlift,2,1,3,285
+Johnson,Hex-Bar Deadlift,2,2,3,315
+Johnson,Hex-Bar Deadlift,2,3,8,355
+Johnson,Hex-Bar Deadlift,3,1,5,305
+Johnson,Hex-Bar Deadlift,3,2,3,325
+Johnson,Hex-Bar Deadlift,3,3,7,365
+Johnson,3-Way DB Shoulder Raise,1,1,7,30
+Johnson,3-Way DB Shoulder Raise,2,1,8,30
+Johnson,3-Way DB Shoulder Raise,3,1,10,30
+Pearson,Barbell Squat,1,1,5,190
+Pearson,Barbell Squat,1,2,5,205
+Pearson,Barbell Squat,1,3,10,235
+Pearson,Barbell Squat,2,1,3,195
+Pearson,Barbell Squat,2,2,3,210
+Pearson,Barbell Squat,2,3,8,240
+Pearson,Barbell Squat,3,1,5,205
+Pearson,Barbell Squat,3,2,3,220
+Pearson,Barbell Squat,3,3,7,245
+Pearson,High-Hang Pull,1,1,5,85
+Pearson,High-Hang Pull,2,1,4,95
+Pearson,High-Hang Pull,3,1,3,105
+Pearson,Box Bench,1,1,5,105
+Pearson,Box Bench,1,2,5,115
+Pearson,Box Bench,1,3,10,130
+Pearson,Box Bench,2,1,3,105
+Pearson,Box Bench,2,2,3,115
+Pearson,Box Bench,2,3,8,130
+Pearson,Box Bench,3,1,5,115
+Pearson,Box Bench,3,2,3,120
+Pearson,Box Bench,3,3,7,135
+Pearson,Bar RDL,1,1,5,75
+Pearson,Bar RDL,2,1,6,75
+Pearson,Bar RDL,3,1,7,75
+Pearson,Bench,1,1,5,100
+Pearson,Bench,1,2,5,105
+Pearson,Bench,1,3,10,120
+Pearson,Bench,2,1,3,100
+Pearson,Bench,2,2,3,110
+Pearson,Bench,2,3,8,125
+Pearson,Bench,3,1,5,105
+Pearson,Bench,3,2,3,115
+Pearson,Bench,3,3,7,130
+Pearson,Hex-Bar Jump,1,1,3,120
+Pearson,Hex-Bar Jump,2,1,4,120
+Pearson,Hex-Bar Jump,3,1,5,120
+Pearson,Barbell Front Squat,1,1,5,95
+Pearson,Barbell Front Squat,1,2,5,100
+Pearson,Barbell Front Squat,1,3,10,115
+Pearson,Barbell Front Squat,2,1,3,95
+Pearson,Barbell Front Squat,2,2,3,105
+Pearson,Barbell Front Squat,2,3,8,120
+Pearson,Barbell Front Squat,3,1,5,100
+Pearson,Barbell Front Squat,3,2,3,110
+Pearson,Barbell Front Squat,3,3,7,120
+Pearson,1-Arm DB Row,1,1,5,20
+Pearson,1-Arm DB Row,2,1,6,20
+Pearson,1-Arm DB Row,3,1,7,20
+Pearson,Clean,1,1,5,75
+Pearson,Clean,1,2,5,90
+Pearson,Clean,1,3,6,105
+Pearson,Clean,2,1,3,80
+Pearson,Clean,2,2,3,90
+Pearson,Clean,2,3,4,105
+Pearson,Clean,3,1,5,85
+Pearson,Clean,3,2,3,95
+Pearson,Clean,3,3,3,110
+Pearson,Barbell Push Press,1,1,5,60
+Pearson,Barbell Push Press,1,2,5,65
+Pearson,Barbell Push Press,1,3,10,75
+Pearson,Barbell Push Press,2,1,3,60
+Pearson,Barbell Push Press,2,2,3,70
+Pearson,Barbell Push Press,2,3,8,75
+Pearson,Barbell Push Press,3,1,5,65
+Pearson,Barbell Push Press,3,2,3,70
+Pearson,Barbell Push Press,3,3,7,80
+Pearson,DB Reverse Lunge Step-up,1,1,3,20
+Pearson,DB Reverse Lunge Step-up,2,1,4,20
+Pearson,DB Reverse Lunge Step-up,3,1,5,20
+Pearson,Chest-Supported DB Row,1,1,5,15
+Pearson,Chest-Supported DB Row,2,1,6,15
+Pearson,Chest-Supported DB Row,3,1,7,15
+Pearson,Hex-Bar Deadlift,1,1,5,190
+Pearson,Hex-Bar Deadlift,1,2,5,210
+Pearson,Hex-Bar Deadlift,1,3,10,240
+Pearson,Hex-Bar Deadlift,2,1,3,195
+Pearson,Hex-Bar Deadlift,2,2,3,215
+Pearson,Hex-Bar Deadlift,2,3,8,245
+Pearson,Hex-Bar Deadlift,3,1,5,210
+Pearson,Hex-Bar Deadlift,3,2,3,225
+Pearson,Hex-Bar Deadlift,3,3,7,250
+Pearson,3-Way DB Shoulder Raise,1,1,7,15
+Pearson,3-Way DB Shoulder Raise,2,1,8,15
+Pearson,3-Way DB Shoulder Raise,3,1,10,15
+Ott,Barbell Squat,1,1,5,160
+Ott,Barbell Squat,1,2,5,175
+Ott,Barbell Squat,1,3,10,200
+Ott,Barbell Squat,2,1,3,165
+Ott,Barbell Squat,2,2,3,180
+Ott,Barbell Squat,2,3,8,205
+Ott,Barbell Squat,3,1,5,175
+Ott,Barbell Squat,3,2,3,185
+Ott,Barbell Squat,3,3,7,210
+Ott,High-Hang Pull,1,1,5,80
+Ott,High-Hang Pull,2,1,4,85
+Ott,High-Hang Pull,3,1,3,95
+Ott,Box Bench,1,1,5,90
+Ott,Box Bench,1,2,5,100
+Ott,Box Bench,1,3,10,110
+Ott,Box Bench,2,1,3,90
+Ott,Box Bench,2,2,3,100
+Ott,Box Bench,2,3,8,115
+Ott,Box Bench,3,1,5,100
+Ott,Box Bench,3,2,3,105
+Ott,Box Bench,3,3,7,115
+Ott,Bar RDL,1,1,5,60
+Ott,Bar RDL,2,1,6,60
+Ott,Bar RDL,3,1,7,60
+Ott,Bench,1,1,5,85
+Ott,Bench,1,2,5,95
+Ott,Bench,1,3,10,105
+Ott,Bench,2,1,3,85
+Ott,Bench,2,2,3,95
+Ott,Bench,2,3,8,110
+Ott,Bench,3,1,5,95
+Ott,Bench,3,2,3,100
+Ott,Bench,3,3,7,110
+Ott,Hex-Bar Jump,1,1,3,95
+Ott,Hex-Bar Jump,2,1,4,95
+Ott,Hex-Bar Jump,3,1,5,95
+Ott,Barbell Front Squat,1,1,5,80
+Ott,Barbell Front Squat,1,2,5,85
+Ott,Barbell Front Squat,1,3,10,95
+Ott,Barbell Front Squat,2,1,3,80
+Ott,Barbell Front Squat,2,2,3,90
+Ott,Barbell Front Squat,2,3,8,100
+Ott,Barbell Front Squat,3,1,5,85
+Ott,Barbell Front Squat,3,2,3,90
+Ott,Barbell Front Squat,3,3,7,105
+Ott,1-Arm DB Row,1,1,5,15
+Ott,1-Arm DB Row,2,1,6,15
+Ott,1-Arm DB Row,3,1,7,15
+Ott,Clean,1,1,5,70
+Ott,Clean,1,2,5,85
+Ott,Clean,1,3,6,95
+Ott,Clean,2,1,3,70
+Ott,Clean,2,2,3,85
+Ott,Clean,2,3,4,100
+Ott,Clean,3,1,5,80
+Ott,Clean,3,2,3,90
+Ott,Clean,3,3,3,100
+Ott,Barbell Push Press,1,1,5,50
+Ott,Barbell Push Press,1,2,5,55
+Ott,Barbell Push Press,1,3,10,65
+Ott,Barbell Push Press,2,1,3,55
+Ott,Barbell Push Press,2,2,3,60
+Ott,Barbell Push Press,2,3,8,65
+Ott,Barbell Push Press,3,1,5,55
+Ott,Barbell Push Press,3,2,3,60
+Ott,Barbell Push Press,3,3,7,70
+Ott,DB Reverse Lunge Step-up,1,1,3,15
+Ott,DB Reverse Lunge Step-up,2,1,4,15
+Ott,DB Reverse Lunge Step-up,3,1,5,15
+Ott,Chest-Supported DB Row,1,1,5,15
+Ott,Chest-Supported DB Row,2,1,6,15
+Ott,Chest-Supported DB Row,3,1,7,15
+Ott,Hex-Bar Deadlift,1,1,5,155
+Ott,Hex-Bar Deadlift,1,2,5,170
+Ott,Hex-Bar Deadlift,1,3,10,195
+Ott,Hex-Bar Deadlift,2,1,3,160
+Ott,Hex-Bar Deadlift,2,2,3,175
+Ott,Hex-Bar Deadlift,2,3,8,200
+Ott,Hex-Bar Deadlift,3,1,5,170
+Ott,Hex-Bar Deadlift,3,2,3,185
+Ott,Hex-Bar Deadlift,3,3,7,205
+Ott,3-Way DB Shoulder Raise,1,1,7,15
+Ott,3-Way DB Shoulder Raise,2,1,8,15
+Ott,3-Way DB Shoulder Raise,3,1,10,15
+Marker,Barbell Squat,1,1,5,215
+Marker,Barbell Squat,1,2,5,240
+Marker,Barbell Squat,1,3,10,270
+Marker,Barbell Squat,2,1,3,225
+Marker,Barbell Squat,2,2,3,245
+Marker,Barbell Squat,2,3,8,275
+Marker,Barbell Squat,3,1,5,240
+Marker,Barbell Squat,3,2,3,255
+Marker,Barbell Squat,3,3,7,285
+Marker,High-Hang Pull,1,1,5,110
+Marker,High-Hang Pull,2,1,4,120
+Marker,High-Hang Pull,3,1,3,135
+Marker,Box Bench,1,1,5,90
+Marker,Box Bench,1,2,5,100
+Marker,Box Bench,1,3,10,110
+Marker,Box Bench,2,1,3,90
+Marker,Box Bench,2,2,3,100
+Marker,Box Bench,2,3,8,115
+Marker,Box Bench,3,1,5,100
+Marker,Box Bench,3,2,3,105
+Marker,Box Bench,3,3,7,115
+Marker,Bar RDL,1,1,5,70
+Marker,Bar RDL,2,1,6,70
+Marker,Bar RDL,3,1,7,70
+Marker,Bench,1,1,5,85
+Marker,Bench,1,2,5,95
+Marker,Bench,1,3,10,105
+Marker,Bench,2,1,3,85
+Marker,Bench,2,2,3,95
+Marker,Bench,2,3,8,110
+Marker,Bench,3,1,5,95
+Marker,Bench,3,2,3,100
+Marker,Bench,3,3,7,110
+Marker,Hex-Bar Jump,1,1,3,115
+Marker,Hex-Bar Jump,2,1,4,115
+Marker,Hex-Bar Jump,3,1,5,115
+Marker,Barbell Front Squat,1,1,5,105
+Marker,Barbell Front Squat,1,2,5,120
+Marker,Barbell Front Squat,1,3,10,135
+Marker,Barbell Front Squat,2,1,3,110
+Marker,Barbell Front Squat,2,2,3,120
+Marker,Barbell Front Squat,2,3,8,135
+Marker,Barbell Front Squat,3,1,5,120
+Marker,Barbell Front Squat,3,2,3,125
+Marker,Barbell Front Squat,3,3,7,140
+Marker,1-Arm DB Row,1,1,5,15
+Marker,1-Arm DB Row,2,1,6,15
+Marker,1-Arm DB Row,3,1,7,15
+Marker,Clean,1,1,5,100
+Marker,Clean,1,2,5,115
+Marker,Clean,1,3,6,135
+Marker,Clean,2,1,3,100
+Marker,Clean,2,2,3,120
+Marker,Clean,2,3,4,140
+Marker,Clean,3,1,5,110
+Marker,Clean,3,2,3,125
+Marker,Clean,3,3,3,140
+Marker,Barbell Push Press,1,1,5,50
+Marker,Barbell Push Press,1,2,5,55
+Marker,Barbell Push Press,1,3,10,65
+Marker,Barbell Push Press,2,1,3,55
+Marker,Barbell Push Press,2,2,3,60
+Marker,Barbell Push Press,2,3,8,65
+Marker,Barbell Push Press,3,1,5,55
+Marker,Barbell Push Press,3,2,3,60
+Marker,Barbell Push Press,3,3,7,70
+Marker,DB Reverse Lunge Step-up,1,1,3,25
+Marker,DB Reverse Lunge Step-up,2,1,4,25
+Marker,DB Reverse Lunge Step-up,3,1,5,25
+Marker,Chest-Supported DB Row,1,1,5,15
+Marker,Chest-Supported DB Row,2,1,6,15
+Marker,Chest-Supported DB Row,3,1,7,15
+Marker,Hex-Bar Deadlift,1,1,5,190
+Marker,Hex-Bar Deadlift,1,2,5,205
+Marker,Hex-Bar Deadlift,1,3,10,235
+Marker,Hex-Bar Deadlift,2,1,3,195
+Marker,Hex-Bar Deadlift,2,2,3,210
+Marker,Hex-Bar Deadlift,2,3,8,240
+Marker,Hex-Bar Deadlift,3,1,5,205
+Marker,Hex-Bar Deadlift,3,2,3,220
+Marker,Hex-Bar Deadlift,3,3,7,245
+Marker,3-Way DB Shoulder Raise,1,1,7,15
+Marker,3-Way DB Shoulder Raise,2,1,8,15
+Marker,3-Way DB Shoulder Raise,3,1,10,15
+Clark,Barbell Squat,1,1,5,190
+Clark,Barbell Squat,1,2,5,210
+Clark,Barbell Squat,1,3,10,240
+Clark,Barbell Squat,2,1,3,195
+Clark,Barbell Squat,2,2,3,215
+Clark,Barbell Squat,2,3,8,245
+Clark,Barbell Squat,3,1,5,210
+Clark,Barbell Squat,3,2,3,225
+Clark,Barbell Squat,3,3,7,250
+Clark,High-Hang Pull,1,1,5,115
+Clark,High-Hang Pull,2,1,4,125
+Clark,High-Hang Pull,3,1,3,135
+Clark,Box Bench,1,1,5,120
+Clark,Box Bench,1,2,5,130
+Clark,Box Bench,1,3,10,150
+Clark,Box Bench,2,1,3,125
+Clark,Box Bench,2,2,3,135
+Clark,Box Bench,2,3,8,155
+Clark,Box Bench,3,1,5,130
+Clark,Box Bench,3,2,3,140
+Clark,Box Bench,3,3,7,155
+Clark,Bar RDL,1,1,5,80
+Clark,Bar RDL,2,1,6,80
+Clark,Bar RDL,3,1,7,80
+Clark,Bench,1,1,5,115
+Clark,Bench,1,2,5,125
+Clark,Bench,1,3,10,140
+Clark,Bench,2,1,3,115
+Clark,Bench,2,2,3,130
+Clark,Bench,2,3,8,145
+Clark,Bench,3,1,5,125
+Clark,Bench,3,2,3,135
+Clark,Bench,3,3,7,150
+Clark,Hex-Bar Jump,1,1,3,130
+Clark,Hex-Bar Jump,2,1,4,130
+Clark,Hex-Bar Jump,3,1,5,130
+Clark,Barbell Front Squat,1,1,5,95
+Clark,Barbell Front Squat,1,2,5,105
+Clark,Barbell Front Squat,1,3,10,115
+Clark,Barbell Front Squat,2,1,3,95
+Clark,Barbell Front Squat,2,2,3,105
+Clark,Barbell Front Squat,2,3,8,120
+Clark,Barbell Front Squat,3,1,5,105
+Clark,Barbell Front Squat,3,2,3,110
+Clark,Barbell Front Squat,3,3,7,125
+Clark,1-Arm DB Row,1,1,5,20
+Clark,1-Arm DB Row,2,1,6,20
+Clark,1-Arm DB Row,3,1,7,20
+Clark,Clean,1,1,5,100
+Clark,Clean,1,2,5,120
+Clark,Clean,1,3,6,140
+Clark,Clean,2,1,3,105
+Clark,Clean,2,2,3,120
+Clark,Clean,2,3,4,140
+Clark,Clean,3,1,5,115
+Clark,Clean,3,2,3,130
+Clark,Clean,3,3,3,145
+Clark,Barbell Push Press,1,1,5,70
+Clark,Barbell Push Press,1,2,5,75
+Clark,Barbell Push Press,1,3,10,85
+Clark,Barbell Push Press,2,1,3,75
+Clark,Barbell Push Press,2,2,3,80
+Clark,Barbell Push Press,2,3,8,90
+Clark,Barbell Push Press,3,1,5,75
+Clark,Barbell Push Press,3,2,3,85
+Clark,Barbell Push Press,3,3,7,95
+Clark,DB Reverse Lunge Step-up,1,1,3,20
+Clark,DB Reverse Lunge Step-up,2,1,4,20
+Clark,DB Reverse Lunge Step-up,3,1,5,20
+Clark,Chest-Supported DB Row,1,1,5,20
+Clark,Chest-Supported DB Row,2,1,6,20
+Clark,Chest-Supported DB Row,3,1,7,20
+Clark,Hex-Bar Deadlift,1,1,5,210
+Clark,Hex-Bar Deadlift,1,2,5,230
+Clark,Hex-Bar Deadlift,1,3,10,265
+Clark,Hex-Bar Deadlift,2,1,3,215
+Clark,Hex-Bar Deadlift,2,2,3,235
+Clark,Hex-Bar Deadlift,2,3,8,270
+Clark,Hex-Bar Deadlift,3,1,5,230
+Clark,Hex-Bar Deadlift,3,2,3,245
+Clark,Hex-Bar Deadlift,3,3,7,275
+Clark,3-Way DB Shoulder Raise,1,1,7,20
+Clark,3-Way DB Shoulder Raise,2,1,8,20
+Clark,3-Way DB Shoulder Raise,3,1,10,20
+Wolfe,Barbell Squat,1,1,5,60
+Wolfe,Barbell Squat,1,2,5,65
+Wolfe,Barbell Squat,1,3,10,75
+Wolfe,Barbell Squat,2,1,3,60
+Wolfe,Barbell Squat,2,2,3,65
+Wolfe,Barbell Squat,2,3,8,75
+Wolfe,Barbell Squat,3,1,5,65
+Wolfe,Barbell Squat,3,2,3,70
+Wolfe,Barbell Squat,3,3,7,80
+Wolfe,High-Hang Pull,1,1,5,55
+Wolfe,High-Hang Pull,2,1,4,65
+Wolfe,High-Hang Pull,3,1,3,70
+Wolfe,Box Bench,1,1,5,55
+Wolfe,Box Bench,1,2,5,60
+Wolfe,Box Bench,1,3,10,70
+Wolfe,Box Bench,2,1,3,55
+Wolfe,Box Bench,2,2,3,60
+Wolfe,Box Bench,2,3,8,70
+Wolfe,Box Bench,3,1,5,60
+Wolfe,Box Bench,3,2,3,65
+Wolfe,Box Bench,3,3,7,75
+Wolfe,Bar RDL,1,1,5,30
+Wolfe,Bar RDL,2,1,6,30
+Wolfe,Bar RDL,3,1,7,30
+Wolfe,Bench,1,1,5,50
+Wolfe,Bench,1,2,5,60
+Wolfe,Bench,1,3,10,65
+Wolfe,Bench,2,1,3,55
+Wolfe,Bench,2,2,3,60
+Wolfe,Bench,2,3,8,65
+Wolfe,Bench,3,1,5,60
+Wolfe,Bench,3,2,3,60
+Wolfe,Bench,3,3,7,70
+Wolfe,Hex-Bar Jump,1,1,3,50
+Wolfe,Hex-Bar Jump,2,1,4,50
+Wolfe,Hex-Bar Jump,3,1,5,50
+Wolfe,Barbell Front Squat,1,1,5,30
+Wolfe,Barbell Front Squat,1,2,5,30
+Wolfe,Barbell Front Squat,1,3,10,35
+Wolfe,Barbell Front Squat,2,1,3,30
+Wolfe,Barbell Front Squat,2,2,3,30
+Wolfe,Barbell Front Squat,2,3,8,35
+Wolfe,Barbell Front Squat,3,1,5,30
+Wolfe,Barbell Front Squat,3,2,3,35
+Wolfe,Barbell Front Squat,3,3,7,35
+Wolfe,1-Arm DB Row,1,1,5,10
+Wolfe,1-Arm DB Row,2,1,6,10
+Wolfe,1-Arm DB Row,3,1,7,10
+Wolfe,Clean,1,1,5,50
+Wolfe,Clean,1,2,5,60
+Wolfe,Clean,1,3,6,70
+Wolfe,Clean,2,1,3,50
+Wolfe,Clean,2,2,3,60
+Wolfe,Clean,2,3,4,70
+Wolfe,Clean,3,1,5,55
+Wolfe,Clean,3,2,3,65
+Wolfe,Clean,3,3,3,75
+Wolfe,Barbell Push Press,1,1,5,30
+Wolfe,Barbell Push Press,1,2,5,35
+Wolfe,Barbell Push Press,1,3,10,40
+Wolfe,Barbell Push Press,2,1,3,35
+Wolfe,Barbell Push Press,2,2,3,35
+Wolfe,Barbell Push Press,2,3,8,40
+Wolfe,Barbell Push Press,3,1,5,35
+Wolfe,Barbell Push Press,3,2,3,40
+Wolfe,Barbell Push Press,3,3,7,45
+Wolfe,DB Reverse Lunge Step-up,1,1,3,5
+Wolfe,DB Reverse Lunge Step-up,2,1,4,5
+Wolfe,DB Reverse Lunge Step-up,3,1,5,5
+Wolfe,Chest-Supported DB Row,1,1,5,10
+Wolfe,Chest-Supported DB Row,2,1,6,10
+Wolfe,Chest-Supported DB Row,3,1,7,10
+Wolfe,Hex-Bar Deadlift,1,1,5,85
+Wolfe,Hex-Bar Deadlift,1,2,5,95
+Wolfe,Hex-Bar Deadlift,1,3,10,105
+Wolfe,Hex-Bar Deadlift,2,1,3,85
+Wolfe,Hex-Bar Deadlift,2,2,3,95
+Wolfe,Hex-Bar Deadlift,2,3,8,110
+Wolfe,Hex-Bar Deadlift,3,1,5,95
+Wolfe,Hex-Bar Deadlift,3,2,3,100
+Wolfe,Hex-Bar Deadlift,3,3,7,110
+Wolfe,3-Way DB Shoulder Raise,1,1,7,10
+Wolfe,3-Way DB Shoulder Raise,2,1,8,10
+Wolfe,3-Way DB Shoulder Raise,3,1,10,10
