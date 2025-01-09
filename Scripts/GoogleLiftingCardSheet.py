@@ -6,8 +6,8 @@ from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build
 
 # Constants
-SERVICE_ACCOUNT_FILE = '/Users/ricky.staugustine/Documents/FB/ntafterschoollifting-02762bc4807d.json'
-CLIENT_SECRETS_FILE = '/Users/ricky.staugustine/Documents/FB/client_secret_743021829074-ta0ehdtfs0tnjgkaf998hu0otdki8mk8.apps.googleusercontent.com.json'
+SERVICE_ACCOUNT_FILE = '/Users/ricky.staugustine/Documents/FB/ntafterschoollifting-b8f7a5923646.json'
+CLIENT_SECRETS_FILE = '/Users/ricky.staugustine/Documents/FB/client_secret.json'
 TOKEN_FILE = 'token.pickle'
 SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
 
@@ -105,12 +105,7 @@ def process_exercise_data(df):
 
 # Display Data
 def display_exercise_weights(exercise_data):
-    """
-    Generate and display all exercise weights for players, grouped by player, week, exercise, and set.
-    
-    :param exercise_data: List of exercise tuples.
-    :return: Grouped and sorted pandas DataFrame.
-    """
+    """Generate and display all exercise weights for players."""
     all_data = []
     for player in players_max_cores.keys():
         for exercise, e, r, s, w in exercise_data:
@@ -126,123 +121,131 @@ def display_exercise_weights(exercise_data):
     
     # Convert to DataFrame
     df = pd.DataFrame(all_data)
-    
     # Sort by Player, Week, Exercise, and Set
-    df = df.sort_values(by=["Player", "Week", "Exercise", "Set"])
-    
-    return df
+    return df.sort_values(by=["Player", "Week", "Exercise", "Set"])
 
-# Google Sheets Interaction
 def update_sheet_with_data(gc, spreadsheet_name, sheet_name, data, headers):
-    """
-    Replace all existing data in a Google Sheet with new data.
-    
-    :param gc: Authenticated gspread client.
-    :param spreadsheet_name: Name of the spreadsheet.
-    :param sheet_name: Name of the sheet within the spreadsheet.
-    :param data: Data to write (list of lists or DataFrame).
-    :param headers: List of headers to add as the first row.
-    """
-    # Open spreadsheet and worksheet
-    sh = gc.open(spreadsheet_name)
-    worksheet = sh.worksheet(sheet_name)
+    """Update Google Sheets with data."""
+    try:
+        print(f"Opening spreadsheet: {spreadsheet_name}")
+        sh = gc.open(spreadsheet_name)
+        worksheet = sh.worksheet(sheet_name)
+        print(f"Clearing worksheet: {sheet_name}")
+        worksheet.clear()
+        if isinstance(data, pd.DataFrame):
+            data = data.values.tolist()
+        print("Updating worksheet with data...")
+        worksheet.update([headers] + data)
+        print(f"Google Sheet '{sheet_name}' updated successfully.")
+    except Exception as e:
+        print(f"Error updating sheet: {e}")
 
-    # Convert DataFrame to a list of lists if needed
-    if isinstance(data, pd.DataFrame):
-        data = data.values.tolist()
+def output_exercise_tabs(gc, spreadsheet_name, exercise_data):
+    """Update or create a spreadsheet with tabs for each exercise and apply filter feature."""
+    try:
+        # Open or create the spreadsheet
+        spreadsheet = None
+        try:
+            spreadsheet = gc.open(spreadsheet_name)
+            print(f"Spreadsheet '{spreadsheet_name}' found. Updating existing sheet.")
+        except gspread.SpreadsheetNotFound:
+            print(f"Spreadsheet '{spreadsheet_name}' not found. Creating a new one.")
+            spreadsheet = gc.create(spreadsheet_name)
+            spreadsheet.share('richard.staugustine@gmail.com', perm_type='user', role='writer')
 
-    # Clear the worksheet
-    worksheet.clear()
-    print("Sheet cleared successfully.")
+        # Create headers
+        headers = ["Player", "Functional Max", "Week", "Set", "Reps", "Weight [lb]"]
+        exercises = ['Squat', 'Clean', 'Bench', 'Deadlift']
 
-    # Write headers and data
-    worksheet.update([headers] + data)
-    print("Data updated successfully.")
+        # Loop through each exercise
+        for exercise in exercises:
+            exercise_rows = []
+            for player in players_max_cores.keys():
+                for ex, e, r, s, w in exercise_data:
+                    if e_to_core.get(e) == exercise:
+                        weight = calculate_weight(player, e, r, s, w)
+                        functional_max = players_max_cores[player][exercise]
+                        exercise_rows.append([player, functional_max, w, s, r, weight])
 
-def apply_filter_to_table(service, spreadsheet_id, sheet_id, start_row=1, start_column=1, end_row=None, end_column=None):
-    """
-    Apply a filter to a range of data in a Google Sheet.
-    
-    :param service: Authenticated Google Sheets API service object.
-    :param spreadsheet_id: The ID of the spreadsheet.
-    :param sheet_id: The ID of the sheet where the filter is to be applied.
-    :param start_row: The starting row index (1-based).
-    :param start_column: The starting column index (1-based).
-    :param end_row: The ending row index (1-based, inclusive), or None to include all rows.
-    :param end_column: The ending column index (1-based, inclusive), or None to include all columns.
-    """
-    filter_request = {
-        "requests": [
-            {
-                "setBasicFilter": {
-                    "filter": {
-                        "range": {
-                            "sheetId": sheet_id,
-                            "startRowIndex": start_row - 1,  # Convert to 0-based
-                            "startColumnIndex": start_column - 1,  # Convert to 0-based
-                            "endRowIndex": end_row if end_row else None,
-                            "endColumnIndex": end_column if end_column else None
+            # Check if the worksheet exists
+            worksheet = None
+            try:
+                worksheet = spreadsheet.worksheet(exercise)
+                print(f"Sheet '{exercise}' exists. Clearing data...")
+                worksheet.clear()
+            except gspread.WorksheetNotFound:
+                print(f"Sheet '{exercise}' does not exist. Creating a new one...")
+                worksheet = spreadsheet.add_worksheet(title=exercise, rows="100", cols="20")
+
+            # Update the worksheet with new data
+            worksheet.update([headers] + exercise_rows)
+
+            # Apply filter to the data range
+            worksheet_id = worksheet._properties['sheetId']
+            apply_filter_to_worksheet(SERVICE_ACCOUNT_FILE, spreadsheet.id, worksheet_id, len(exercise_rows) + 1, len(headers))
+
+        print(f"Spreadsheet '{spreadsheet_name}' updated with filters applied to all tabs.")
+    except Exception as e:
+        print(f"Error updating exercise tabs: {e}")
+
+from google.oauth2.service_account import Credentials
+
+def apply_filter_to_worksheet(service_account_file, spreadsheet_id, worksheet_id, num_rows, num_columns):
+    """Apply a filter to the worksheet's data range."""
+    try:
+        # Authenticate directly with Google Sheets API using service account credentials
+        credentials = Credentials.from_service_account_file(
+            service_account_file,
+            scopes=['https://www.googleapis.com/auth/spreadsheets']
+        )
+        service = build('sheets', 'v4', credentials=credentials)
+
+        # Build the filter request
+        filter_request = {
+            "requests": [
+                {
+                    "setBasicFilter": {
+                        "filter": {
+                            "range": {
+                                "sheetId": worksheet_id,
+                                "startRowIndex": 0,  # Start from the first row
+                                "startColumnIndex": 0,  # Start from the first column
+                                "endRowIndex": num_rows,  # Include all rows
+                                "endColumnIndex": num_columns  # Include all columns
+                            }
                         }
                     }
                 }
-            }
-        ]
-    }
+            ]
+        }
 
-    try:
-        response = service.spreadsheets().batchUpdate(
+        # Send the request to the Google Sheets API
+        service.spreadsheets().batchUpdate(
             spreadsheetId=spreadsheet_id,
             body=filter_request
         ).execute()
-        print("Filter applied successfully.")
-        return response
+        print(f"Filter applied to sheet ID {worksheet_id}.")
     except Exception as e:
-        print(f"Failed to apply filter: {e}")
-        return None
+        print(f"Error applying filter: {e}")
 
-# Main Script
 def main():
-    # Authenticate with Google Sheets API
     creds = authenticate_google_sheets(CLIENT_SECRETS_FILE, TOKEN_FILE)
-    service = build('sheets', 'v4', credentials=creds)
     gc = authenticate_gspread(SERVICE_ACCOUNT_FILE)
-
-    # Spreadsheet details
-    spreadsheet_id = '1EAv4dMF27XrPH9Mrs4X8Ahdk-HYjzPnPRcB_H1uJSBQ'  # Replace with the actual spreadsheet ID
-    spreadsheet_name = 'After-School Lifting'  # Name of the spreadsheet
-    sheet_name = 'Progrum'  # Name of the sheet within the spreadsheet
-
-    # Load exercise data
     columns_to_read = ['Exercise', 'e', 'r', 's', 'w']
     df = load_exercise_data('/Users/ricky.staugustine/Documents/FB/After-School Lifting - Weights.csv', columns_to_read)
     exercise_data = process_exercise_data(df)
 
-    # Display weights
+    # Update the main sheet
+    print("Updating main sheet...")
+    spreadsheet_name = 'After-School Lifting'
+    sheet_name = 'Progrum'
     exercise_results_df = display_exercise_weights(exercise_data)
-
-    # Define headers
     headers = ["Player", "Exercise", "Week", "Set", "Reps", "Weight [lb]"]
+    update_sheet_with_data(gc, spreadsheet_name, sheet_name, exercise_results_df, headers)
 
-    # Replace the data in the sheet with the updated data
-    update_sheet_with_data(gc, spreadsheet_name, sheet_name, exercise_results_df, headers=headers)
-
-    # Retrieve the sheet ID
-    spreadsheet_metadata = service.spreadsheets().get(spreadsheetId=spreadsheet_id).execute()
-    sheet_id = next(sheet['properties']['sheetId'] for sheet in spreadsheet_metadata['sheets']
-                    if sheet['properties']['title'] == sheet_name)
-
-    # Apply filter to the data range
-    total_rows = len(exercise_results_df) + 1  # Add 1 for the header row
-    total_columns = len(headers)
-    apply_filter_to_table(
-        service,
-        spreadsheet_id=spreadsheet_id,
-        sheet_id=sheet_id,
-        start_row=1,
-        start_column=1,
-        end_row=total_rows,
-        end_column=total_columns
-    )
+    # Create new spreadsheet for exercises
+    print("Creating new spreadsheet for exercises...")
+    output_exercise_tabs(gc, "Cores", exercise_data)
 
 if __name__ == '__main__':
     main()
