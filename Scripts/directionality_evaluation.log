@@ -1,0 +1,21 @@
+Directionality Evaluation:
+Bench:
+  Positive Changes: 20
+  Negative Changes: 0
+  Total Changes: 20
+  P-Value: BinomTestResult(k=20, n=20, alternative='two-sided', statistic=1.0, pvalue=1.9073486328125e-06)
+Squat:
+  Positive Changes: 19
+  Negative Changes: 0
+  Total Changes: 19
+  P-Value: BinomTestResult(k=19, n=19, alternative='two-sided', statistic=1.0, pvalue=3.814697265625e-06)
+Clean:
+  Positive Changes: 0
+  Negative Changes: 13
+  Total Changes: 13
+  P-Value: BinomTestResult(k=0, n=13, alternative='two-sided', statistic=0.0, pvalue=0.000244140625)
+Deadlift:
+  Positive Changes: 21
+  Negative Changes: 0
+  Total Changes: 21
+  P-Value: BinomTestResult(k=21, n=21, alternative='two-sided', statistic=1.0, pvalue=9.5367431640625e-07)
