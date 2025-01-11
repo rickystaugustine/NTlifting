@@ -1,0 +1,721 @@
+Exercise,Code,Week #,Set #,# of Reps,Multiplier of Max,Relevant Core,Player,Max Lift,Calculated Weight
+Barbell Squat,1,1,1,5,0.65,Squat,Clark,300,195
+Barbell Squat,1,1,1,5,0.65,Squat,Johnson,400,260
+Barbell Squat,1,1,1,5,0.65,Squat,Marker,340,220
+Barbell Squat,1,1,1,5,0.65,Squat,Ott,250,160
+Barbell Squat,1,1,1,5,0.65,Squat,Pearson,295,190
+Barbell Squat,1,1,1,5,0.65,Squat,Wolfe,95,60
+Barbell Squat,1,1,2,5,0.7,Squat,Clark,300,210
+Barbell Squat,1,1,2,5,0.7,Squat,Johnson,400,280
+Barbell Squat,1,1,2,5,0.7,Squat,Marker,340,240
+Barbell Squat,1,1,2,5,0.7,Squat,Ott,250,175
+Barbell Squat,1,1,2,5,0.7,Squat,Pearson,295,205
+Barbell Squat,1,1,2,5,0.7,Squat,Wolfe,95,65
+Barbell Squat,1,1,3,10,0.8,Squat,Clark,300,240
+Barbell Squat,1,1,3,10,0.8,Squat,Johnson,400,320
+Barbell Squat,1,1,3,10,0.8,Squat,Marker,340,270
+Barbell Squat,1,1,3,10,0.8,Squat,Ott,250,200
+Barbell Squat,1,1,3,10,0.8,Squat,Pearson,295,235
+Barbell Squat,1,1,3,10,0.8,Squat,Wolfe,95,75
+Barbell Squat,1,2,1,3,0.675,Squat,Clark,300,200
+Barbell Squat,1,2,1,3,0.675,Squat,Johnson,400,270
+Barbell Squat,1,2,1,3,0.675,Squat,Marker,340,230
+Barbell Squat,1,2,1,3,0.675,Squat,Ott,250,170
+Barbell Squat,1,2,1,3,0.675,Squat,Pearson,295,200
+Barbell Squat,1,2,1,3,0.675,Squat,Wolfe,95,65
+Barbell Squat,1,2,2,3,0.725,Squat,Clark,300,220
+Barbell Squat,1,2,2,3,0.725,Squat,Johnson,400,290
+Barbell Squat,1,2,2,3,0.725,Squat,Marker,340,245
+Barbell Squat,1,2,2,3,0.725,Squat,Ott,250,180
+Barbell Squat,1,2,2,3,0.725,Squat,Pearson,295,215
+Barbell Squat,1,2,2,3,0.725,Squat,Wolfe,95,70
+Barbell Squat,1,2,3,8,0.825,Squat,Clark,300,250
+Barbell Squat,1,2,3,8,0.825,Squat,Johnson,400,330
+Barbell Squat,1,2,3,8,0.825,Squat,Marker,340,280
+Barbell Squat,1,2,3,8,0.825,Squat,Ott,250,205
+Barbell Squat,1,2,3,8,0.825,Squat,Pearson,295,245
+Barbell Squat,1,2,3,8,0.825,Squat,Wolfe,95,80
+Barbell Squat,1,3,1,5,0.7,Squat,Clark,300,210
+Barbell Squat,1,3,1,5,0.7,Squat,Johnson,400,280
+Barbell Squat,1,3,1,5,0.7,Squat,Marker,340,240
+Barbell Squat,1,3,1,5,0.7,Squat,Ott,250,175
+Barbell Squat,1,3,1,5,0.7,Squat,Pearson,295,205
+Barbell Squat,1,3,1,5,0.7,Squat,Wolfe,95,65
+Barbell Squat,1,3,2,3,0.75,Squat,Clark,300,225
+Barbell Squat,1,3,2,3,0.75,Squat,Johnson,400,300
+Barbell Squat,1,3,2,3,0.75,Squat,Marker,340,255
+Barbell Squat,1,3,2,3,0.75,Squat,Ott,250,190
+Barbell Squat,1,3,2,3,0.75,Squat,Pearson,295,220
+Barbell Squat,1,3,2,3,0.75,Squat,Wolfe,95,70
+Barbell Squat,1,3,3,7,0.85,Squat,Clark,300,255
+Barbell Squat,1,3,3,7,0.85,Squat,Johnson,400,340
+Barbell Squat,1,3,3,7,0.85,Squat,Marker,340,290
+Barbell Squat,1,3,3,7,0.85,Squat,Ott,250,210
+Barbell Squat,1,3,3,7,0.85,Squat,Pearson,295,250
+Barbell Squat,1,3,3,7,0.85,Squat,Wolfe,95,80
+Barbell Front Squat,2,1,1,5,0.325,Squat,Clark,300,100
+Barbell Front Squat,2,1,1,5,0.325,Squat,Johnson,400,130
+Barbell Front Squat,2,1,1,5,0.325,Squat,Marker,340,110
+Barbell Front Squat,2,1,1,5,0.325,Squat,Ott,250,80
+Barbell Front Squat,2,1,1,5,0.325,Squat,Pearson,295,95
+Barbell Front Squat,2,1,1,5,0.325,Squat,Wolfe,95,30
+Barbell Front Squat,2,1,2,5,0.35,Squat,Clark,300,105
+Barbell Front Squat,2,1,2,5,0.35,Squat,Johnson,400,140
+Barbell Front Squat,2,1,2,5,0.35,Squat,Marker,340,120
+Barbell Front Squat,2,1,2,5,0.35,Squat,Ott,250,90
+Barbell Front Squat,2,1,2,5,0.35,Squat,Pearson,295,105
+Barbell Front Squat,2,1,2,5,0.35,Squat,Wolfe,95,35
+Barbell Front Squat,2,1,3,10,0.4,Squat,Clark,300,120
+Barbell Front Squat,2,1,3,10,0.4,Squat,Johnson,400,160
+Barbell Front Squat,2,1,3,10,0.4,Squat,Marker,340,135
+Barbell Front Squat,2,1,3,10,0.4,Squat,Ott,250,100
+Barbell Front Squat,2,1,3,10,0.4,Squat,Pearson,295,120
+Barbell Front Squat,2,1,3,10,0.4,Squat,Wolfe,95,40
+Barbell Front Squat,2,2,1,3,0.3375,Squat,Clark,300,100
+Barbell Front Squat,2,2,1,3,0.3375,Squat,Johnson,400,135
+Barbell Front Squat,2,2,1,3,0.3375,Squat,Marker,340,115
+Barbell Front Squat,2,2,1,3,0.3375,Squat,Ott,250,85
+Barbell Front Squat,2,2,1,3,0.3375,Squat,Pearson,295,100
+Barbell Front Squat,2,2,1,3,0.3375,Squat,Wolfe,95,30
+Barbell Front Squat,2,2,2,3,0.3625,Squat,Clark,300,110
+Barbell Front Squat,2,2,2,3,0.3625,Squat,Johnson,400,145
+Barbell Front Squat,2,2,2,3,0.3625,Squat,Marker,340,125
+Barbell Front Squat,2,2,2,3,0.3625,Squat,Ott,250,90
+Barbell Front Squat,2,2,2,3,0.3625,Squat,Pearson,295,105
+Barbell Front Squat,2,2,2,3,0.3625,Squat,Wolfe,95,35
+Barbell Front Squat,2,2,3,8,0.4125,Squat,Clark,300,125
+Barbell Front Squat,2,2,3,8,0.4125,Squat,Johnson,400,165
+Barbell Front Squat,2,2,3,8,0.4125,Squat,Marker,340,140
+Barbell Front Squat,2,2,3,8,0.4125,Squat,Ott,250,105
+Barbell Front Squat,2,2,3,8,0.4125,Squat,Pearson,295,120
+Barbell Front Squat,2,2,3,8,0.4125,Squat,Wolfe,95,40
+Barbell Front Squat,2,3,1,5,0.35,Squat,Clark,300,105
+Barbell Front Squat,2,3,1,5,0.35,Squat,Johnson,400,140
+Barbell Front Squat,2,3,1,5,0.35,Squat,Marker,340,120
+Barbell Front Squat,2,3,1,5,0.35,Squat,Ott,250,90
+Barbell Front Squat,2,3,1,5,0.35,Squat,Pearson,295,105
+Barbell Front Squat,2,3,1,5,0.35,Squat,Wolfe,95,35
+Barbell Front Squat,2,3,2,3,0.375,Squat,Clark,300,110
+Barbell Front Squat,2,3,2,3,0.375,Squat,Johnson,400,150
+Barbell Front Squat,2,3,2,3,0.375,Squat,Marker,340,130
+Barbell Front Squat,2,3,2,3,0.375,Squat,Ott,250,95
+Barbell Front Squat,2,3,2,3,0.375,Squat,Pearson,295,110
+Barbell Front Squat,2,3,2,3,0.375,Squat,Wolfe,95,35
+Barbell Front Squat,2,3,3,7,0.425,Squat,Clark,300,130
+Barbell Front Squat,2,3,3,7,0.425,Squat,Johnson,400,170
+Barbell Front Squat,2,3,3,7,0.425,Squat,Marker,340,145
+Barbell Front Squat,2,3,3,7,0.425,Squat,Ott,250,105
+Barbell Front Squat,2,3,3,7,0.425,Squat,Pearson,295,125
+Barbell Front Squat,2,3,3,7,0.425,Squat,Wolfe,95,40
+DB Reverse Lunge Step-up,3,1,1,3,0.075,Squat,Clark,300,20
+DB Reverse Lunge Step-up,3,1,1,3,0.075,Squat,Johnson,400,30
+DB Reverse Lunge Step-up,3,1,1,3,0.075,Squat,Marker,340,25
+DB Reverse Lunge Step-up,3,1,1,3,0.075,Squat,Ott,250,20
+DB Reverse Lunge Step-up,3,1,1,3,0.075,Squat,Pearson,295,20
+DB Reverse Lunge Step-up,3,1,1,3,0.075,Squat,Wolfe,95,5
+DB Reverse Lunge Step-up,3,1,2,3,0.075,Squat,Clark,300,20
+DB Reverse Lunge Step-up,3,1,2,3,0.075,Squat,Johnson,400,30
+DB Reverse Lunge Step-up,3,1,2,3,0.075,Squat,Marker,340,25
+DB Reverse Lunge Step-up,3,1,2,3,0.075,Squat,Ott,250,20
+DB Reverse Lunge Step-up,3,1,2,3,0.075,Squat,Pearson,295,20
+DB Reverse Lunge Step-up,3,1,2,3,0.075,Squat,Wolfe,95,5
+DB Reverse Lunge Step-up,3,1,3,3,0.075,Squat,Clark,300,20
+DB Reverse Lunge Step-up,3,1,3,3,0.075,Squat,Johnson,400,30
+DB Reverse Lunge Step-up,3,1,3,3,0.075,Squat,Marker,340,25
+DB Reverse Lunge Step-up,3,1,3,3,0.075,Squat,Ott,250,20
+DB Reverse Lunge Step-up,3,1,3,3,0.075,Squat,Pearson,295,20
+DB Reverse Lunge Step-up,3,1,3,3,0.075,Squat,Wolfe,95,5
+DB Reverse Lunge Step-up,3,2,1,4,0.075,Squat,Clark,300,20
+DB Reverse Lunge Step-up,3,2,1,4,0.075,Squat,Johnson,400,30
+DB Reverse Lunge Step-up,3,2,1,4,0.075,Squat,Marker,340,25
+DB Reverse Lunge Step-up,3,2,1,4,0.075,Squat,Ott,250,20
+DB Reverse Lunge Step-up,3,2,1,4,0.075,Squat,Pearson,295,20
+DB Reverse Lunge Step-up,3,2,1,4,0.075,Squat,Wolfe,95,5
+DB Reverse Lunge Step-up,3,2,2,4,0.075,Squat,Clark,300,20
+DB Reverse Lunge Step-up,3,2,2,4,0.075,Squat,Johnson,400,30
+DB Reverse Lunge Step-up,3,2,2,4,0.075,Squat,Marker,340,25
+DB Reverse Lunge Step-up,3,2,2,4,0.075,Squat,Ott,250,20
+DB Reverse Lunge Step-up,3,2,2,4,0.075,Squat,Pearson,295,20
+DB Reverse Lunge Step-up,3,2,2,4,0.075,Squat,Wolfe,95,5
+DB Reverse Lunge Step-up,3,2,3,4,0.075,Squat,Clark,300,20
+DB Reverse Lunge Step-up,3,2,3,4,0.075,Squat,Johnson,400,30
+DB Reverse Lunge Step-up,3,2,3,4,0.075,Squat,Marker,340,25
+DB Reverse Lunge Step-up,3,2,3,4,0.075,Squat,Ott,250,20
+DB Reverse Lunge Step-up,3,2,3,4,0.075,Squat,Pearson,295,20
+DB Reverse Lunge Step-up,3,2,3,4,0.075,Squat,Wolfe,95,5
+DB Reverse Lunge Step-up,3,3,1,5,0.075,Squat,Clark,300,20
+DB Reverse Lunge Step-up,3,3,1,5,0.075,Squat,Johnson,400,30
+DB Reverse Lunge Step-up,3,3,1,5,0.075,Squat,Marker,340,25
+DB Reverse Lunge Step-up,3,3,1,5,0.075,Squat,Ott,250,20
+DB Reverse Lunge Step-up,3,3,1,5,0.075,Squat,Pearson,295,20
+DB Reverse Lunge Step-up,3,3,1,5,0.075,Squat,Wolfe,95,5
+DB Reverse Lunge Step-up,3,3,2,5,0.075,Squat,Clark,300,20
+DB Reverse Lunge Step-up,3,3,2,5,0.075,Squat,Johnson,400,30
+DB Reverse Lunge Step-up,3,3,2,5,0.075,Squat,Marker,340,25
+DB Reverse Lunge Step-up,3,3,2,5,0.075,Squat,Ott,250,20
+DB Reverse Lunge Step-up,3,3,2,5,0.075,Squat,Pearson,295,20
+DB Reverse Lunge Step-up,3,3,2,5,0.075,Squat,Wolfe,95,5
+DB Reverse Lunge Step-up,3,3,3,5,0.075,Squat,Clark,300,20
+DB Reverse Lunge Step-up,3,3,3,5,0.075,Squat,Johnson,400,30
+DB Reverse Lunge Step-up,3,3,3,5,0.075,Squat,Marker,340,25
+DB Reverse Lunge Step-up,3,3,3,5,0.075,Squat,Ott,250,20
+DB Reverse Lunge Step-up,3,3,3,5,0.075,Squat,Pearson,295,20
+DB Reverse Lunge Step-up,3,3,3,5,0.075,Squat,Wolfe,95,5
+High-Hang Pull,4,1,1,5,0.7,Clean,Clark,165,115
+High-Hang Pull,4,1,1,5,0.7,Clean,Johnson,175,120
+High-Hang Pull,4,1,1,5,0.7,Clean,Marker,160,110
+High-Hang Pull,4,1,1,5,0.7,Clean,Ott,115,80
+High-Hang Pull,4,1,1,5,0.7,Clean,Pearson,125,90
+High-Hang Pull,4,1,1,5,0.7,Clean,Wolfe,85,60
+High-Hang Pull,4,2,1,4,0.77,Clean,Clark,165,125
+High-Hang Pull,4,2,1,4,0.77,Clean,Johnson,175,135
+High-Hang Pull,4,2,1,4,0.77,Clean,Marker,160,125
+High-Hang Pull,4,2,1,4,0.77,Clean,Ott,115,90
+High-Hang Pull,4,2,1,4,0.77,Clean,Pearson,125,95
+High-Hang Pull,4,2,1,4,0.77,Clean,Wolfe,85,65
+High-Hang Pull,4,3,1,3,0.847,Clean,Clark,165,140
+High-Hang Pull,4,3,1,3,0.847,Clean,Johnson,175,150
+High-Hang Pull,4,3,1,3,0.847,Clean,Marker,160,135
+High-Hang Pull,4,3,1,3,0.847,Clean,Ott,115,95
+High-Hang Pull,4,3,1,3,0.847,Clean,Pearson,125,105
+High-Hang Pull,4,3,1,3,0.847,Clean,Wolfe,85,70
+Clean,5,1,1,5,0.65,Clean,Clark,165,105
+Clean,5,1,1,5,0.65,Clean,Johnson,175,115
+Clean,5,1,1,5,0.65,Clean,Marker,160,105
+Clean,5,1,1,5,0.65,Clean,Ott,115,75
+Clean,5,1,1,5,0.65,Clean,Pearson,125,80
+Clean,5,1,1,5,0.65,Clean,Wolfe,85,55
+Clean,5,1,2,5,0.7,Clean,Clark,165,115
+Clean,5,1,2,5,0.7,Clean,Johnson,175,120
+Clean,5,1,2,5,0.7,Clean,Marker,160,110
+Clean,5,1,2,5,0.7,Clean,Ott,115,80
+Clean,5,1,2,5,0.7,Clean,Pearson,125,90
+Clean,5,1,2,5,0.7,Clean,Wolfe,85,60
+Clean,5,1,3,6,0.875,Clean,Clark,165,145
+Clean,5,1,3,6,0.875,Clean,Johnson,175,155
+Clean,5,1,3,6,0.875,Clean,Marker,160,140
+Clean,5,1,3,6,0.875,Clean,Ott,115,100
+Clean,5,1,3,6,0.875,Clean,Pearson,125,110
+Clean,5,1,3,6,0.875,Clean,Wolfe,85,75
+Clean,5,2,1,3,0.675,Clean,Clark,165,110
+Clean,5,2,1,3,0.675,Clean,Johnson,175,120
+Clean,5,2,1,3,0.675,Clean,Marker,160,110
+Clean,5,2,1,3,0.675,Clean,Ott,115,80
+Clean,5,2,1,3,0.675,Clean,Pearson,125,85
+Clean,5,2,1,3,0.675,Clean,Wolfe,85,55
+Clean,5,2,2,3,0.725,Clean,Clark,165,120
+Clean,5,2,2,3,0.725,Clean,Johnson,175,125
+Clean,5,2,2,3,0.725,Clean,Marker,160,115
+Clean,5,2,2,3,0.725,Clean,Ott,115,85
+Clean,5,2,2,3,0.725,Clean,Pearson,125,90
+Clean,5,2,2,3,0.725,Clean,Wolfe,85,60
+Clean,5,2,3,4,0.9,Clean,Clark,165,150
+Clean,5,2,3,4,0.9,Clean,Johnson,175,160
+Clean,5,2,3,4,0.9,Clean,Marker,160,145
+Clean,5,2,3,4,0.9,Clean,Ott,115,105
+Clean,5,2,3,4,0.9,Clean,Pearson,125,110
+Clean,5,2,3,4,0.9,Clean,Wolfe,85,75
+Clean,5,3,1,5,0.7,Clean,Clark,165,115
+Clean,5,3,1,5,0.7,Clean,Johnson,175,120
+Clean,5,3,1,5,0.7,Clean,Marker,160,110
+Clean,5,3,1,5,0.7,Clean,Ott,115,80
+Clean,5,3,1,5,0.7,Clean,Pearson,125,90
+Clean,5,3,1,5,0.7,Clean,Wolfe,85,60
+Clean,5,3,2,3,0.75,Clean,Clark,165,125
+Clean,5,3,2,3,0.75,Clean,Johnson,175,130
+Clean,5,3,2,3,0.75,Clean,Marker,160,120
+Clean,5,3,2,3,0.75,Clean,Ott,115,85
+Clean,5,3,2,3,0.75,Clean,Pearson,125,95
+Clean,5,3,2,3,0.75,Clean,Wolfe,85,65
+Clean,5,3,3,3,0.925,Clean,Clark,165,155
+Clean,5,3,3,3,0.925,Clean,Johnson,175,160
+Clean,5,3,3,3,0.925,Clean,Marker,160,150
+Clean,5,3,3,3,0.925,Clean,Ott,115,105
+Clean,5,3,3,3,0.925,Clean,Pearson,125,115
+Clean,5,3,3,3,0.925,Clean,Wolfe,85,80
+Box Bench,6,1,1,5,0.6825,Bench,Clark,180,125
+Box Bench,6,1,1,5,0.6825,Bench,Johnson,250,170
+Box Bench,6,1,1,5,0.6825,Bench,Marker,135,90
+Box Bench,6,1,1,5,0.6825,Bench,Ott,135,90
+Box Bench,6,1,1,5,0.6825,Bench,Pearson,155,105
+Box Bench,6,1,1,5,0.6825,Bench,Wolfe,85,60
+Box Bench,6,1,2,5,0.735,Bench,Clark,180,130
+Box Bench,6,1,2,5,0.735,Bench,Johnson,250,185
+Box Bench,6,1,2,5,0.735,Bench,Marker,135,100
+Box Bench,6,1,2,5,0.735,Bench,Ott,135,100
+Box Bench,6,1,2,5,0.735,Bench,Pearson,155,115
+Box Bench,6,1,2,5,0.735,Bench,Wolfe,85,60
+Box Bench,6,1,3,10,0.84,Bench,Clark,180,150
+Box Bench,6,1,3,10,0.84,Bench,Johnson,250,210
+Box Bench,6,1,3,10,0.84,Bench,Marker,135,115
+Box Bench,6,1,3,10,0.84,Bench,Ott,135,115
+Box Bench,6,1,3,10,0.84,Bench,Pearson,155,130
+Box Bench,6,1,3,10,0.84,Bench,Wolfe,85,70
+Box Bench,6,2,1,3,0.7087,Bench,Clark,180,130
+Box Bench,6,2,1,3,0.7087,Bench,Johnson,250,175
+Box Bench,6,2,1,3,0.7087,Bench,Marker,135,95
+Box Bench,6,2,1,3,0.7087,Bench,Ott,135,95
+Box Bench,6,2,1,3,0.7087,Bench,Pearson,155,110
+Box Bench,6,2,1,3,0.7087,Bench,Wolfe,85,60
+Box Bench,6,2,2,3,0.7612,Bench,Clark,180,135
+Box Bench,6,2,2,3,0.7612,Bench,Johnson,250,190
+Box Bench,6,2,2,3,0.7612,Bench,Marker,135,105
+Box Bench,6,2,2,3,0.7612,Bench,Ott,135,105
+Box Bench,6,2,2,3,0.7612,Bench,Pearson,155,120
+Box Bench,6,2,2,3,0.7612,Bench,Wolfe,85,65
+Box Bench,6,2,3,8,0.8662,Bench,Clark,180,155
+Box Bench,6,2,3,8,0.8662,Bench,Johnson,250,215
+Box Bench,6,2,3,8,0.8662,Bench,Marker,135,115
+Box Bench,6,2,3,8,0.8662,Bench,Ott,135,115
+Box Bench,6,2,3,8,0.8662,Bench,Pearson,155,135
+Box Bench,6,2,3,8,0.8662,Bench,Wolfe,85,75
+Box Bench,6,3,1,5,0.735,Bench,Clark,180,130
+Box Bench,6,3,1,5,0.735,Bench,Johnson,250,185
+Box Bench,6,3,1,5,0.735,Bench,Marker,135,100
+Box Bench,6,3,1,5,0.735,Bench,Ott,135,100
+Box Bench,6,3,1,5,0.735,Bench,Pearson,155,115
+Box Bench,6,3,1,5,0.735,Bench,Wolfe,85,60
+Box Bench,6,3,2,3,0.7875,Bench,Clark,180,140
+Box Bench,6,3,2,3,0.7875,Bench,Johnson,250,195
+Box Bench,6,3,2,3,0.7875,Bench,Marker,135,105
+Box Bench,6,3,2,3,0.7875,Bench,Ott,135,105
+Box Bench,6,3,2,3,0.7875,Bench,Pearson,155,120
+Box Bench,6,3,2,3,0.7875,Bench,Wolfe,85,65
+Box Bench,6,3,3,7,0.8925,Bench,Clark,180,160
+Box Bench,6,3,3,7,0.8925,Bench,Johnson,250,225
+Box Bench,6,3,3,7,0.8925,Bench,Marker,135,120
+Box Bench,6,3,3,7,0.8925,Bench,Ott,135,120
+Box Bench,6,3,3,7,0.8925,Bench,Pearson,155,140
+Box Bench,6,3,3,7,0.8925,Bench,Wolfe,85,75
+Bench,7,1,1,5,0.65,Bench,Clark,180,115
+Bench,7,1,1,5,0.65,Bench,Johnson,250,160
+Bench,7,1,1,5,0.65,Bench,Marker,135,90
+Bench,7,1,1,5,0.65,Bench,Ott,135,90
+Bench,7,1,1,5,0.65,Bench,Pearson,155,100
+Bench,7,1,1,5,0.65,Bench,Wolfe,85,55
+Bench,7,1,2,5,0.7,Bench,Clark,180,125
+Bench,7,1,2,5,0.7,Bench,Johnson,250,175
+Bench,7,1,2,5,0.7,Bench,Marker,135,95
+Bench,7,1,2,5,0.7,Bench,Ott,135,95
+Bench,7,1,2,5,0.7,Bench,Pearson,155,110
+Bench,7,1,2,5,0.7,Bench,Wolfe,85,60
+Bench,7,1,3,10,0.8,Bench,Clark,180,145
+Bench,7,1,3,10,0.8,Bench,Johnson,250,200
+Bench,7,1,3,10,0.8,Bench,Marker,135,110
+Bench,7,1,3,10,0.8,Bench,Ott,135,110
+Bench,7,1,3,10,0.8,Bench,Pearson,155,125
+Bench,7,1,3,10,0.8,Bench,Wolfe,85,70
+Bench,7,2,1,3,0.675,Bench,Clark,180,120
+Bench,7,2,1,3,0.675,Bench,Johnson,250,170
+Bench,7,2,1,3,0.675,Bench,Marker,135,90
+Bench,7,2,1,3,0.675,Bench,Ott,135,90
+Bench,7,2,1,3,0.675,Bench,Pearson,155,105
+Bench,7,2,1,3,0.675,Bench,Wolfe,85,55
+Bench,7,2,2,3,0.725,Bench,Clark,180,130
+Bench,7,2,2,3,0.725,Bench,Johnson,250,180
+Bench,7,2,2,3,0.725,Bench,Marker,135,100
+Bench,7,2,2,3,0.725,Bench,Ott,135,100
+Bench,7,2,2,3,0.725,Bench,Pearson,155,110
+Bench,7,2,2,3,0.725,Bench,Wolfe,85,60
+Bench,7,2,3,8,0.825,Bench,Clark,180,150
+Bench,7,2,3,8,0.825,Bench,Johnson,250,205
+Bench,7,2,3,8,0.825,Bench,Marker,135,110
+Bench,7,2,3,8,0.825,Bench,Ott,135,110
+Bench,7,2,3,8,0.825,Bench,Pearson,155,130
+Bench,7,2,3,8,0.825,Bench,Wolfe,85,70
+Bench,7,3,1,5,0.7,Bench,Clark,180,125
+Bench,7,3,1,5,0.7,Bench,Johnson,250,175
+Bench,7,3,1,5,0.7,Bench,Marker,135,95
+Bench,7,3,1,5,0.7,Bench,Ott,135,95
+Bench,7,3,1,5,0.7,Bench,Pearson,155,110
+Bench,7,3,1,5,0.7,Bench,Wolfe,85,60
+Bench,7,3,2,3,0.75,Bench,Clark,180,135
+Bench,7,3,2,3,0.75,Bench,Johnson,250,190
+Bench,7,3,2,3,0.75,Bench,Marker,135,100
+Bench,7,3,2,3,0.75,Bench,Ott,135,100
+Bench,7,3,2,3,0.75,Bench,Pearson,155,115
+Bench,7,3,2,3,0.75,Bench,Wolfe,85,65
+Bench,7,3,3,7,0.85,Bench,Clark,180,155
+Bench,7,3,3,7,0.85,Bench,Johnson,250,210
+Bench,7,3,3,7,0.85,Bench,Marker,135,115
+Bench,7,3,3,7,0.85,Bench,Ott,135,115
+Bench,7,3,3,7,0.85,Bench,Pearson,155,130
+Bench,7,3,3,7,0.85,Bench,Wolfe,85,70
+1-Arm DB Row,8,1,1,5,0.1375,Bench,Clark,180,25
+1-Arm DB Row,8,1,1,5,0.1375,Bench,Johnson,250,35
+1-Arm DB Row,8,1,1,5,0.1375,Bench,Marker,135,20
+1-Arm DB Row,8,1,1,5,0.1375,Bench,Ott,135,20
+1-Arm DB Row,8,1,1,5,0.1375,Bench,Pearson,155,20
+1-Arm DB Row,8,1,1,5,0.1375,Bench,Wolfe,85,10
+1-Arm DB Row,8,1,2,5,0.1375,Bench,Clark,180,25
+1-Arm DB Row,8,1,2,5,0.1375,Bench,Johnson,250,35
+1-Arm DB Row,8,1,2,5,0.1375,Bench,Marker,135,20
+1-Arm DB Row,8,1,2,5,0.1375,Bench,Ott,135,20
+1-Arm DB Row,8,1,2,5,0.1375,Bench,Pearson,155,20
+1-Arm DB Row,8,1,2,5,0.1375,Bench,Wolfe,85,10
+1-Arm DB Row,8,1,3,5,0.1375,Bench,Clark,180,25
+1-Arm DB Row,8,1,3,5,0.1375,Bench,Johnson,250,35
+1-Arm DB Row,8,1,3,5,0.1375,Bench,Marker,135,20
+1-Arm DB Row,8,1,3,5,0.1375,Bench,Ott,135,20
+1-Arm DB Row,8,1,3,5,0.1375,Bench,Pearson,155,20
+1-Arm DB Row,8,1,3,5,0.1375,Bench,Wolfe,85,10
+1-Arm DB Row,8,2,1,6,0.1375,Bench,Clark,180,25
+1-Arm DB Row,8,2,1,6,0.1375,Bench,Johnson,250,35
+1-Arm DB Row,8,2,1,6,0.1375,Bench,Marker,135,20
+1-Arm DB Row,8,2,1,6,0.1375,Bench,Ott,135,20
+1-Arm DB Row,8,2,1,6,0.1375,Bench,Pearson,155,20
+1-Arm DB Row,8,2,1,6,0.1375,Bench,Wolfe,85,10
+1-Arm DB Row,8,2,2,6,0.1375,Bench,Clark,180,25
+1-Arm DB Row,8,2,2,6,0.1375,Bench,Johnson,250,35
+1-Arm DB Row,8,2,2,6,0.1375,Bench,Marker,135,20
+1-Arm DB Row,8,2,2,6,0.1375,Bench,Ott,135,20
+1-Arm DB Row,8,2,2,6,0.1375,Bench,Pearson,155,20
+1-Arm DB Row,8,2,2,6,0.1375,Bench,Wolfe,85,10
+1-Arm DB Row,8,2,3,6,0.1375,Bench,Clark,180,25
+1-Arm DB Row,8,2,3,6,0.1375,Bench,Johnson,250,35
+1-Arm DB Row,8,2,3,6,0.1375,Bench,Marker,135,20
+1-Arm DB Row,8,2,3,6,0.1375,Bench,Ott,135,20
+1-Arm DB Row,8,2,3,6,0.1375,Bench,Pearson,155,20
+1-Arm DB Row,8,2,3,6,0.1375,Bench,Wolfe,85,10
+1-Arm DB Row,8,3,1,7,0.1375,Bench,Clark,180,25
+1-Arm DB Row,8,3,1,7,0.1375,Bench,Johnson,250,35
+1-Arm DB Row,8,3,1,7,0.1375,Bench,Marker,135,20
+1-Arm DB Row,8,3,1,7,0.1375,Bench,Ott,135,20
+1-Arm DB Row,8,3,1,7,0.1375,Bench,Pearson,155,20
+1-Arm DB Row,8,3,1,7,0.1375,Bench,Wolfe,85,10
+1-Arm DB Row,8,3,2,7,0.1375,Bench,Clark,180,25
+1-Arm DB Row,8,3,2,7,0.1375,Bench,Johnson,250,35
+1-Arm DB Row,8,3,2,7,0.1375,Bench,Marker,135,20
+1-Arm DB Row,8,3,2,7,0.1375,Bench,Ott,135,20
+1-Arm DB Row,8,3,2,7,0.1375,Bench,Pearson,155,20
+1-Arm DB Row,8,3,2,7,0.1375,Bench,Wolfe,85,10
+1-Arm DB Row,8,3,3,7,0.1375,Bench,Clark,180,25
+1-Arm DB Row,8,3,3,7,0.1375,Bench,Johnson,250,35
+1-Arm DB Row,8,3,3,7,0.1375,Bench,Marker,135,20
+1-Arm DB Row,8,3,3,7,0.1375,Bench,Ott,135,20
+1-Arm DB Row,8,3,3,7,0.1375,Bench,Pearson,155,20
+1-Arm DB Row,8,3,3,7,0.1375,Bench,Wolfe,85,10
+Barbell Push Press,9,1,1,5,0.4062,Bench,Clark,180,75
+Barbell Push Press,9,1,1,5,0.4062,Bench,Johnson,250,100
+Barbell Push Press,9,1,1,5,0.4062,Bench,Marker,135,55
+Barbell Push Press,9,1,1,5,0.4062,Bench,Ott,135,55
+Barbell Push Press,9,1,1,5,0.4062,Bench,Pearson,155,65
+Barbell Push Press,9,1,1,5,0.4062,Bench,Wolfe,85,35
+Barbell Push Press,9,1,2,5,0.4375,Bench,Clark,180,80
+Barbell Push Press,9,1,2,5,0.4375,Bench,Johnson,250,110
+Barbell Push Press,9,1,2,5,0.4375,Bench,Marker,135,60
+Barbell Push Press,9,1,2,5,0.4375,Bench,Ott,135,60
+Barbell Push Press,9,1,2,5,0.4375,Bench,Pearson,155,70
+Barbell Push Press,9,1,2,5,0.4375,Bench,Wolfe,85,35
+Barbell Push Press,9,1,3,10,0.5,Bench,Clark,180,90
+Barbell Push Press,9,1,3,10,0.5,Bench,Johnson,250,125
+Barbell Push Press,9,1,3,10,0.5,Bench,Marker,135,70
+Barbell Push Press,9,1,3,10,0.5,Bench,Ott,135,70
+Barbell Push Press,9,1,3,10,0.5,Bench,Pearson,155,80
+Barbell Push Press,9,1,3,10,0.5,Bench,Wolfe,85,40
+Barbell Push Press,9,2,1,3,0.4218,Bench,Clark,180,75
+Barbell Push Press,9,2,1,3,0.4218,Bench,Johnson,250,105
+Barbell Push Press,9,2,1,3,0.4218,Bench,Marker,135,55
+Barbell Push Press,9,2,1,3,0.4218,Bench,Ott,135,55
+Barbell Push Press,9,2,1,3,0.4218,Bench,Pearson,155,65
+Barbell Push Press,9,2,1,3,0.4218,Bench,Wolfe,85,35
+Barbell Push Press,9,2,2,3,0.4531,Bench,Clark,180,80
+Barbell Push Press,9,2,2,3,0.4531,Bench,Johnson,250,115
+Barbell Push Press,9,2,2,3,0.4531,Bench,Marker,135,60
+Barbell Push Press,9,2,2,3,0.4531,Bench,Ott,135,60
+Barbell Push Press,9,2,2,3,0.4531,Bench,Pearson,155,70
+Barbell Push Press,9,2,2,3,0.4531,Bench,Wolfe,85,40
+Barbell Push Press,9,2,3,8,0.5156,Bench,Clark,180,95
+Barbell Push Press,9,2,3,8,0.5156,Bench,Johnson,250,130
+Barbell Push Press,9,2,3,8,0.5156,Bench,Marker,135,70
+Barbell Push Press,9,2,3,8,0.5156,Bench,Ott,135,70
+Barbell Push Press,9,2,3,8,0.5156,Bench,Pearson,155,80
+Barbell Push Press,9,2,3,8,0.5156,Bench,Wolfe,85,45
+Barbell Push Press,9,3,1,5,0.4375,Bench,Clark,180,80
+Barbell Push Press,9,3,1,5,0.4375,Bench,Johnson,250,110
+Barbell Push Press,9,3,1,5,0.4375,Bench,Marker,135,60
+Barbell Push Press,9,3,1,5,0.4375,Bench,Ott,135,60
+Barbell Push Press,9,3,1,5,0.4375,Bench,Pearson,155,70
+Barbell Push Press,9,3,1,5,0.4375,Bench,Wolfe,85,35
+Barbell Push Press,9,3,2,3,0.4875,Bench,Clark,180,90
+Barbell Push Press,9,3,2,3,0.4875,Bench,Johnson,250,120
+Barbell Push Press,9,3,2,3,0.4875,Bench,Marker,135,65
+Barbell Push Press,9,3,2,3,0.4875,Bench,Ott,135,65
+Barbell Push Press,9,3,2,3,0.4875,Bench,Pearson,155,75
+Barbell Push Press,9,3,2,3,0.4875,Bench,Wolfe,85,40
+Barbell Push Press,9,3,3,7,0.5312,Bench,Clark,180,95
+Barbell Push Press,9,3,3,7,0.5312,Bench,Johnson,250,135
+Barbell Push Press,9,3,3,7,0.5312,Bench,Marker,135,70
+Barbell Push Press,9,3,3,7,0.5312,Bench,Ott,135,70
+Barbell Push Press,9,3,3,7,0.5312,Bench,Pearson,155,80
+Barbell Push Press,9,3,3,7,0.5312,Bench,Wolfe,85,45
+Chest-Supported DB Row,10,1,1,5,0.125,Bench,Clark,180,20
+Chest-Supported DB Row,10,1,1,5,0.125,Bench,Johnson,250,30
+Chest-Supported DB Row,10,1,1,5,0.125,Bench,Marker,135,15
+Chest-Supported DB Row,10,1,1,5,0.125,Bench,Ott,135,15
+Chest-Supported DB Row,10,1,1,5,0.125,Bench,Pearson,155,20
+Chest-Supported DB Row,10,1,1,5,0.125,Bench,Wolfe,85,10
+Chest-Supported DB Row,10,1,2,5,0.125,Bench,Clark,180,20
+Chest-Supported DB Row,10,1,2,5,0.125,Bench,Johnson,250,30
+Chest-Supported DB Row,10,1,2,5,0.125,Bench,Marker,135,15
+Chest-Supported DB Row,10,1,2,5,0.125,Bench,Ott,135,15
+Chest-Supported DB Row,10,1,2,5,0.125,Bench,Pearson,155,20
+Chest-Supported DB Row,10,1,2,5,0.125,Bench,Wolfe,85,10
+Chest-Supported DB Row,10,1,3,5,0.125,Bench,Clark,180,20
+Chest-Supported DB Row,10,1,3,5,0.125,Bench,Johnson,250,30
+Chest-Supported DB Row,10,1,3,5,0.125,Bench,Marker,135,15
+Chest-Supported DB Row,10,1,3,5,0.125,Bench,Ott,135,15
+Chest-Supported DB Row,10,1,3,5,0.125,Bench,Pearson,155,20
+Chest-Supported DB Row,10,1,3,5,0.125,Bench,Wolfe,85,10
+Chest-Supported DB Row,10,2,1,6,0.125,Bench,Clark,180,20
+Chest-Supported DB Row,10,2,1,6,0.125,Bench,Johnson,250,30
+Chest-Supported DB Row,10,2,1,6,0.125,Bench,Marker,135,15
+Chest-Supported DB Row,10,2,1,6,0.125,Bench,Ott,135,15
+Chest-Supported DB Row,10,2,1,6,0.125,Bench,Pearson,155,20
+Chest-Supported DB Row,10,2,1,6,0.125,Bench,Wolfe,85,10
+Chest-Supported DB Row,10,2,2,6,0.125,Bench,Clark,180,20
+Chest-Supported DB Row,10,2,2,6,0.125,Bench,Johnson,250,30
+Chest-Supported DB Row,10,2,2,6,0.125,Bench,Marker,135,15
+Chest-Supported DB Row,10,2,2,6,0.125,Bench,Ott,135,15
+Chest-Supported DB Row,10,2,2,6,0.125,Bench,Pearson,155,20
+Chest-Supported DB Row,10,2,2,6,0.125,Bench,Wolfe,85,10
+Chest-Supported DB Row,10,2,3,6,0.125,Bench,Clark,180,20
+Chest-Supported DB Row,10,2,3,6,0.125,Bench,Johnson,250,30
+Chest-Supported DB Row,10,2,3,6,0.125,Bench,Marker,135,15
+Chest-Supported DB Row,10,2,3,6,0.125,Bench,Ott,135,15
+Chest-Supported DB Row,10,2,3,6,0.125,Bench,Pearson,155,20
+Chest-Supported DB Row,10,2,3,6,0.125,Bench,Wolfe,85,10
+Chest-Supported DB Row,10,3,1,7,0.125,Bench,Clark,180,20
+Chest-Supported DB Row,10,3,1,7,0.125,Bench,Johnson,250,30
+Chest-Supported DB Row,10,3,1,7,0.125,Bench,Marker,135,15
+Chest-Supported DB Row,10,3,1,7,0.125,Bench,Ott,135,15
+Chest-Supported DB Row,10,3,1,7,0.125,Bench,Pearson,155,20
+Chest-Supported DB Row,10,3,1,7,0.125,Bench,Wolfe,85,10
+Chest-Supported DB Row,10,3,2,7,0.125,Bench,Clark,180,20
+Chest-Supported DB Row,10,3,2,7,0.125,Bench,Johnson,250,30
+Chest-Supported DB Row,10,3,2,7,0.125,Bench,Marker,135,15
+Chest-Supported DB Row,10,3,2,7,0.125,Bench,Ott,135,15
+Chest-Supported DB Row,10,3,2,7,0.125,Bench,Pearson,155,20
+Chest-Supported DB Row,10,3,2,7,0.125,Bench,Wolfe,85,10
+Chest-Supported DB Row,10,3,3,7,0.125,Bench,Clark,180,20
+Chest-Supported DB Row,10,3,3,7,0.125,Bench,Johnson,250,30
+Chest-Supported DB Row,10,3,3,7,0.125,Bench,Marker,135,15
+Chest-Supported DB Row,10,3,3,7,0.125,Bench,Ott,135,15
+Chest-Supported DB Row,10,3,3,7,0.125,Bench,Pearson,155,20
+Chest-Supported DB Row,10,3,3,7,0.125,Bench,Wolfe,85,10
+3-Way DB Shoulder Raise,11,1,1,7,0.125,Bench,Clark,180,20
+3-Way DB Shoulder Raise,11,1,1,7,0.125,Bench,Johnson,250,30
+3-Way DB Shoulder Raise,11,1,1,7,0.125,Bench,Marker,135,15
+3-Way DB Shoulder Raise,11,1,1,7,0.125,Bench,Ott,135,15
+3-Way DB Shoulder Raise,11,1,1,7,0.125,Bench,Pearson,155,20
+3-Way DB Shoulder Raise,11,1,1,7,0.125,Bench,Wolfe,85,10
+3-Way DB Shoulder Raise,11,1,2,7,0.125,Bench,Clark,180,20
+3-Way DB Shoulder Raise,11,1,2,7,0.125,Bench,Johnson,250,30
+3-Way DB Shoulder Raise,11,1,2,7,0.125,Bench,Marker,135,15
+3-Way DB Shoulder Raise,11,1,2,7,0.125,Bench,Ott,135,15
+3-Way DB Shoulder Raise,11,1,2,7,0.125,Bench,Pearson,155,20
+3-Way DB Shoulder Raise,11,1,2,7,0.125,Bench,Wolfe,85,10
+3-Way DB Shoulder Raise,11,1,3,7,0.125,Bench,Clark,180,20
+3-Way DB Shoulder Raise,11,1,3,7,0.125,Bench,Johnson,250,30
+3-Way DB Shoulder Raise,11,1,3,7,0.125,Bench,Marker,135,15
+3-Way DB Shoulder Raise,11,1,3,7,0.125,Bench,Ott,135,15
+3-Way DB Shoulder Raise,11,1,3,7,0.125,Bench,Pearson,155,20
+3-Way DB Shoulder Raise,11,1,3,7,0.125,Bench,Wolfe,85,10
+3-Way DB Shoulder Raise,11,2,1,8,0.125,Bench,Clark,180,20
+3-Way DB Shoulder Raise,11,2,1,8,0.125,Bench,Johnson,250,30
+3-Way DB Shoulder Raise,11,2,1,8,0.125,Bench,Marker,135,15
+3-Way DB Shoulder Raise,11,2,1,8,0.125,Bench,Ott,135,15
+3-Way DB Shoulder Raise,11,2,1,8,0.125,Bench,Pearson,155,20
+3-Way DB Shoulder Raise,11,2,1,8,0.125,Bench,Wolfe,85,10
+3-Way DB Shoulder Raise,11,2,2,8,0.125,Bench,Clark,180,20
+3-Way DB Shoulder Raise,11,2,2,8,0.125,Bench,Johnson,250,30
+3-Way DB Shoulder Raise,11,2,2,8,0.125,Bench,Marker,135,15
+3-Way DB Shoulder Raise,11,2,2,8,0.125,Bench,Ott,135,15
+3-Way DB Shoulder Raise,11,2,2,8,0.125,Bench,Pearson,155,20
+3-Way DB Shoulder Raise,11,2,2,8,0.125,Bench,Wolfe,85,10
+3-Way DB Shoulder Raise,11,2,3,8,0.125,Bench,Clark,180,20
+3-Way DB Shoulder Raise,11,2,3,8,0.125,Bench,Johnson,250,30
+3-Way DB Shoulder Raise,11,2,3,8,0.125,Bench,Marker,135,15
+3-Way DB Shoulder Raise,11,2,3,8,0.125,Bench,Ott,135,15
+3-Way DB Shoulder Raise,11,2,3,8,0.125,Bench,Pearson,155,20
+3-Way DB Shoulder Raise,11,2,3,8,0.125,Bench,Wolfe,85,10
+3-Way DB Shoulder Raise,11,3,1,10,0.125,Bench,Clark,180,20
+3-Way DB Shoulder Raise,11,3,1,10,0.125,Bench,Johnson,250,30
+3-Way DB Shoulder Raise,11,3,1,10,0.125,Bench,Marker,135,15
+3-Way DB Shoulder Raise,11,3,1,10,0.125,Bench,Ott,135,15
+3-Way DB Shoulder Raise,11,3,1,10,0.125,Bench,Pearson,155,20
+3-Way DB Shoulder Raise,11,3,1,10,0.125,Bench,Wolfe,85,10
+3-Way DB Shoulder Raise,11,3,2,10,0.125,Bench,Clark,180,20
+3-Way DB Shoulder Raise,11,3,2,10,0.125,Bench,Johnson,250,30
+3-Way DB Shoulder Raise,11,3,2,10,0.125,Bench,Marker,135,15
+3-Way DB Shoulder Raise,11,3,2,10,0.125,Bench,Ott,135,15
+3-Way DB Shoulder Raise,11,3,2,10,0.125,Bench,Pearson,155,20
+3-Way DB Shoulder Raise,11,3,2,10,0.125,Bench,Wolfe,85,10
+3-Way DB Shoulder Raise,11,3,3,10,0.125,Bench,Clark,180,20
+3-Way DB Shoulder Raise,11,3,3,10,0.125,Bench,Johnson,250,30
+3-Way DB Shoulder Raise,11,3,3,10,0.125,Bench,Marker,135,15
+3-Way DB Shoulder Raise,11,3,3,10,0.125,Bench,Ott,135,15
+3-Way DB Shoulder Raise,11,3,3,10,0.125,Bench,Pearson,155,20
+3-Way DB Shoulder Raise,11,3,3,10,0.125,Bench,Wolfe,85,10
+Bar RDL,12,1,1,5,0.25,Deadlift,Clark,330,80
+Bar RDL,12,1,1,5,0.25,Deadlift,Johnson,435,110
+Bar RDL,12,1,1,5,0.25,Deadlift,Marker,295,75
+Bar RDL,12,1,1,5,0.25,Deadlift,Ott,245,60
+Bar RDL,12,1,1,5,0.25,Deadlift,Pearson,300,75
+Bar RDL,12,1,1,5,0.25,Deadlift,Wolfe,135,35
+Bar RDL,12,1,2,5,0.25,Deadlift,Clark,330,80
+Bar RDL,12,1,2,5,0.25,Deadlift,Johnson,435,110
+Bar RDL,12,1,2,5,0.25,Deadlift,Marker,295,75
+Bar RDL,12,1,2,5,0.25,Deadlift,Ott,245,60
+Bar RDL,12,1,2,5,0.25,Deadlift,Pearson,300,75
+Bar RDL,12,1,2,5,0.25,Deadlift,Wolfe,135,35
+Bar RDL,12,1,3,5,0.25,Deadlift,Clark,330,80
+Bar RDL,12,1,3,5,0.25,Deadlift,Johnson,435,110
+Bar RDL,12,1,3,5,0.25,Deadlift,Marker,295,75
+Bar RDL,12,1,3,5,0.25,Deadlift,Ott,245,60
+Bar RDL,12,1,3,5,0.25,Deadlift,Pearson,300,75
+Bar RDL,12,1,3,5,0.25,Deadlift,Wolfe,135,35
+Bar RDL,12,2,1,6,0.25,Deadlift,Clark,330,80
+Bar RDL,12,2,1,6,0.25,Deadlift,Johnson,435,110
+Bar RDL,12,2,1,6,0.25,Deadlift,Marker,295,75
+Bar RDL,12,2,1,6,0.25,Deadlift,Ott,245,60
+Bar RDL,12,2,1,6,0.25,Deadlift,Pearson,300,75
+Bar RDL,12,2,1,6,0.25,Deadlift,Wolfe,135,35
+Bar RDL,12,2,2,6,0.25,Deadlift,Clark,330,80
+Bar RDL,12,2,2,6,0.25,Deadlift,Johnson,435,110
+Bar RDL,12,2,2,6,0.25,Deadlift,Marker,295,75
+Bar RDL,12,2,2,6,0.25,Deadlift,Ott,245,60
+Bar RDL,12,2,2,6,0.25,Deadlift,Pearson,300,75
+Bar RDL,12,2,2,6,0.25,Deadlift,Wolfe,135,35
+Bar RDL,12,2,3,6,0.25,Deadlift,Clark,330,80
+Bar RDL,12,2,3,6,0.25,Deadlift,Johnson,435,110
+Bar RDL,12,2,3,6,0.25,Deadlift,Marker,295,75
+Bar RDL,12,2,3,6,0.25,Deadlift,Ott,245,60
+Bar RDL,12,2,3,6,0.25,Deadlift,Pearson,300,75
+Bar RDL,12,2,3,6,0.25,Deadlift,Wolfe,135,35
+Bar RDL,12,3,1,7,0.25,Deadlift,Clark,330,80
+Bar RDL,12,3,1,7,0.25,Deadlift,Johnson,435,110
+Bar RDL,12,3,1,7,0.25,Deadlift,Marker,295,75
+Bar RDL,12,3,1,7,0.25,Deadlift,Ott,245,60
+Bar RDL,12,3,1,7,0.25,Deadlift,Pearson,300,75
+Bar RDL,12,3,1,7,0.25,Deadlift,Wolfe,135,35
+Bar RDL,12,3,2,7,0.25,Deadlift,Clark,330,80
+Bar RDL,12,3,2,7,0.25,Deadlift,Johnson,435,110
+Bar RDL,12,3,2,7,0.25,Deadlift,Marker,295,75
+Bar RDL,12,3,2,7,0.25,Deadlift,Ott,245,60
+Bar RDL,12,3,2,7,0.25,Deadlift,Pearson,300,75
+Bar RDL,12,3,2,7,0.25,Deadlift,Wolfe,135,35
+Bar RDL,12,3,3,7,0.25,Deadlift,Clark,330,80
+Bar RDL,12,3,3,7,0.25,Deadlift,Johnson,435,110
+Bar RDL,12,3,3,7,0.25,Deadlift,Marker,295,75
+Bar RDL,12,3,3,7,0.25,Deadlift,Ott,245,60
+Bar RDL,12,3,3,7,0.25,Deadlift,Pearson,300,75
+Bar RDL,12,3,3,7,0.25,Deadlift,Wolfe,135,35
+Hex-Bar Jump,13,1,1,3,0.4,Deadlift,Clark,330,130
+Hex-Bar Jump,13,1,1,3,0.4,Deadlift,Johnson,435,175
+Hex-Bar Jump,13,1,1,3,0.4,Deadlift,Marker,295,120
+Hex-Bar Jump,13,1,1,3,0.4,Deadlift,Ott,245,100
+Hex-Bar Jump,13,1,1,3,0.4,Deadlift,Pearson,300,120
+Hex-Bar Jump,13,1,1,3,0.4,Deadlift,Wolfe,135,55
+Hex-Bar Jump,13,1,2,3,0.4,Deadlift,Clark,330,130
+Hex-Bar Jump,13,1,2,3,0.4,Deadlift,Johnson,435,175
+Hex-Bar Jump,13,1,2,3,0.4,Deadlift,Marker,295,120
+Hex-Bar Jump,13,1,2,3,0.4,Deadlift,Ott,245,100
+Hex-Bar Jump,13,1,2,3,0.4,Deadlift,Pearson,300,120
+Hex-Bar Jump,13,1,2,3,0.4,Deadlift,Wolfe,135,55
+Hex-Bar Jump,13,1,3,3,0.4,Deadlift,Clark,330,130
+Hex-Bar Jump,13,1,3,3,0.4,Deadlift,Johnson,435,175
+Hex-Bar Jump,13,1,3,3,0.4,Deadlift,Marker,295,120
+Hex-Bar Jump,13,1,3,3,0.4,Deadlift,Ott,245,100
+Hex-Bar Jump,13,1,3,3,0.4,Deadlift,Pearson,300,120
+Hex-Bar Jump,13,1,3,3,0.4,Deadlift,Wolfe,135,55
+Hex-Bar Jump,13,2,1,4,0.4,Deadlift,Clark,330,130
+Hex-Bar Jump,13,2,1,4,0.4,Deadlift,Johnson,435,175
+Hex-Bar Jump,13,2,1,4,0.4,Deadlift,Marker,295,120
+Hex-Bar Jump,13,2,1,4,0.4,Deadlift,Ott,245,100
+Hex-Bar Jump,13,2,1,4,0.4,Deadlift,Pearson,300,120
+Hex-Bar Jump,13,2,1,4,0.4,Deadlift,Wolfe,135,55
+Hex-Bar Jump,13,2,2,4,0.4,Deadlift,Clark,330,130
+Hex-Bar Jump,13,2,2,4,0.4,Deadlift,Johnson,435,175
+Hex-Bar Jump,13,2,2,4,0.4,Deadlift,Marker,295,120
+Hex-Bar Jump,13,2,2,4,0.4,Deadlift,Ott,245,100
+Hex-Bar Jump,13,2,2,4,0.4,Deadlift,Pearson,300,120
+Hex-Bar Jump,13,2,2,4,0.4,Deadlift,Wolfe,135,55
+Hex-Bar Jump,13,2,3,4,0.4,Deadlift,Clark,330,130
+Hex-Bar Jump,13,2,3,4,0.4,Deadlift,Johnson,435,175
+Hex-Bar Jump,13,2,3,4,0.4,Deadlift,Marker,295,120
+Hex-Bar Jump,13,2,3,4,0.4,Deadlift,Ott,245,100
+Hex-Bar Jump,13,2,3,4,0.4,Deadlift,Pearson,300,120
+Hex-Bar Jump,13,2,3,4,0.4,Deadlift,Wolfe,135,55
+Hex-Bar Jump,13,3,1,5,0.4,Deadlift,Clark,330,130
+Hex-Bar Jump,13,3,1,5,0.4,Deadlift,Johnson,435,175
+Hex-Bar Jump,13,3,1,5,0.4,Deadlift,Marker,295,120
+Hex-Bar Jump,13,3,1,5,0.4,Deadlift,Ott,245,100
+Hex-Bar Jump,13,3,1,5,0.4,Deadlift,Pearson,300,120
+Hex-Bar Jump,13,3,1,5,0.4,Deadlift,Wolfe,135,55
+Hex-Bar Jump,13,3,2,5,0.4,Deadlift,Clark,330,130
+Hex-Bar Jump,13,3,2,5,0.4,Deadlift,Johnson,435,175
+Hex-Bar Jump,13,3,2,5,0.4,Deadlift,Marker,295,120
+Hex-Bar Jump,13,3,2,5,0.4,Deadlift,Ott,245,100
+Hex-Bar Jump,13,3,2,5,0.4,Deadlift,Pearson,300,120
+Hex-Bar Jump,13,3,2,5,0.4,Deadlift,Wolfe,135,55
+Hex-Bar Jump,13,3,3,5,0.4,Deadlift,Clark,330,130
+Hex-Bar Jump,13,3,3,5,0.4,Deadlift,Johnson,435,175
+Hex-Bar Jump,13,3,3,5,0.4,Deadlift,Marker,295,120
+Hex-Bar Jump,13,3,3,5,0.4,Deadlift,Ott,245,100
+Hex-Bar Jump,13,3,3,5,0.4,Deadlift,Pearson,300,120
+Hex-Bar Jump,13,3,3,5,0.4,Deadlift,Wolfe,135,55
+Hex-Bar Deadlift,14,1,1,5,0.65,Deadlift,Clark,330,215
+Hex-Bar Deadlift,14,1,1,5,0.65,Deadlift,Johnson,435,285
+Hex-Bar Deadlift,14,1,1,5,0.65,Deadlift,Marker,295,190
+Hex-Bar Deadlift,14,1,1,5,0.65,Deadlift,Ott,245,160
+Hex-Bar Deadlift,14,1,1,5,0.65,Deadlift,Pearson,300,195
+Hex-Bar Deadlift,14,1,1,5,0.65,Deadlift,Wolfe,135,90
+Hex-Bar Deadlift,14,1,2,5,0.7,Deadlift,Clark,330,230
+Hex-Bar Deadlift,14,1,2,5,0.7,Deadlift,Johnson,435,305
+Hex-Bar Deadlift,14,1,2,5,0.7,Deadlift,Marker,295,205
+Hex-Bar Deadlift,14,1,2,5,0.7,Deadlift,Ott,245,170
+Hex-Bar Deadlift,14,1,2,5,0.7,Deadlift,Pearson,300,210
+Hex-Bar Deadlift,14,1,2,5,0.7,Deadlift,Wolfe,135,95
+Hex-Bar Deadlift,14,1,3,10,0.8,Deadlift,Clark,330,265
+Hex-Bar Deadlift,14,1,3,10,0.8,Deadlift,Johnson,435,350
+Hex-Bar Deadlift,14,1,3,10,0.8,Deadlift,Marker,295,235
+Hex-Bar Deadlift,14,1,3,10,0.8,Deadlift,Ott,245,195
+Hex-Bar Deadlift,14,1,3,10,0.8,Deadlift,Pearson,300,240
+Hex-Bar Deadlift,14,1,3,10,0.8,Deadlift,Wolfe,135,110
+Hex-Bar Deadlift,14,2,1,3,0.675,Deadlift,Clark,330,225
+Hex-Bar Deadlift,14,2,1,3,0.675,Deadlift,Johnson,435,295
+Hex-Bar Deadlift,14,2,1,3,0.675,Deadlift,Marker,295,200
+Hex-Bar Deadlift,14,2,1,3,0.675,Deadlift,Ott,245,165
+Hex-Bar Deadlift,14,2,1,3,0.675,Deadlift,Pearson,300,200
+Hex-Bar Deadlift,14,2,1,3,0.675,Deadlift,Wolfe,135,90
+Hex-Bar Deadlift,14,2,2,3,0.725,Deadlift,Clark,330,240
+Hex-Bar Deadlift,14,2,2,3,0.725,Deadlift,Johnson,435,315
+Hex-Bar Deadlift,14,2,2,3,0.725,Deadlift,Marker,295,215
+Hex-Bar Deadlift,14,2,2,3,0.725,Deadlift,Ott,245,180
+Hex-Bar Deadlift,14,2,2,3,0.725,Deadlift,Pearson,300,220
+Hex-Bar Deadlift,14,2,2,3,0.725,Deadlift,Wolfe,135,100
+Hex-Bar Deadlift,14,2,3,8,0.825,Deadlift,Clark,330,270
+Hex-Bar Deadlift,14,2,3,8,0.825,Deadlift,Johnson,435,360
+Hex-Bar Deadlift,14,2,3,8,0.825,Deadlift,Marker,295,245
+Hex-Bar Deadlift,14,2,3,8,0.825,Deadlift,Ott,245,200
+Hex-Bar Deadlift,14,2,3,8,0.825,Deadlift,Pearson,300,250
+Hex-Bar Deadlift,14,2,3,8,0.825,Deadlift,Wolfe,135,110
+Hex-Bar Deadlift,14,3,1,5,0.7,Deadlift,Clark,330,230
+Hex-Bar Deadlift,14,3,1,5,0.7,Deadlift,Johnson,435,305
+Hex-Bar Deadlift,14,3,1,5,0.7,Deadlift,Marker,295,205
+Hex-Bar Deadlift,14,3,1,5,0.7,Deadlift,Ott,245,170
+Hex-Bar Deadlift,14,3,1,5,0.7,Deadlift,Pearson,300,210
+Hex-Bar Deadlift,14,3,1,5,0.7,Deadlift,Wolfe,135,95
+Hex-Bar Deadlift,14,3,2,3,0.75,Deadlift,Clark,330,250
+Hex-Bar Deadlift,14,3,2,3,0.75,Deadlift,Johnson,435,325
+Hex-Bar Deadlift,14,3,2,3,0.75,Deadlift,Marker,295,220
+Hex-Bar Deadlift,14,3,2,3,0.75,Deadlift,Ott,245,185
+Hex-Bar Deadlift,14,3,2,3,0.75,Deadlift,Pearson,300,225
+Hex-Bar Deadlift,14,3,2,3,0.75,Deadlift,Wolfe,135,100
+Hex-Bar Deadlift,14,3,3,7,0.85,Deadlift,Clark,330,280
+Hex-Bar Deadlift,14,3,3,7,0.85,Deadlift,Johnson,435,370
+Hex-Bar Deadlift,14,3,3,7,0.85,Deadlift,Marker,295,250
+Hex-Bar Deadlift,14,3,3,7,0.85,Deadlift,Ott,245,210
+Hex-Bar Deadlift,14,3,3,7,0.85,Deadlift,Pearson,300,255
+Hex-Bar Deadlift,14,3,3,7,0.85,Deadlift,Wolfe,135,115
