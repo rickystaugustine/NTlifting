@@ -74,7 +74,7 @@ def generate_rep_differences_vectorized(r_assigned_array):
     size = len(r_assigned_array)
 
     min_bound = -0.9 * r_assigned_array
-    max_bound = 3.0 * r_assigned_array
+    max_bound = 5.0 * r_assigned_array
 
     sigma_L = ((-1 * min_bound) * 0.997) / 3
     sigma_R = (max_bound * 0.997) / 3
