@@ -3,6 +3,8 @@ from oauth2client.service_account import ServiceAccountCredentials
 import pandas as pd
 import numpy as np
 from scipy.optimize import curve_fit, OptimizeWarning
+from scipy.stats import norm
+from scipy.integrate import quad
 import warnings
 import matplotlib.pyplot as plt
 
@@ -103,59 +105,127 @@ def simulate_actual_lift_data(assigned_weights_df, program_df, num_iterations=5)
     np.random.seed(42)  # For reproducibility
     simulated_data = pd.DataFrame()
 
-    def generate_actual_reps(row):
-        r_assigned = row['# of Reps']
-        if np.random.rand() < 0.5:  # Lower range
-            r_actual_low = np.random.uniform(0.1 * r_assigned, 0.9 * r_assigned)
-            return r_actual_low
-        else:  # Higher range
-            r_actual_high = np.random.uniform(1.0 * r_assigned, 3.0 * r_assigned)
-            return r_actual_high
+    def custom_pdf(x, r_assigned, side):
+        """
+        Custom PDF for the left and right tails.
+        Tapers to 0 at bounds while peaking at r_assigned.
+    
+        Parameters:
+            x (float): The value to evaluate the PDF.
+            r_assigned (float): The assigned number of reps.
+            side (str): 'left' or 'right' to indicate the tail.
+    
+        Returns:
+            float: Probability density at x.
+        """
+        if side == "left":
+            # Left PDF: Normal curve tapering to 0 at 0.1 * r_assigned
+            sigma_L = 0.2 * r_assigned
+            return norm.pdf(x, loc=r_assigned, scale=sigma_L) if x >= 0.1 * r_assigned else 0
+        elif side == "right":
+            # Right PDF: Normal curve tapering to 0 at 3 * r_assigned
+            sigma_R = 0.3 * r_assigned
+            return norm.pdf(x, loc=r_assigned, scale=sigma_R) if x <= 3 * r_assigned else 0
+        return 0
+    
+    def normalize_pdf(r_assigned, size=1000):
+        """
+        Combine left and right PDFs, normalize, and sample values.
+    
+        Parameters:
+            r_assigned (float): Assigned number of reps.
+            size (int): Number of samples.
+    
+        Returns:
+            np.ndarray: Sampled values from the custom distribution.
+        """
+        # Define bounds
+        min_bound = 0.1 * r_assigned
+        max_bound = 3.0 * r_assigned
+    
+        # Define the combined PDF
+        def combined_pdf(x):
+            if x < r_assigned:
+                return custom_pdf(x, r_assigned, "left")
+            else:
+                return custom_pdf(x, r_assigned, "right")
+    
+        # Normalize the combined PDF
+        normalization_constant, _ = quad(combined_pdf, min_bound, max_bound)
+    
+        def normalized_pdf(x):
+            return combined_pdf(x) / normalization_constant
+    
+        # Generate samples using inverse transform sampling
+        x_vals = np.linspace(min_bound, max_bound, size)
+        pdf_vals = np.array([normalized_pdf(x) for x in x_vals])
+        cdf_vals = np.cumsum(pdf_vals)
+        cdf_vals /= cdf_vals[-1]  # Normalize CDF to range [0, 1]
+    
+        random_probs = np.random.uniform(0, 1, size)
+        sampled_vals = np.interp(random_probs, cdf_vals, x_vals)
+    
+        return sampled_vals
+     
+    def weight_custom_pdf(w, w_assigned):
+        """
+        Custom PDF for Actual Weight.
+        Peaks at W_assigned and tapers to 0 at bounds (0.5 * W_assigned, 1.5 * W_assigned).
+    
+        Parameters:
+            w (float): The value to evaluate the PDF.
+            w_assigned (float): The assigned weight.
+    
+        Returns:
+            float: Probability density at w.
+        """
+        lower_bound = 0.5 * w_assigned
+        upper_bound = 1.5 * w_assigned
+        sigma = 0.1 * w_assigned  # Standard deviation
+    
+        if lower_bound <= w <= upper_bound:
+            return np.exp(-((w - w_assigned) ** 2) / (2 * sigma ** 2))
+        return 0
 
-    def generate_actual_weights(row):
-        weight_bounds = {
-            'min': 0.5 * row['Assigned Weight'],
-            'max': 1.5 * row['Assigned Weight']
-        }
-        return np.random.uniform(weight_bounds['min'], weight_bounds['max'])
+    def generate_actual_weights_custom(w_assigned, size=1):
+        """
+        Generate Actual Weights based on a custom PDF.
+    
+        Parameters:
+            w_assigned (float): Assigned weight.
+            size (int): Number of samples.
+    
+        Returns:
+            np.ndarray: Sampled values.
+        """
+        lower_bound = 0.5 * w_assigned
+        upper_bound = 1.5 * w_assigned
+    
+        # Normalize the custom PDF
+        normalization_constant, _ = quad(lambda w: weight_custom_pdf(w, w_assigned), lower_bound, upper_bound)
+    
+        def normalized_pdf(w):
+            return weight_custom_pdf(w, w_assigned) / normalization_constant
+    
+        # Generate samples using inverse transform sampling
+        x_vals = np.linspace(lower_bound, upper_bound, 1000)
+        pdf_vals = np.array([normalized_pdf(x) for x in x_vals])
+        cdf_vals = np.cumsum(pdf_vals)
+        cdf_vals /= cdf_vals[-1]  # Normalize CDF to range [0, 1]
+    
+        random_probs = np.random.uniform(0, 1, size)
+        sampled_vals = np.interp(random_probs, cdf_vals, x_vals)
+    
+        return sampled_vals
+
 
     for _ in range(num_iterations):
         iteration_data = assigned_weights_df.copy()
-        iteration_data['Actual Reps'] = iteration_data.apply(generate_actual_reps, axis=1)
-        iteration_data['Actual Weight'] = iteration_data.apply(generate_actual_weights, axis=1)
+        iteration_data['Actual Reps'] = iteration_data['# of Reps'].apply(lambda r: np.random.choice(normalize_pdf(r)))
+        iteration_data['Actual Weight'] = iteration_data['Assigned Weight'].apply(lambda w: np.random.choice(normalize_pdf(w)))
         simulated_data = pd.concat([simulated_data, iteration_data], ignore_index=True)
 
     return simulated_data
-
-def analyze_simulated_data(simulated_data):
-    grouped_exercises = simulated_data.groupby('Exercise')
-    num_exercises = len(grouped_exercises)
-
-    rows = int(np.ceil(np.sqrt(num_exercises)))
-    cols = int(np.ceil(num_exercises / rows))
-
-    # Plot Rep Differences
-    fig_reps, axs_reps = plt.subplots(rows, cols, figsize=(cols * 5, rows * 5))
-    fig_reps.suptitle("Rep Difference Distribution", fontsize=16)
-    axs_reps = axs_reps.flatten()
-
-    for i, (exercise, group) in enumerate(grouped_exercises):
-        rep_diff = group['Actual Reps'] - group['# of Reps']
-
-        axs_reps[i].hist(rep_diff, bins=20, alpha=0.7, label=f'Rep Diff ({exercise})')
-        axs_reps[i].set_title(f"{exercise}")
-        axs_reps[i].set_xlabel("Difference in Reps")
-        axs_reps[i].set_ylabel("Frequency")
-        axs_reps[i].legend()
-
-    # Hide unused subplots
-    for j in range(i + 1, len(axs_reps)):
-        axs_reps[j].axis('off')
-
-    # Save the figure
-    fig_reps.tight_layout(rect=[0, 0, 1, 0.95])
-    fig_reps.savefig("Rep_Differences.png")
-    plt.close(fig_reps)
 
 def map_relevant_core(simulated_data, program_df):
     exercise_to_core = program_df.set_index('Exercise')['Relevant Core'].to_dict()
@@ -174,9 +244,6 @@ def main():
 
     # Simulate actual lift data
     simulated_data = simulate_actual_lift_data(assigned_weights_df, program_df, num_iterations=5)
-
-    # Analyze simulated data
-    analyze_simulated_data(simulated_data)
 
     # Write results back to Google Sheets
     write_to_google_sheet('After-School Lifting', 'AssignedWeights', assigned_weights_df)
