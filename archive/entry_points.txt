@@ -1,2 +1,5 @@
 [console_scripts]
-google-oauthlib-tool = google_auth_oauthlib.tool.__main__:main [tool]
+fonttools = fontTools.__main__:main
+pyftmerge = fontTools.merge:main
+pyftsubset = fontTools.subset:main
+ttx = fontTools.ttx:main
