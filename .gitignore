@@ -1,1 +1,4 @@
+# Ignore macOS system files
 .DS_Store
+# Ignore Python virtual environments
+venv_NTlifting/
