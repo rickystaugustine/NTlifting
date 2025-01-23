@@ -1,6 +1,7 @@
 import numpy as np
 import pandas as pd
 from scipy.stats import norm
+import logging
 
 def generate_rep_differences_vectorized(r_assigned_array: np.ndarray) -> np.ndarray:
     """
@@ -41,3 +42,9 @@ def simulate_iteration(data_chunk: pd.DataFrame) -> pd.DataFrame:
     data_chunk['Actual Reps'] = r_assigned + generate_rep_differences_vectorized(r_assigned)
     data_chunk['Actual Weight'] = w_assigned + np.random.normal(loc=0, scale=0.1 * w_assigned, size=len(w_assigned))
     return data_chunk
+
+def simulate_lift_data(repeated_program_df, num_iterations=5):
+    logging.info("Simulating lift data...")
+    simulated_data = pd.concat([simulate_iteration(repeated_program_df) for _ in range(num_iterations)], ignore_index=True)
+    logging.info(f"Simulated data generated with {len(simulated_data)} records.")
+    return simulated_data

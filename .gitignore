@@ -2,3 +2,5 @@
 .DS_Store
 # Ignore Python virtual environments
 venv_NTlifting/
+# Ignore cache files.
+__pycache__/

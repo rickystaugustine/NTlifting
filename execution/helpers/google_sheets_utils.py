@@ -2,6 +2,7 @@ import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 import pandas as pd
 import numpy as np
+import os
 
 def authorize_google_client():
     scope = [
@@ -9,7 +10,7 @@ def authorize_google_client():
         "https://www.googleapis.com/auth/drive",
     ]
     credentials = ServiceAccountCredentials.from_json_keyfile_name(
-        '/Users/ricky.staugustine/Documents/FB/Lifting/ntafterschoollifting-b8f7a5923646.json', scope
+        os.path.join("config", "ntafterschoollifting-b8f7a5923646.json"), scope
     )
     client = gspread.authorize(credentials)
     return client

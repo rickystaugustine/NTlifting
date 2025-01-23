@@ -11,7 +11,7 @@ import os
 # Ensure Python can locate `helpers/`
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../")))
 
-from helpers.fitting import fit_single_exercise_global
+from helpers.exercise_fitting import fit_single_exercise_global
 from helpers.multipliers import ConstantMultiplier, FittedMultiplier
 
 def review_fitting_analysis(program_df, output_dir="execution/analysis/fitting_review"):
