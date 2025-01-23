@@ -1,0 +1,7 @@
+MAE: 17.3808
+RMSE: 23.3979
+Mean Bias: -5.8110
+95% Confidence Interval for Bias: (np.float64(-6.208252724694935), np.float64(-5.413814894161909))
+Pearson Correlation: 0.9694
+Spearman Correlation: 0.9684
+Validation metrics and plots saved.

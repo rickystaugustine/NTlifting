@@ -1,0 +1,256 @@
+execution
+├── __pycache__
+│   └── __init__.cpython-313.pyc
+├── analysis
+│   ├── assigned_weights_review
+│   │   ├── simulated_data_review
+│   │   │   ├── simulated_data_Adkins_reps.png
+│   │   │   ├── simulated_data_Adkins_weight.png
+│   │   │   ├── simulated_data_Bousman_reps.png
+│   │   │   ├── simulated_data_Bousman_weight.png
+│   │   │   ├── simulated_data_Brinkley_reps.png
+│   │   │   ├── simulated_data_Brinkley_weight.png
+│   │   │   ├── simulated_data_Clark_reps.png
+│   │   │   ├── simulated_data_Clark_weight.png
+│   │   │   ├── simulated_data_Cole_reps.png
+│   │   │   ├── simulated_data_Cole_weight.png
+│   │   │   ├── simulated_data_Davis_reps.png
+│   │   │   ├── simulated_data_Davis_weight.png
+│   │   │   ├── simulated_data_G. Thomas_reps.png
+│   │   │   ├── simulated_data_G. Thomas_weight.png
+│   │   │   ├── simulated_data_Gebhart_reps.png
+│   │   │   ├── simulated_data_Gebhart_weight.png
+│   │   │   ├── simulated_data_Gierzak_reps.png
+│   │   │   ├── simulated_data_Gierzak_weight.png
+│   │   │   ├── simulated_data_Johnson_reps.png
+│   │   │   ├── simulated_data_Johnson_weight.png
+│   │   │   ├── simulated_data_Marker_reps.png
+│   │   │   ├── simulated_data_Marker_weight.png
+│   │   │   ├── simulated_data_Miears_reps.png
+│   │   │   ├── simulated_data_Miears_weight.png
+│   │   │   ├── simulated_data_Ott_reps.png
+│   │   │   ├── simulated_data_Ott_weight.png
+│   │   │   ├── simulated_data_Pearson_reps.png
+│   │   │   ├── simulated_data_Pearson_weight.png
+│   │   │   ├── simulated_data_Roberts_reps.png
+│   │   │   ├── simulated_data_Roberts_weight.png
+│   │   │   ├── simulated_data_Runyon_reps.png
+│   │   │   ├── simulated_data_Runyon_weight.png
+│   │   │   ├── simulated_data_Scott_reps.png
+│   │   │   ├── simulated_data_Scott_weight.png
+│   │   │   ├── simulated_data_Sullivan_reps.png
+│   │   │   ├── simulated_data_Sullivan_weight.png
+│   │   │   ├── simulated_data_Vernon_reps.png
+│   │   │   ├── simulated_data_Vernon_weight.png
+│   │   │   ├── simulated_data_Wintrow_reps.png
+│   │   │   ├── simulated_data_Wintrow_weight.png
+│   │   │   ├── simulated_data_Wolfe_reps.png
+│   │   │   ├── simulated_data_Wolfe_weight.png
+│   │   │   ├── simulated_data_Wyatt_reps.png
+│   │   │   ├── simulated_data_Wyatt_weight.png
+│   │   │   ├── simulated_data_review.csv
+│   │   │   └── simulated_data_review.py
+│   │   ├── assigned_weights_Adkins.png
+│   │   ├── assigned_weights_Bousman.png
+│   │   ├── assigned_weights_Brady.png
+│   │   ├── assigned_weights_Brinkley.png
+│   │   ├── assigned_weights_Clark.png
+│   │   ├── assigned_weights_Cole.png
+│   │   ├── assigned_weights_Davis.png
+│   │   ├── assigned_weights_Farno.png
+│   │   ├── assigned_weights_Foster.png
+│   │   ├── assigned_weights_G. Thomas.png
+│   │   ├── assigned_weights_Gebhart.png
+│   │   ├── assigned_weights_Gierzak.png
+│   │   ├── assigned_weights_Hoblit.png
+│   │   ├── assigned_weights_Johnson.png
+│   │   ├── assigned_weights_L. Thomas.png
+│   │   ├── assigned_weights_Marker.png
+│   │   ├── assigned_weights_Martin.png
+│   │   ├── assigned_weights_Miears.png
+│   │   ├── assigned_weights_O'Conner.png
+│   │   ├── assigned_weights_Ott.png
+│   │   ├── assigned_weights_Pearson.png
+│   │   ├── assigned_weights_Roberts.png
+│   │   ├── assigned_weights_Runyon.png
+│   │   ├── assigned_weights_Scott.png
+│   │   ├── assigned_weights_Sullivan.png
+│   │   ├── assigned_weights_Vernon.png
+│   │   ├── assigned_weights_Wintrow.png
+│   │   ├── assigned_weights_Wolfe.png
+│   │   ├── assigned_weights_Wyatt.png
+│   │   ├── assigned_weights_review.csv
+│   │   └── assigned_weights_review.py
+│   ├── fitting_review
+│   │   ├── metrics
+│   │   │   ├── fitting_error_metrics.csv
+│   │   │   └── fitting_results.csv
+│   │   ├── plots
+│   │   │   ├── exercise_10_comparison.png
+│   │   │   ├── exercise_11_comparison.png
+│   │   │   ├── exercise_12_comparison.png
+│   │   │   ├── exercise_13_comparison.png
+│   │   │   ├── exercise_14_comparison.png
+│   │   │   ├── exercise_14_fit.png
+│   │   │   ├── exercise_15_comparison.png
+│   │   │   ├── exercise_16_comparison.png
+│   │   │   ├── exercise_1_comparison.png
+│   │   │   ├── exercise_1_fit.png
+│   │   │   ├── exercise_2_comparison.png
+│   │   │   ├── exercise_2_fit.png
+│   │   │   ├── exercise_3_comparison.png
+│   │   │   ├── exercise_4_comparison.png
+│   │   │   ├── exercise_4_fit.png
+│   │   │   ├── exercise_5_comparison.png
+│   │   │   ├── exercise_5_fit.png
+│   │   │   ├── exercise_6_comparison.png
+│   │   │   ├── exercise_7_comparison.png
+│   │   │   ├── exercise_7_fit.png
+│   │   │   ├── exercise_8_comparison.png
+│   │   │   ├── exercise_9_comparison.png
+│   │   │   └── exercise_9_fit.png
+│   │   └── fitting_equations.txt
+│   ├── functional_max_review
+│   │   ├── debug_log.txt
+│   │   ├── difference_in_max_distribution.png
+│   │   ├── functional_max_density_plot.png
+│   │   ├── functional_max_diff_histogram.png
+│   │   ├── functional_max_distribution.png
+│   │   ├── functional_max_kde.png
+│   │   ├── functional_max_qq_plot.png
+│   │   ├── functional_max_results.csv
+│   │   ├── functional_max_review.csv
+│   │   ├── functional_max_review.py
+│   │   ├── functional_max_scatter.png
+│   │   ├── functional_max_validation_metrics.txt
+│   │   └── functional_max_vs_tested_max.png
+│   ├── simulated_data_review
+│   │   ├── simulated_data_Adkins_reps.png
+│   │   ├── simulated_data_Adkins_weight.png
+│   │   ├── simulated_data_Bousman_reps.png
+│   │   ├── simulated_data_Bousman_weight.png
+│   │   ├── simulated_data_Brinkley_reps.png
+│   │   ├── simulated_data_Brinkley_weight.png
+│   │   ├── simulated_data_Clark_reps.png
+│   │   ├── simulated_data_Clark_weight.png
+│   │   ├── simulated_data_Cole_reps.png
+│   │   ├── simulated_data_Cole_weight.png
+│   │   ├── simulated_data_Davis_reps.png
+│   │   ├── simulated_data_Davis_weight.png
+│   │   ├── simulated_data_G. Thomas_reps.png
+│   │   ├── simulated_data_G. Thomas_weight.png
+│   │   ├── simulated_data_Gebhart_reps.png
+│   │   ├── simulated_data_Gebhart_weight.png
+│   │   ├── simulated_data_Gierzak_reps.png
+│   │   ├── simulated_data_Gierzak_weight.png
+│   │   ├── simulated_data_Johnson_reps.png
+│   │   ├── simulated_data_Johnson_weight.png
+│   │   ├── simulated_data_Marker_reps.png
+│   │   ├── simulated_data_Marker_weight.png
+│   │   ├── simulated_data_Miears_reps.png
+│   │   ├── simulated_data_Miears_weight.png
+│   │   ├── simulated_data_Ott_reps.png
+│   │   ├── simulated_data_Ott_weight.png
+│   │   ├── simulated_data_Pearson_reps.png
+│   │   ├── simulated_data_Pearson_weight.png
+│   │   ├── simulated_data_Roberts_reps.png
+│   │   ├── simulated_data_Roberts_weight.png
+│   │   ├── simulated_data_Runyon_reps.png
+│   │   ├── simulated_data_Runyon_weight.png
+│   │   ├── simulated_data_Scott_reps.png
+│   │   ├── simulated_data_Scott_weight.png
+│   │   ├── simulated_data_Sullivan_reps.png
+│   │   ├── simulated_data_Sullivan_weight.png
+│   │   ├── simulated_data_Vernon_reps.png
+│   │   ├── simulated_data_Vernon_weight.png
+│   │   ├── simulated_data_Wintrow_reps.png
+│   │   ├── simulated_data_Wintrow_weight.png
+│   │   ├── simulated_data_Wolfe_reps.png
+│   │   ├── simulated_data_Wolfe_weight.png
+│   │   ├── simulated_data_Wyatt_reps.png
+│   │   ├── simulated_data_Wyatt_weight.png
+│   │   └── simulated_data_review.csv
+│   ├── assigned_weights_review.py
+│   ├── fitting_review.py
+│   ├── functional_max_review.py
+│   ├── functional_max_validation.py
+│   └── simulated_data_review.py
+├── evaluation
+│   ├── functional_max
+│   │   ├── functional_max_diff_histogram.png
+│   │   └── functional_max_summary_metrics.csv
+│   └── functional_max_evaluation.py
+├── experimental
+│   ├── FunctionalMaxConfidence.py
+│   └── IncorporateActualData.py
+├── helpers
+│   ├── __pycache__
+│   │   ├── __init__.cpython-313.pyc
+│   │   ├── data_loading.cpython-313.pyc
+│   │   ├── data_merging.cpython-313.pyc
+│   │   ├── data_processing.cpython-313.pyc
+│   │   ├── exercise_fitting.cpython-313.pyc
+│   │   ├── fitting.cpython-313.pyc
+│   │   ├── functional_max_calc.cpython-313.pyc
+│   │   ├── google_sheets_utils.cpython-313.pyc
+│   │   ├── multiplier_fitting.cpython-313.pyc
+│   │   ├── multipliers.cpython-313.pyc
+│   │   ├── rep_multiplier_fit.cpython-313.pyc
+│   │   ├── simulation.cpython-313.pyc
+│   │   └── weight_assignment.cpython-313.pyc
+│   ├── __init__.py
+│   ├── data_loading.py
+│   ├── data_merging.py
+│   ├── data_processing.py
+│   ├── exercise_fitting.py
+│   ├── functional_max_calc.py
+│   ├── google_sheets_utils.py
+│   ├── multiplier_fitting.py
+│   ├── multipliers.py
+│   ├── simulation.py
+│   └── weight_assignment.py
+├── inputs
+│   ├── __pycache__
+│   │   ├── google_sheets_io.cpython-313.pyc
+│   │   └── google_sheets_utils.cpython-313.pyc
+│   └── google_sheets_utils.py
+├── logs
+│   ├── calculate_functional_max.log
+│   ├── fitting_review.log
+│   ├── functional_max_review.log
+│   └── weight_review.log
+├── outputs
+│   ├── Data
+│   │   └── metrics_history.csv
+│   ├── Plots
+│   │   ├── WeightDifferencePlots
+│   │   │   ├── Weight_Differences_Player_Adkins.png
+│   │   │   ├── Weight_Differences_Player_Bousman.png
+│   │   │   ├── Weight_Differences_Player_Brinkley.png
+│   │   │   ├── Weight_Differences_Player_Clark.png
+│   │   │   ├── Weight_Differences_Player_Cole.png
+│   │   │   ├── Weight_Differences_Player_Davis.png
+│   │   │   ├── Weight_Differences_Player_G. Thomas.png
+│   │   │   ├── Weight_Differences_Player_Gebhart.png
+│   │   │   ├── Weight_Differences_Player_Gierzak.png
+│   │   │   ├── Weight_Differences_Player_Johnson.png
+│   │   │   ├── Weight_Differences_Player_Marker.png
+│   │   │   ├── Weight_Differences_Player_Miears.png
+│   │   │   ├── Weight_Differences_Player_Ott.png
+│   │   │   ├── Weight_Differences_Player_Pearson.png
+│   │   │   ├── Weight_Differences_Player_Roberts.png
+│   │   │   ├── Weight_Differences_Player_Runyon.png
+│   │   │   ├── Weight_Differences_Player_Scott.png
+│   │   │   ├── Weight_Differences_Player_Sullivan.png
+│   │   │   ├── Weight_Differences_Player_Vernon.png
+│   │   │   ├── Weight_Differences_Player_Wintrow.png
+│   │   │   ├── Weight_Differences_Player_Wolfe.png
+│   │   │   └── Weight_Differences_Player_Wyatt.png
+│   │   ├── Differentials.png
+│   │   └── combined_plots.png
+│   └── logs
+├── __init__.py
+├── exercise_performance_model.py
+└── main.py
+
+23 directories, 231 files

@@ -1,0 +1,2348 @@
+.
+├── .DS_Store
+├── .git
+│   ├── .DS_Store
+│   ├── COMMIT_EDITMSG
+│   ├── FETCH_HEAD
+│   ├── HEAD
+│   ├── ORIG_HEAD
+│   ├── branches
+│   ├── config
+│   ├── description
+│   ├── hooks
+│   │   ├── applypatch-msg.sample
+│   │   ├── commit-msg.sample
+│   │   ├── fsmonitor-watchman.sample
+│   │   ├── post-update.sample
+│   │   ├── pre-applypatch.sample
+│   │   ├── pre-commit.sample
+│   │   ├── pre-merge-commit.sample
+│   │   ├── pre-push.sample
+│   │   ├── pre-rebase.sample
+│   │   ├── pre-receive.sample
+│   │   ├── prepare-commit-msg.sample
+│   │   ├── push-to-checkout.sample
+│   │   ├── sendemail-validate.sample
+│   │   └── update.sample
+│   ├── index
+│   ├── index 2
+│   ├── index 2.lock
+│   ├── index 3
+│   ├── index 4
+│   ├── index 5.lock
+│   ├── info
+│   │   ├── exclude
+│   │   └── refs
+│   ├── logs
+│   │   ├── .DS_Store
+│   │   ├── HEAD
+│   │   └── refs
+│   │       ├── heads
+│   │       │   ├── jan15
+│   │       │   ├── jan21
+│   │       │   ├── jan22
+│   │       │   └── main
+│   │       └── remotes
+│   │           └── origin
+│   ├── objects
+│   │   ├── info
+│   │   │   ├── commit-graph
+│   │   │   └── packs
+│   │   └── pack
+│   │       ├── pack-455fc8dc225580fabeee01b253e08dd5b65a7959.idx
+│   │       └── pack-455fc8dc225580fabeee01b253e08dd5b65a7959.pack
+│   ├── packed-refs
+│   └── refs
+│       ├── .DS_Store
+│       ├── heads
+│       ├── remotes
+│       │   └── origin
+│       │       └── HEAD
+│       └── tags
+├── .gitignore
+├── archive
+│   ├── .DS_Store
+│   ├── audio_files
+│   │   ├── invalid_keypress.mp3
+│   │   └── invalid_keypress.ogg
+│   ├── configs
+│   ├── deprecated_scripts
+│   │   ├── .DS_Store
+│   │   ├── B_A_S_E_.py
+│   │   ├── BitmapGlyphMetrics.py
+│   │   ├── Blocks.py
+│   │   ├── CFF2ToCFF.py
+│   │   ├── CFFToCFF2.py
+│   │   ├── C_B_D_T_.py
+│   │   ├── C_B_L_C_.py
+│   │   ├── C_F_F_.py
+│   │   ├── C_F_F__2.py
+│   │   ├── C_O_L_R_.py
+│   │   ├── C_P_A_L_.py
+│   │   ├── ContextualizedCurveFitting.py
+│   │   ├── D_S_I_G_.py
+│   │   ├── D__e_b_g.py
+│   │   ├── DefaultTable.py
+│   │   ├── E_B_D_T_.py
+│   │   ├── E_B_L_C_.py
+│   │   ├── F_F_T_M_.py
+│   │   ├── F__e_a_t.py
+│   │   ├── G_D_E_F_.py
+│   │   ├── G_M_A_P_.py
+│   │   ├── G_P_K_G_.py
+│   │   ├── G_P_O_S_.py
+│   │   ├── G_S_U_B_.py
+│   │   ├── G__l_a_t.py
+│   │   ├── G__l_o_c.py
+│   │   ├── H_V_A_R_.py
+│   │   ├── HexBarDLfix.py
+│   │   ├── HighHangPullFix.py
+│   │   ├── J_S_T_F_.py
+│   │   ├── L_T_S_H_.py
+│   │   ├── M_A_T_H_.py
+│   │   ├── M_E_T_A_.py
+│   │   ├── M_V_A_R_.py
+│   │   ├── MacRoman.py
+│   │   ├── Modularization.py
+│   │   ├── O_S_2f_2.py
+│   │   ├── S_I_N_G_.py
+│   │   ├── S_T_A_T_.py
+│   │   ├── S_V_G_.py
+│   │   ├── S__i_l_f.py
+│   │   ├── S__i_l_l.py
+│   │   ├── ScriptExtensions.py
+│   │   ├── Scripts.py
+│   │   ├── T_S_I_B_.py
+│   │   ├── T_S_I_C_.py
+│   │   ├── T_S_I_D_.py
+│   │   ├── T_S_I_J_.py
+│   │   ├── T_S_I_P_.py
+│   │   ├── T_S_I_S_.py
+│   │   ├── T_S_I_V_.py
+│   │   ├── T_S_I__0.py
+│   │   ├── T_S_I__1.py
+│   │   ├── T_S_I__2.py
+│   │   ├── T_S_I__3.py
+│   │   ├── T_S_I__5.py
+│   │   ├── T_T_F_A_.py
+│   │   ├── TupleVariation.py
+│   │   ├── V_A_R_C_.py
+│   │   ├── V_D_M_X_.py
+│   │   ├── V_O_R_G_.py
+│   │   ├── V_V_A_R_.py
+│   │   ├── __init__.py
+│   │   ├── __main__.py
+│   │   ├── _a_n_k_r.py
+│   │   ├── _a_v_a_r.py
+│   │   ├── _aaxis.py
+│   │   ├── _activeselection.py
+│   │   ├── _activeshape.py
+│   │   ├── _aiohttp_requests.py
+│   │   ├── _angularaxis.py
+│   │   ├── _annotation.py
+│   │   ├── _aspectratio.py
+│   │   ├── _autorangeoptions.py
+│   │   ├── _axis.py
+│   │   ├── _b_s_l_n.py
+│   │   ├── _bar.py
+│   │   ├── _barpolar.py
+│   │   ├── _baxis.py
+│   │   ├── _bounds.py
+│   │   ├── _box.py
+│   │   ├── _button.py
+│   │   ├── _c_i_d_g.py
+│   │   ├── _c_m_a_p.py
+│   │   ├── _c_v_a_r.py
+│   │   ├── _c_v_t.py
+│   │   ├── _camera.py
+│   │   ├── _candlestick.py
+│   │   ├── _caps.py
+│   │   ├── _carpet.py
+│   │   ├── _caxis.py
+│   │   ├── _cells.py
+│   │   ├── _center.py
+│   │   ├── _choropleth.py
+│   │   ├── _choroplethmap.py
+│   │   ├── _choroplethmapbox.py
+│   │   ├── _circle.py
+│   │   ├── _client.py
+│   │   ├── _client_async.py
+│   │   ├── _cloud_sdk.py
+│   │   ├── _cluster.py
+│   │   ├── _coloraxis.py
+│   │   ├── _colorbar 2.py
+│   │   ├── _colorscale.py
+│   │   ├── _cone.py
+│   │   ├── _connector.py
+│   │   ├── _contour.py
+│   │   ├── _contourcarpet.py
+│   │   ├── _contours.py
+│   │   ├── _credentials_async.py
+│   │   ├── _credentials_base.py
+│   │   ├── _cryptography_rsa.py
+│   │   ├── _currentvalue.py
+│   │   ├── _custom_tls_signer.py
+│   │   ├── _data.py
+│   │   ├── _decreasing.py
+│   │   ├── _default.py
+│   │   ├── _default_async.py
+│   │   ├── _delta.py
+│   │   ├── _densitymap.py
+│   │   ├── _densitymapbox.py
+│   │   ├── _deprecations.py
+│   │   ├── _diagonal.py
+│   │   ├── _dimension.py
+│   │   ├── _domain.py
+│   │   ├── _elffile.py
+│   │   ├── _error_x.py
+│   │   ├── _error_y.py
+│   │   ├── _error_z.py
+│   │   ├── _exponential_backoff.py
+│   │   ├── _eye.py
+│   │   ├── _f_e_a_t.py
+│   │   ├── _f_p_g_m.py
+│   │   ├── _f_v_a_r.py
+│   │   ├── _figure.py
+│   │   ├── _figurewidget.py
+│   │   ├── _fill 2.py
+│   │   ├── _fillgradient.py
+│   │   ├── _fillpattern.py
+│   │   ├── _font 74.py
+│   │   ├── _frame.py
+│   │   ├── _funnel.py
+│   │   ├── _funnelarea.py
+│   │   ├── _g_a_s_p.py
+│   │   ├── _g_c_i_d.py
+│   │   ├── _g_l_y_f.py
+│   │   ├── _g_v_a_r.py
+│   │   ├── _gauge.py
+│   │   ├── _geo.py
+│   │   ├── _gradient 2.py
+│   │   ├── _grid.py
+│   │   ├── _grouptitlefont.py
+│   │   ├── _h_d_m_x.py
+│   │   ├── _h_e_a_d.py
+│   │   ├── _h_h_e_a.py
+│   │   ├── _h_m_t_x.py
+│   │   ├── _header.py
+│   │   ├── _heatmap.py
+│   │   ├── _heatmapgl.py
+│   │   ├── _helpers.py
+│   │   ├── _histogram.py
+│   │   ├── _histogram2d.py
+│   │   ├── _histogram2dcontour.py
+│   │   ├── _hoverlabel 2.py
+│   │   ├── _http_client.py
+│   │   ├── _icicle.py
+│   │   ├── _id_token_async.py
+│   │   ├── _image.py
+│   │   ├── _imaginaryaxis.py
+│   │   ├── _increasing.py
+│   │   ├── _indicator.py
+│   │   ├── _insidetextfont 2.py
+│   │   ├── _isosurface.py
+│   │   ├── _jwt_async.py
+│   │   ├── _k_e_r_n.py
+│   │   ├── _l_c_a_r.py
+│   │   ├── _l_o_c_a.py
+│   │   ├── _l_t_a_g.py
+│   │   ├── _label.py
+│   │   ├── _labelfont.py
+│   │   ├── _lataxis.py
+│   │   ├── _layer.py
+│   │   ├── _layout.py
+│   │   ├── _leaf.py
+│   │   ├── _legend.py
+│   │   ├── _legendgrouptitle 2.py
+│   │   ├── _lighting.py
+│   │   ├── _lightposition.py
+│   │   ├── _line.py
+│   │   ├── _link.py
+│   │   ├── _lonaxis.py
+│   │   ├── _m_a_x_p.py
+│   │   ├── _m_e_t_a.py
+│   │   ├── _m_o_r_t.py
+│   │   ├── _m_o_r_x.py
+│   │   ├── _manylinux.py
+│   │   ├── _map.py
+│   │   ├── _mapbox.py
+│   │   ├── _margin.py
+│   │   ├── _marker 3.py
+│   │   ├── _meanline.py
+│   │   ├── _mesh3d.py
+│   │   ├── _metadata.py
+│   │   ├── _minor.py
+│   │   ├── _modebar.py
+│   │   ├── _mtls_helper.py
+│   │   ├── _musllinux.py
+│   │   ├── _n_a_m_e.py
+│   │   ├── _newselection.py
+│   │   ├── _newshape.py
+│   │   ├── _node.py
+│   │   ├── _number.py
+│   │   ├── _o_p_b_d.py
+│   │   ├── _oauth2client.py
+│   │   ├── _ohlc.py
+│   │   ├── _outsidetextfont 2.py
+│   │   ├── _p_o_s_t.py
+│   │   ├── _p_r_e_p.py
+│   │   ├── _p_r_o_p.py
+│   │   ├── _pad.py
+│   │   ├── _parcats.py
+│   │   ├── _parcoords.py
+│   │   ├── _parser.py
+│   │   ├── _pathbar.py
+│   │   ├── _pattern 2.py
+│   │   ├── _pie.py
+│   │   ├── _pointcloud.py
+│   │   ├── _polar.py
+│   │   ├── _project.py
+│   │   ├── _projection.py
+│   │   ├── _python_rsa.py
+│   │   ├── _radialaxis.py
+│   │   ├── _rangebreak.py
+│   │   ├── _rangefont.py
+│   │   ├── _rangeselector.py
+│   │   ├── _rangeslider.py
+│   │   ├── _realaxis.py
+│   │   ├── _reauth_async.py
+│   │   ├── _refresh_worker.py
+│   │   ├── _requests_base.py
+│   │   ├── _root.py
+│   │   ├── _rotation.py
+│   │   ├── _s_b_i_x.py
+│   │   ├── _sankey.py
+│   │   ├── _scene.py
+│   │   ├── _selected.py
+│   │   ├── _selection.py
+│   │   ├── _service_account_async.py
+│   │   ├── _service_account_info.py
+│   │   ├── _shape.py
+│   │   ├── _slices.py
+│   │   ├── _slider.py
+│   │   ├── _smith.py
+│   │   ├── _spaceframe.py
+│   │   ├── _spdx.py
+│   │   ├── _splom.py
+│   │   ├── _starts.py
+│   │   ├── _step.py
+│   │   ├── _stream 2.py
+│   │   ├── _streamtube.py
+│   │   ├── _structures.py
+│   │   ├── _subtitle.py
+│   │   ├── _sunburst.py
+│   │   ├── _surface.py
+│   │   ├── _symbol.py
+│   │   ├── _t_r_a_k.py
+│   │   ├── _table.py
+│   │   ├── _template.py
+│   │   ├── _ternary.py
+│   │   ├── _textfont 3.py
+│   │   ├── _threshold.py
+│   │   ├── _tickfont 4.py
+│   │   ├── _tickformatstop 4.py
+│   │   ├── _tiling.py
+│   │   ├── _title 4.py
+│   │   ├── _tokenizer.py
+│   │   ├── _totals.py
+│   │   ├── _transition 2.py
+│   │   ├── _treemap.py
+│   │   ├── _uniformtext.py
+│   │   ├── _unselected.py
+│   │   ├── _up.py
+│   │   ├── _updatemenu.py
+│   │   ├── _utils.py
+│   │   ├── _v_h_e_a.py
+│   │   ├── _v_m_t_x.py
+│   │   ├── _version.py
+│   │   ├── _violin.py
+│   │   ├── _volume.py
+│   │   ├── _waterfall.py
+│   │   ├── _x 2.py
+│   │   ├── _xaxis.py
+│   │   ├── _xbins.py
+│   │   ├── _y 2.py
+│   │   ├── _yaxis 2.py
+│   │   ├── _ybins.py
+│   │   ├── _z 2.py
+│   │   ├── _zaxis.py
+│   │   ├── access_token.py
+│   │   ├── actions.py
+│   │   ├── afmLib.py
+│   │   ├── after.py
+│   │   ├── agl.py
+│   │   ├── aiohttp.py
+│   │   ├── anchored_artists.py
+│   │   ├── angle_helper.py
+│   │   ├── api_helpers
+│   │   │   ├── GoogleLiftingCardSheet.py
+│   │   │   └── populate_card.py
+│   │   ├── api_key.py
+│   │   ├── app_engine.py
+│   │   ├── arc.py
+│   │   ├── areaPen.py
+│   │   ├── arrayTools.py
+│   │   ├── art3d.py
+│   │   ├── asciiTable.py
+│   │   ├── asn1.py
+│   │   ├── ast 2.py
+│   │   ├── auth.py
+│   │   ├── authorization 2.py
+│   │   ├── authorization_code 2.py
+│   │   ├── avar.py
+│   │   ├── avarPlanner.py
+│   │   ├── aws.py
+│   │   ├── axes3d.py
+│   │   ├── axes_divider.py
+│   │   ├── axes_grid.py
+│   │   ├── axes_rgb.py
+│   │   ├── axes_size.py
+│   │   ├── axis3d.py
+│   │   ├── axis_artist.py
+│   │   ├── axisline_style.py
+│   │   ├── axislines.py
+│   │   ├── backend_application.py
+│   │   ├── base.py
+│   │   ├── basePen.py
+│   │   ├── before.py
+│   │   ├── before_sleep.py
+│   │   ├── benchmark.py
+│   │   ├── bezierTools.py
+│   │   ├── boundsPen.py
+│   │   ├── builder.py
+│   │   ├── cairoPen.py
+│   │   ├── certs.py
+│   │   ├── cff.py
+│   │   ├── challenges.py
+│   │   ├── char.py
+│   │   ├── classifyTools.py
+│   │   ├── cli.py
+│   │   ├── cliTools.py
+│   │   ├── client_credentials.py
+│   │   ├── cmap.py
+│   │   ├── cocoaPen.py
+│   │   ├── codec.py
+│   │   ├── codecs.py
+│   │   ├── common.py
+│   │   ├── compat.py
+│   │   ├── conf.py
+│   │   ├── configTools.py
+│   │   ├── conftest.py
+│   │   ├── constraint.py
+│   │   ├── converters.py
+│   │   ├── core.py
+│   │   ├── credentials.py
+│   │   ├── cu2qu.py
+│   │   ├── cu2quPen.py
+│   │   ├── cython.py
+│   │   ├── debug.py
+│   │   ├── decoder.py
+│   │   ├── device.py
+│   │   ├── dictTools.py
+│   │   ├── dispatchers.py
+│   │   ├── douban.py
+│   │   ├── downscoped.py
+│   │   ├── ebay.py
+│   │   ├── eexec.py
+│   │   ├── encoder.py
+│   │   ├── encodingTools.py
+│   │   ├── environment_vars.py
+│   │   ├── eoo.py
+│   │   ├── error.py
+│   │   ├── errors.py
+│   │   ├── es256.py
+│   │   ├── etree.py
+│   │   ├── exceptions 2.py
+│   │   ├── exceptions.py
+│   │   ├── explicitClosingLinePen.py
+│   │   ├── external_account.py
+│   │   ├── external_account_authorized_user.py
+│   │   ├── external_libs
+│   │   │   ├── OTTags.py
+│   │   │   ├── StandardEncoding.py
+│   │   │   ├── _scatter.py
+│   │   │   ├── _scatter3d.py
+│   │   │   ├── _scattercarpet.py
+│   │   │   ├── _scattergeo.py
+│   │   │   ├── _scattergl.py
+│   │   │   ├── _scattermap.py
+│   │   │   ├── _scattermapbox.py
+│   │   │   ├── _scatterpolar.py
+│   │   │   ├── _scatterpolargl.py
+│   │   │   ├── _scattersmith.py
+│   │   │   └── _scatterternary.py
+│   │   ├── facebook.py
+│   │   ├── featureVars.py
+│   │   ├── filenames.py
+│   │   ├── files.py
+│   │   ├── filterPen.py
+│   │   ├── fitbit.py
+│   │   ├── fitting_and_simulation.py
+│   │   ├── fixedTools.py
+│   │   ├── floating_axes.py
+│   │   ├── flow.py
+│   │   ├── fontBuilder.py
+│   │   ├── freetypePen.py
+│   │   ├── func.py
+│   │   ├── functional_max
+│   │   │   ├── FunctionalMaxCalculationTesting.py
+│   │   │   ├── FunctionalMaxCalculations_backup.py
+│   │   │   ├── FunctionalMaxEvaluation.py
+│   │   │   ├── FunctionalMaxReverseEngineering.py
+│   │   │   └── FunctionalMaxWithHHPfix.py
+│   │   ├── gdch_credentials.py
+│   │   ├── geometry.py
+│   │   ├── glifLib.py
+│   │   ├── gpos.py
+│   │   ├── grUtils.py
+│   │   ├── graph_objs.py
+│   │   ├── grid_finder.py
+│   │   ├── grid_helper_curvelinear.py
+│   │   ├── grpc.py
+│   │   ├── hashPointPen.py
+│   │   ├── help.py
+│   │   ├── helpers.py
+│   │   ├── hybrid.py
+│   │   ├── iam.py
+│   │   ├── id_token.py
+│   │   ├── identity_pool.py
+│   │   ├── idnadata.py
+│   │   ├── impersonated_credentials.py
+│   │   ├── implicit.py
+│   │   ├── inset_locator.py
+│   │   ├── instagram.py
+│   │   ├── intTools.py
+│   │   ├── integer.py
+│   │   ├── interactive.py
+│   │   ├── interpolatable.py
+│   │   ├── interpolatableHelpers.py
+│   │   ├── interpolatablePlot.py
+│   │   ├── interpolatableTestContourOrder.py
+│   │   ├── interpolatableTestStartingPoint.py
+│   │   ├── interpolate_layout.py
+│   │   ├── intranges.py
+│   │   ├── introspect.py
+│   │   ├── iri2uri.py
+│   │   ├── iterTools.py
+│   │   ├── iup.py
+│   │   ├── jwt.py
+│   │   ├── kerning.py
+│   │   ├── key.py
+│   │   ├── keys.py
+│   │   ├── layout.py
+│   │   ├── lazy.py
+│   │   ├── lazyTools.py
+│   │   ├── legacy_application.py
+│   │   ├── lexer.py
+│   │   ├── location.py
+│   │   ├── loggingTools.py
+│   │   ├── lookupDebugInfo.py
+│   │   ├── macCreatorType.py
+│   │   ├── macRes.py
+│   │   ├── macUtils.py
+│   │   ├── mailchimp.py
+│   │   ├── markers.py
+│   │   ├── maxContextCalc.py
+│   │   ├── merger.py
+│   │   ├── metadata.py
+│   │   ├── metrics.py
+│   │   ├── mobile_application.py
+│   │   ├── modeling
+│   │   │   ├── CleanTestModel.py
+│   │   │   ├── FunctionalMaxHybridModel.py
+│   │   │   ├── MainModel.py
+│   │   │   └── models.py
+│   │   ├── momentsPen.py
+│   │   ├── mpl_axes.py
+│   │   ├── mtls.py
+│   │   ├── multiVarStore.py
+│   │   ├── mutator.py
+│   │   ├── mvar.py
+│   │   ├── namedtype.py
+│   │   ├── namedval.py
+│   │   ├── names.py
+│   │   ├── nap.py
+│   │   ├── oauth1_auth.py
+│   │   ├── oauth1_session.py
+│   │   ├── oauth2_auth.py
+│   │   ├── oauth2_session.py
+│   │   ├── opentype.py
+│   │   ├── options.py
+│   │   ├── organize_scripts.py
+│   │   ├── otBase.py
+│   │   ├── otConverters.py
+│   │   ├── otData.py
+│   │   ├── otTables.py
+│   │   ├── otTraverse.py
+│   │   ├── package_data.py
+│   │   ├── parallel.py
+│   │   ├── parameters.py
+│   │   ├── parasite_axes.py
+│   │   ├── parser.py
+│   │   ├── pem.py
+│   │   ├── perimeterPen.py
+│   │   ├── pkcs1.py
+│   │   ├── pkcs1_v2.py
+│   │   ├── plentymarkets.py
+│   │   ├── plistlib.py
+│   │   ├── plot.py
+│   │   ├── plotly.py
+│   │   ├── pluggable.py
+│   │   ├── pointInsidePen.py
+│   │   ├── pointPen.py
+│   │   ├── pre_configured.py
+│   │   ├── prime.py
+│   │   ├── proj3d.py
+│   │   ├── psCharStrings.py
+│   │   ├── psLib.py
+│   │   ├── psOperators.py
+│   │   ├── py23.py
+│   │   ├── pylab.py
+│   │   ├── qtPen.py
+│   │   ├── qu2cu.py
+│   │   ├── qu2cuPen.py
+│   │   ├── quartzPen.py
+│   │   ├── randnum.py
+│   │   ├── reauth.py
+│   │   ├── recordingPen.py
+│   │   ├── reference.py
+│   │   ├── refresh_token.py
+│   │   ├── removeOverlaps.py
+│   │   ├── reorderGlyphs.py
+│   │   ├── reportLabPen.py
+│   │   ├── request_token.py
+│   │   ├── request_validator.py
+│   │   ├── requests.py
+│   │   ├── requirements.py
+│   │   ├── resource.py
+│   │   ├── resource_owner_password_credentials.py
+│   │   ├── results.py
+│   │   ├── retry.py
+│   │   ├── reverseContourPen.py
+│   │   ├── revocation.py
+│   │   ├── roundTools.py
+│   │   ├── roundingPen.py
+│   │   ├── rsa.py
+│   │   ├── sbixGlyph.py
+│   │   ├── sbixStrike.py
+│   │   ├── scaleUpem.py
+│   │   ├── service_account.py
+│   │   ├── service_application.py
+│   │   ├── sessions.py
+│   │   ├── sfnt.py
+│   │   ├── shapes.py
+│   │   ├── signals.py
+│   │   ├── signature.py
+│   │   ├── signature_only.py
+│   │   ├── simulations
+│   │   │   ├── AnalyzeResidualPatterns.py
+│   │   │   └── SimulatedDataAnalysis.py
+│   │   ├── slack.py
+│   │   ├── socks.py
+│   │   ├── solver.py
+│   │   ├── specializer.py
+│   │   ├── specifiers.py
+│   │   ├── split.py
+│   │   ├── sstruct.py
+│   │   ├── standardGlyphOrder.py
+│   │   ├── stat.py
+│   │   ├── statNames.py
+│   │   ├── statisticsPen.py
+│   │   ├── stop.py
+│   │   ├── streaming.py
+│   │   ├── sts.py
+│   │   ├── subplots.py
+│   │   ├── svg.py
+│   │   ├── svgPathPen.py
+│   │   ├── symfont.py
+│   │   ├── t2CharStringPen.py
+│   │   ├── table_builder.py
+│   │   ├── tables.py
+│   │   ├── tag.py
+│   │   ├── tagmap.py
+│   │   ├── tags.py
+│   │   ├── teePen.py
+│   │   ├── testTools.py
+│   │   ├── test_angle_helper.py
+│   │   ├── test_art3d.py
+│   │   ├── test_axes3d.py
+│   │   ├── test_axes_grid1.py
+│   │   ├── test_axis_artist.py
+│   │   ├── test_axislines.py
+│   │   ├── test_floating_axes.py
+│   │   ├── test_grid_finder.py
+│   │   ├── test_grid_helper_curvelinear.py
+│   │   ├── test_legend3d.py
+│   │   ├── testing.py
+│   │   ├── textTools.py
+│   │   ├── tfmLib.py
+│   │   ├── timeTools.py
+│   │   ├── token.py
+│   │   ├── tokens 2.py
+│   │   ├── tornadoweb.py
+│   │   ├── transform.py
+│   │   ├── transformPen.py
+│   │   ├── transforms.py
+│   │   ├── treeTools.py
+│   │   ├── ttCollection.py
+│   │   ├── ttFont.py
+│   │   ├── ttGlyphPen.py
+│   │   ├── ttGlyphSet.py
+│   │   ├── ttProgram.py
+│   │   ├── ttVisitor.py
+│   │   ├── ttx.py
+│   │   ├── types.py
+│   │   ├── tzfile.py
+│   │   ├── tzinfo.py
+│   │   ├── ufo.py
+│   │   ├── unbuilder.py
+│   │   ├── unicode.py
+│   │   ├── univ.py
+│   │   ├── uri_validate.py
+│   │   ├── urllib3.py
+│   │   ├── useful.py
+│   │   ├── userinfo.py
+│   │   ├── util.py
+│   │   ├── utils.py
+│   │   ├── uts46data.py
+│   │   ├── validators.py
+│   │   ├── varStore.py
+│   │   ├── variableScalar.py
+│   │   ├── vector.py
+│   │   ├── version.py
+│   │   ├── visitor.py
+│   │   ├── voltToFea.py
+│   │   ├── wait.py
+│   │   ├── web_application.py
+│   │   ├── webauthn_handler.py
+│   │   ├── webauthn_handler_factory.py
+│   │   ├── webauthn_types.py
+│   │   ├── weibo.py
+│   │   ├── weight_processing
+│   │   │   ├── FixWeightDiffs.py
+│   │   │   ├── LiftingCardCalculations.py
+│   │   │   └── OptimizingWeightDifferences.py
+│   │   ├── width.py
+│   │   ├── woff2.py
+│   │   ├── wxPen.py
+│   │   ├── xmlReader.py
+│   │   └── xmlWriter.py
+│   ├── documentation
+│   │   ├── 478.fdc0539db81116781109.js.LICENSE.txt
+│   │   ├── 486.6450efe6168c2f8caddb.js.LICENSE.txt
+│   │   ├── ACT
+│   │   ├── API_CHANGES.txt
+│   │   ├── AUTHORS.txt
+│   │   ├── Abidjan
+│   │   ├── Accra
+│   │   ├── Acre
+│   │   ├── Adak
+│   │   ├── Addis_Ababa
+│   │   ├── Adelaide
+│   │   ├── Aden
+│   │   ├── Alaska
+│   │   ├── Aleutian
+│   │   ├── Algiers
+│   │   ├── Almaty
+│   │   ├── Amman
+│   │   ├── Amsterdam
+│   │   ├── Anadyr
+│   │   ├── Anchorage
+│   │   ├── Andorra
+│   │   ├── Anguilla
+│   │   ├── Antananarivo
+│   │   ├── Antigua
+│   │   ├── Apia
+│   │   ├── Aqtau
+│   │   ├── Aqtobe
+│   │   ├── Araguaina
+│   │   ├── Arizona
+│   │   ├── Aruba
+│   │   ├── Ashgabat
+│   │   ├── Ashkhabad
+│   │   ├── Asmara
+│   │   ├── Asmera
+│   │   ├── Astrakhan
+│   │   ├── Asuncion
+│   │   ├── Athens
+│   │   ├── Atikokan
+│   │   ├── Atka
+│   │   ├── Atlantic
+│   │   ├── Atyrau
+│   │   ├── Auckland
+│   │   ├── Azores
+│   │   ├── Baghdad
+│   │   ├── Bahia
+│   │   ├── Bahia_Banderas
+│   │   ├── Bahrain
+│   │   ├── BajaNorte
+│   │   ├── BajaSur
+│   │   ├── Baku
+│   │   ├── Bamako
+│   │   ├── Bangkok
+│   │   ├── Bangui
+│   │   ├── Banjul
+│   │   ├── Barbados
+│   │   ├── Barnaul
+│   │   ├── Beirut
+│   │   ├── Belem
+│   │   ├── Belfast
+│   │   ├── Belgrade
+│   │   ├── Belize
+│   │   ├── Berlin
+│   │   ├── Bermuda
+│   │   ├── Beulah
+│   │   ├── Bishkek
+│   │   ├── Bissau
+│   │   ├── Blanc-Sablon
+│   │   ├── Blantyre
+│   │   ├── Boa_Vista
+│   │   ├── Bogota
+│   │   ├── Boise
+│   │   ├── Bougainville
+│   │   ├── Bratislava
+│   │   ├── Brazzaville
+│   │   ├── Brisbane
+│   │   ├── Broken_Hill
+│   │   ├── Brunei
+│   │   ├── Brussels
+│   │   ├── Bucharest
+│   │   ├── Budapest
+│   │   ├── Buenos_Aires 2
+│   │   ├── Bujumbura
+│   │   ├── Busingen
+│   │   ├── CET
+│   │   ├── COPYING.txt
+│   │   ├── CREDITS.html
+│   │   ├── CST6CDT
+│   │   ├── Cairo
+│   │   ├── Calcutta
+│   │   ├── Cambridge_Bay
+│   │   ├── Campo_Grande
+│   │   ├── Canary
+│   │   ├── Canberra
+│   │   ├── Cancun
+│   │   ├── Cape_Verde
+│   │   ├── Caracas
+│   │   ├── Casablanca
+│   │   ├── Casey
+│   │   ├── Catamarca
+│   │   ├── Cayenne
+│   │   ├── Cayman
+│   │   ├── Center
+│   │   ├── Central
+│   │   ├── Ceuta
+│   │   ├── Chagos
+│   │   ├── Chatham
+│   │   ├── Chicago
+│   │   ├── Chihuahua
+│   │   ├── Chisinau
+│   │   ├── Chita
+│   │   ├── Choibalsan
+│   │   ├── Chongqing
+│   │   ├── Christmas
+│   │   ├── Chungking
+│   │   ├── Chuuk
+│   │   ├── Ciudad_Juarez
+│   │   ├── Cocos
+│   │   ├── Colombo
+│   │   ├── ComodRivadavia
+│   │   ├── Comoro
+│   │   ├── Conakry
+│   │   ├── Continental
+│   │   ├── Copenhagen
+│   │   ├── Coral_Harbour
+│   │   ├── Cordoba 2
+│   │   ├── Costa_Rica
+│   │   ├── Creston
+│   │   ├── Cuba
+│   │   ├── Cuiaba
+│   │   ├── Curacao
+│   │   ├── Currie
+│   │   ├── Dacca
+│   │   ├── Dakar
+│   │   ├── Damascus
+│   │   ├── Danmarkshavn
+│   │   ├── Dar_es_Salaam
+│   │   ├── Darwin
+│   │   ├── Davis
+│   │   ├── Dawson
+│   │   ├── Dawson_Creek
+│   │   ├── DeNoronha
+│   │   ├── Denver
+│   │   ├── Detroit
+│   │   ├── Dhaka
+│   │   ├── Dili
+│   │   ├── Djibouti
+│   │   ├── Dominica
+│   │   ├── Douala
+│   │   ├── Dubai
+│   │   ├── Dublin
+│   │   ├── DumontDUrville
+│   │   ├── Dushanbe
+│   │   ├── EET
+│   │   ├── EST
+│   │   ├── EST5EDT
+│   │   ├── East
+│   │   ├── East-Indiana
+│   │   ├── Easter
+│   │   ├── EasterIsland
+│   │   ├── Eastern
+│   │   ├── Edmonton
+│   │   ├── Efate
+│   │   ├── Egypt
+│   │   ├── Eire
+│   │   ├── Eirunepe
+│   │   ├── El_Aaiun
+│   │   ├── El_Salvador
+│   │   ├── Enderbury
+│   │   ├── Ensenada
+│   │   ├── Eucla
+│   │   ├── Factory
+│   │   ├── Faeroe
+│   │   ├── Fakaofo
+│   │   ├── Famagusta
+│   │   ├── Faroe
+│   │   ├── Fiji
+│   │   ├── Fort_Nelson
+│   │   ├── Fort_Wayne
+│   │   ├── Fortaleza
+│   │   ├── Freetown
+│   │   ├── Funafuti
+│   │   ├── GB
+│   │   ├── GB-Eire
+│   │   ├── GMT
+│   │   ├── GMT+0 2
+│   │   ├── GMT+1
+│   │   ├── GMT+10
+│   │   ├── GMT+11
+│   │   ├── GMT+12
+│   │   ├── GMT+2
+│   │   ├── GMT+3
+│   │   ├── GMT+4
+│   │   ├── GMT+5
+│   │   ├── GMT+6
+│   │   ├── GMT+7
+│   │   ├── GMT+8
+│   │   ├── GMT+9
+│   │   ├── GMT-0 2
+│   │   ├── GMT-1
+│   │   ├── GMT-10
+│   │   ├── GMT-11
+│   │   ├── GMT-12
+│   │   ├── GMT-13
+│   │   ├── GMT-14
+│   │   ├── GMT-2
+│   │   ├── GMT-3
+│   │   ├── GMT-4
+│   │   ├── GMT-5
+│   │   ├── GMT-6
+│   │   ├── GMT-7
+│   │   ├── GMT-8
+│   │   ├── GMT-9
+│   │   ├── GMT0 2
+│   │   ├── Gaborone
+│   │   ├── Galapagos
+│   │   ├── Gambier
+│   │   ├── Gaza
+│   │   ├── General
+│   │   ├── Gibraltar
+│   │   ├── Glace_Bay
+│   │   ├── Godthab
+│   │   ├── Goose_Bay
+│   │   ├── Grand_Turk
+│   │   ├── Greenwich
+│   │   ├── Grenada
+│   │   ├── Guadalcanal
+│   │   ├── Guadeloupe
+│   │   ├── Guam
+│   │   ├── Guatemala
+│   │   ├── Guayaquil
+│   │   ├── Guernsey
+│   │   ├── Guyana
+│   │   ├── HST
+│   │   ├── Halifax
+│   │   ├── Harare
+│   │   ├── Harbin
+│   │   ├── Havana
+│   │   ├── Hawaii
+│   │   ├── Hebron
+│   │   ├── Helsinki
+│   │   ├── Hermosillo
+│   │   ├── Ho_Chi_Minh
+│   │   ├── Hobart
+│   │   ├── Hong_Kong
+│   │   ├── Hongkong
+│   │   ├── Honolulu
+│   │   ├── Hovd
+│   │   ├── INSTALLER
+│   │   ├── INSTALLER 4
+│   │   ├── Iceland
+│   │   ├── Indiana-Starke
+│   │   ├── Indianapolis
+│   │   ├── Inuvik
+│   │   ├── Iqaluit
+│   │   ├── Iran
+│   │   ├── Irkutsk
+│   │   ├── Isle_of_Man
+│   │   ├── Israel
+│   │   ├── Istanbul
+│   │   ├── Jakarta
+│   │   ├── Jamaica
+│   │   ├── Jan_Mayen
+│   │   ├── Japan
+│   │   ├── Jayapura
+│   │   ├── Jersey
+│   │   ├── Jerusalem
+│   │   ├── Johannesburg
+│   │   ├── Johnston
+│   │   ├── Juba
+│   │   ├── Jujuy 2
+│   │   ├── Juneau
+│   │   ├── Kabul
+│   │   ├── Kaliningrad
+│   │   ├── Kamchatka
+│   │   ├── Kampala
+│   │   ├── Kanton
+│   │   ├── Karachi
+│   │   ├── Kashgar
+│   │   ├── Kathmandu
+│   │   ├── Katmandu
+│   │   ├── Kerguelen
+│   │   ├── Khandyga
+│   │   ├── Khartoum
+│   │   ├── Kiev
+│   │   ├── Kigali
+│   │   ├── Kinshasa
+│   │   ├── Kiritimati
+│   │   ├── Kirov
+│   │   ├── Knox
+│   │   ├── Knox_IN
+│   │   ├── Kolkata
+│   │   ├── Kosrae
+│   │   ├── Kralendijk
+│   │   ├── Krasnoyarsk
+│   │   ├── Kuala_Lumpur
+│   │   ├── Kuching
+│   │   ├── Kuwait
+│   │   ├── Kwajalein
+│   │   ├── Kyiv
+│   │   ├── LHI
+│   │   ├── LICENSE
+│   │   ├── LICENSE 3
+│   │   ├── LICENSE.md
+│   │   ├── LICENSE.rst
+│   │   ├── LICENSE.txt
+│   │   ├── La_Paz
+│   │   ├── La_Rioja
+│   │   ├── Lagos
+│   │   ├── Libreville
+│   │   ├── Libya
+│   │   ├── Lima
+│   │   ├── Lindeman
+│   │   ├── Lisbon
+│   │   ├── Ljubljana
+│   │   ├── Lome
+│   │   ├── London
+│   │   ├── Longyearbyen
+│   │   ├── Lord_Howe
+│   │   ├── Los_Angeles
+│   │   ├── Louisville
+│   │   ├── Lower_Princes
+│   │   ├── Luanda
+│   │   ├── Lubumbashi
+│   │   ├── Lusaka
+│   │   ├── Luxembourg
+│   │   ├── MET
+│   │   ├── METADATA
+│   │   ├── METADATA 3
+│   │   ├── MST
+│   │   ├── MST7MDT
+│   │   ├── Macao
+│   │   ├── Macau
+│   │   ├── Maceio
+│   │   ├── Macquarie
+│   │   ├── Madeira
+│   │   ├── Madrid
+│   │   ├── Magadan
+│   │   ├── Mahe
+│   │   ├── Majuro
+│   │   ├── Makassar
+│   │   ├── Malabo
+│   │   ├── Maldives
+│   │   ├── Malta
+│   │   ├── Managua
+│   │   ├── Manaus
+│   │   ├── Manila
+│   │   ├── Maputo
+│   │   ├── Marengo
+│   │   ├── Mariehamn
+│   │   ├── Marigot
+│   │   ├── Marquesas
+│   │   ├── Martinique
+│   │   ├── Maseru
+│   │   ├── Matamoros
+│   │   ├── Mauritius
+│   │   ├── Mawson
+│   │   ├── Mayotte
+│   │   ├── Mazatlan
+│   │   ├── Mbabane
+│   │   ├── McMurdo
+│   │   ├── Melbourne
+│   │   ├── Mendoza 2
+│   │   ├── Menominee
+│   │   ├── Merida
+│   │   ├── Metlakatla
+│   │   ├── Mexico_City
+│   │   ├── Michigan
+│   │   ├── Midway
+│   │   ├── Minsk
+│   │   ├── Miquelon
+│   │   ├── Mogadishu
+│   │   ├── Monaco
+│   │   ├── Moncton
+│   │   ├── Monrovia
+│   │   ├── Monterrey
+│   │   ├── Montevideo
+│   │   ├── Monticello
+│   │   ├── Montreal
+│   │   ├── Montserrat
+│   │   ├── Moscow
+│   │   ├── Mountain
+│   │   ├── Muscat
+│   │   ├── NSW
+│   │   ├── NZ
+│   │   ├── NZ-CHAT
+│   │   ├── Nairobi
+│   │   ├── Nassau
+│   │   ├── Nauru
+│   │   ├── Navajo
+│   │   ├── Ndjamena
+│   │   ├── New_Salem
+│   │   ├── New_York
+│   │   ├── Newfoundland
+│   │   ├── Niamey
+│   │   ├── Nicosia
+│   │   ├── Nipigon
+│   │   ├── Niue
+│   │   ├── Nome
+│   │   ├── Norfolk
+│   │   ├── Noronha
+│   │   ├── North
+│   │   ├── Nouakchott
+│   │   ├── Noumea
+│   │   ├── Novokuznetsk
+│   │   ├── Novosibirsk
+│   │   ├── Nuuk
+│   │   ├── Ojinaga
+│   │   ├── Omsk
+│   │   ├── Oral
+│   │   ├── Oslo
+│   │   ├── Ouagadougou
+│   │   ├── PRC
+│   │   ├── PST8PDT
+│   │   ├── Pacific
+│   │   ├── Pago_Pago
+│   │   ├── Palau
+│   │   ├── Palmer
+│   │   ├── Panama
+│   │   ├── Pangnirtung
+│   │   ├── Paramaribo
+│   │   ├── Paris
+│   │   ├── Perth
+│   │   ├── Petersburg
+│   │   ├── Phnom_Penh
+│   │   ├── Phoenix
+│   │   ├── Pitcairn
+│   │   ├── Podgorica
+│   │   ├── Pohnpei
+│   │   ├── Poland
+│   │   ├── Ponape
+│   │   ├── Pontianak
+│   │   ├── Port-au-Prince
+│   │   ├── Port_Moresby
+│   │   ├── Port_of_Spain
+│   │   ├── Porto-Novo
+│   │   ├── Porto_Acre
+│   │   ├── Porto_Velho
+│   │   ├── Portugal
+│   │   ├── Prague
+│   │   ├── Puerto_Rico
+│   │   ├── Punta_Arenas
+│   │   ├── Pyongyang
+│   │   ├── Qatar
+│   │   ├── Qostanay
+│   │   ├── Queensland
+│   │   ├── Qyzylorda
+│   │   ├── README.txt
+│   │   ├── RECORD
+│   │   ├── RECORD 3
+│   │   ├── REQUESTED
+│   │   ├── REQUESTED 2
+│   │   ├── ROC
+│   │   ├── ROK
+│   │   ├── Rainy_River
+│   │   ├── Rangoon
+│   │   ├── Rankin_Inlet
+│   │   ├── Rarotonga
+│   │   ├── Recife
+│   │   ├── Regina
+│   │   ├── Resolute
+│   │   ├── Reunion
+│   │   ├── Reykjavik
+│   │   ├── Riga
+│   │   ├── Rio_Branco
+│   │   ├── Rio_Gallegos
+│   │   ├── Riyadh
+│   │   ├── Rome
+│   │   ├── Rosario
+│   │   ├── Rothera
+│   │   ├── Saigon
+│   │   ├── Saipan
+│   │   ├── Sakhalin
+│   │   ├── Salta
+│   │   ├── Samara
+│   │   ├── Samarkand
+│   │   ├── Samoa
+│   │   ├── San_Juan
+│   │   ├── San_Luis
+│   │   ├── San_Marino
+│   │   ├── Santa_Isabel
+│   │   ├── Santarem
+│   │   ├── Santiago
+│   │   ├── Santo_Domingo
+│   │   ├── Sao_Paulo
+│   │   ├── Sao_Tome
+│   │   ├── Sarajevo
+│   │   ├── Saratov
+│   │   ├── Saskatchewan
+│   │   ├── Scoresbysund
+│   │   ├── Seoul
+│   │   ├── Shanghai
+│   │   ├── Shiprock
+│   │   ├── Simferopol
+│   │   ├── Singapore 2
+│   │   ├── Sitka
+│   │   ├── Skopje
+│   │   ├── Sofia
+│   │   ├── South
+│   │   ├── South_Georgia
+│   │   ├── South_Pole
+│   │   ├── Srednekolymsk
+│   │   ├── St_Barthelemy
+│   │   ├── St_Helena
+│   │   ├── St_Johns
+│   │   ├── St_Kitts
+│   │   ├── St_Lucia
+│   │   ├── St_Thomas
+│   │   ├── St_Vincent
+│   │   ├── Stanley
+│   │   ├── Stockholm
+│   │   ├── Swift_Current
+│   │   ├── Sydney
+│   │   ├── Syowa
+│   │   ├── Tahiti
+│   │   ├── Taipei
+│   │   ├── Tallinn
+│   │   ├── Tarawa
+│   │   ├── Tashkent
+│   │   ├── Tasmania
+│   │   ├── Tbilisi
+│   │   ├── Tegucigalpa
+│   │   ├── Tehran
+│   │   ├── Tel_Aviv
+│   │   ├── Tell_City
+│   │   ├── Thimbu
+│   │   ├── Thimphu
+│   │   ├── Thule
+│   │   ├── Thunder_Bay
+│   │   ├── Tijuana
+│   │   ├── Timbuktu
+│   │   ├── Tirane
+│   │   ├── Tiraspol
+│   │   ├── Tokyo
+│   │   ├── Tomsk
+│   │   ├── Tongatapu
+│   │   ├── Toronto
+│   │   ├── Tortola
+│   │   ├── Tripoli
+│   │   ├── Troll
+│   │   ├── Truk
+│   │   ├── Tucuman
+│   │   ├── Tunis
+│   │   ├── Turkey
+│   │   ├── UCT 2
+│   │   ├── UTC
+│   │   ├── Ujung_Pandang
+│   │   ├── Ulaanbaatar
+│   │   ├── Ulan_Bator
+│   │   ├── Ulyanovsk
+│   │   ├── Universal
+│   │   ├── Urumqi
+│   │   ├── Ushuaia
+│   │   ├── Ust-Nera
+│   │   ├── Uzhgorod
+│   │   ├── Vaduz
+│   │   ├── Vancouver
+│   │   ├── Vatican
+│   │   ├── Vevay
+│   │   ├── Victoria
+│   │   ├── Vienna
+│   │   ├── Vientiane
+│   │   ├── Vilnius
+│   │   ├── Vincennes
+│   │   ├── Virgin
+│   │   ├── Vladivostok
+│   │   ├── Volgograd
+│   │   ├── Vostok
+│   │   ├── W-SU
+│   │   ├── WET
+│   │   ├── WHEEL
+│   │   ├── WHEEL 3
+│   │   ├── Wake
+│   │   ├── Wallis
+│   │   ├── Warsaw
+│   │   ├── West
+│   │   ├── Whitehorse
+│   │   ├── Winamac
+│   │   ├── Windhoek
+│   │   ├── Winnipeg
+│   │   ├── Yakutat
+│   │   ├── Yakutsk
+│   │   ├── Yancowinna
+│   │   ├── Yangon
+│   │   ├── Yap
+│   │   ├── Yekaterinburg
+│   │   ├── Yellowknife
+│   │   ├── Yerevan
+│   │   ├── Yukon
+│   │   ├── Zagreb
+│   │   ├── Zaporozhye
+│   │   ├── Zulu
+│   │   ├── Zurich
+│   │   ├── activate
+│   │   ├── cacerts 2.txt
+│   │   ├── cdist-X1.txt
+│   │   ├── cdist-X2.txt
+│   │   ├── entry_points.txt
+│   │   ├── f2py
+│   │   ├── fonttools
+│   │   ├── google-oauthlib-tool
+│   │   ├── index.js.LICENSE.txt
+│   │   ├── iris.txt
+│   │   ├── japanese_utf8.txt
+│   │   ├── kaleido
+│   │   ├── label_inputs.txt
+│   │   ├── label_results.txt
+│   │   ├── label_strels.txt
+│   │   ├── leapseconds
+│   │   ├── normalizer
+│   │   ├── numpy-config
+│   │   ├── pdist-boolean-inp.txt
+│   │   ├── pdist-chebyshev-ml-iris.txt
+│   │   ├── pdist-chebyshev-ml.txt
+│   │   ├── pdist-cityblock-ml-iris.txt
+│   │   ├── pdist-cityblock-ml.txt
+│   │   ├── pdist-correlation-ml-iris.txt
+│   │   ├── pdist-correlation-ml.txt
+│   │   ├── pdist-cosine-ml-iris.txt
+│   │   ├── pdist-cosine-ml.txt
+│   │   ├── pdist-double-inp.txt
+│   │   ├── pdist-euclidean-ml-iris.txt
+│   │   ├── pdist-euclidean-ml.txt
+│   │   ├── pdist-hamming-ml.txt
+│   │   ├── pdist-jaccard-ml.txt
+│   │   ├── pdist-jensenshannon-ml-iris.txt
+│   │   ├── pdist-jensenshannon-ml.txt
+│   │   ├── pdist-minkowski-3.2-ml-iris.txt
+│   │   ├── pdist-minkowski-3.2-ml.txt
+│   │   ├── pdist-minkowski-5.8-ml-iris.txt
+│   │   ├── pdist-seuclidean-ml-iris.txt
+│   │   ├── pdist-seuclidean-ml.txt
+│   │   ├── pdist-spearman-ml.txt
+│   │   ├── pip
+│   │   ├── pip3
+│   │   ├── pyftmerge
+│   │   ├── pyftsubset
+│   │   ├── pyrsa-decrypt
+│   │   ├── pyrsa-encrypt
+│   │   ├── pyrsa-keygen
+│   │   ├── pyrsa-priv2pub
+│   │   ├── pyrsa-sign
+│   │   ├── pyrsa-verify
+│   │   ├── random-bool-data.txt
+│   │   ├── random-double-data.txt
+│   │   ├── random-int-data.txt
+│   │   ├── random-uint-data.txt
+│   │   ├── robots.txt
+│   │   ├── selfdual-4d-polytope.txt
+│   │   ├── static_foo.txt
+│   │   ├── table_API_readme.txt
+│   │   ├── top_level.txt
+│   │   ├── ttx
+│   │   ├── umath-validation-set-README.txt
+│   │   ├── vendor.txt
+│   │   ├── version
+│   │   ├── zip-safe
+│   │   ├── zip-safe 2
+│   │   └── zones
+│   ├── excel_files
+│   │   ├── grouped_exercise_data.xlsx
+│   │   └── updated_grouped_exercise_data.xlsx
+│   ├── experimental
+│   │   ├── FunctionalMaxConfidence.py
+│   │   └── IncorporateActualData.py
+│   ├── images
+│   │   ├── .DS_Store
+│   │   ├── analysis
+│   │   │   ├── AnalysisPlots.png
+│   │   │   ├── Differentials 2.png
+│   │   │   ├── Differentials.png
+│   │   │   └── Simulated_Data_Analysis.png
+│   │   ├── distributions
+│   │   │   ├── Actual Reps - Assigned Reps_distribution.png
+│   │   │   ├── Actual Reps_distribution.png
+│   │   │   ├── Actual Weight - Assigned Weight_distribution.png
+│   │   │   ├── Actual Weight_distribution.png
+│   │   │   ├── _r_assigned_normalized_distribution.png
+│   │   │   ├── _w_assigned_normalized_distribution.png
+│   │   │   ├── combined_plots.png
+│   │   │   ├── combined_plots_optimized.png
+│   │   │   ├── r_actual_<_r_assigned_normalized_distribution.png
+│   │   │   ├── r_actual_>_r_assigned_normalized_distribution.png
+│   │   │   └── r_actual_minus_r_assigned_distribution.png
+│   │   ├── fitting_diagnostics
+│   │   │   ├── CleanActualVsFittedMultipliers.png
+│   │   │   ├── CleanActualVsFittedMultipliersCubic.png
+│   │   │   ├── FittingDiagnosticsFor1-ArmDBrow.png
+│   │   │   ├── FittingDiagnosticsFor3-WayDBshoulderRaise.png
+│   │   │   ├── FittingDiagnosticsForBarRDL.png
+│   │   │   ├── FittingDiagnosticsForBarbellFrontSquat.png
+│   │   │   ├── FittingDiagnosticsForBarbellPushPress.png
+│   │   │   ├── FittingDiagnosticsForBarbellSquat.png
+│   │   │   ├── FittingDiagnosticsForBench.png
+│   │   │   ├── FittingDiagnosticsForBoxBench.png
+│   │   │   ├── FittingDiagnosticsForChest-SupportedDBrow.png
+│   │   │   ├── FittingDiagnosticsForClean.png
+│   │   │   ├── FittingDiagnosticsForDBreverseLungeStep-up.png
+│   │   │   ├── FittingDiagnosticsForHex-BarDeadlift.png
+│   │   │   ├── FittingDiagnosticsForHex-BarJump.png
+│   │   │   ├── FittingDiagnosticsForHigh-HangPull.png
+│   │   │   └── HexBarDLactualVsPredictedMultipliers.png
+│   │   ├── functional_max
+│   │   │   ├── AllFunctionalMaxes.png
+│   │   │   ├── MetricsHistory.png
+│   │   │   ├── ModelComparisons.png
+│   │   │   └── functional_max_differences.png
+│   │   ├── multipliers
+│   │   │   ├── CleanActualVsBestFittedMultipliers.png
+│   │   │   ├── FittedCurveForHexBarDL.png
+│   │   │   ├── exercise_10_comparison.png
+│   │   │   ├── exercise_11_comparison.png
+│   │   │   ├── exercise_12_comparison.png
+│   │   │   ├── exercise_13_comparison.png
+│   │   │   ├── exercise_14_comparison.png
+│   │   │   ├── exercise_14_fit.png
+│   │   │   ├── exercise_15_comparison.png
+│   │   │   ├── exercise_16_comparison.png
+│   │   │   ├── exercise_1_comparison.png
+│   │   │   ├── exercise_1_fit.png
+│   │   │   ├── exercise_2_comparison.png
+│   │   │   ├── exercise_2_fit.png
+│   │   │   ├── exercise_3_comparison.png
+│   │   │   ├── exercise_4_comparison.png
+│   │   │   ├── exercise_4_fit.png
+│   │   │   ├── exercise_5_comparison.png
+│   │   │   ├── exercise_5_fit.png
+│   │   │   ├── exercise_6_comparison.png
+│   │   │   ├── exercise_7_comparison.png
+│   │   │   ├── exercise_7_fit.png
+│   │   │   ├── exercise_8_comparison.png
+│   │   │   ├── exercise_9_comparison.png
+│   │   │   ├── exercise_9_fit.png
+│   │   │   └── fitting_results.csv
+│   │   ├── rep_differences
+│   │   │   ├── DistributionOfRepsDifference.png
+│   │   │   ├── DistributionOfRepsDifferenceRactual-Rassigned.png
+│   │   │   ├── Rep_Differences.png
+│   │   │   ├── Rep_Differences_1-Arm DB Row.png
+│   │   │   ├── Rep_Differences_3-Way DB Shoulder Raise.png
+│   │   │   ├── Rep_Differences_Bar RDL.png
+│   │   │   ├── Rep_Differences_Barbell Front Squat.png
+│   │   │   ├── Rep_Differences_Barbell Push Press.png
+│   │   │   ├── Rep_Differences_Barbell Squat.png
+│   │   │   ├── Rep_Differences_Bench.png
+│   │   │   ├── Rep_Differences_Box Bench.png
+│   │   │   ├── Rep_Differences_Chest-Supported DB Row.png
+│   │   │   ├── Rep_Differences_Clean.png
+│   │   │   ├── Rep_Differences_DB Reverse Lunge Step-up.png
+│   │   │   ├── Rep_Differences_Figure.png
+│   │   │   ├── Rep_Differences_Hex-Bar Deadlift.png
+│   │   │   ├── Rep_Differences_Hex-Bar Jump.png
+│   │   │   ├── Rep_Differences_High-Hang Pull.png
+│   │   │   ├── Rep_Differences_by_Exercise.png
+│   │   │   └── Reps_Differences.png
+│   │   ├── residuals
+│   │   │   ├── ResidualPlot.png
+│   │   │   ├── ResidualPlotForClean.png
+│   │   │   ├── Residuals.png
+│   │   │   ├── ResidualsAcrossTestedMaxRanges.png
+│   │   │   ├── ResidualsForExperimentalData.png
+│   │   │   ├── ResidualsPlot.png
+│   │   │   ├── ResidualsPlotForClean.png
+│   │   │   ├── ResidualsPlotForCleanCubic.png
+│   │   │   ├── ResidualsPlotForCubic.png
+│   │   │   ├── ResidualsPlotsForClean.png
+│   │   │   ├── ResidualsWithHHPfix.png
+│   │   │   └── residuals_plot.png
+│   │   ├── ui_elements
+│   │   │   ├── Figure_1.png
+│   │   │   ├── MAEbyExercise.png
+│   │   │   ├── Minduka_Present_Blue_Pack.png
+│   │   │   ├── back.png
+│   │   │   ├── back_large.png
+│   │   │   ├── dots.png
+│   │   │   ├── filesave.png
+│   │   │   ├── filesave_large.png
+│   │   │   ├── forward.png
+│   │   │   ├── forward_large.png
+│   │   │   ├── hand.png
+│   │   │   ├── help.png
+│   │   │   ├── help_large.png
+│   │   │   ├── home.png
+│   │   │   ├── home_large.png
+│   │   │   ├── logo2.png
+│   │   │   ├── matplotlib.png
+│   │   │   ├── matplotlib_large.png
+│   │   │   ├── move.png
+│   │   │   ├── move_large.png
+│   │   │   ├── qt4_editor_options.png
+│   │   │   ├── qt4_editor_options_large.png
+│   │   │   ├── sort_asc.png
+│   │   │   ├── sort_both.png
+│   │   │   ├── sort_desc.png
+│   │   │   ├── subplots.png
+│   │   │   ├── subplots_large.png
+│   │   │   ├── test_plot.png
+│   │   │   ├── zoom_to_rect.png
+│   │   │   └── zoom_to_rect_large.png
+│   │   └── weight_differences
+│   │       ├── DistributionOfWeightDifference.png
+│   │       ├── DistributionOfWeightDifferenceWactual-Wassigned.png
+│   │       ├── W_actual_minus_W_assigned_distribution.png
+│   │       ├── Weight_Differences.png
+│   │       ├── Weight_Differences_1-Arm DB Row.png
+│   │       ├── Weight_Differences_3-Way DB Shoulder Raise.png
+│   │       ├── Weight_Differences_Bar RDL.png
+│   │       ├── Weight_Differences_Barbell Front Squat.png
+│   │       ├── Weight_Differences_Barbell Push Press.png
+│   │       ├── Weight_Differences_Barbell Squat.png
+│   │       ├── Weight_Differences_Bench.png
+│   │       ├── Weight_Differences_Box Bench.png
+│   │       ├── Weight_Differences_Chest-Supported DB Row.png
+│   │       ├── Weight_Differences_Clean.png
+│   │       ├── Weight_Differences_DB Reverse Lunge Step-up.png
+│   │       ├── Weight_Differences_Hex-Bar Deadlift.png
+│   │       ├── Weight_Differences_Hex-Bar Jump.png
+│   │       ├── Weight_Differences_High-Hang Pull.png
+│   │       ├── Weight_Differences_Player_Adkins.png
+│   │       ├── Weight_Differences_Player_Bousman.png
+│   │       ├── Weight_Differences_Player_Brinkley.png
+│   │       ├── Weight_Differences_Player_Clark.png
+│   │       ├── Weight_Differences_Player_Cole.png
+│   │       ├── Weight_Differences_Player_Davis.png
+│   │       ├── Weight_Differences_Player_G. Thomas.png
+│   │       ├── Weight_Differences_Player_Gebhart.png
+│   │       ├── Weight_Differences_Player_Gierzak.png
+│   │       ├── Weight_Differences_Player_Johnson.png
+│   │       ├── Weight_Differences_Player_Marker.png
+│   │       ├── Weight_Differences_Player_Miears.png
+│   │       ├── Weight_Differences_Player_Ott.png
+│   │       ├── Weight_Differences_Player_Pearson.png
+│   │       ├── Weight_Differences_Player_Roberts.png
+│   │       ├── Weight_Differences_Player_Runyon.png
+│   │       ├── Weight_Differences_Player_Scott.png
+│   │       ├── Weight_Differences_Player_Sullivan.png
+│   │       ├── Weight_Differences_Player_Thomas.png
+│   │       ├── Weight_Differences_Player_Vernon.png
+│   │       ├── Weight_Differences_Player_Wintrow.png
+│   │       ├── Weight_Differences_Player_Wolfe.png
+│   │       ├── Weight_Differences_Player_Wyatt.png
+│   │       ├── simulated_data_Adkins.png
+│   │       ├── simulated_data_Bousman.png
+│   │       ├── simulated_data_Brinkley.png
+│   │       ├── simulated_data_Clark.png
+│   │       ├── simulated_data_Cole.png
+│   │       ├── simulated_data_Davis.png
+│   │       ├── simulated_data_G. Thomas.png
+│   │       ├── simulated_data_Gebhart.png
+│   │       ├── simulated_data_Gierzak.png
+│   │       ├── simulated_data_Johnson.png
+│   │       ├── simulated_data_Marker.png
+│   │       ├── simulated_data_Miears.png
+│   │       ├── simulated_data_Ott.png
+│   │       ├── simulated_data_Pearson.png
+│   │       ├── simulated_data_Roberts.png
+│   │       ├── simulated_data_Runyon.png
+│   │       ├── simulated_data_Scott.png
+│   │       ├── simulated_data_Sullivan.png
+│   │       ├── simulated_data_Vernon.png
+│   │       ├── simulated_data_Wintrow.png
+│   │       ├── simulated_data_Wolfe.png
+│   │       ├── simulated_data_Wyatt.png
+│   │       ├── w_actual_<_w_assigned_normalized_distribution.png
+│   │       └── w_actual_>_w_assigned_normalized_distribution.png
+│   ├── js_files
+│   │   ├── 133.d03e1dd786ee2967a117.js
+│   │   ├── 423.d0d3e2912c33c7566484.js
+│   │   ├── 478.fdc0539db81116781109.js
+│   │   ├── 486.6450efe6168c2f8caddb.js
+│   │   ├── 657.d00745f2277e50b85be7.js
+│   │   ├── 855.323c80e7298812d692e7.js
+│   │   ├── AMS-Regular.js
+│   │   ├── AMScd.js
+│   │   ├── AMSmath.js
+│   │   ├── AMSsymbols.js
+│   │   ├── AM_CHTML-full.js
+│   │   ├── AM_CHTML.js
+│   │   ├── AM_HTMLorMML-full.js
+│   │   ├── AM_HTMLorMML.js
+│   │   ├── AM_SVG-full.js
+│   │   ├── AM_SVG.js
+│   │   ├── Accessible-full.js
+│   │   ├── Accessible.js
+│   │   ├── Arrows.js
+│   │   ├── AssistiveMML.js
+│   │   ├── BasicLatin.js
+│   │   ├── BoxDrawing.js
+│   │   ├── CHTML-preview.js
+│   │   ├── Caligraphic-Bold.js
+│   │   ├── CombDiacritMarks.js
+│   │   ├── CombDiactForSymbols.js
+│   │   ├── Dingbats.js
+│   │   ├── EnclosedAlphanum.js
+│   │   ├── FontWarnings.js
+│   │   ├── Fraktur-Bold.js
+│   │   ├── Fraktur-Regular.js
+│   │   ├── GeneralPunctuation.js
+│   │   ├── GeometricShapes.js
+│   │   ├── GreekAndCoptic.js
+│   │   ├── HTML-CSS.js
+│   │   ├── HTML.js
+│   │   ├── HelpDialog.js
+│   │   ├── Latin1Supplement.js
+│   │   ├── LatinExtendedA.js
+│   │   ├── LatinExtendedB.js
+│   │   ├── LetterlikeSymbols.js
+│   │   ├── MML_CHTML-full.js
+│   │   ├── MML_CHTML.js
+│   │   ├── MML_HTMLorMML-full.js
+│   │   ├── MML_HTMLorMML.js
+│   │   ├── MML_SVG-full.js
+│   │   ├── MML_SVG.js
+│   │   ├── MMLorHTML.js
+│   │   ├── Main-Bold.js
+│   │   ├── Main.js
+│   │   ├── MatchWebFonts.js
+│   │   ├── Math-BoldItalic.js
+│   │   ├── MathEvents.js
+│   │   ├── MathJax.js
+│   │   ├── MathML.js
+│   │   ├── MathMenu.js
+│   │   ├── MathOperators.js
+│   │   ├── MathZoom.js
+│   │   ├── MiscMathSymbolsA.js
+│   │   ├── MiscMathSymbolsB.js
+│   │   ├── MiscSymbols.js
+│   │   ├── MiscSymbolsAndArrows.js
+│   │   ├── MiscTechnical.js
+│   │   ├── PUA.js
+│   │   ├── Safe.js
+│   │   ├── SansSerif-Bold.js
+│   │   ├── SansSerif-Italic.js
+│   │   ├── SansSerif-Regular.js
+│   │   ├── Script-Regular.js
+│   │   ├── SpacingModLetters.js
+│   │   ├── SuppMathOperators.js
+│   │   ├── SupplementalArrowsA.js
+│   │   ├── SupplementalArrowsB.js
+│   │   ├── TeX-AMS-MML_HTMLorMML-full.js
+│   │   ├── TeX-AMS-MML_HTMLorMML.js
+│   │   ├── TeX-AMS-MML_SVG-full.js
+│   │   ├── TeX-AMS-MML_SVG.js
+│   │   ├── TeX-AMS_CHTML-full.js
+│   │   ├── TeX-AMS_CHTML.js
+│   │   ├── TeX-AMS_HTML-full.js
+│   │   ├── TeX-AMS_HTML.js
+│   │   ├── TeX-AMS_SVG-full.js
+│   │   ├── TeX-AMS_SVG.js
+│   │   ├── TeX-MML-AM_CHTML-full.js
+│   │   ├── TeX-MML-AM_CHTML.js
+│   │   ├── TeX-MML-AM_HTMLorMML-full.js
+│   │   ├── TeX-MML-AM_HTMLorMML.js
+│   │   ├── TeX-MML-AM_SVG-full.js
+│   │   ├── TeX-MML-AM_SVG.js
+│   │   ├── TeX.js
+│   │   ├── Typewriter-Regular.js
+│   │   ├── a.js
+│   │   ├── accessibility-menu.js
+│   │   ├── action.js
+│   │   ├── algebra 2.js
+│   │   ├── annotation-xml.js
+│   │   ├── ar.js
+│   │   ├── asciimath2jax.js
+│   │   ├── ast.js
+│   │   ├── auto-collapse.js
+│   │   ├── autobold.js
+│   │   ├── autoload-all.js
+│   │   ├── b.js
+│   │   ├── bbox.js
+│   │   ├── bcc.js
+│   │   ├── begingroup.js
+│   │   ├── bg.js
+│   │   ├── boldsymbol.js
+│   │   ├── br.js
+│   │   ├── c.js
+│   │   ├── ca.js
+│   │   ├── cancel.js
+│   │   ├── cdo.js
+│   │   ├── ce.js
+│   │   ├── collapsible.js
+│   │   ├── color.js
+│   │   ├── config.js
+│   │   ├── content-mathml.js
+│   │   ├── cs.js
+│   │   ├── cy.js
+│   │   ├── d.js
+│   │   ├── da.js
+│   │   ├── de.js
+│   │   ├── default.js
+│   │   ├── diq.js
+│   │   ├── e.js
+│   │   ├── elementary 2.js
+│   │   ├── en.js
+│   │   ├── enclose.js
+│   │   ├── energy.js
+│   │   ├── eo.js
+│   │   ├── es.js
+│   │   ├── explorer.js
+│   │   ├── extension.js
+│   │   ├── extpfeil.js
+│   │   ├── f.js
+│   │   ├── fa.js
+│   │   ├── fast-preview.js
+│   │   ├── fi.js
+│   │   ├── fontdata-extra.js
+│   │   ├── fontdata.js
+│   │   ├── fr 2.js
+│   │   ├── g.js
+│   │   ├── gl.js
+│   │   ├── greek-capital.js
+│   │   ├── greek-mathfonts-bold.js
+│   │   ├── greek-mathfonts-italic 2.js
+│   │   ├── greek-mathfonts-sans-serif-bold.js
+│   │   ├── greek-scripts 2.js
+│   │   ├── greek-small 2.js
+│   │   ├── greek-symbols.js
+│   │   ├── h.js
+│   │   ├── handle-floats.js
+│   │   ├── he.js
+│   │   ├── hebrew_letters 2.js
+│   │   ├── hyperbolic 2.js
+│   │   ├── i.js
+│   │   ├── ia.js
+│   │   ├── index.js
+│   │   ├── it.js
+│   │   ├── j.js
+│   │   ├── ja.js
+│   │   ├── jax.js
+│   │   ├── jsMath2jax.js
+│   │   ├── k.js
+│   │   ├── kaleido_scopes.js
+│   │   ├── kn.js
+│   │   ├── ko.js
+│   │   ├── l.js
+│   │   ├── latest.js
+│   │   ├── latin-lower-double-accent 2.js
+│   │   ├── latin-lower-normal.js
+│   │   ├── latin-lower-phonetic.js
+│   │   ├── latin-lower-single-accent.js
+│   │   ├── latin-mathfonts-bold-fraktur.js
+│   │   ├── latin-mathfonts-bold-script 2.js
+│   │   ├── latin-mathfonts-bold.js
+│   │   ├── latin-mathfonts-double-struck 2.js
+│   │   ├── latin-mathfonts-fraktur.js
+│   │   ├── latin-mathfonts-italic.js
+│   │   ├── latin-mathfonts-monospace.js
+│   │   ├── latin-mathfonts-sans-serif-bold 2.js
+│   │   ├── latin-mathfonts-sans-serif-italic 2.js
+│   │   ├── latin-mathfonts-sans-serif.js
+│   │   ├── latin-mathfonts-script 2.js
+│   │   ├── latin-rest 2.js
+│   │   ├── latin-upper-double-accent.js
+│   │   ├── latin-upper-normal 2.js
+│   │   ├── latin-upper-single-accent 2.js
+│   │   ├── lb.js
+│   │   ├── length.js
+│   │   ├── lki.js
+│   │   ├── local.js
+│   │   ├── lt.js
+│   │   ├── m.js
+│   │   ├── maction.js
+│   │   ├── math_angles.js
+│   │   ├── math_arrows.js
+│   │   ├── math_characters.js
+│   │   ├── math_delimiters.js
+│   │   ├── math_digits.js
+│   │   ├── math_geometry 2.js
+│   │   ├── math_harpoons 2.js
+│   │   ├── math_non_characters.js
+│   │   ├── math_symbols.js
+│   │   ├── math_whitespace.js
+│   │   ├── mathchoice.js
+│   │   ├── mathjax-sre.js
+│   │   ├── mathmaps_ie.js
+│   │   ├── mediawiki-texvc.js
+│   │   ├── memory.js
+│   │   ├── menclose.js
+│   │   ├── mglyph.js
+│   │   ├── mhchem.js
+│   │   ├── mk.js
+│   │   ├── mml2jax.js
+│   │   ├── mml3.js
+│   │   ├── mmultiscripts.js
+│   │   ├── ms.js
+│   │   ├── mtable.js
+│   │   ├── multiline.js
+│   │   ├── n.js
+│   │   ├── newcommand.js
+│   │   ├── nl.js
+│   │   ├── noErrors.js
+│   │   ├── noUndefined.js
+│   │   ├── o.js
+│   │   ├── oc.js
+│   │   ├── opf.js
+│   │   ├── other.js
+│   │   ├── other_stars.js
+│   │   ├── p.js
+│   │   ├── pl.js
+│   │   ├── pt-br.js
+│   │   ├── pt.js
+│   │   ├── q.js
+│   │   ├── qqq.js
+│   │   ├── r.js
+│   │   ├── remoteEntry.c6c768d682b3638efd6b.js
+│   │   ├── ru.js
+│   │   ├── s.js
+│   │   ├── scn.js
+│   │   ├── sco.js
+│   │   ├── scr.js
+│   │   ├── semantic-enrich.js
+│   │   ├── sk.js
+│   │   ├── sl.js
+│   │   ├── speed.js
+│   │   ├── style.js
+│   │   ├── sv.js
+│   │   ├── t.js
+│   │   ├── temperature.js
+│   │   ├── tex2jax.js
+│   │   ├── th.js
+│   │   ├── time.js
+│   │   ├── toMathML.js
+│   │   ├── tr.js
+│   │   ├── trigonometry 2.js
+│   │   ├── u.js
+│   │   ├── uk.js
+│   │   ├── unicode.js
+│   │   ├── v.js
+│   │   ├── verb.js
+│   │   ├── vi.js
+│   │   ├── volume.js
+│   │   ├── w.js
+│   │   ├── weight.js
+│   │   ├── wgxpath.install.js
+│   │   ├── x.js
+│   │   ├── y.js
+│   │   ├── z.js
+│   │   ├── zh-hans.js
+│   │   └── zh-hant.js
+│   ├── legacy_data
+│   │   ├── CompleteProgram.csv
+│   │   ├── Stocks.csv
+│   │   ├── data_x_x2_x3.csv
+│   │   ├── fr_FR.csv
+│   │   ├── mae_by_exercise.csv
+│   │   ├── msft.csv
+│   │   ├── mt19937-testset-1.csv
+│   │   ├── mt19937-testset-2.csv
+│   │   ├── pcg64-testset-1.csv
+│   │   ├── pcg64-testset-2.csv
+│   │   ├── pcg64dxsm-testset-1.csv
+│   │   ├── pcg64dxsm-testset-2.csv
+│   │   ├── philox-testset-1.csv
+│   │   ├── philox-testset-2.csv
+│   │   ├── populated_weights.csv
+│   │   ├── processed_exercise_weights.csv
+│   │   ├── sfc64-testset-1.csv
+│   │   ├── sfc64-testset-2.csv
+│   │   ├── umath-validation-set-arccos.csv
+│   │   ├── umath-validation-set-arccosh.csv
+│   │   ├── umath-validation-set-arcsin.csv
+│   │   ├── umath-validation-set-arcsinh.csv
+│   │   ├── umath-validation-set-arctan.csv
+│   │   ├── umath-validation-set-arctanh.csv
+│   │   ├── umath-validation-set-cbrt.csv
+│   │   ├── umath-validation-set-cos.csv
+│   │   ├── umath-validation-set-cosh.csv
+│   │   ├── umath-validation-set-exp.csv
+│   │   ├── umath-validation-set-exp2.csv
+│   │   ├── umath-validation-set-expm1.csv
+│   │   ├── umath-validation-set-log.csv
+│   │   ├── umath-validation-set-log10.csv
+│   │   ├── umath-validation-set-log1p.csv
+│   │   ├── umath-validation-set-log2.csv
+│   │   ├── umath-validation-set-sin.csv
+│   │   ├── umath-validation-set-sinh.csv
+│   │   ├── umath-validation-set-tan.csv
+│   │   └── umath-validation-set-tanh.csv
+│   ├── logs
+│   │   ├── debug.log
+│   │   ├── directionality_evaluation.log
+│   │   ├── fitted_parameters.log
+│   │   ├── metrics_history 2.csv
+│   │   ├── metrics_history.csv
+│   │   ├── metrics_history_backup.csv
+│   │   ├── model_accuracy.log
+│   │   ├── output.log
+│   │   ├── profiling
+│   │   │   ├── output.prof
+│   │   │   ├── profile_output.prof
+│   │   │   └── profile_results.prof
+│   │   └── simulated_data_analysis.log
+│   ├── python_env
+│   │   ├── pip3.13
+│   │   └── pyvenv.cfg
+│   ├── reference_models
+│   │   └── DynamicHybridModel.py
+│   ├── reports
+│   │   ├── After-School Lifting - AnalysisPlots.pdf
+│   │   ├── CompleteProgram.numbers
+│   │   ├── fitting_diagnostics.pdf
+│   │   └── fitting_diagnostics_v2.pdf
+│   ├── reviews
+│   │   ├── core_maxes_review_2025-01-22.csv
+│   │   └── program_data_review_2025-01-22.csv
+│   ├── scripts
+│   │   ├── .DS_Store
+│   │   ├── __main__ 2.py
+│   │   └── shell
+│   │       ├── Activate.ps1
+│   │       ├── activate.csh
+│   │       └── activate.fish
+│   ├── source_code
+│   │   ├── __main__.cpython-313 2.pyc
+│   │   ├── base 3.py
+│   │   ├── bezierTools.c
+│   │   ├── bezierTools.cpython-313-darwin.so
+│   │   ├── cu2qu.c
+│   │   ├── cu2qu.cpython-313-darwin.so
+│   │   ├── iup.c
+│   │   ├── iup.cpython-313-darwin.so
+│   │   ├── lexer.c
+│   │   ├── lexer.cpython-313-darwin.so
+│   │   ├── libEGL.dylib
+│   │   ├── libswiftshader_libEGL.dylib
+│   │   ├── libswiftshader_libGLESv2.dylib
+│   │   ├── momentsPen.c
+│   │   ├── momentsPen.cpython-313-darwin.so
+│   │   ├── py.typed
+│   │   ├── qu2cu.c
+│   │   └── qu2cu.cpython-313-darwin.so
+│   └── timezone_data
+│       ├── icudtl.dat
+│       ├── iso3166.tab
+│       ├── tzdata.zi
+│       ├── zone.tab
+│       ├── zone1970.tab
+│       └── zonenow.tab
+├── config
+│   ├── client_secret.json
+│   └── ntafterschoollifting-b8f7a5923646.json
+├── docs
+│   ├── .DS_Store
+│   ├── PROJECT_STRUCTURE.md
+│   ├── README.md
+│   └── requirements.txt
+├── execution
+│   ├── .DS_Store
+│   ├── analysis
+│   │   ├── .DS_Store
+│   │   ├── assigned_weights_review
+│   │   │   ├── assigned_weights_Adkins.png
+│   │   │   ├── assigned_weights_Bousman.png
+│   │   │   ├── assigned_weights_Brady.png
+│   │   │   ├── assigned_weights_Brinkley.png
+│   │   │   ├── assigned_weights_Clark.png
+│   │   │   ├── assigned_weights_Cole.png
+│   │   │   ├── assigned_weights_Davis.png
+│   │   │   ├── assigned_weights_Farno.png
+│   │   │   ├── assigned_weights_Foster.png
+│   │   │   ├── assigned_weights_G. Thomas.png
+│   │   │   ├── assigned_weights_Gebhart.png
+│   │   │   ├── assigned_weights_Gierzak.png
+│   │   │   ├── assigned_weights_Hoblit.png
+│   │   │   ├── assigned_weights_Johnson.png
+│   │   │   ├── assigned_weights_L. Thomas.png
+│   │   │   ├── assigned_weights_Marker.png
+│   │   │   ├── assigned_weights_Martin.png
+│   │   │   ├── assigned_weights_Miears.png
+│   │   │   ├── assigned_weights_O'Conner.png
+│   │   │   ├── assigned_weights_Ott.png
+│   │   │   ├── assigned_weights_Pearson.png
+│   │   │   ├── assigned_weights_Roberts.png
+│   │   │   ├── assigned_weights_Runyon.png
+│   │   │   ├── assigned_weights_Scott.png
+│   │   │   ├── assigned_weights_Sullivan.png
+│   │   │   ├── assigned_weights_Vernon.png
+│   │   │   ├── assigned_weights_Wintrow.png
+│   │   │   ├── assigned_weights_Wolfe.png
+│   │   │   ├── assigned_weights_Wyatt.png
+│   │   │   ├── assigned_weights_review.csv
+│   │   │   ├── assigned_weights_review.py
+│   │   │   └── simulated_data_review
+│   │   │       ├── .DS_Store
+│   │   │       ├── simulated_data_Adkins_reps.png
+│   │   │       ├── simulated_data_Adkins_weight.png
+│   │   │       ├── simulated_data_Bousman_reps.png
+│   │   │       ├── simulated_data_Bousman_weight.png
+│   │   │       ├── simulated_data_Brinkley_reps.png
+│   │   │       ├── simulated_data_Brinkley_weight.png
+│   │   │       ├── simulated_data_Clark_reps.png
+│   │   │       ├── simulated_data_Clark_weight.png
+│   │   │       ├── simulated_data_Cole_reps.png
+│   │   │       ├── simulated_data_Cole_weight.png
+│   │   │       ├── simulated_data_Davis_reps.png
+│   │   │       ├── simulated_data_Davis_weight.png
+│   │   │       ├── simulated_data_G. Thomas_reps.png
+│   │   │       ├── simulated_data_G. Thomas_weight.png
+│   │   │       ├── simulated_data_Gebhart_reps.png
+│   │   │       ├── simulated_data_Gebhart_weight.png
+│   │   │       ├── simulated_data_Gierzak_reps.png
+│   │   │       ├── simulated_data_Gierzak_weight.png
+│   │   │       ├── simulated_data_Johnson_reps.png
+│   │   │       ├── simulated_data_Johnson_weight.png
+│   │   │       ├── simulated_data_Marker_reps.png
+│   │   │       ├── simulated_data_Marker_weight.png
+│   │   │       ├── simulated_data_Miears_reps.png
+│   │   │       ├── simulated_data_Miears_weight.png
+│   │   │       ├── simulated_data_Ott_reps.png
+│   │   │       ├── simulated_data_Ott_weight.png
+│   │   │       ├── simulated_data_Pearson_reps.png
+│   │   │       ├── simulated_data_Pearson_weight.png
+│   │   │       ├── simulated_data_Roberts_reps.png
+│   │   │       ├── simulated_data_Roberts_weight.png
+│   │   │       ├── simulated_data_Runyon_reps.png
+│   │   │       ├── simulated_data_Runyon_weight.png
+│   │   │       ├── simulated_data_Scott_reps.png
+│   │   │       ├── simulated_data_Scott_weight.png
+│   │   │       ├── simulated_data_Sullivan_reps.png
+│   │   │       ├── simulated_data_Sullivan_weight.png
+│   │   │       ├── simulated_data_Vernon_reps.png
+│   │   │       ├── simulated_data_Vernon_weight.png
+│   │   │       ├── simulated_data_Wintrow_reps.png
+│   │   │       ├── simulated_data_Wintrow_weight.png
+│   │   │       ├── simulated_data_Wolfe_reps.png
+│   │   │       ├── simulated_data_Wolfe_weight.png
+│   │   │       ├── simulated_data_Wyatt_reps.png
+│   │   │       ├── simulated_data_Wyatt_weight.png
+│   │   │       ├── simulated_data_review.csv
+│   │   │       └── simulated_data_review.py
+│   │   ├── fitting_review
+│   │   │   ├── .DS_Store
+│   │   │   ├── fitting_equations.txt
+│   │   │   ├── fitting_review.py
+│   │   │   ├── metrics
+│   │   │   │   ├── fitting_error_metrics.csv
+│   │   │   │   └── fitting_results.csv
+│   │   │   └── plots
+│   │   │       ├── exercise_10_comparison.png
+│   │   │       ├── exercise_11_comparison.png
+│   │   │       ├── exercise_12_comparison.png
+│   │   │       ├── exercise_13_comparison.png
+│   │   │       ├── exercise_14_comparison.png
+│   │   │       ├── exercise_14_fit.png
+│   │   │       ├── exercise_15_comparison.png
+│   │   │       ├── exercise_16_comparison.png
+│   │   │       ├── exercise_1_comparison.png
+│   │   │       ├── exercise_1_fit.png
+│   │   │       ├── exercise_2_comparison.png
+│   │   │       ├── exercise_2_fit.png
+│   │   │       ├── exercise_3_comparison.png
+│   │   │       ├── exercise_4_comparison.png
+│   │   │       ├── exercise_4_fit.png
+│   │   │       ├── exercise_5_comparison.png
+│   │   │       ├── exercise_5_fit.png
+│   │   │       ├── exercise_6_comparison.png
+│   │   │       ├── exercise_7_comparison.png
+│   │   │       ├── exercise_7_fit.png
+│   │   │       ├── exercise_8_comparison.png
+│   │   │       ├── exercise_9_comparison.png
+│   │   │       └── exercise_9_fit.png
+│   │   └── functional_max_review
+│   │       ├── debug_log.txt
+│   │       ├── functional_max_density_plot.png
+│   │       ├── functional_max_diff_histogram.png
+│   │       ├── functional_max_distribution.png
+│   │       ├── functional_max_kde.png
+│   │       ├── functional_max_qq_plot.png
+│   │       ├── functional_max_results.csv
+│   │       ├── functional_max_review.csv
+│   │       ├── functional_max_review.py
+│   │       ├── functional_max_scatter.png
+│   │       ├── functional_max_validation_metrics.txt
+│   │       └── functional_max_vs_tested_max.png
+│   ├── exercise_performance_model.py
+│   ├── experimental
+│   │   └── calculate_functional_max.py
+│   ├── helpers
+│   │   ├── .DS_Store
+│   │   ├── __init__.py
+│   │   ├── __pycache__
+│   │   │   ├── __init__.cpython-313 2.pyc
+│   │   │   ├── __init__.cpython-313.pyc
+│   │   │   ├── fitting.cpython-313 2.pyc
+│   │   │   ├── fitting.cpython-313.pyc
+│   │   │   ├── google_sheets_utils.cpython-313 2.pyc
+│   │   │   ├── google_sheets_utils.cpython-313.pyc
+│   │   │   ├── multipliers.cpython-313 2.pyc
+│   │   │   └── multipliers.cpython-313.pyc
+│   │   ├── data_merging.py
+│   │   ├── fitting.py
+│   │   ├── functional_max_calc.py
+│   │   ├── google_sheets_utils.py
+│   │   ├── multipliers.py
+│   │   ├── rep_multiplier_fit.py
+│   │   └── simulation.py
+│   ├── inputs
+│   │   └── google_sheets_io.py
+│   ├── main.py
+│   └── outputs
+│       ├── .DS_Store
+│       ├── Data
+│       │   ├── .DS_Store
+│       │   └── metrics_history.csv
+│       ├── Plots
+│       │   ├── .DS_Store
+│       │   ├── Differentials.png
+│       │   ├── WeightDifferencePlots
+│       │   │   ├── Weight_Differences_Player_Adkins.png
+│       │   │   ├── Weight_Differences_Player_Bousman.png
+│       │   │   ├── Weight_Differences_Player_Brinkley.png
+│       │   │   ├── Weight_Differences_Player_Clark.png
+│       │   │   ├── Weight_Differences_Player_Cole.png
+│       │   │   ├── Weight_Differences_Player_Davis.png
+│       │   │   ├── Weight_Differences_Player_G. Thomas.png
+│       │   │   ├── Weight_Differences_Player_Gebhart.png
+│       │   │   ├── Weight_Differences_Player_Gierzak.png
+│       │   │   ├── Weight_Differences_Player_Johnson.png
+│       │   │   ├── Weight_Differences_Player_Marker.png
+│       │   │   ├── Weight_Differences_Player_Miears.png
+│       │   │   ├── Weight_Differences_Player_Ott.png
+│       │   │   ├── Weight_Differences_Player_Pearson.png
+│       │   │   ├── Weight_Differences_Player_Roberts.png
+│       │   │   ├── Weight_Differences_Player_Runyon.png
+│       │   │   ├── Weight_Differences_Player_Scott.png
+│       │   │   ├── Weight_Differences_Player_Sullivan.png
+│       │   │   ├── Weight_Differences_Player_Vernon.png
+│       │   │   ├── Weight_Differences_Player_Wintrow.png
+│       │   │   ├── Weight_Differences_Player_Wolfe.png
+│       │   │   └── Weight_Differences_Player_Wyatt.png
+│       │   └── combined_plots.png
+│       └── logs
+│           ├── calculate_functional_max.log
+│           ├── fitting_review.log
+│           ├── functional_max_review.log
+│           └── weight_review.log
+├── full_project_structure.txt
+├── project_structure.txt
+├── run_analysis.sh
+└── venv_NTlifting
+    ├── .gitignore
+    ├── bin
+    │   ├── Activate.ps1
+    │   ├── activate
+    │   ├── activate.csh
+    │   ├── activate.fish
+    │   ├── f2py
+    │   ├── fonttools
+    │   ├── google-oauthlib-tool
+    │   ├── mail-parser
+    │   ├── normalizer
+    │   ├── numpy-config
+    │   ├── pip
+    │   ├── pip3
+    │   ├── pip3.13
+    │   ├── pyftmerge
+    │   ├── pyftsubset
+    │   ├── pyrsa-decrypt
+    │   ├── pyrsa-encrypt
+    │   ├── pyrsa-keygen
+    │   ├── pyrsa-priv2pub
+    │   ├── pyrsa-sign
+    │   ├── pyrsa-verify
+    │   ├── python -> python3.13
+    │   ├── python3 -> python3.13
+    │   ├── python3.13 -> /usr/local/opt/python@3.13/bin/python3.13
+    │   ├── ttx
+    │   ├── virtualenv
+    │   └── wsdump
+    ├── etc
+    │   └── jupyter
+    │       └── nbconfig
+    │           └── notebook.d
+    ├── include
+    │   └── python3.13
+    ├── lib
+    │   └── python3.13
+    │       └── site-packages
+    │           ├── PIL
+    │           ├── PySocks-1.7.1.dist-info
+    │           ├── __pycache__
+    │           ├── _plotly_future_
+    │           ├── _plotly_utils
+    │           ├── apiclient
+    │           ├── attr
+    │           ├── attrs
+    │           ├── attrs-24.3.0.dist-info
+    │           ├── cachetools
+    │           ├── cachetools-5.5.0.dist-info
+    │           ├── certifi
+    │           ├── certifi-2024.12.14.dist-info
+    │           ├── charset_normalizer
+    │           ├── charset_normalizer-3.4.1.dist-info
+    │           ├── contourpy
+    │           ├── contourpy-1.3.1.dist-info
+    │           ├── cycler
+    │           ├── cycler-0.12.1.dist-info
+    │           ├── dateutil
+    │           ├── distlib
+    │           ├── distlib-0.3.9.dist-info
+    │           ├── docs
+    │           ├── exceptiongroup
+    │           ├── exceptiongroup-1.2.2.dist-info
+    │           ├── filelock
+    │           ├── filelock-3.16.1.dist-info
+    │           ├── fontTools
+    │           ├── fonttools-4.55.4.dist-info
+    │           ├── google
+    │           ├── google_api_core-2.24.0.dist-info
+    │           ├── google_api_python_client-2.156.0.dist-info
+    │           ├── google_auth-2.37.0.dist-info
+    │           ├── google_auth_httplib2-0.2.0.dist-info
+    │           ├── google_auth_httplib2.py
+    │           ├── google_auth_oauthlib
+    │           ├── google_auth_oauthlib-1.2.1.dist-info
+    │           ├── googleapiclient
+    │           ├── googleapis_common_protos-1.66.0.dist-info
+    │           ├── gspread
+    │           ├── gspread-6.1.4.dist-info
+    │           ├── h11
+    │           ├── h11-0.14.0.dist-info
+    │           ├── httplib2
+    │           ├── httplib2-0.22.0.dist-info
+    │           ├── idna
+    │           ├── idna-3.10.dist-info
+    │           ├── imap_tools
+    │           ├── imap_tools-1.8.0.dist-info
+    │           ├── ipaddress-1.0.23.dist-info
+    │           ├── ipaddress.py
+    │           ├── joblib
+    │           ├── joblib-1.4.2.dist-info
+    │           ├── jupyterlab_plotly
+    │           ├── kiwisolver
+    │           ├── kiwisolver-1.4.8.dist-info
+    │           ├── lxml
+    │           ├── lxml-5.3.0.dist-info
+    │           ├── mail_parser-4.1.2.dist-info
+    │           ├── mailbox
+    │           ├── mailbox-0.4.dist-info
+    │           ├── mailparser
+    │           ├── matplotlib
+    │           ├── matplotlib-3.10.0.dist-info
+    │           ├── mpl_toolkits
+    │           ├── numpy
+    │           ├── numpy-2.0.2.dist-info
+    │           ├── oauth2client
+    │           ├── oauth2client-4.1.3.dist-info
+    │           ├── oauthlib
+    │           ├── oauthlib-3.2.2.dist-info
+    │           ├── outcome
+    │           ├── outcome-1.3.0.post0.dist-info
+    │           ├── packaging
+    │           ├── packaging-24.2.dist-info
+    │           ├── pandas
+    │           ├── pandas-2.2.3.dist-info
+    │           ├── pillow-11.1.0.dist-info
+    │           ├── pip
+    │           ├── pip-24.3.1.dist-info
+    │           ├── platformdirs
+    │           ├── platformdirs-4.3.6.dist-info
+    │           ├── plotly
+    │           ├── plotly-5.24.1.dist-info
+    │           ├── proto
+    │           ├── proto_plus-1.25.0.dist-info
+    │           ├── protobuf-5.29.2.dist-info
+    │           ├── pyasn1
+    │           ├── pyasn1-0.6.1.dist-info
+    │           ├── pyasn1_modules
+    │           ├── pyasn1_modules-0.4.1.dist-info
+    │           ├── pylab.py
+    │           ├── pyparsing
+    │           ├── pyparsing-3.2.0.dist-info
+    │           ├── python_dateutil-2.9.0.post0.dist-info
+    │           ├── pytz
+    │           ├── pytz-2024.2.dist-info
+    │           ├── requests
+    │           ├── requests-2.32.3.dist-info
+    │           ├── requests_oauthlib
+    │           ├── requests_oauthlib-2.0.0.dist-info
+    │           ├── rsa
+    │           ├── rsa-4.9.dist-info
+    │           ├── scipy
+    │           ├── scipy-1.15.1.dist-info
+    │           ├── scripts
+    │           ├── seaborn
+    │           ├── seaborn-0.13.2.dist-info
+    │           ├── selenium
+    │           ├── selenium-4.27.1.dist-info
+    │           ├── six-1.17.0.dist-info
+    │           ├── six.py
+    │           ├── sniffio
+    │           ├── sniffio-1.3.1.dist-info
+    │           ├── socks.py
+    │           ├── sockshandler.py
+    │           ├── sortedcontainers
+    │           ├── sortedcontainers-2.4.0.dist-info
+    │           ├── tenacity
+    │           ├── tenacity-9.0.0.dist-info
+    │           ├── trio
+    │           ├── trio-0.28.0.dist-info
+    │           ├── trio_websocket
+    │           ├── trio_websocket-0.11.1.dist-info
+    │           ├── typing_extensions-4.12.2.dist-info
+    │           ├── typing_extensions.py
+    │           ├── tzdata
+    │           ├── tzdata-2024.2.dist-info
+    │           ├── uritemplate
+    │           ├── uritemplate-4.1.1.dist-info
+    │           ├── urllib3
+    │           ├── urllib3-2.3.0.dist-info
+    │           ├── virtualenv
+    │           ├── virtualenv-20.28.1.dist-info
+    │           ├── websocket
+    │           ├── websocket_client-1.8.0.dist-info
+    │           ├── wsproto
+    │           └── wsproto-1.2.0.dist-info
+    └── pyvenv.cfg
+
+214 directories, 2132 files
