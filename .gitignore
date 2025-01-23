@@ -3,4 +3,5 @@
 # Ignore Python virtual environments
 venv_NTlifting/
 # Ignore cache files.
-__pycache__/
+__pycache__/config/ntafterschoollifting-b8f7a5923646.json
+config/client_secret.json
