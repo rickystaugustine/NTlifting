@@ -23,7 +23,7 @@ jobs:
           fetch-depth: 0  # Ensures full repository checkout
 
       - name: 📂 Verify Repository Structure
-        run: ls -l  # Debugging step to check if tests/ exists
+        run: ls -R execution/helpers  # Check if files exist in GitHub Actions
 
       - name: 🐍 Set up Python
         uses: actions/setup-python@v4
