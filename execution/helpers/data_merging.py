@@ -67,3 +67,30 @@ if validation_errors:
     df_validation_errors = pd.DataFrame(validation_errors, columns=["Exercise", "Max Error"])
     logging.warning("⚠️ Validation Errors (Above ±0.05):")
     logging.warning(df_validation_errors.to_string(index=False))
+
+def merge_data():
+    """ Merges repeated program data with core maxes and applies multipliers. """
+    global merged_df  # Ensure function modifies the global dataframe
+    
+    logging.info("🔄 Running merge_data() function...")
+    
+    # Merge datasets
+    merged_df = repeated_program_df.merge(flattened_core_maxes_df, on=["Player", "Relevant Core"], how="left")
+    logging.info("✅ Merged repeated_program_df with flattened_core_maxes_df")
+
+    # Apply multipliers to generate assigned weights
+    for exercise, params in multiplier_fits.items():
+        mask = merged_df["Exercise"] == exercise
+        if isinstance(params, float):  # Static multiplier
+            merged_df.loc[mask, "M_assigned"] = params
+        else:  # Dynamic multiplier
+            w, s, r = merged_df.loc[mask, ["Week #", "Set #", "# of Reps"]].values.T
+            merged_df.loc[mask, "M_assigned"] = params[0] * w + params[1] * s + params[2] * np.log(r + 1) + params[3]
+
+    # Ensure 'NRM' values remain labeled correctly
+    if "Tested Max" in merged_df.columns:
+        merged_df["M_assigned"] = merged_df["M_assigned"].astype(object)
+    else:
+        logging.error("❌ ERROR: 'Tested Max' column not found in merged_df!")
+
+    return merged_df
