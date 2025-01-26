@@ -1,8 +1,7 @@
-# tests/conftest.py
 import sys
 import os
 
-# Add the project root directory to sys.path to enable absolute imports
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
+PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
+sys.path.insert(0, os.path.join(PROJECT_ROOT, ".."))
 
-print(f"✅ Root directory added to sys.path: {sys.path[0]}")
+print(f"✅ Updated sys.path: {sys.path}")
