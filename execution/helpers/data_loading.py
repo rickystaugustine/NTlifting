@@ -14,7 +14,7 @@ try:
 except ModuleNotFoundError:
     logging.error("❌ ERROR: Failed to import 'preprocess_data'. Retrying with adjusted sys.path.")
     sys.path.append(os.path.abspath(os.path.dirname(__file__) + "/../helpers"))
-    from helpers.data_processing import preprocess_data
+    from execution.helpers.data_processing import preprocess_data
 
 # Set up logging
 logging.basicConfig(level=logging.INFO)
