@@ -5,10 +5,12 @@ on:
     branches:
       - main
       - dev
+      - correct_functional_max_calculations_jan24
   pull_request:
     branches:
       - main
       - dev
+      - correct_functional_max_calculations_jan24
 
 jobs:
   test:
