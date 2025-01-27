@@ -100,7 +100,7 @@ def run_simulation(data=None):
     logging.info(f"✅ Simulated data saved to {simulated_data_path}")
 
     # ✅ Fix: Ensure both arguments are passed to `write_to_google_sheet`
-    write_to_google_sheet(sheet_name="SimulatedData", data=df)
+    write_to_google_sheet(worksheet_name="After-School Lifting",sheet_name="SimulatedData", data=df)
 
     logging.info("✅ Simulated data successfully saved to Google Sheets!")
 
