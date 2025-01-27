@@ -76,6 +76,8 @@ def run_simulation(data=None):
 
     df = data if isinstance(data, pd.DataFrame) else assigned_weights_df  # Use default if still invalid
 
+    logging.info(f"🔍 DataFrame columns: {df.columns}")  # Debugging step
+
     if df.empty:
         logging.warning("⚠️ No data provided for simulation.")
         return None
