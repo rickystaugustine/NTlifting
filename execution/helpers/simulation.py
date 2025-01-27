@@ -80,7 +80,7 @@ def run_simulation(data=None):
 
     # Standardize column names
     column_mapping = {
-        "Reps": "# of Reps",  # Example: Fix mismatched column names
+        "Reps": "# of Reps",
         "Num Reps": "# of Reps",
     }
     df.rename(columns=column_mapping, inplace=True)
@@ -99,11 +99,12 @@ def run_simulation(data=None):
     df.to_pickle(simulated_data_path)
     logging.info(f"✅ Simulated data saved to {simulated_data_path}")
 
-    # Upload to Google Sheets
-    write_to_google_sheet("SimulatedData", df)
+    # ✅ Fix: Ensure both arguments are passed to `write_to_google_sheet`
+    write_to_google_sheet(sheet_name="SimulatedData", data=df)
+
     logging.info("✅ Simulated data successfully saved to Google Sheets!")
 
-    return df.to_dict(orient="records")  # ✅ Convert DataFrame to a dictionary for consistency
+    return df.to_dict(orient="records")
 
 # Expand dataframe for simulation
 expanded_df = assigned_weights_df.loc[assigned_weights_df.index.repeat(SIMULATION_ROUNDS)].copy()
