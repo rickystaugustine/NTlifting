@@ -2,6 +2,7 @@ import gspread
 import pandas as pd
 import numpy as np
 import logging
+import os
 from oauth2client.service_account import ServiceAccountCredentials
 
 # Configure logging
@@ -13,7 +14,13 @@ def authorize_google_client():
         "https://spreadsheets.google.com/feeds",
         "https://www.googleapis.com/auth/drive"
     ]
-    creds = ServiceAccountCredentials.from_json_keyfile_name("/Users/ricky.staugustine/.config/NTlifting/ntafterschoollifting-b8f7a5923646.json", scope)
+    credentials_path = "/Users/ricky.staugustine/.config/NTlifting/ntafterschoollifting-b8f7a5923646.json"
+
+    if not os.path.exists(credentials_path):
+        logging.error(f"❌ ERROR: Google Sheets credentials file missing at {credentials_path}.")
+        return None  # Prevent failure
+
+    creds = ServiceAccountCredentials.from_json_keyfile_name(credentials_path, scope)
     client = gspread.authorize(creds)
     logging.info("✅ Google Sheets API authorization successful!")
     return client
