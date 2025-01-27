@@ -70,8 +70,15 @@ def run_simulation(data=None):
     logging.info("🚀 Running simulation on assigned weights dataset...")
 
     # Ensure data is a Pandas DataFrame
-    df = pd.DataFrame(data) if isinstance(data, dict) else data
-    df = df if isinstance(df, pd.DataFrame) else assigned_weights_df  # Use default if still invalid
+    if isinstance(data, dict):
+        logging.warning("⚠️ Data passed as a dictionary. Converting to DataFrame...")
+        data = pd.DataFrame([data])  # Convert single dictionary into a DataFrame
+
+    df = data if isinstance(data, pd.DataFrame) else assigned_weights_df  # Use default if still invalid
+
+    if df.empty:
+        logging.warning("⚠️ No data provided for simulation.")
+        return None
 
     df["Simulated Reps"] = df.apply(simulate_iteration, axis=1)
 
