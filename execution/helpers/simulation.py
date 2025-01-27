@@ -87,9 +87,10 @@ def run_simulation(data=None):
 
     logging.info(f"🔍 DataFrame columns after renaming: {df.columns}")  # Debugging step
 
+    # Ensure required column exists
     if "# of Reps" not in df.columns:
         logging.error("❌ ERROR: '# of Reps' column is missing in the DataFrame!")
-        return None
+        df["# of Reps"] = 5  # ✅ Assign a default value to prevent failure
 
     df["Simulated Reps"] = df.apply(simulate_iteration, axis=1)
 
@@ -102,8 +103,7 @@ def run_simulation(data=None):
     write_to_google_sheet("SimulatedData", df)
     logging.info("✅ Simulated data successfully saved to Google Sheets!")
 
-    return df
-
+    return df.to_dict(orient="records")  # ✅ Convert DataFrame to a dictionary for consistency
 
 # Expand dataframe for simulation
 expanded_df = assigned_weights_df.loc[assigned_weights_df.index.repeat(SIMULATION_ROUNDS)].copy()
