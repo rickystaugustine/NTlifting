@@ -77,7 +77,8 @@ def run_simulation(data=None):
     logging.info(f"✅ Simulated data saved to {simulated_data_path}")
 
     # ✅ Only one Google Sheets upload
-    write_to_google_sheet("After-School Lifting", "SimulatedData", df)
+    df_cleaned = df.applymap(lambda x: x.tolist() if isinstance(x, np.ndarray) else x)
+    write_to_google_sheet("After-School Lifting", "SimulatedData", df_cleaned)
     logging.info("✅ Simulated data successfully uploaded to Google Sheets!")
 
     return df.to_dict(orient="records")
