@@ -56,10 +56,13 @@ def fit_exercise_multipliers(program_df):
         logging.warning("⚠️ program_df was passed as a dict, converting to DataFrame...")
         program_df = pd.DataFrame(program_df)
 
-    # Ensure 'Code' column exists to avoid KeyError
-    if "Code" not in program_df.columns:
-        logging.error("❌ ERROR: 'Code' column is missing in program_df! Adding a default column...")
-        program_df["Code"] = "Unknown"  # Add a default value to prevent failure
+    # Ensure required columns exist
+    required_columns = ["Code", "Week #", "Set #", "# of Reps", "Tested Max"]
+    missing_columns = [col for col in required_columns if col not in program_df.columns]
+    
+    if missing_columns:
+        logging.error(f"❌ ERROR: Missing required columns in program_df: {missing_columns}")
+        return {}  # Return an empty dictionary instead of None to prevent TypeError
 
     exercises = program_df["Code"].unique()
     exercise_functions = {}
@@ -73,13 +76,6 @@ def fit_exercise_multipliers(program_df):
             logging.warning(f"⚠️ No data available for exercise: {exercise}")
             continue
 
-        # Extract necessary columns, ensuring they exist
-        required_columns = ["Week #", "Set #", "# of Reps", "Tested Max"]
-        for col in required_columns:
-            if col not in exercise_df.columns:
-                logging.error(f"❌ ERROR: Missing required column '{col}' in program_df!")
-                return None  # Fail gracefully
-
         w = exercise_df["Week #"].values
         s = exercise_df["Set #"].values
         r = exercise_df["# of Reps"].values
@@ -91,7 +87,7 @@ def fit_exercise_multipliers(program_df):
             logging.warning(f"⚠️ No valid numeric data for exercise: {exercise}")
             continue
 
-        # Fit a simple linear model (placeholder as an example)
+        # Fit a simple linear model
         coeffs = np.polyfit(w[valid_mask] + s[valid_mask] + np.log(r[valid_mask] + 1), maxes[valid_mask], 1)
         
         # Store the function for this exercise
@@ -99,4 +95,4 @@ def fit_exercise_multipliers(program_df):
 
         logging.info(f"✅ Fitted multipliers for {exercise}: {coeffs}")
 
-    return exercise_functions
+    return exercise_functions  # Ensure this always returns a dictionary
