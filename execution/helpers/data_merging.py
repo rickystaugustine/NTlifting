@@ -73,7 +73,7 @@ def merge_data():
     global merged_df  # Ensure function modifies the global dataframe
     
     logging.info("🔄 Running merge_data() function...")
-    
+
     # Merge datasets
     merged_df = repeated_program_df.merge(flattened_core_maxes_df, on=["Player", "Relevant Core"], how="left")
     logging.info("✅ Merged repeated_program_df with flattened_core_maxes_df")
@@ -93,4 +93,4 @@ def merge_data():
     else:
         logging.error("❌ ERROR: 'Tested Max' column not found in merged_df!")
 
-    return merged_df
+    return merged_df.to_dict(orient="records")  # Convert DataFrame to a list of dictionaries
