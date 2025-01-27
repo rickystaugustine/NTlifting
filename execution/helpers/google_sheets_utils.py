@@ -1,22 +1,20 @@
 import gspread
 import pandas as pd
-import numpy as np
 import logging
 import os
 from oauth2client.service_account import ServiceAccountCredentials
-from gspread.exceptions import SpreadsheetNotFound
+from gspread.exceptions import SpreadsheetNotFound, WorksheetNotFound
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - INFO - %(message)s")
 
-# Google Sheets API Authorization
 def authorize_google_client():
+    """Authorize and return Google Sheets client."""
     scope = [
         "https://spreadsheets.google.com/feeds",
         "https://www.googleapis.com/auth/drive"
     ]
     
-    # Dynamically find the credentials file
     credentials_path = os.getenv("GOOGLE_APPLICATION_CREDENTIALS", "/Users/ricky.staugustine/.config/gspread/service_account.json")
 
     if not os.path.exists(credentials_path):
@@ -27,6 +25,33 @@ def authorize_google_client():
     client = gspread.authorize(creds)
     logging.info("✅ Google Sheets API authorization successful!")
     return client
+
+def write_to_google_sheet(spreadsheet_name, worksheet_name, data):
+    """Writes data to Google Sheets."""
+    client = authorize_google_client()
+    if client is None:
+        return None  # Prevent failure if credentials are missing
+
+    try:
+        sheet = client.open(spreadsheet_name)  # ✅ Spreadsheet is "After-School Lifting"
+    except SpreadsheetNotFound:
+        logging.error(f"❌ ERROR: Spreadsheet '{spreadsheet_name}' not found. Creating a new one.")
+        sheet = client.create(spreadsheet_name)
+
+    try:
+        worksheet = sheet.worksheet(worksheet_name)  # ✅ Worksheet (tab) is "SimulatedData"
+    except WorksheetNotFound:
+        logging.warning(f"⚠️ Worksheet '{worksheet_name}' not found in '{spreadsheet_name}'. Creating a new one.")
+        worksheet = sheet.add_worksheet(title=worksheet_name, rows="1000", cols="26")
+
+    # Convert DataFrame to list if needed
+    if isinstance(data, pd.DataFrame):
+        data = [data.columns.tolist()] + data.values.tolist()
+
+    worksheet.clear()
+    worksheet.append_rows(data)
+    logging.info(f"✅ Successfully wrote data to {spreadsheet_name}/{worksheet_name}.")
+
 
 # Read data from Google Sheets
 def read_google_sheets(sheet_name, worksheet_name):
@@ -44,26 +69,3 @@ def read_google_sheets(sheet_name, worksheet_name):
     except SpreadsheetNotFound:
         logging.error(f"❌ ERROR: Spreadsheet '{sheet_name}' not found.")
         return None
-
-# Write data to Google Sheets with improved Pandas handling
-def write_to_google_sheet(sheet_name, worksheet_name, data):
-    """Writes data to Google Sheets."""
-    client = authorize_google_client()
-    if client is None:
-        return None  # Prevent failure if credentials are missing
-
-    try:
-        sheet = client.open(sheet_name)
-    except SpreadsheetNotFound:
-        logging.error(f"❌ ERROR: Spreadsheet '{sheet_name}' not found. Creating a new one.")
-        sheet = client.create(sheet_name)  # ✅ Create new sheet if missing
-
-    worksheet = sheet.worksheet(worksheet_name)
-
-    # Convert DataFrame to list if needed
-    if isinstance(data, pd.DataFrame):
-        data = [data.columns.tolist()] + data.values.tolist()
-
-    worksheet.clear()
-    worksheet.append_rows(data)
-    logging.info(f"✅ Successfully wrote data to {sheet_name}/{worksheet_name}.")
