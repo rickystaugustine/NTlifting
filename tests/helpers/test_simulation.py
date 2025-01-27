@@ -4,7 +4,12 @@ from execution.helpers.simulation import run_simulation
 
 def test_run_simulation():
     """Ensure simulation runs without errors."""
-    example_input = {"athlete": "John Doe", "max_lift": 200}
+    example_input = {
+        "athlete": "John Doe",
+        "max_lift": 200,
+        "# of Reps": 5  # ✅ Ensure this column is included
+    }
     result = run_simulation(example_input)
-    assert isinstance(result, dict)  # Adjust based on expected output
 
+    assert result is not None
+    assert isinstance(result, dict)  # Adjust based on expected output
