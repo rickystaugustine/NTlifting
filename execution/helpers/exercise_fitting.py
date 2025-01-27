@@ -51,6 +51,11 @@ def fit_single_exercise_global(code: int, program_records: List[Dict]) -> Tuple[
 def fit_exercise_multipliers(program_df):
     """ Fits multipliers for each exercise. """
 
+    # Ensure program_df is a Pandas DataFrame
+    if not isinstance(program_df, pd.DataFrame):
+        logging.warning("⚠️ program_df was passed as a dict, converting to DataFrame...")
+        program_df = pd.DataFrame(program_df)
+
     # Ensure 'Code' column exists to avoid KeyError
     if "Code" not in program_df.columns:
         logging.error("❌ ERROR: 'Code' column is missing in program_df! Adding a default column...")
@@ -81,12 +86,12 @@ def fit_exercise_multipliers(program_df):
         maxes = exercise_df["Tested Max"].values
 
         # Handle potential missing or non-numeric values
-        valid_mask = ~np.isnan(w) & ~np.isnan(s) & ~np.isnan(r) & ~np.isnan(maxes)
+        valid_mask = ~pd.isna(w) & ~pd.isna(s) & ~pd.isna(r) & ~pd.isna(maxes)
         if not valid_mask.any():
             logging.warning(f"⚠️ No valid numeric data for exercise: {exercise}")
             continue
 
-        # Fit a simple linear model (placeholding as an example)
+        # Fit a simple linear model (placeholder as an example)
         coeffs = np.polyfit(w[valid_mask] + s[valid_mask] + np.log(r[valid_mask] + 1), maxes[valid_mask], 1)
         
         # Store the function for this exercise
