@@ -81,7 +81,7 @@ def run_simulation(data=None):
     )
     logging.info("✅ Simulated data successfully uploaded to Google Sheets!")
 
-    return df.to_dict(orient="records")
+    return {"simulated_data": df.to_dict(orient="records")}
 
 # Expand dataframe for simulation
 expanded_df = assigned_weights_df.loc[assigned_weights_df.index.repeat(SIMULATION_ROUNDS)].copy()

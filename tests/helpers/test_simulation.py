@@ -12,4 +12,4 @@ def test_run_simulation():
     result = run_simulation(example_input)
 
     assert result is not None
-    assert isinstance(result, dict)  # Adjust based on expected output
+    assert isinstance(result, dict) and "simulated_data" in result
