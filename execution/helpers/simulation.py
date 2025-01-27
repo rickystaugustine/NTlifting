@@ -69,7 +69,10 @@ def run_simulation(data=None):
     """ Runs the full simulation on the assigned weights dataset. """
     logging.info("🚀 Running simulation on assigned weights dataset...")
 
-    df = data if data is not None else assigned_weights_df  # Use provided data or default
+    # Ensure data is a Pandas DataFrame
+    df = pd.DataFrame(data) if isinstance(data, dict) else data
+    df = df if isinstance(df, pd.DataFrame) else assigned_weights_df  # Use default if still invalid
+
     df["Simulated Reps"] = df.apply(simulate_iteration, axis=1)
 
     # Save simulated data
