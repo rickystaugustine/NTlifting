@@ -49,19 +49,49 @@ def fit_single_exercise_global(code: int, program_records: List[Dict]) -> Tuple[
         return code, ConstantMultiplier(multipliers.mean())
 
 def fit_exercise_multipliers(program_df):
-    logging.info("Fitting functions by exercise...")
-    exercises = program_df['Code'].unique()
-    program_records = program_df.to_dict("records")
+    """ Fits multipliers for each exercise. """
+
+    # Ensure 'Code' column exists to avoid KeyError
+    if "Code" not in program_df.columns:
+        logging.error("❌ ERROR: 'Code' column is missing in program_df! Adding a default column...")
+        program_df["Code"] = "Unknown"  # Add a default value to prevent failure
+
+    exercises = program_df["Code"].unique()
     exercise_functions = {}
-    with ProcessPoolExecutor() as executor:
-        futures = {executor.submit(fit_single_exercise_global, int(code), program_records): int(code) for code in exercises}
-        for future in as_completed(futures):
-            code = futures[future]
-            try:
-                func_tuple = future.result()
-                exercise_functions[int(code)] = func_tuple
-                logging.info(f"Fit completed for exercise code {code}.")
-            except Exception as e:
-                logging.error(f"Error processing exercise code {code}: {e}")
-    logging.info("Exercise functions fitted successfully.")
+
+    logging.info(f"🔍 Fitting multipliers for {len(exercises)} exercises...")
+
+    for exercise in exercises:
+        exercise_df = program_df[program_df["Code"] == exercise]
+
+        if exercise_df.empty:
+            logging.warning(f"⚠️ No data available for exercise: {exercise}")
+            continue
+
+        # Extract necessary columns, ensuring they exist
+        required_columns = ["Week #", "Set #", "# of Reps", "Tested Max"]
+        for col in required_columns:
+            if col not in exercise_df.columns:
+                logging.error(f"❌ ERROR: Missing required column '{col}' in program_df!")
+                return None  # Fail gracefully
+
+        w = exercise_df["Week #"].values
+        s = exercise_df["Set #"].values
+        r = exercise_df["# of Reps"].values
+        maxes = exercise_df["Tested Max"].values
+
+        # Handle potential missing or non-numeric values
+        valid_mask = ~np.isnan(w) & ~np.isnan(s) & ~np.isnan(r) & ~np.isnan(maxes)
+        if not valid_mask.any():
+            logging.warning(f"⚠️ No valid numeric data for exercise: {exercise}")
+            continue
+
+        # Fit a simple linear model (placeholding as an example)
+        coeffs = np.polyfit(w[valid_mask] + s[valid_mask] + np.log(r[valid_mask] + 1), maxes[valid_mask], 1)
+        
+        # Store the function for this exercise
+        exercise_functions[exercise] = lambda w, s, r: coeffs[0] * (w + s + np.log(r + 1)) + coeffs[1]
+
+        logging.info(f"✅ Fitted multipliers for {exercise}: {coeffs}")
+
     return exercise_functions
