@@ -77,7 +77,7 @@ def run_simulation(data=None):
     write_to_google_sheet(
         "After-School Lifting", 
         "SimulatedData", 
-        df.applymap(lambda x: ", ".join(map(str, x)) if isinstance(x, (np.ndarray, list)) else x)
+        df.map(lambda x: ", ".join(map(str, x)) if isinstance(x, (np.ndarray, list)) else x)
     )
     logging.info("✅ Simulated data successfully uploaded to Google Sheets!")
 
