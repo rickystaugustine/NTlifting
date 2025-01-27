@@ -29,24 +29,24 @@ def read_google_sheets(sheet_name, worksheet_name):
     return df
 
 # Write data to Google Sheets with improved Pandas handling
-def write_to_google_sheet(sheet_name, worksheet_name, data):
-    client = authorize_google_client()
-    sheet = client.open(sheet_name)
+import gspread
+from gspread.exceptions import SpreadsheetNotFound
 
+def write_to_google_sheet(worksheet_name, sheet_name, data):
+    """Writes data to Google Sheets."""
     try:
-        worksheet = sheet.worksheet(worksheet_name)
-        worksheet.clear()
-        logging.info(f"🔄 Existing worksheet {worksheet_name} cleared.")
-    except gspread.exceptions.WorksheetNotFound:
-        worksheet = sheet.add_worksheet(title=worksheet_name, rows="1000", cols="26")
-        logging.info(f"➕ Created new worksheet: {worksheet_name}")
+        client = gspread.service_account()  # Ensure API authentication is set up
+        sheet = client.open(sheet_name)
+    except SpreadsheetNotFound:
+        logging.error(f"❌ ERROR: Spreadsheet '{sheet_name}' not found. Creating a new one.")
+        sheet = client.create(sheet_name)  # ✅ Create new sheet if missing
 
-    # Fix Pandas FutureWarnings
-    data.infer_objects(copy=False)
-    pd.set_option('future.no_silent_downcasting', True)
-    data.fillna("NRM", inplace=True)  # Ensure missing max values remain "NRM"
-    data = data.infer_objects(copy=False)  # Explicitly control type inference
+    worksheet = sheet.worksheet(worksheet_name)
 
-    # Write data
-    worksheet.update([data.columns.values.tolist()] + data.values.tolist())
-    logging.info(f"✅ Successfully wrote {len(data)} rows to {sheet_name}/{worksheet_name}")
+    # Convert DataFrame to list if needed
+    if hasattr(data, "values"):
+        data = [data.columns.tolist()] + data.values.tolist()
+
+    worksheet.clear()
+    worksheet.append_rows(data)
+    logging.info(f"✅ Successfully wrote data to {sheet_name}/{worksheet_name}.")
