@@ -71,14 +71,14 @@ def run_simulation(data=None):
 
     df["Simulated Reps"] = df.apply(simulate_iteration, axis=1)
 
-    # Save and upload simulated data
-    simulated_data_path = os.path.join(project_root, "data/simulated_data.pkl")
-    df.to_pickle(simulated_data_path)
-    logging.info(f"✅ Simulated data saved to {simulated_data_path}")
+    # ✅ Removed duplicate pickle save
 
-    # ✅ Only one Google Sheets upload
-    df_cleaned = df.applymap(lambda x: x.tolist() if isinstance(x, np.ndarray) else x)
-    write_to_google_sheet("After-School Lifting", "SimulatedData", df_cleaned)
+    # ✅ Apply transformation inline instead of using a separate `df_cleaned` variable
+    write_to_google_sheet(
+        "After-School Lifting", 
+        "SimulatedData", 
+        df.applymap(lambda x: ", ".join(map(str, x)) if isinstance(x, (np.ndarray, list)) else x)
+    )
     logging.info("✅ Simulated data successfully uploaded to Google Sheets!")
 
     return df.to_dict(orient="records")
@@ -89,9 +89,7 @@ expanded_df["Simulation Round"] = np.tile(np.arange(1, SIMULATION_ROUNDS + 1), l
 expanded_df["Simulated Weight"] = simulate_weights(assigned_weights_df["Assigned Weight"].values).flatten()
 expanded_df["Simulated Reps"] = simulate_reps(assigned_weights_df["# of Reps"].values).flatten()
 
-# Save expanded simulated data
+# ✅ Save expanded simulated data only once
 simulated_data_path = os.path.join(project_root, "data/simulated_data.pkl")
 expanded_df.to_pickle(simulated_data_path)
-logging.info(f"✅ Expanded simulated data saved to {simulated_data_path}")
-
-# 🚨 Removed redundant write_to_google_sheet() call!
+logging.info(f"✅ Simulated data saved to {simulated_data_path}")
