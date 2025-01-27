@@ -93,4 +93,4 @@ def merge_data():
     else:
         logging.error("❌ ERROR: 'Tested Max' column not found in merged_df!")
 
-    return merged_df.to_dict(orient="records")  # Convert DataFrame to a list of dictionaries
+    return {col: merged_df[
