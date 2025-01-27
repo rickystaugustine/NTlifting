@@ -76,24 +76,16 @@ def run_simulation(data=None):
 
     df = data if isinstance(data, pd.DataFrame) else assigned_weights_df  # Use default if still invalid
 
-    logging.info(f"🔍 DataFrame columns: {df.columns}")  # Debugging step
+    logging.info(f"🔍 DataFrame columns before renaming: {df.columns}")  # Debugging step
 
-    if df.empty:
-        logging.warning("⚠️ No data provided for simulation.")
-        return None
+    # Standardize column names
+    column_mapping = {
+        "Reps": "# of Reps",  # Example: Fix mismatched column names
+        "Num Reps": "# of Reps",
+    }
+    df.rename(columns=column_mapping, inplace=True)
 
-    df["Simulated Reps"] = df.apply(simulate_iteration, axis=1)
-
-    # Save simulated data
-    simulated_data_path = os.path.join(project_root, "data/simulated_data.pkl")
-    df.to_pickle(simulated_data_path)
-    logging.info(f"✅ Simulated data saved to {simulated_data_path}")
-
-    # Upload to Google Sheets
-    write_to_google_sheet("SimulatedData", df)
-    logging.info("✅ Simulated data successfully saved to Google Sheets!")
-
-    return df
+    logging.info(f"�
 
 # Expand dataframe for simulation
 expanded_df = assigned_weights_df.loc[assigned_weights_df.index.repeat(SIMULATION_ROUNDS)].copy()
