@@ -3,10 +3,9 @@ import pandas as pd
 from execution.helpers.data_merging import merge_data
 from execution.helpers.data_processing import preprocess_data
 
-def test_merge_data():
-    """Ensure data merging works with valid input."""
-    
-    # ✅ Mock input with all required columns
+@pytest.fixture
+def mock_data():
+    """Provides mock program and core_maxes data for testing."""
     program_mock = pd.DataFrame({
         "Exercise": ["Bench Press", "Squat"],
         "Sets": [3, 4]
@@ -19,6 +18,12 @@ def test_merge_data():
         "Clean": [180, 140],
         "Hex-Bar Deadlift": [350, 280]
     })
+
+    return program_mock, core_maxes_mock
+
+def test_merge_data(mock_data):
+    """Ensure data merging works with valid input."""
+    program_mock, core_maxes_mock = mock_data
 
     # ✅ Ensure preprocess_data() runs correctly
     flattened_core_maxes, repeated_program = preprocess_data(program_mock, core_maxes_mock)
