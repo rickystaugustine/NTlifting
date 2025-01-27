@@ -121,5 +121,5 @@ logging.info(f"✅ Simulated data saved to {simulated_data_path}")
 
 # Upload to Google Sheets
 logging.info("Uploading simulated data to Google Sheets...")
-write_to_google_sheet(sheet_name="After-School Lifting", worksheet_name="SimulatedData", data=expanded_df)
+write_to_google_sheet("After-School Lifting", "SimulatedData", expanded_df)
 logging.info("✅ Simulated data successfully saved to Google Sheets!")
