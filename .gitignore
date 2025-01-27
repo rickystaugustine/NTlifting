@@ -1,0 +1,13 @@
+# Ignore macOS system files
+.DS_Store
+# Ignore Python virtual environments
+venv_NTlifting/
+# Ignore cache files.
+__pycache__/config/ntafterschoollifting-b8f7a5923646.json
+config/client_secret.json
+config/ntafterschoollifting-b8f7a5923646.json
+config/client_secret.json
+
+# Ignore Python cache
+__pycache__/
+*.pyc
