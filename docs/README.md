@@ -78,6 +78,21 @@ This project is licensed under the MIT License.
 4. Push to your branch (`git push origin feature-name`).
 5. Open a Pull Request.
 
+## 📝 Pull Request Guidelines
+To maintain consistency and readability, all pull requests must follow a structured format.
+
+📌 **Follow the PR Template:**  
+- The PR template is located at [`.github/PULL_REQUEST_TEMPLATE.md`](.github/PULL_REQUEST_TEMPLATE.md).
+- Use the correct naming convention:   [TYPE] #ISSUE_NUMBER - Short Description
+- **Examples:**
+- [BUGFIX] #7 - Fix Google Sheets Data Loading
+- [FEATURE] #15 - Implement Weight Progression Model
+- [DOCS] #22 - Update README Formatting
+- - Before submitting, ensure:
+- [ ] The PR is linked to an issue.
+- [ ] Code changes are tested.
+- [ ] No breaking changes are introduced.
+
 ## 🏆 Maintainer
 **Ricky St. Augustine**  
 For questions, reach out via GitHub Issues.
