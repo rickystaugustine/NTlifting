@@ -93,6 +93,24 @@ To maintain consistency and readability, all pull requests must follow a structu
 - [ ] Code changes are tested.
 - [ ] No breaking changes are introduced.
 
+## 🔧 Fixes & Updates
+
+### ✅ Full Test Suite Passing (Latest Fixes)
+- **Resolved `KeyError: 'Tested Max'`** in `test_assign_weights.py` by ensuring `"Tested Max"` is included in test data.
+- **Fixed dtype compatibility issue** with `"NRM"` assignments in Pandas.
+  - Explicitly converted `"Assigned Weight"` to `object` before assigning `"NRM"`.
+- **Corrected `write_to_google_sheet()` behavior** to properly append rows even when creating a new worksheet.
+- **Updated `test_google_sheets_utils.py` mocking** to properly simulate worksheet creation and prevent false failures.
+- **Ensured `fit_multipliers()` accepts DataFrame input** instead of incorrectly receiving a dictionary.
+- **Fixed `run_simulation()` function signature** to accept expected input arguments.
+
+---
+
+### ✅ How to Run Tests
+To verify functionality, run:
+```bash
+pytest tests/ --disable-warnings
+
 ## 🏆 Maintainer
 **Ricky St. Augustine**  
 For questions, reach out via GitHub Issues.
