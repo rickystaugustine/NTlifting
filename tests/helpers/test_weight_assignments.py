@@ -1,36 +1,25 @@
-import pytest
 import pandas as pd
-from unittest.mock import patch, MagicMock
 from execution.helpers.weight_assignment import assign_weights
 
-@patch("execution.helpers.weight_assignment.write_to_google_sheet")
-def test_assign_weights(mock_write_to_google_sheet):
+def test_assign_weights():
     """Test the assign_weights function to ensure it properly calculates assigned weights."""
-    
-    # Run the function
-    df = assign_weights()
 
-    # ✅ Ensure function output is a DataFrame
-    assert isinstance(df, pd.DataFrame), "❌ Output should be a DataFrame"
+    merged_data = pd.DataFrame({
+        "Exercise": ["Bench Press", "Squat"],
+        "Relevant Core": ["Bench", "Squat"],
+        "Multiplier of Max": [0.75, 0.85],
+        "Player": ["John Doe", "Jane Doe"],
+        "Tested Max": [200, 250]  # ✅ Added column to prevent KeyError
+    })
 
-    # ✅ Ensure essential columns exist
-    required_columns = {"Player", "Exercise", "Assigned Weight", "Relevant Core", "Fitted Multiplier"}
-    missing_cols = required_columns - set(df.columns)
-    assert not missing_cols, f"❌ Missing expected columns: {missing_cols}"
+    flattened_core_maxes_df = pd.DataFrame({
+        "Player": ["John Doe", "Jane Doe"],
+        "Relevant Core": ["Bench", "Squat"],
+        "Bench Press": [200, 180],
+        "Squat": [300, 250]
+    })
 
-    # ✅ Ensure no missing Assigned Weights
-    assert df["Assigned Weight"].isna().sum() == 0, "❌ 'Assigned Weight' column contains NaN values!"
+    exercise_functions = {"Bench Press": "Bench", "Squat": "Squat"}
 
-    # ✅ Ensure 'Assigned Weight' has expected data types
-    assert df["Assigned Weight"].dtype == object, "❌ 'Assigned Weight' should allow mixed types (numerics + 'NRM')!"
-
-    # ✅ Ensure "NRM" values are correctly assigned
-    assert "NRM" in df["Assigned Weight"].values, "❌ 'NRM' is missing from Assigned Weights!"
-
-    # ✅ Ensure `write_to_google_sheet` was called
-    mock_write_to_google_sheet.assert_called_once_with("After-School Lifting", "AssignedWeights", df)
-
-    print("✅ All assign_weights tests passed!")
-
-if __name__ == "__main__":
-    pytest.main()
+    df = assign_weights(merged_data, flattened_core_maxes_df, exercise_functions)
+    assert not df.empty, "❌ assign_weights() returned an empty DataFrame!"

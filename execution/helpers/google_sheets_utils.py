@@ -16,7 +16,7 @@ def authorize_google_client():
         "https://www.googleapis.com/auth/drive"
     ]
     
-    credentials_path = os.getenv("GOOGLE_APPLICATION_CREDENTIALS", "/Users/ricky.staugustine/.config/gspread/service_account.json")
+    credentials_path = "/Users/ricky.staugustine/.config/gspread/service_account.json"
 
     if not os.path.exists(credentials_path):
         logging.error(f"❌ ERROR: Google Sheets credentials file missing at {credentials_path}.")
@@ -27,68 +27,47 @@ def authorize_google_client():
     logging.info("✅ Google Sheets API authorization successful!")
     return client
     
-def read_google_sheets(spreadsheet_name, worksheet_name):
-    """Reads data from a specified Google Sheets spreadsheet and worksheet."""
-    client = authorize_google_client()
-    if client is None:
-        logging.error("❌ ERROR: Google Sheets authentication failed.")
-        return pd.DataFrame()  # Return an empty DataFrame to prevent failure
-
+def read_google_sheets(sheet_name, worksheet_name):
     try:
-        sheet = client.open(spreadsheet_name)
-    except SpreadsheetNotFound:
-        logging.error(f"❌ ERROR: Spreadsheet '{spreadsheet_name}' not found.")
-        return pd.DataFrame()
-
-    try:
+        client = gspread.service_account()
+        sheet = client.open(sheet_name)
         worksheet = sheet.worksheet(worksheet_name)
-    except WorksheetNotFound:
-        logging.error(f"❌ ERROR: Worksheet '{worksheet_name}' not found in '{spreadsheet_name}'.")
+
+        # Print ALL sheet data before calling get_all_records()
+        raw_values = worksheet.get_all_values()
+        print("✅ DEBUG: Raw Google Sheets Data:")
+        for row in raw_values:
+            print(row)
+
+        # Now call get_all_records()
+        records = worksheet.get_all_records()
+        print(f"✅ DEBUG: Retrieved records: {records}")
+
+        if not records:
+            logging.warning(f"⚠️ WARNING: No data found in '{sheet_name}' -> '{worksheet_name}'. Returning empty DataFrame.")
+            return pd.DataFrame()
+
+        return pd.DataFrame(records)
+
+    except Exception as e:
+        logging.error(f"❌ ERROR: Failed to read Google Sheets data - {e}")
         return pd.DataFrame()
-
-    # ✅ Debugging output before calling `get_all_records()`
-    logging.info(f"✅ DEBUG: Calling get_all_records() for '{spreadsheet_name}' -> '{worksheet_name}'")
-
-    # ✅ **Ensure `get_all_records()` is actually called**
-    data = worksheet.get_all_records()
-
-    # ✅ Debugging: Check retrieved data
-    logging.info(f"✅ DEBUG: Retrieved {len(data)} records from '{spreadsheet_name}' -> '{worksheet_name}'")
-
-    if not data:
-        logging.warning(f"⚠️ WARNING: No data found in '{spreadsheet_name}' -> '{worksheet_name}'. Returning empty DataFrame.")
-        return pd.DataFrame()
-
-    return pd.DataFrame(data)
 
 # ✅ Write data to Google Sheets
-def write_to_google_sheet(spreadsheet_name, worksheet_name, data):
-    """Writes data to Google Sheets."""
-    client = authorize_google_client()
-    if client is None:
-        return None  # Prevent failure if credentials are missing
-
+def write_to_google_sheet(sheet_name, worksheet_name, dataframe):
     try:
-        sheet = client.open(spreadsheet_name)
-    except SpreadsheetNotFound:
-        logging.error(f"❌ ERROR: Spreadsheet '{spreadsheet_name}' not found. Creating a new one.")
-        sheet = client.create(spreadsheet_name)
+        client = gspread.service_account()
+        sheet = client.open(sheet_name)
 
-    try:
-        worksheet = sheet.worksheet(worksheet_name)
-    except WorksheetNotFound:
-        logging.warning(f"⚠️ Worksheet '{worksheet_name}' not found in '{spreadsheet_name}'. Creating a new one.")
-        worksheet = sheet.add_worksheet(title=worksheet_name, rows="1000", cols="26")
+        try:
+            worksheet = sheet.worksheet(worksheet_name)
+            worksheet.clear()  # ✅ Clear existing worksheet
+        except gspread.exceptions.WorksheetNotFound:
+            logging.warning(f"⚠️ Worksheet '{worksheet_name}' not found in '{sheet_name}'. Creating a new one.")
+            worksheet = sheet.add_worksheet(title=worksheet_name, rows="100", cols="20")
 
-    # Convert DataFrame to list if needed
-    if isinstance(data, pd.DataFrame):
-        data = [data.columns.tolist()] + data.values.tolist()
+        # ✅ Ensure `append_rows()` is always executed
+        worksheet.append_rows([dataframe.columns.tolist()] + dataframe.values.tolist())
 
-    worksheet.clear()  # ✅ Ensure `clear()` is actually called before checking `call_count`
-    
-    # ✅ Debugging Output
-    logging.info(f"✅ DEBUG: worksheet.clear() was called {worksheet.clear.call_count} times")
-
-    worksheet.append_rows(data)
-    logging.info(f"✅ Successfully wrote data to {spreadsheet_name}/{worksheet_name}.")
-
+    except Exception as e:
+        logging.error(f"❌ ERROR: Failed to write to Google Sheets - {e}")
