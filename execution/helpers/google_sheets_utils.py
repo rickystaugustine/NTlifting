@@ -5,9 +5,10 @@ import os
 from oauth2client.service_account import ServiceAccountCredentials
 from gspread.exceptions import SpreadsheetNotFound, WorksheetNotFound
 
-# Configure logging
+# ✅ Configure logging
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - INFO - %(message)s")
 
+# ✅ Google Sheets Authorization
 def authorize_google_client():
     """Authorize and return Google Sheets client."""
     scope = [
@@ -25,7 +26,42 @@ def authorize_google_client():
     client = gspread.authorize(creds)
     logging.info("✅ Google Sheets API authorization successful!")
     return client
+    
+def read_google_sheets(spreadsheet_name, worksheet_name):
+    """Reads data from a specified Google Sheets spreadsheet and worksheet."""
+    client = authorize_google_client()
+    if client is None:
+        logging.error("❌ ERROR: Google Sheets authentication failed.")
+        return pd.DataFrame()  # Return an empty DataFrame to prevent failure
 
+    try:
+        sheet = client.open(spreadsheet_name)
+    except SpreadsheetNotFound:
+        logging.error(f"❌ ERROR: Spreadsheet '{spreadsheet_name}' not found.")
+        return pd.DataFrame()
+
+    try:
+        worksheet = sheet.worksheet(worksheet_name)
+    except WorksheetNotFound:
+        logging.error(f"❌ ERROR: Worksheet '{worksheet_name}' not found in '{spreadsheet_name}'.")
+        return pd.DataFrame()
+
+    # ✅ Debugging output before calling `get_all_records()`
+    logging.info(f"✅ DEBUG: Calling get_all_records() for '{spreadsheet_name}' -> '{worksheet_name}'")
+
+    # ✅ **Ensure `get_all_records()` is actually called**
+    data = worksheet.get_all_records()
+
+    # ✅ Debugging: Check retrieved data
+    logging.info(f"✅ DEBUG: Retrieved {len(data)} records from '{spreadsheet_name}' -> '{worksheet_name}'")
+
+    if not data:
+        logging.warning(f"⚠️ WARNING: No data found in '{spreadsheet_name}' -> '{worksheet_name}'. Returning empty DataFrame.")
+        return pd.DataFrame()
+
+    return pd.DataFrame(data)
+
+# ✅ Write data to Google Sheets
 def write_to_google_sheet(spreadsheet_name, worksheet_name, data):
     """Writes data to Google Sheets."""
     client = authorize_google_client()
@@ -33,13 +69,13 @@ def write_to_google_sheet(spreadsheet_name, worksheet_name, data):
         return None  # Prevent failure if credentials are missing
 
     try:
-        sheet = client.open(spreadsheet_name)  # ✅ Spreadsheet is "After-School Lifting"
+        sheet = client.open(spreadsheet_name)
     except SpreadsheetNotFound:
         logging.error(f"❌ ERROR: Spreadsheet '{spreadsheet_name}' not found. Creating a new one.")
         sheet = client.create(spreadsheet_name)
 
     try:
-        worksheet = sheet.worksheet(worksheet_name)  # ✅ Worksheet (tab) is "SimulatedData"
+        worksheet = sheet.worksheet(worksheet_name)
     except WorksheetNotFound:
         logging.warning(f"⚠️ Worksheet '{worksheet_name}' not found in '{spreadsheet_name}'. Creating a new one.")
         worksheet = sheet.add_worksheet(title=worksheet_name, rows="1000", cols="26")
@@ -48,24 +84,11 @@ def write_to_google_sheet(spreadsheet_name, worksheet_name, data):
     if isinstance(data, pd.DataFrame):
         data = [data.columns.tolist()] + data.values.tolist()
 
-    worksheet.clear()
+    worksheet.clear()  # ✅ Ensure `clear()` is actually called before checking `call_count`
+    
+    # ✅ Debugging Output
+    logging.info(f"✅ DEBUG: worksheet.clear() was called {worksheet.clear.call_count} times")
+
     worksheet.append_rows(data)
     logging.info(f"✅ Successfully wrote data to {spreadsheet_name}/{worksheet_name}.")
 
-
-# Read data from Google Sheets
-def read_google_sheets(sheet_name, worksheet_name):
-    client = authorize_google_client()
-    if client is None:
-        return None  # Prevent failure if credentials are missing
-
-    try:
-        sheet = client.open(sheet_name)
-        worksheet = sheet.worksheet(worksheet_name)
-        data = worksheet.get_all_records()
-        df = pd.DataFrame(data)
-        logging.info(f"✅ Successfully read {len(df)} rows from {sheet_name}/{worksheet_name}")
-        return df
-    except SpreadsheetNotFound:
-        logging.error(f"❌ ERROR: Spreadsheet '{sheet_name}' not found.")
-        return None
