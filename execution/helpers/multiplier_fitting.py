@@ -1,5 +1,5 @@
 import logging
-from helpers.exercise_fitting import fit_exercise_multipliers
+from execution.helpers.exercise_fitting import fit_exercise_multipliers
 import numpy as np
 from scipy.optimize import curve_fit
 

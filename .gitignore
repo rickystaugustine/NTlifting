@@ -7,3 +7,12 @@ __pycache__/config/ntafterschoollifting-b8f7a5923646.json
 config/client_secret.json
 config/ntafterschoollifting-b8f7a5923646.json
 config/client_secret.json
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+.coverage*
