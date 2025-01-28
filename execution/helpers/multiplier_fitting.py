@@ -4,11 +4,33 @@ import numpy as np
 from scipy.optimize import curve_fit
 
 def fit_multipliers(repeated_program_df):
-    """Fits multipliers for all exercises separately from weight assignment."""
+    """ Fits multipliers for each exercise in the repeated program dataframe. """
+
     logging.info("Fitting multipliers for exercises...")
-    exercise_functions = fit_exercise_multipliers(repeated_program_df)
-    
-    logging.info(f"Fitted multipliers for {len(exercise_functions)} exercises.")
+
+    required_columns = ["Exercise", "Week #", "Set #", "# of Reps", "Multiplier of Max"]
+    missing_columns = [col for col in required_columns if col not in repeated_program_df.columns]
+
+    # Debugging: Log available columns
+    logging.info(f"🔍 Available columns in repeated_program_df: {list(repeated_program_df.columns)}")
+
+    if missing_columns:
+        logging.error(f"❌ ERROR: Missing required columns in program_df: {missing_columns}")
+        return {}  # Return empty multipliers
+
+    exercise_functions = {}
+    unique_exercises = repeated_program_df["Exercise"].unique()
+
+    for exercise in unique_exercises:
+        df_exercise = repeated_program_df[repeated_program_df["Exercise"] == exercise]
+        
+        if df_exercise["Multiplier of Max"].isna().all():
+            logging.warning(f"⚠️ No multiplier values found for {exercise}, skipping...")
+            continue
+        
+        exercise_functions[exercise] = lambda x: x["Multiplier of Max"]
+
+    logging.info(f"✅ Fitted multipliers for {len(exercise_functions)} exercises.")
     return exercise_functions
 
 def rep_to_percentage(reps, a, b, c):

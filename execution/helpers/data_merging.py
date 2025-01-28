@@ -68,30 +68,30 @@ if validation_errors:
     logging.warning("⚠️ Validation Errors (Above ±0.05):")
     logging.warning(df_validation_errors.to_string(index=False))
 
-def merge_data():
-    """ Merges repeated program data with core maxes and applies multipliers. """
-    global merged_df  # Ensure function modifies the global dataframe
-    
+def merge_data(repeated_program_df, flattened_core_maxes_df, multiplier_fits):
+    """ Merges expanded program data with core maxes and applies multipliers. """
+
     logging.info("🔄 Running merge_data() function...")
 
-    # Merge datasets
+    # Debugging: Log before merge
+    logging.info(f"🔍 Columns in repeated_program_df BEFORE merging: {list(repeated_program_df.columns)}")
+    logging.info(f"🔍 Columns in flattened_core_maxes_df BEFORE merging: {list(flattened_core_maxes_df.columns)}")
+
+    # Perform the merge
     merged_df = repeated_program_df.merge(flattened_core_maxes_df, on=["Player", "Relevant Core"], how="left")
-    logging.info("✅ Merged repeated_program_df with flattened_core_maxes_df")
 
-    # Apply multipliers to generate assigned weights
-    for exercise, params in multiplier_fits.items():
-        mask = merged_df["Exercise"] == exercise
-        if isinstance(params, float):  # Static multiplier
-            merged_df.loc[mask, "M_assigned"] = params
-        else:  # Dynamic multiplier
-            w, s, r = merged_df.loc[mask, ["Week #", "Set #", "# of Reps"]].values.T
-            merged_df.loc[mask, "M_assigned"] = params[0] * w + params[1] * s + params[2] * np.log(r + 1) + params[3]
+    # Fix: Check for duplicate `Tested Max` columns and rename properly
+    if "Tested Max_x" in merged_df.columns and "Tested Max_y" in merged_df.columns:
+        logging.warning("⚠️ Detected duplicate `Tested Max` columns! Resolving issue...")
 
-    # Ensure 'NRM' values remain labeled correctly
-    if "Tested Max" in merged_df.columns:
-        merged_df["M_assigned"] = merged_df["M_assigned"].astype(object)
-    else:
-        logging.error("❌ ERROR: 'Tested Max' column not found in merged_df!")
+        # Use the `Tested Max_y` column and drop the other
+        merged_df["Tested Max"] = merged_df["Tested Max_y"].fillna(merged_df["Tested Max_x"])
+        merged_df.drop(columns=["Tested Max_x", "Tested Max_y"], inplace=True)
 
-    return {col: merged_df[col].tolist() for col in merged_df.columns}  # Convert DataFrame to dictionary
+    # Debugging: Ensure `Tested Max` is present after merge
+    if "Tested Max" not in merged_df.columns:
+        logging.error("❌ ERROR: 'Tested Max' column missing after merge!")
 
+    logging.info(f"✅ Merged successfully, 'Tested Max' available in merged_data.")
+
+    return merged_df

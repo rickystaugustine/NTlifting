@@ -16,7 +16,7 @@ def authorize_google_client():
         "https://www.googleapis.com/auth/drive"
     ]
     
-    credentials_path = os.getenv("GOOGLE_APPLICATION_CREDENTIALS", "/Users/ricky.staugustine/.config/gspread/service_account.json")
+    credentials_path = "/Users/ricky.staugustine/.config/gspread/service_account.json"
 
     if not os.path.exists(credentials_path):
         logging.error(f"❌ ERROR: Google Sheets credentials file missing at {credentials_path}.")
@@ -84,10 +84,9 @@ def write_to_google_sheet(spreadsheet_name, worksheet_name, data):
     if isinstance(data, pd.DataFrame):
         data = [data.columns.tolist()] + data.values.tolist()
 
-    worksheet.clear()  # ✅ Ensure `clear()` is actually called before checking `call_count`
-    
-    # ✅ Debugging Output
-    logging.info(f"✅ DEBUG: worksheet.clear() was called {worksheet.clear.call_count} times")
+    print("🔍 DEBUG: Type of worksheet.clear ->", type(worksheet.clear))
+    cleared = worksheet.clear()
+    logging.info(f"✅ Worksheet cleared: {cleared}")
 
     worksheet.append_rows(data)
     logging.info(f"✅ Successfully wrote data to {spreadsheet_name}/{worksheet_name}.")
