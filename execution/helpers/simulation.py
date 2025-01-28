@@ -36,7 +36,9 @@ def simulate_weights(weight):
     """ Simulate weight variations using a normal distribution around the assigned weight. """
     return np.round(norm.rvs(loc=weight, scale=2, size=SIMULATION_ROUNDS), 1)
 
-def run_simulation():
+def run_simulation(input_data):
+    """Simulate exercise performance based on input data."""
+    # Function logic
     """ Runs the full simulation on the assigned weights dataset. """
     logging.info("🚀 Running simulation on assigned weights dataset...")
 

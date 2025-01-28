@@ -51,7 +51,10 @@ def assign_weights(merged_data, flattened_core_maxes_df, exercise_functions):
     for exercise, function in exercise_functions.items():
         mask = assigned_df["Exercise"] == exercise
 
-        # Assign "NRM" only if "Tested Max" is actually missing
+        # Ensure "Assigned Weight" column is object type before assigning strings
+        assigned_df["Assigned Weight"] = assigned_df["Assigned Weight"].astype(object)
+
+        # Assign "NRM" to missing values
         assigned_df.loc[mask & (assigned_df["Tested Max"].isna()), "Assigned Weight"] = "NRM"
 
         # Debugging: Check number of valid weights before calculation
