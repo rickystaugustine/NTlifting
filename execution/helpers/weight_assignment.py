@@ -19,57 +19,58 @@ ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "../.."))
 repeated_program_path = os.path.join(ROOT_DIR, "data/repeated_program.pkl")
 core_maxes_path = os.path.join(ROOT_DIR, "data/flattened_core_maxes.pkl")
 
-def assign_weights():
-    """Calculates and assigns weights based on multipliers and maxes."""
-    logging.info("Loading data for weight assignment...")
-    expected_files = [repeated_program_path, core_maxes_path]
-    missing_files = [f for f in expected_files if not os.path.exists(f)]
+def assign_weights(merged_data, flattened_core_maxes_df, exercise_functions):
+    """ Assigns weights based on merged data, core maxes, and exercise multipliers. """
 
-    if missing_files:
-        raise FileNotFoundError(f"❌ ERROR: Missing required data files: {missing_files}")
+    logging.info("🚀 Assigning weights using merged data and multipliers...")
 
-    repeated_program_df = pd.read_pickle(repeated_program_path)
-    flattened_core_maxes_df = pd.read_pickle(core_maxes_path)
+    if merged_data.empty:
+        logging.error("❌ ERROR: merged_data is empty. Check data preprocessing.")
+        return pd.DataFrame()
 
-    logging.info("Merging repeated program with core maxes...")
-    merged_df = repeated_program_df.merge(flattened_core_maxes_df, on=["Player", "Relevant Core"], how="left")
+    assigned_df = merged_data.copy()
 
-    # Ensure "Tested Max" column is present
-    if "Tested Max" not in merged_df.columns:
-        raise KeyError("❌ ERROR: 'Tested Max' column is missing from merged_df after merging!")
+    # Ensure "Assigned Weight" column exists
+    assigned_df["Assigned Weight"] = np.nan
 
-    # Compute Fitted Multipliers
-    weeks, sets, reps, codes = (
-        merged_df["Week #"].values,
-        merged_df["Set #"].values,
-        merged_df["# of Reps"].values,
-        merged_df["Code"].values,
-    )
+    # Convert "Tested Max" and "Multiplier of Max" to numeric
+    assigned_df["Tested Max"] = pd.to_numeric(assigned_df["Tested Max"], errors="coerce")
+    assigned_df["Multiplier of Max"] = pd.to_numeric(assigned_df["Multiplier of Max"], errors="coerce")
 
-    multipliers = [
-        exercise_functions.get(int(code), lambda w, s, r: 0)(w, s, r)
-        for code, w, s, r in zip(codes, weeks, sets, reps)
-    ]
-    merged_df["Fitted Multiplier"] = multipliers
+    # Debugging: Check if `exercise_functions` is loaded properly
+    if not exercise_functions:
+        logging.error("❌ ERROR: `exercise_functions` is EMPTY! Multipliers were not fitted.")
+        return assigned_df  # Return unchanged data to avoid breaking pipeline
 
-    # Calculate Assigned Weights
-    merged_df["Assigned Weight"] = np.floor(pd.to_numeric(merged_df["Tested Max"], errors="coerce") * merged_df["Fitted Multiplier"] / 5) * 5
-    merged_df["Assigned Weight"] = merged_df["Assigned Weight"].astype(object)
+    # Log valid vs. invalid rows
+    num_valid = assigned_df["Tested Max"].notna().sum()
+    num_invalid = assigned_df["Tested Max"].isna().sum()
+    logging.info(f"✅ Valid Tested Max entries: {num_valid}")
+    logging.warning(f"⚠️ Invalid Tested Max entries (will be 'NRM'): {num_invalid}")
 
-    # Handle NRM Cases
-    merged_df.loc[merged_df["Tested Max"] == "NRM", "Assigned Weight"] = "NRM"
+    for exercise, function in exercise_functions.items():
+        mask = assigned_df["Exercise"] == exercise
 
-    # Save assigned weights
-    assigned_weights_path = os.path.join(ROOT_DIR, "data/assigned_weights.pkl")
-    merged_df.to_pickle(assigned_weights_path)
-    logging.info(f"✅ Assigned weights saved to {assigned_weights_path}")
+        # Assign "NRM" only if "Tested Max" is actually missing
+        assigned_df.loc[mask & (assigned_df["Tested Max"].isna()), "Assigned Weight"] = "NRM"
 
-    # Upload to Google Sheets
-    logging.info("Uploading assigned weights to Google Sheets...")
-    write_to_google_sheet("After-School Lifting", "AssignedWeights", merged_df)
-    logging.info("✅ Assigned weights successfully saved to Google Sheets!")
+        # Debugging: Check number of valid weights before calculation
+        valid_mask = mask & (~assigned_df["Tested Max"].isna()) & (~assigned_df["Multiplier of Max"].isna())
+        valid_count = valid_mask.sum()
+        logging.info(f"✅ Valid weights for {exercise}: {valid_count}")
 
-    return merged_df
+        if function is not None and valid_count > 0:
+            assigned_df.loc[valid_mask, "Assigned Weight"] = (
+                assigned_df.loc[valid_mask, "Tested Max"] * assigned_df.loc[valid_mask, "Multiplier of Max"]
+            )
+
+    # Replace NaN values with "NRM"
+    assigned_df["Assigned Weight"] = assigned_df["Assigned Weight"].astype(object)
+    assigned_df.loc[assigned_df["Tested Max"].isna(), "Assigned Weight"] = "NRM"
+
+    logging.info(f"✅ Assigned weights successfully calculated. Non-NRM count: {(assigned_df['Assigned Weight'] != 'NRM').sum()}")
+
+    return assigned_df
 
 # ✅ Ensure script doesn't auto-execute when imported
 if __name__ == "__main__":
