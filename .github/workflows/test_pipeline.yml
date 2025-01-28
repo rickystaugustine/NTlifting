@@ -1,6 +1,7 @@
+---
 name: Test Pipeline
 
-on:
+"on":
   push:
     branches:
       - main
@@ -38,14 +39,12 @@ jobs:
       - name: 🔍 Run Tests
         run: |
           pytest tests/ --ignore=tests/helpers/test_functional_max_calc.py
-          pytest tests/ --tb=short --disable-warnings --cov=execution/helpers  # Add test coverage
+          pytest tests/ --tb=short --disable-warnings --cov=execution/helpers
 
       - name: 📊 Upload Coverage Report
         uses: codecov/codecov-action@v4
         with:
           token: ${{ secrets.CODECOV_TOKEN }}  # 🔹 Add this line
           files: ./coverage.xml
-          fail_ci_if_error: true
+          fail_ci_if_error: "true"
           verbose: true
-
-
