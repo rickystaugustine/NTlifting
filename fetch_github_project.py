@@ -92,21 +92,27 @@ if "data" in data and "user" in data["data"] and "projectV2" in data["data"]["us
     kanban_board_data = []
 
     for item in project["items"]["nodes"]:
+        print(f"\n🛠️ Debugging: Full Content for Item ID {item['id']}:")
+        print(json.dumps(item.get("content", {}), indent=2))
+
+        # ✅ Ensure 'content' is present
         if "content" in item and item["content"] is not None:
+            # ✅ Ensure 'title' exists before accessing it
+            issue_title = item["content"].get("title", "Unknown (No Title)")
+
             # ✅ Ensure 'number' exists before accessing it
-            if "number" in item["content"]:
-                issue_data = {
-                    "Issue Number": item["content"]["number"],
-                    "Title": item["content"]["title"],
-                    "Status": item["content"]["state"],
-                    "Labels": ", ".join([label["name"] for label in item["content"].get("labels", {}).get("nodes", [])]),
-                    "URL": item["content"]["url"],
-                }
-                issues_list.append(issue_data)
-                print(f"- #{issue_data['Issue Number']}: {issue_data['Title']} ({issue_data['Status']})")
-                print(f"  🔗 {issue_data['URL']}\n")
-            else:
-                print(f"⚠️ Skipping non-issue item in project: {item['content']}")  # Debugging
+            issue_number = item["content"].get("number", "N/A")
+
+            issue_data = {
+                "Issue Number": issue_number,
+                "Title": issue_title,
+                "Status": item["content"].get("state", "Unknown"),
+                "Labels": ", ".join([label["name"] for label in item["content"].get("labels", {}).get("nodes", [])]),
+                "URL": item["content"].get("url", "No URL"),
+            }
+            issues_list.append(issue_data)
+            print(f"- #{issue_data['Issue Number']}: {issue_data['Title']} ({issue_data['Status']})")
+            print(f"  🔗 {issue_data['URL']}\n")
 
         # ✅ Debug Kanban Board Data
         print("\n🛠️ Debugging: fieldValues for Item:")
@@ -120,12 +126,12 @@ if "data" in data and "user" in data["data"] and "projectV2" in data["data"]["us
                     if "Status" in field["field"]["name"]:  # Adjust based on actual API response
                         kanban_column = field["name"]
 
-            if kanban_column and "content" in item and item["content"] is not None:
+            if kanban_column:
                 kanban_board_data.append({
-                    "Column": kanban_column,  # Kanban board column name
-                    "Issue": item["content"].get("title", "Unknown")
+                    "Column": kanban_column,
+                    "Issue": issue_title
                 })
-                print(f"✅ Assigned Issue '{item['content']['title']}' to Column: {kanban_column}")
+                print(f"✅ Assigned Issue '{issue_title}' to Column: {kanban_column}")
 
     # ✅ Convert Issues Data to DataFrame
     df_issues = pd.DataFrame(issues_list)
