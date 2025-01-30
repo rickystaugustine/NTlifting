@@ -18,7 +18,7 @@ jobs:
           python-version: "3.11"
 
       - name: Install Dependencies
-        run: pip install requests pandas openpyxl
+        run: pip install requests pandas openpyxl matplotlib
 
       - name: Run Fetch Script
         env:
@@ -43,6 +43,24 @@ jobs:
           name: kanban-board
           path: kanban_board.csv
 
+      - name: Upload Issue Status Chart
+        uses: actions/upload-artifact@v4
+        with:
+          name: issue-status-chart
+          path: issue_status_chart.png
+
+      - name: Upload Kanban Board Chart
+        uses: actions/upload-artifact@v4
+        with:
+          name: kanban-board-chart
+          path: kanban_board_chart.png
+
+      - name: Upload Labels Chart
+        uses: actions/upload-artifact@v4
+        with:
+          name: labels-chart
+          path: labels_chart.png
+
       - name: Send Email Notification
         uses: dawidd6/action-send-mail@v3
         with:
@@ -54,4 +72,10 @@ jobs:
           to: "richard.staugustine@gmail.com"
           from: "NT Lifting Project Bot"
           body: "The latest GitHub project report has been generated. See attached files."
-          attachments: issues_export.csv, issues_export.xlsx
+          attachments: |
+            issues_export.csv
+            issues_export.xlsx
+            kanban_board.csv
+            issue_status_chart.png
+            kanban_board_chart.png
+            labels_chart.png

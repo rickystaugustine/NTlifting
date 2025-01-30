@@ -3,6 +3,7 @@ import json
 import csv
 import pandas as pd
 import os
+import matplotlib.pyplot as plt
 
 # ✅ Define Repository Information
 GITHUB_TOKEN = os.getenv("GH_PAT")
@@ -150,6 +151,41 @@ if "data" in data and "user" in data["data"] and "projectV2" in data["data"]["us
         print("✅ Kanban Board data retrieved successfully.")
     else:
         print("⚠️ No Kanban board data found. Check the API response and column names.")
+
+    # ✅ 1. Issue Status Breakdown (Open vs. Closed)
+    status_counts = df_issues["Status"].value_counts()
+    plt.figure(figsize=(6, 4))
+    status_counts.plot(kind="bar", color=["green", "red"])
+    plt.xlabel("Status")
+    plt.ylabel("Number of Issues")
+    plt.title("Issue Status Breakdown")
+    plt.xticks(rotation=0)
+    plt.savefig("issue_status_chart.png")
+    print("✅ Issue Status Chart saved.")
+
+    # ✅ 2. Kanban Board Overview (Issues per Column)
+    if not df_kanban.empty:
+        kanban_counts = df_kanban["Column"].value_counts()
+        plt.figure(figsize=(6, 4))
+        kanban_counts.plot(kind="bar", color="blue")
+        plt.xlabel("Kanban Column")
+        plt.ylabel("Number of Issues")
+        plt.title("Kanban Board Overview")
+        plt.xticks(rotation=30, ha="right")
+        plt.savefig("kanban_board_chart.png")
+        print("✅ Kanban Board Chart saved.")
+
+    # ✅ 3. Labels Distribution (Top 5 Labels)
+    label_counts = df_issues["Labels"].str.split(", ").explode().value_counts().head(5)
+    if not label_counts.empty:
+        plt.figure(figsize=(6, 4))
+        label_counts.plot(kind="bar", color="purple")
+        plt.xlabel("Labels")
+        plt.ylabel("Usage Count")
+        plt.title("Top 5 Labels Used")
+        plt.xticks(rotation=30, ha="right")
+        plt.savefig("labels_chart.png")
+        print("✅ Labels Chart saved.")
 
 else:
     print("\n🚨 **Error: 'data' field not found in response.** Check API permissions and request syntax.")
