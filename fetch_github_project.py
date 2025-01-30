@@ -176,21 +176,21 @@ if "data" in data and "user" in data["data"] and "projectV2" in data["data"]["us
         print("✅ Kanban Board Chart saved.")
 
     # ✅ 3. Labels Distribution (Top 5 Labels)
-    label_counts = df_issues["Labels"].str.split(", ").explode().value_counts().head(5)
+    label_counts = df_issues["Labels"].str.split(", ").explode().value_counts()
     if not label_counts.empty:
-        plt.figure(figsize=(8, 5))  # Increased figure size for readability
+        plt.figure(figsize=(10, 6))  # Increased figure size for readability
         ax = label_counts.plot(kind="bar", color="purple")
-        
+
         plt.xlabel("Labels", fontsize=12)
         plt.ylabel("Usage Count", fontsize=12)
-        plt.title("Top 5 Labels Used", fontsize=14)
-        
+        plt.title("Label Usage Distribution", fontsize=14)
+
         # ✅ Rotate labels correctly to prevent cutting off
         plt.xticks(rotation=45, ha="right", fontsize=10)
-        
+
         # ✅ Adjust subplot layout to prevent text from being cut off
         plt.tight_layout()
-        
+
         plt.savefig("labels_chart.png")
         print("✅ Labels Chart saved.")
 
