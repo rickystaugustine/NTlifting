@@ -30,15 +30,15 @@ jobs:
         with:
           name: github-reports-and-charts
           path: |
-            issues_export.csv
-            issues_export.xlsx
-            kanban_board.csv
-            kanban_board.xlsx
-            issue_status_chart.png
-            priority_chart.png
-            size_chart.png
-            estimation_vs_size_chart.png
-            labels_chart.png
+            ./issues_export.csv
+            ./issues_export.xlsx
+            ./kanban_board.csv
+            ./kanban_board.xlsx
+            ./issue_status_chart.png
+            ./priority_chart.png
+            ./size_chart.png
+            ./estimation_vs_size_chart.png
+            ./labels_chart.png
 
       - name: Send Email Notification
         uses: dawidd6/action-send-mail@v3
