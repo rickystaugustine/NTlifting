@@ -169,3 +169,28 @@ if "data" in data and "user" in data["data"] and "projectV2" in data["data"]["us
             plt.xticks(rotation=45, ha="right", fontsize=10)
             plt.tight_layout()
             plt.savefig(chart_filenames[title])
+
+import os
+
+# ✅ Check if files exist after generation
+files_to_check = [
+    "issues_export.csv",
+    "issues_export.xlsx",
+    "kanban_board.csv",
+    "kanban_board.xlsx",
+    "issue_status_chart.png",
+    "priority_chart.png",
+    "size_chart.png",
+    "estimation_vs_size_chart.png",
+    "labels_chart.png",
+]
+
+missing_files = [file for file in files_to_check if not os.path.exists(file)]
+
+if missing_files:
+    print("\n🚨 Missing Files Detected:")
+    for file in missing_files:
+        print(f"❌ {file} was not created.")
+    print("⚠️ Ensure `fetch_github_project.py` is running correctly and all files are being generated.")
+else:
+    print("\n✅ All required files were successfully generated.")

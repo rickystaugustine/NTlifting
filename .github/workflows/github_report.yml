@@ -29,7 +29,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: github-reports-and-charts
-          path: |
+          path: ./
             issues_export.csv
             issues_export.xlsx
             kanban_board.csv
