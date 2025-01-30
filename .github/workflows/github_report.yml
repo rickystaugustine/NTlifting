@@ -1,0 +1,51 @@
+name: Weekly GitHub Project Report
+
+on:
+  schedule:
+    - cron: "0 12 * * 1"  # Runs every Monday at 12:00 UTC
+  workflow_dispatch:  # Allows manual trigger
+
+jobs:
+  fetch-github-project:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set Up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+
+      - name: Install Dependencies
+        run: pip install requests pandas openpyxl
+
+      - name: Run Fetch Script
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
+        run: python fetch_github_project.py
+
+      - name: Upload CSV Report
+        uses: actions/upload-artifact@v4
+        with:
+          name: github-issues-csv
+          path: issues_export.csv
+
+      - name: Upload Excel Report
+        uses: actions/upload-artifact@v4
+        with:
+          name: github-issues-excel
+          path: issues_export.xlsx
+
+      - name: Send Email Notification
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          username: ${{ secrets.EMAIL_USERNAME }}
+          password: ${{ secrets.EMAIL_PASSWORD }}
+          subject: "📊 GitHub Project Weekly Report"
+          to: "richard.staugustine@gmail.com"
+          from: "NT Lifting Project Bot"
+          body: "The latest GitHub project report has been generated. See attached files."
+          attachments: issues_export.csv, issues_export.xlsx
