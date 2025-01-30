@@ -16,6 +16,62 @@ HEADERS = {
     "Accept": "application/vnd.github+json"
 }
 
+# ✅ Define GraphQL Query
+query = """
+{
+  user(login: "rickystaugustine") {
+    projectV2(number: 1) {
+      title
+      url
+      items(first: 50) {
+        nodes {
+          id
+          fieldValues(first: 10) {
+            nodes {
+              ... on ProjectV2ItemFieldTextValue {
+                text
+              }
+              ... on ProjectV2ItemFieldSingleSelectValue {
+                name
+                field {
+                  ... on ProjectV2FieldCommon {
+                    name
+                  }
+                }
+              }
+              ... on ProjectV2ItemFieldDateValue {
+                date
+                field {
+                  name
+                }
+              }
+              ... on ProjectV2ItemFieldNumberValue {
+                number
+                field {
+                  name
+                }
+              }
+            }
+          }
+          content {
+            ... on Issue {
+              number
+              title
+              url
+              state
+              labels(first: 10) {
+                nodes {
+                  name
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 # ✅ Debug: Verify API Authentication
 if not GITHUB_TOKEN:
     print("🚨 ERROR: `GH_PAT` is missing. Ensure your GitHub token is set correctly in repository secrets.")
