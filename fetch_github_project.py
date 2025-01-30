@@ -31,6 +31,9 @@ query = """
               ... on ProjectV2ItemFieldTextValue {
                 text
               }
+              ... on ProjectV2ItemFieldSingleSelectValue {
+                name
+              }
             }
           }
           content {
@@ -77,7 +80,7 @@ if "data" in data and "user" in data["data"] and "projectV2" in data["data"]["us
     # ✅ Extract Issue Data
     issues_list = []
     kanban_board_data = []
-    
+
     for item in project["items"]["nodes"]:
         if "content" in item and item["content"] is not None:
             # ✅ Ensure 'number' exists before accessing it
@@ -95,11 +98,14 @@ if "data" in data and "user" in data["data"] and "projectV2" in data["data"]["us
             else:
                 print(f"⚠️ Skipping non-issue item in project: {item['content']}")  # Debugging
 
-    # ✅ Extract Kanban Board Data
-    if "fieldValues" in item and "nodes" in item["fieldValues"]:
-        for field in item["fieldValues"]["nodes"]:
-            if "text" in field and "content" in item and item["content"] is not None:
-                kanban_board_data.append({"Column": field["text"], "Issue": item["content"].get("title", "Unknown")})
+        # ✅ Extract Kanban Board Data
+        if "fieldValues" in item and "nodes" in item["fieldValues"]:
+            for field in item["fieldValues"]["nodes"]:
+                if "name" in field and "content" in item and item["content"] is not None:
+                    kanban_board_data.append({
+                        "Column": field["name"],  # This is the Kanban board column
+                        "Issue": item["content"].get("title", "Unknown")
+                    })
 
     # ✅ Convert Issues Data to DataFrame
     df_issues = pd.DataFrame(issues_list)
@@ -110,6 +116,7 @@ if "data" in data and "user" in data["data"] and "projectV2" in data["data"]["us
     # ✅ Convert Kanban Board Data to DataFrame
     df_kanban = pd.DataFrame(kanban_board_data)
     df_kanban.to_csv("kanban_board.csv", index=False)
+    df_kanban.to_excel("kanban_board.xlsx", index=False)
     print("✅ Kanban Board data retrieved successfully.")
 
 else:
