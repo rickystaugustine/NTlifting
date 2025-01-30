@@ -70,7 +70,7 @@ query = """
       }
     }
   }
-}
+}"""
 
 # ✅ Debug: Verify API Authentication
 if not GITHUB_TOKEN:
