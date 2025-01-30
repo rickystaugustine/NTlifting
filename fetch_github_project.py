@@ -174,6 +174,12 @@ except Exception as e:
     print(f"❌ ERROR saving Kanban board files: {e}")
 
 # ✅ Generate Charts
+df_issues["Estimation"] = pd.to_numeric(df_issues["Estimation"], errors="coerce")
+print("\n🔍 Debugging: Checking 'Estimation' Column Before Plotting")
+print(df_issues[["Size", "Estimation"]].dropna())
+
+if df_issues["Estimation"].dtype != "float64":
+    print("\n🚨 ERROR: 'Estimation' column is not numeric after conversion.")
 charts = {
     "Issue Status Breakdown": df_issues["Status"].value_counts(),
     "Issue Priority Distribution": df_issues["Priority"].value_counts(),
