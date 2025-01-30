@@ -42,13 +42,17 @@ query = """
               ... on ProjectV2ItemFieldDateValue {
                 date
                 field {
-                  name
+                  ... on ProjectV2FieldCommon {
+                    name
+                  }
                 }
               }
               ... on ProjectV2ItemFieldNumberValue {
                 number
                 field {
-                  name
+                  ... on ProjectV2FieldCommon {
+                    name
+                  }
                 }
               }
             }
@@ -70,7 +74,8 @@ query = """
       }
     }
   }
-}"""
+}
+"""
 
 # ✅ Debug: Verify API Authentication
 if not GITHUB_TOKEN:
