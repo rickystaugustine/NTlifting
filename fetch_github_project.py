@@ -33,6 +33,11 @@ query = """
               }
               ... on ProjectV2ItemFieldSingleSelectValue {
                 name
+                field {
+                  ... on ProjectV2FieldCommon {
+                    name
+                  }
+                }
               }
             }
           }
@@ -102,8 +107,9 @@ if "data" in data and "user" in data["data"] and "projectV2" in data["data"]["us
         if "fieldValues" in item and "nodes" in item["fieldValues"]:
             kanban_column = None
             for field in item["fieldValues"]["nodes"]:
-                if "name" in field:
-                    kanban_column = field["name"]
+                if "name" in field and "field" in field and "name" in field["field"]:
+                    if "Status" in field["field"]["name"]:  # Adjust based on actual API response
+                        kanban_column = field["name"]
 
             if kanban_column and "content" in item and item["content"] is not None:
                 kanban_board_data.append({
