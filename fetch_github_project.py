@@ -1,6 +1,5 @@
 import requests
 import json
-import csv
 import pandas as pd
 import os
 import matplotlib.pyplot as plt
@@ -40,6 +39,18 @@ query = """
                   }
                 }
               }
+              ... on ProjectV2ItemFieldDateValue {
+                date
+                field {
+                  name
+                }
+              }
+              ... on ProjectV2ItemFieldNumberValue {
+                number
+                field {
+                  name
+                }
+              }
             }
           }
           content {
@@ -48,19 +59,12 @@ query = """
               title
               url
               state
-              labels(first: 5) {
+              labels(first: 10) {
                 nodes {
                   name
                 }
               }
             }
-          }
-        }
-      }
-      fields(first: 10) {
-        nodes {
-          ... on ProjectV2Field {
-            name
           }
         }
       }
@@ -73,15 +77,6 @@ query = """
 response = requests.post(GRAPHQL_URL, json={"query": query}, headers=HEADERS)
 data = response.json()
 
-# 🔍 Debug: Print Full Response
-print("\n🔍 **Full Response from GitHub:**")
-print(json.dumps(data, indent=2))
-
-# ✅ Check for Authentication Errors
-if "message" in data and "status" in data and data["status"] == 401:
-    print("\n🚨 **Error: Authentication failed (401 Unauthorized). Check your GH_PAT token permissions.**")
-    exit(1)
-
 # ✅ Extract Project Data
 if "data" in data and "user" in data["data"] and "projectV2" in data["data"]["user"]:
     project = data["data"]["user"]["projectV2"]
@@ -93,106 +88,84 @@ if "data" in data and "user" in data["data"] and "projectV2" in data["data"]["us
     kanban_board_data = []
 
     for item in project["items"]["nodes"]:
-        print(f"\n🛠️ Debugging: Full Content for Item ID {item['id']}:")
-        print(json.dumps(item.get("content", {}), indent=2))
-
-        # ✅ Ensure 'content' is present
         if "content" in item and item["content"] is not None:
-            # ✅ Ensure 'title' exists before accessing it
-            issue_title = item["content"].get("title", "Unknown (No Title)")
-
-            # ✅ Ensure 'number' exists before accessing it
-            issue_number = item["content"].get("number", "N/A")
-
             issue_data = {
-                "Issue Number": issue_number,
-                "Title": issue_title,
+                "Issue Number": item["content"].get("number", "N/A"),
+                "Title": item["content"].get("title", "Unknown"),
                 "Status": item["content"].get("state", "Unknown"),
                 "Labels": ", ".join([label["name"] for label in item["content"].get("labels", {}).get("nodes", [])]),
                 "URL": item["content"].get("url", "No URL"),
+                "Priority": "Unassigned",
+                "Size": "Unassigned",
+                "Estimation": "Unassigned",
+                "Start Date": "Unassigned",
+                "Due Date": "Unassigned",
             }
-            issues_list.append(issue_data)
-            print(f"- #{issue_data['Issue Number']}: {issue_data['Title']} ({issue_data['Status']})")
-            print(f"  🔗 {issue_data['URL']}\n")
 
-        # ✅ Debug Kanban Board Data
-        print("\n🛠️ Debugging: fieldValues for Item:")
-        print(json.dumps(item.get("fieldValues", {}), indent=2))
+            if "fieldValues" in item and "nodes" in item["fieldValues"]:
+                for field in item["fieldValues"]["nodes"]:
+                    if "name" in field and "field" in field:
+                        field_name = field["field"]["name"]
+
+                        if "Priority" in field_name:
+                            issue_data["Priority"] = field["name"]
+                        elif "Size" in field_name:
+                            issue_data["Size"] = field["name"]
+                        elif "Estimation" in field_name:
+                            issue_data["Estimation"] = field["number"]
+                        elif "Start Date" in field_name:
+                            issue_data["Start Date"] = field["date"]
+                        elif "Due Date" in field_name:
+                            issue_data["Due Date"] = field["date"]
+
+            issues_list.append(issue_data)
 
         # ✅ Extract Kanban Board Data
         if "fieldValues" in item and "nodes" in item["fieldValues"]:
             kanban_column = None
+            issue_title = item["content"].get("title", "Unknown") if "content" in item else "Unknown"
+
             for field in item["fieldValues"]["nodes"]:
                 if "name" in field and "field" in field and "name" in field["field"]:
-                    if "Status" in field["field"]["name"]:  # Adjust based on actual API response
+                    if "Status" in field["field"]["name"]:
                         kanban_column = field["name"]
 
             if kanban_column:
-                kanban_board_data.append({
-                    "Column": kanban_column,
-                    "Issue": issue_title
-                })
-                print(f"✅ Assigned Issue '{issue_title}' to Column: {kanban_column}")
+                kanban_board_data.append({"Column": kanban_column, "Issue": issue_title})
 
-    # ✅ Convert Issues Data to DataFrame
+    # ✅ Save Issue Data
     df_issues = pd.DataFrame(issues_list)
     df_issues.to_csv("issues_export.csv", index=False)
     df_issues.to_excel("issues_export.xlsx", index=False)
-    print("✅ GitHub Issues exported successfully.")
 
-    # ✅ Convert Kanban Board Data to DataFrame
+    # ✅ Save Kanban Board Data
     if kanban_board_data:
-        print("\n🛠️ Debugging: Kanban Board Data Before Saving:")
-        print(json.dumps(kanban_board_data, indent=2))  # Print extracted data
-        
         df_kanban = pd.DataFrame(kanban_board_data)
         df_kanban.to_csv("kanban_board.csv", index=False)
         df_kanban.to_excel("kanban_board.xlsx", index=False)
-        print("✅ Kanban Board data retrieved successfully.")
-    else:
-        print("⚠️ No Kanban board data found. Check the API response and column names.")
 
-    # ✅ 1. Issue Status Breakdown (Open vs. Closed)
-    status_counts = df_issues["Status"].value_counts()
-    plt.figure(figsize=(6, 4))
-    status_counts.plot(kind="bar", color=["green", "red"])
-    plt.xlabel("Status")
-    plt.ylabel("Number of Issues")
-    plt.title("Issue Status Breakdown")
-    plt.xticks(rotation=0)
-    plt.savefig("issue_status_chart.png")
-    print("✅ Issue Status Chart saved.")
+    # ✅ Generate Charts
+    charts = {
+        "Issue Status Breakdown": df_issues["Status"].value_counts(),
+        "Issue Priority Distribution": df_issues["Priority"].value_counts(),
+        "Issue Size Distribution": df_issues["Size"].value_counts(),
+        "Estimation vs. Size": df_issues.groupby("Size")["Estimation"].mean(),
+        "Label Usage Distribution": df_issues["Labels"].str.split(", ").explode().value_counts(),
+    }
 
-    # ✅ 2. Kanban Board Overview (Issues per Column)
-    if not df_kanban.empty:
-        kanban_counts = df_kanban["Column"].value_counts()
-        plt.figure(figsize=(6, 4))
-        kanban_counts.plot(kind="bar", color="blue")
-        plt.xlabel("Kanban Column")
-        plt.ylabel("Number of Issues")
-        plt.title("Kanban Board Overview")
-        plt.xticks(rotation=30, ha="right")
-        plt.savefig("kanban_board_chart.png")
-        print("✅ Kanban Board Chart saved.")
+    chart_filenames = {
+        "Issue Status Breakdown": "issue_status_chart.png",
+        "Issue Priority Distribution": "priority_chart.png",
+        "Issue Size Distribution": "size_chart.png",
+        "Estimation vs. Size": "estimation_vs_size_chart.png",
+        "Label Usage Distribution": "labels_chart.png",
+    }
 
-    # ✅ 3. Labels Distribution (Top 5 Labels)
-    label_counts = df_issues["Labels"].str.split(", ").explode().value_counts()
-    if not label_counts.empty:
-        plt.figure(figsize=(10, 6))  # Increased figure size for readability
-        ax = label_counts.plot(kind="bar", color="purple")
-
-        plt.xlabel("Labels", fontsize=12)
-        plt.ylabel("Usage Count", fontsize=12)
-        plt.title("Label Usage Distribution", fontsize=14)
-
-        # ✅ Rotate labels correctly to prevent cutting off
-        plt.xticks(rotation=45, ha="right", fontsize=10)
-
-        # ✅ Adjust subplot layout to prevent text from being cut off
-        plt.tight_layout()
-
-        plt.savefig("labels_chart.png")
-        print("✅ Labels Chart saved.")
-
-else:
-    print("\n🚨 **Error: 'data' field not found in response.** Check API permissions and request syntax.")
+    for title, data in charts.items():
+        if not data.empty:
+            plt.figure(figsize=(10, 6))
+            data.plot(kind="bar", color="blue")
+            plt.title(title)
+            plt.xticks(rotation=45, ha="right", fontsize=10)
+            plt.tight_layout()
+            plt.savefig(chart_filenames[title])

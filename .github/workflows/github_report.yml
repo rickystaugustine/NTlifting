@@ -2,8 +2,8 @@ name: Weekly GitHub Project Report
 
 on:
   schedule:
-    - cron: "0 12 * * 1"  # Runs every Monday at 12:00 UTC
-  workflow_dispatch:  # Allows manual trigger
+    - cron: "0 12 * * 1"
+  workflow_dispatch:
 
 jobs:
   fetch-github-project:
@@ -25,41 +25,20 @@ jobs:
           GH_PAT: ${{ secrets.GH_PAT }}
         run: python fetch_github_project.py
 
-      - name: Upload CSV Report
+      - name: Upload Reports & Charts
         uses: actions/upload-artifact@v4
         with:
-          name: github-issues-csv
-          path: issues_export.csv
-
-      - name: Upload Excel Report
-        uses: actions/upload-artifact@v4
-        with:
-          name: github-issues-excel
-          path: issues_export.xlsx
-
-      - name: Upload Kanban Board Report
-        uses: actions/upload-artifact@v4
-        with:
-          name: kanban-board
-          path: kanban_board.csv
-
-      - name: Upload Issue Status Chart
-        uses: actions/upload-artifact@v4
-        with:
-          name: issue-status-chart
-          path: issue_status_chart.png
-
-      - name: Upload Kanban Board Chart
-        uses: actions/upload-artifact@v4
-        with:
-          name: kanban-board-chart
-          path: kanban_board_chart.png
-
-      - name: Upload Labels Chart
-        uses: actions/upload-artifact@v4
-        with:
-          name: labels-chart
-          path: labels_chart.png
+          name: github-reports-and-charts
+          path: |
+            issues_export.csv
+            issues_export.xlsx
+            kanban_board.csv
+            kanban_board.xlsx
+            issue_status_chart.png
+            priority_chart.png
+            size_chart.png
+            estimation_vs_size_chart.png
+            labels_chart.png
 
       - name: Send Email Notification
         uses: dawidd6/action-send-mail@v3
@@ -76,6 +55,9 @@ jobs:
             issues_export.csv
             issues_export.xlsx
             kanban_board.csv
+            kanban_board.xlsx
             issue_status_chart.png
-            kanban_board_chart.png
+            priority_chart.png
+            size_chart.png
+            estimation_vs_size_chart.png
             labels_chart.png
