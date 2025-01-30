@@ -141,6 +141,9 @@ if "data" in data and "user" in data["data"] and "projectV2" in data["data"]["us
 
     # ✅ Convert Kanban Board Data to DataFrame
     if kanban_board_data:
+        print("\n🛠️ Debugging: Kanban Board Data Before Saving:")
+        print(json.dumps(kanban_board_data, indent=2))  # Print extracted data
+        
         df_kanban = pd.DataFrame(kanban_board_data)
         df_kanban.to_csv("kanban_board.csv", index=False)
         df_kanban.to_excel("kanban_board.xlsx", index=False)

@@ -37,6 +37,12 @@ jobs:
           name: github-issues-excel
           path: issues_export.xlsx
 
+      - name: Upload Kanban Board Report
+        uses: actions/upload-artifact@v4
+        with:
+          name: kanban-board
+          path: kanban_board.csv
+
       - name: Send Email Notification
         uses: dawidd6/action-send-mail@v3
         with:
