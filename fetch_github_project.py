@@ -100,12 +100,16 @@ if "data" in data and "user" in data["data"] and "projectV2" in data["data"]["us
 
         # ✅ Extract Kanban Board Data
         if "fieldValues" in item and "nodes" in item["fieldValues"]:
+            kanban_column = None
             for field in item["fieldValues"]["nodes"]:
-                if "name" in field and "content" in item and item["content"] is not None:
-                    kanban_board_data.append({
-                        "Column": field["name"],  # This is the Kanban board column
-                        "Issue": item["content"].get("title", "Unknown")
-                    })
+                if "name" in field:
+                    kanban_column = field["name"]
+
+            if kanban_column and "content" in item and item["content"] is not None:
+                kanban_board_data.append({
+                    "Column": kanban_column,  # Kanban board column name
+                    "Issue": item["content"].get("title", "Unknown")
+                })
 
     # ✅ Convert Issues Data to DataFrame
     df_issues = pd.DataFrame(issues_list)
