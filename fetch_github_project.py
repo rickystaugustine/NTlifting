@@ -76,6 +76,11 @@ data = response.json()
 print("\n🔍 **Full Response from GitHub:**")
 print(json.dumps(data, indent=2))
 
+# ✅ Check for Authentication Errors
+if "message" in data and "status" in data and data["status"] == 401:
+    print("\n🚨 **Error: Authentication failed (401 Unauthorized). Check your GH_PAT token permissions.**")
+    exit(1)
+
 # ✅ Extract Project Data
 if "data" in data and "user" in data["data"] and "projectV2" in data["data"]["user"]:
     project = data["data"]["user"]["projectV2"]
@@ -103,6 +108,10 @@ if "data" in data and "user" in data["data"] and "projectV2" in data["data"]["us
             else:
                 print(f"⚠️ Skipping non-issue item in project: {item['content']}")  # Debugging
 
+        # ✅ Debug Kanban Board Data
+        print("\n🛠️ Debugging: fieldValues for Item:")
+        print(json.dumps(item.get("fieldValues", {}), indent=2))
+
         # ✅ Extract Kanban Board Data
         if "fieldValues" in item and "nodes" in item["fieldValues"]:
             kanban_column = None
@@ -116,6 +125,7 @@ if "data" in data and "user" in data["data"] and "projectV2" in data["data"]["us
                     "Column": kanban_column,  # Kanban board column name
                     "Issue": item["content"].get("title", "Unknown")
                 })
+                print(f"✅ Assigned Issue '{item['content']['title']}' to Column: {kanban_column}")
 
     # ✅ Convert Issues Data to DataFrame
     df_issues = pd.DataFrame(issues_list)
@@ -124,10 +134,13 @@ if "data" in data and "user" in data["data"] and "projectV2" in data["data"]["us
     print("✅ GitHub Issues exported successfully.")
 
     # ✅ Convert Kanban Board Data to DataFrame
-    df_kanban = pd.DataFrame(kanban_board_data)
-    df_kanban.to_csv("kanban_board.csv", index=False)
-    df_kanban.to_excel("kanban_board.xlsx", index=False)
-    print("✅ Kanban Board data retrieved successfully.")
+    if kanban_board_data:
+        df_kanban = pd.DataFrame(kanban_board_data)
+        df_kanban.to_csv("kanban_board.csv", index=False)
+        df_kanban.to_excel("kanban_board.xlsx", index=False)
+        print("✅ Kanban Board data retrieved successfully.")
+    else:
+        print("⚠️ No Kanban board data found. Check the API response and column names.")
 
 else:
     print("\n🚨 **Error: 'data' field not found in response.** Check API permissions and request syntax.")
