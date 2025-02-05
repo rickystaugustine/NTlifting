@@ -71,7 +71,7 @@ if __name__ == "__main__":
     logging.info("✅ Assigned weights successfully uploaded to Google Sheets!")
 
     # Step 6: Simulate Lifting Performance
-    simulated_data = run_simulation()
+    simulated_data = run_simulation(assigned_weights_df)
 
     # Convert all NumPy int64 values to Python int before uploading
     simulated_data = simulated_data.map(lambda x: int(x) if isinstance(x, (np.int64, np.int32)) else x)
