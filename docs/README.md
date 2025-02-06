@@ -95,10 +95,11 @@ This workflow is typically initiated through manual runs, but future iterations 
 ## Key Project Inputs
 
 **CompleteProgram:**
-| Exercise          | Week # | Set # | Reps | Multiplier |
-|-------------------|--------|-------|------|------------|
-| Barbell Squat     | 1      | 1     | 5    | 0.8        |
-| Bench Press       | 1      | 1     | 5    | 0.85       |
+
+| Exercise      | Week # | Set # | Reps | Multiplier |
+| ------------- | ------ | ----- | ---- | ---------- |
+| Barbell Squat | 1      | 1     | 5    | 0.8        |
+| Bench Press   | 1      | 1     | 5    | 0.85       |
 
 Expected ranges and values:
 - **Reps:** Typically between 1 and 10.
@@ -106,29 +107,16 @@ Expected ranges and values:
 - **Week #:** Should be 1, 2, or 3.
 
 **Maxes:**
-| Player            | Core Lift      | Max |
-|-------------------|----------------|-----|
-| John Doe          | Barbell Squat  | 300 |
-| Jane Doe          | Bench Press    | 200 |
-
-Expected ranges and values:
-- **Max:** Typical values range from 100 to 500 pounds.
-- **Core Lift:** Common examples include "Barbell Squat," "Bench Press," and "Deadlift."
-- **Player:** Any non-empty string representing a player's name.
-
-**CompleteProgram:**
-
-| Exercise      | Week # | Set # | Reps | Multiplier |
-| ------------- | ------ | ----- | ---- | ---------- |
-| Barbell Squat | 1      | 1     | 5    | 0.8        |
-| Bench Press   | 1      | 1     | 5    | 0.85       |
-
-**Maxes:**
 
 | **Player** | **Core Lift** | **Max** |
 | ---------- | ------------- | ------- |
 | John Doe   | Barbell Squat | 300     |
 | Jane Doe   | Bench Press   | 200     |
+
+Expected ranges and values:
+- **Max:** Typical values range from 100 to 500 pounds.
+- **Core Lift:** Presently, include "Barbell Squat," "Bench," "Clean," and "Deadlift."
+- **Player:** Any non-empty string representing a player's name.
 
 ## Key Project Outputs
 
