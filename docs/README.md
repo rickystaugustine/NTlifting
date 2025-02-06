@@ -26,45 +26,12 @@ This project automates the process of assigning lifting weights for a high schoo
 - [How to Run Tests](#how-to-run-tests)
 - [Maintainer](#maintainer)
 
-- [Overview](#overview)
-- [Features](#features)
-- [Installation](#installation)
-- [Credentials Setup](#credentials-setup)
-- [Workflow](#workflow)
-- [Project Structure](#project-structure)
-- [Key Project Inputs](#key-project-inputs)
-- [Key Project Outputs](#key-project-outputs)
-- [Usage](#usage)
-- [FAQ & Troubleshooting](#faq--troubleshooting)
-- [Pull Request Guidelines](#pull-request-guidelines)
-- [Fixes & Updates](#fixes--updates)
-- [How to Run Tests](#how-to-run-tests)
-- [Maintainer](#maintainer)
-
 ## Features
-
-- **Google Sheets Integration:** Reads data from `CompleteProgram` and `Maxes` tabs. (Some complexity in handling different sheet structures.)
-- **Dynamic Weight Assignments:** Calculates weights using fitted multipliers. (Complex due to reliance on properly merged data.)
-- **Confidence-Based Simulations:** Estimates Functional Max Strength conservatively. (Prone to errors if the input data ranges are inconsistent.)
-- **Functional Max Calculations:** Currently in development. (Complex logic still being refined.)
-- **Data Dashboard:** Provides a structured summary for training analysis. (Relatively stable.)
-- **Error Handling:** Ensures robustness when handling missing or invalid data. (Requires careful testing to cover all edge cases.)
 
 - **Google Sheets Integration:** Reads data from `CompleteProgram` and `Maxes` tabs. (Rarely Updated)
 - **Dynamic Weight Assignments:** Calculates weights using fitted multipliers. (Actively Maintained)
 - **Confidence-Based Simulations:** Estimates Functional Max Strength conservatively. (Actively Maintained)
 - **Functional Max Calculations:** Currently in development.
-- **Data Dashboard:** Provides a structured summary for training analysis.
-- **Error Handling:** Ensures robustness when handling missing or invalid data.
-- **Google Sheets Integration:** Reads data from `CompleteProgram` and `Maxes` tabs. (Stable)
-- **Dynamic Weight Assignments:** Calculates weights using fitted multipliers. (Stable)
-- **Confidence-Based Simulations:** Estimates Functional Max Strength conservatively. (Under Review)
-- **Data Dashboard:** Provides a structured summary for training analysis. (Stable)
-- **Error Handling:** Ensures robustness when handling missing or invalid data. (In Progress)
-
-- **Google Sheets Integration:** Reads data from `CompleteProgram` and `Maxes` tabs.
-- **Dynamic Weight Assignments:** Calculates weights using fitted multipliers.
-- **Confidence-Based Simulations:** Estimates Functional Max Strength conservatively.
 - **Data Dashboard:** Provides a structured summary for training analysis.
 - **Error Handling:** Ensures robustness when handling missing or invalid data.
 
@@ -270,28 +237,6 @@ These preprocessing steps ensure that the input data is clean and structured pro
 - **Q:** Why is the script failing at the merge step?\
   **A:** Verify that the `CompleteProgram` and `Maxes` tabs have consistent column names and that the data types match.
 
-## Pull Request Guidelines
-
-All pull requests should follow this naming format:
-```
-[TYPE] #ISSUE_NUMBER - Short Description
-```
-
-### **Examples:**
-```
-[BUGFIX] #7 - Fix Google Sheets Data Loading
-[FEATURE] #15 - Implement Weight Progression Model
-[DOCS] #22 - Update README Formatting
-```
-
-### **PR Types:**
-- `[FEATURE]` → New feature implementation
-- `[BUGFIX]` → Fixes a bug
-- `[REFACTOR]` → Code cleanup, optimizations
-- `[DOCS]` → Documentation updates
-- `[TEST]` → Unit tests, test automation
-- `[CONFIG]` → CI/CD or configuration changes
-
 ### Required Tests Before Submitting a PR
 Contributors must run the following tests to ensure consistency and functionality:
 - **Unit Tests:**
@@ -302,26 +247,6 @@ Contributors must run the following tests to ensure consistency and functionalit
   - `test_data_merging.py`: Verifies that program data and maxes merge as intended without errors.
 - **Validation Tests:**
   - `test_google_sheets_utils.py`: Checks that data is correctly read from and written to Google Sheets.
-
-All pull requests should follow this naming format:
-```
-[TYPE] #ISSUE_NUMBER - Short Description
-```
-
-### **Examples:**
-```
-[BUGFIX] #7 - Fix Google Sheets Data Loading
-[FEATURE] #15 - Implement Weight Progression Model
-[DOCS] #22 - Update README Formatting
-```
-
-### **PR Types:**
-- `[FEATURE]` → New feature implementation
-- `[BUGFIX]` → Fixes a bug
-- `[REFACTOR]` → Code cleanup, optimizations
-- `[DOCS]` → Documentation updates
-- `[TEST]` → Unit tests, test automation
-- `[CONFIG]` → CI/CD or configuration changes
 
 ### How to Run Tests
 
@@ -346,18 +271,6 @@ Before submitting a pull request, ensure that all tests pass by running the test
 pytest tests/ --disable-warnings
 ```
 Check the output for any failing tests and address those issues. This helps maintain a stable codebase and ensures that new changes do not introduce regressions.
-
-All pull requests should follow this naming format:
-```
-[TYPE] #ISSUE_NUMBER - Short Description
-```
-
-### **Examples:**
-```
-[BUGFIX] #7 - Fix Google Sheets Data Loading
-[FEATURE] #15 - Implement Weight Progression Model
-[DOCS] #22 - Update README Formatting
-```
 
 ### **PR Types:**
 - `[FEATURE]` → New feature implementation
@@ -384,15 +297,6 @@ All pull requests should follow this naming format:
 [DOCS] #22 - Update README Formatting
 ```
 
-### **PR Types:**
-
-- `[FEATURE]` → New feature implementation
-- `[BUGFIX]` → Fixes a bug
-- `[REFACTOR]` → Code cleanup, optimizations
-- `[DOCS]` → Documentation updates
-- `[TEST]` → Unit tests, test automation
-- `[CONFIG]` → CI/CD or configuration changes
-
 ### References
 
 - **Pull Request Template:** Found at `.github/PULL_REQUEST_TEMPLATE.md`.
@@ -409,14 +313,6 @@ All pull requests should follow this naming format:
 - **Corrected ************`write_to_google_sheet()`************ behavior** to properly append rows even when creating a new worksheet.
 - **Updated ************`test_google_sheets_utils.py`************ mocking** to properly simulate worksheet creation and prevent false failures.
 - **Ensured ************`fit_multipliers()`************ accepts DataFrame input** instead of incorrectly receiving a dictionary.
-
-## How to Run Tests
-
-To verify functionality, run:
-
-```bash
-pytest tests/ --disable-warnings
-```
 
 ## Maintainer
 
