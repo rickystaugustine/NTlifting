@@ -114,6 +114,8 @@ This workflow is typically initiated through manual runs, but future iterations 
 5. **Simulate & Estimate Maxes:** Uses a conservative model for missing maxes.
 6. **Generate Dashboard:** Summarizes key outputs for analysis.
 
+![Workflow](https://github.com/user-attachments/assets/f2cc7347-cc24-42c5-8afa-686ddcfdae04)
+
 ## Project Structure
 
 - **`execution/`**: Core scripts for processing lifting programs and handling data.
