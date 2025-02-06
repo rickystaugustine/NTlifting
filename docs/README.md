@@ -1,7 +1,24 @@
 # Lifting Program Automation
 
+![Build Status](https://img.shields.io/github/workflow/status/YOUR_USERNAME/YOUR_REPO/CI?style=flat-square)  
+![License](https://img.shields.io/github/license/YOUR_USERNAME/YOUR_REPO?style=flat-square)
+
 ## 📌 Overview
 This project automates the process of assigning lifting weights for a high school football strength program. It integrates data from Google Sheets, calculates assigned weights based on tested maxes and multipliers, and simulates missing data for a conservative Functional Max Strength estimate.
+
+## Table of Contents
+- [Overview](#overview)
+- [Features](#features)
+- [Installation](#installation)
+- [Credentials Setup](#credentials-setup)
+- [Workflow](#workflow)
+- [Project Structure](#project-structure)
+- [Usage](#usage)
+- [FAQ & Troubleshooting](#faq--troubleshooting)
+- [Pull Request Guidelines](#pull-request-guidelines)
+- [Fixes & Updates](#fixes--updates)
+- [How to Run Tests](#how-to-run-tests)
+- [Maintainer](#maintainer)
 
 ## 🚀 Features
 - **Google Sheets Integration**: Reads data from `CompleteProgram` and `Maxes` tabs.
@@ -19,9 +36,21 @@ This project automates the process of assigning lifting weights for a high schoo
    ```bash
    pip install -r requirements.txt
    ```
-3. Set up Google Sheets API authentication:
-   - Add your credentials JSON file to the project directory.
-   - Ensure access to the relevant Google Sheets.
+3. [Set up your credentials](#credentials-setup) for accessing Google Sheets.
+
+## 📜 Credentials Setup
+1. **Generate the credentials file:**
+   - Go to the Google Cloud Console.
+   - Enable the Google Sheets API.
+   - Create a new service account and download the JSON credentials file.
+
+2. **Store credentials securely:**
+   - Place the JSON file in a secure location, such as `~/.config/your_project/credentials.json`.
+   - Ensure that `credentials.json` is listed in `.gitignore` to prevent it from being committed to version control.
+
+3. **Reference the credentials in your code:**
+   - Set an environment variable, e.g., `GOOGLE_APPLICATION_CREDENTIALS=/path/to/credentials.json`.
+   - Adjust your project’s configuration to load credentials from this environment variable or file path.
 
 ## 📊 Workflow
 1. **Load Data** – Pulls lifting data from Google Sheets.
@@ -32,24 +61,32 @@ This project automates the process of assigning lifting weights for a high schoo
 6. **Generate Dashboard** – Summarizes key outputs for analysis.
 
 ## 🏗 Project Structure
-```
-/lifting-program-automation
-│-- /src                 # Core scripts
-│-- /data                # Local storage for processing (if needed)
-│-- /docs                # Documentation
-│-- /notebooks           # Jupyter notebooks (for analysis/testing)
-│-- /tests               # Unit tests
-│-- requirements.txt     # Python dependencies
-│-- README.md            # Project overview
-```
+### Consolidated Directory Descriptions:
+- **`execution/`** → Core scripts for processing lifting programs and handling data.
+- **`docs/`** → Documentation, including guides and references.
+- **`tests/`** → Unit tests and other testing scripts.
+- **`archive/`** → Deprecated or experimental files no longer in active use.
 
 ## 🔄 Usage
 Run the main script:
 ```bash
-python src/main.py
+python execution/main.py
 ```
 
-## 📌 Pull Request Naming Convention
+## 📜 FAQ & Troubleshooting
+- **Q:** How do I handle authentication errors with Google Sheets?  
+  **A:** Make sure the credentials file is in the correct directory and that the service account has access to the target spreadsheet.
+
+- **Q:** What do I do if there are missing maxes?  
+  **A:** The script assigns "NRM" (No Relevant Max) and calculates weights accordingly. Check your source data to ensure it’s complete.
+
+- **Q:** Why is the script failing at the merge step?  
+  **A:** Verify that the `CompleteProgram` and `Maxes` tabs have consistent column names and that the data types match.
+
+## 📜 CONTRIBUTING.md Location
+Place the `CONTRIBUTING.md` file in the `docs/` directory to keep it easily accessible alongside other project documentation.
+
+## 📌 Pull Request Guidelines
 All pull requests should follow this naming format:
 ```
 [TYPE] #ISSUE_NUMBER - Short Description
@@ -68,36 +105,16 @@ All pull requests should follow this naming format:
 - `[TEST]` → Unit tests, test automation
 - `[CONFIG]` → CI/CD or configuration changes
 
-## 📜 License
-This project is licensed under the MIT License.
-
-## 🤝 Contributing
-1. Fork the repo.
-2. Create a feature branch (`git checkout -b feature-name`).
-3. Commit changes (`git commit -m "Add new feature"`).
-4. Push to your branch (`git push origin feature-name`).
-5. Open a Pull Request.
-
-## 📝 Pull Request Guidelines
-To maintain consistency and readability, all pull requests must follow a structured format.
-
-📌 **Follow the PR Template:**  
-- The PR template is located at [`.github/PULL_REQUEST_TEMPLATE.md`](.github/PULL_REQUEST_TEMPLATE.md).
-- Use the correct naming convention:   [TYPE] #ISSUE_NUMBER - Short Description
-- **Examples:**
-- [BUGFIX] #7 - Fix Google Sheets Data Loading
-- [FEATURE] #15 - Implement Weight Progression Model
-- [DOCS] #22 - Update README Formatting
-- - Before submitting, ensure:
-- [ ] The PR is linked to an issue.
-- [ ] Code changes are tested.
-- [ ] No breaking changes are introduced.
+### References
+- **Pull Request Template:** Found at `.github/PULL_REQUEST_TEMPLATE.md`.
+- **GitHub Workflow - Report Generation:** See `.github/workflows/github_report.yml`.
+- **GitHub Workflow - Test Suite:** See `.github/workflows/test-suite.yml`.
 
 ## 🔧 Fixes & Updates
 
 ### ✅ Full Test Suite Passing (Latest Fixes)
 - **Resolved `KeyError: 'Tested Max'`** in `test_assign_weights.py` by ensuring `"Tested Max"` is included in test data.
-- **Fixed dtype compatibility issue** with `"NRM"` assignments in Pandas.
+- **Fixed dtype compatibility issue** with `"NRM"` assignments in Pandas.  
   - Explicitly converted `"Assigned Weight"` to `object` before assigning `"NRM"`.
 - **Corrected `write_to_google_sheet()` behavior** to properly append rows even when creating a new worksheet.
 - **Updated `test_google_sheets_utils.py` mocking** to properly simulate worksheet creation and prevent false failures.
@@ -110,7 +127,9 @@ To maintain consistency and readability, all pull requests must follow a structu
 To verify functionality, run:
 ```bash
 pytest tests/ --disable-warnings
+```
 
 ## 🏆 Maintainer
 **Ricky St. Augustine**  
 For questions, reach out via GitHub Issues.
+
