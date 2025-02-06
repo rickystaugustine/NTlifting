@@ -63,21 +63,26 @@ This project automates the process of assigning lifting weights for a high schoo
 ## 🏗 Project Structure
 ### Consolidated Directory Descriptions:
 - **`execution/`** → Core scripts for processing lifting programs and handling data.
+- **`data/`** → Local storage for temporary files, processed data, or caches.
 - **`docs/`** → Documentation, including guides and references.
 - **`tests/`** → Unit tests and other testing scripts.
 - **`archive/`** → Deprecated or experimental files no longer in active use.
+- **`scripts/`** → Standalone utility scripts (e.g., `fetch_github_project.py`).
+
+### Key Files:
+- **`requirements.txt`** → Production dependencies.
+- **`requirements-dev.txt`** → Development and testing dependencies.
+- **`.github/workflows/`** → CI/CD workflows for testing and deployment.
+- **`data/CompleteProgram.csv`** → Contains all exercises, weeks, sets, and reps.
+- **`data/Maxes.csv`** → Lists player maximums for each core lift.
+- **`data/AssignedWeights.csv`** → Calculated weights based on the maxes and multipliers.
+- **`data/SimulatedData.csv`** → Simulated results for exercises with missing maxes.
 
 ## 🔄 Usage
 Run the main script:
 ```bash
 python execution/main.py
 ```
-
-## 📜 Scripts
-- **`scripts/fetch_github_project.py`**: Retrieves GitHub project data and kanban boards for reporting purposes.
-
-## 📜 Scripts
-- **`scripts/fetch_github_project.py`**: Retrieves GitHub project data and kanban boards for reporting purposes.
 
 ## 📜 FAQ & Troubleshooting
 - **Q:** How do I handle authentication errors with Google Sheets?  
@@ -88,9 +93,6 @@ python execution/main.py
 
 - **Q:** Why is the script failing at the merge step?  
   **A:** Verify that the `CompleteProgram` and `Maxes` tabs have consistent column names and that the data types match.
-
-## 📜 CONTRIBUTING.md Location
-Place the `CONTRIBUTING.md` file in the `docs/` directory to keep it easily accessible alongside other project documentation.
 
 ## 📌 Pull Request Guidelines
 All pull requests should follow this naming format:
