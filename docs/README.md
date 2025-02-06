@@ -160,11 +160,6 @@ python execution/main.py
 - **Q:** Why is the script failing at the merge step?  
   **A:** Verify that the `CompleteProgram` and `Maxes` tabs have consistent column names and that the data types match.
 
-### Additional Tips
-- **Logging:** Check the log files in the `logs/` directory for detailed error messages and warnings.
-- **Dependencies:** Ensure that all dependencies listed in `requirements.txt` are installed and up-to-date.
-- **Environment Variables:** Confirm that all required environment variables are set correctly before running any scripts.
-
 - **Q:** Where can I find the test results and how should I interpret them?  
   **A:** Test results are displayed in the GitHub Actions tab under the relevant workflow run. A green checkmark indicates that all tests passed, while a red X means at least one test failed. For more details, click on the workflow run to see the logs. The logs show which specific tests failed and provide the output messages to help diagnose the issue. Common indicators include assertion errors or missing data. This information can guide you on what to fix before submitting a pull request.
 
@@ -224,6 +219,11 @@ These preprocessing steps ensure that the input data is clean and structured pro
 
 - **Q:** Why is the script failing at the merge step?\
   **A:** Verify that the `CompleteProgram` and `Maxes` tabs have consistent column names and that the data types match.
+  
+### Additional Tips
+- **Logging:** Check the log files in the `logs/` directory for detailed error messages and warnings.
+- **Dependencies:** Ensure that all dependencies listed in `requirements.txt` are installed and up-to-date.
+- **Environment Variables:** Confirm that all required environment variables are set correctly before running any scripts.
 
 ### Required Tests Before Submitting a PR
 Contributors must run the following tests to ensure consistency and functionality:
