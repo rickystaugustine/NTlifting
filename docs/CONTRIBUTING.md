@@ -5,7 +5,7 @@ Thank you for considering contributing to this project! This guide will help you
 ## 🛠️ Setting Up Your Development Environment
 1. Clone the repository:
    ```bash
-   git clone https://github.com/YOUR_USERNAME/YOUR_REPO.git
+   git clone https://github.com/rickystaugustine/NTlifting.git
    ```
 2. Create a virtual environment:
    ```bash
@@ -74,6 +74,9 @@ Make sure both files are present in the project’s root directory.
 - Confirm that no breaking changes are introduced.
 - Reviewers will verify the changes meet the project’s standards and follow best practices.
 
+## 📜 Auxiliary Scripts
+- **Scripts:** Standalone utilities (e.g., `scripts/fetch_github_project.py`) are located in the `scripts/` directory and not part of the core application code.
+
 ## 📚 Additional Notes
 - **Continuous Integration:** The project uses GitHub Actions workflows to run tests on each pull request.
 - **Documentation:** Update `README.md` and any other relevant documentation if your changes alter usage or functionality.
@@ -82,5 +85,4 @@ Make sure both files are present in the project’s root directory.
 ---
 
 Following these guidelines will help maintain a consistent and efficient workflow for all contributors, ensuring the project’s ongoing quality and stability.
-
 

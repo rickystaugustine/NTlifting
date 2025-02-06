@@ -1,7 +1,7 @@
 # Lifting Program Automation
 
-![Build Status](https://img.shields.io/github/workflow/status/YOUR_USERNAME/YOUR_REPO/CI?style=flat-square)  
-![License](https://img.shields.io/github/license/YOUR_USERNAME/YOUR_REPO?style=flat-square)
+![Build Status](https://img.shields.io/github/workflow/status/rickystaugustine/NTlifting/CI?style=flat-square)  
+![License](https://img.shields.io/github/license/rickystaugustine/NTlifting?style=flat-square)
 
 ## 📌 Overview
 This project automates the process of assigning lifting weights for a high school football strength program. It integrates data from Google Sheets, calculates assigned weights based on tested maxes and multipliers, and simulates missing data for a conservative Functional Max Strength estimate.
@@ -30,7 +30,7 @@ This project automates the process of assigning lifting weights for a high schoo
 ## 🔧 Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/YOUR_USERNAME/YOUR_REPO.git
+   git clone https://github.com/rickystaugustine/NTlifting.git
    ```
 2. Install required dependencies:
    ```bash
@@ -72,6 +72,12 @@ Run the main script:
 ```bash
 python execution/main.py
 ```
+
+## 📜 Scripts
+- **`scripts/fetch_github_project.py`**: Retrieves GitHub project data and kanban boards for reporting purposes.
+
+## 📜 Scripts
+- **`scripts/fetch_github_project.py`**: Retrieves GitHub project data and kanban boards for reporting purposes.
 
 ## 📜 FAQ & Troubleshooting
 - **Q:** How do I handle authentication errors with Google Sheets?  
