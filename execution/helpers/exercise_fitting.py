@@ -13,7 +13,7 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(
 # Dynamically add the NTlifting root directory
 ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "../.."))
 sys.path.insert(0, ROOT_DIR)
-logging.info(f"✅ Root directory added to sys.path: {ROOT_DIR}")
+# logging.info(f"✅ Root directory added to sys.path: {ROOT_DIR}")
 
 from scipy.optimize import curve_fit, OptimizeWarning
 from typing import Tuple, Union, List, Dict
@@ -32,7 +32,7 @@ def fit_single_exercise_global(code: int, program_records: List[Dict]) -> Tuple[
     multipliers = exercise_df['Multiplier of Max'].values
 
     if len(set(multipliers)) == 1:
-        logging.info(f"Exercise {code} has a constant multiplier: {multipliers[0]}")
+        # logging.info(f"Exercise {code} has a constant multiplier: {multipliers[0]}")
         return code, ConstantMultiplier(multipliers[0])
 
     initial_guess = np.polyfit(weeks + sets + np.log(reps + 1), multipliers, 1).tolist() + [multipliers.mean()]
@@ -42,7 +42,7 @@ def fit_single_exercise_global(code: int, program_records: List[Dict]) -> Tuple[
         with warnings.catch_warnings():
             warnings.filterwarnings("error", category=OptimizeWarning)
             popt, _ = curve_fit(m_func, (weeks, sets, reps), multipliers, p0=initial_guess, bounds=bounds, maxfev=10000)
-        logging.info(f"Exercise {code} fitted successfully with coefficients: {popt}")
+        # logging.info(f"Exercise {code} fitted successfully with coefficients: {popt}")
         return code, FittedMultiplier(popt)
     except (OptimizeWarning, RuntimeError) as e:
         logging.warning(f"Curve fitting failed for exercise {code}: {e}. Assigning mean multiplier.")
@@ -53,7 +53,7 @@ def fit_exercise_multipliers(program_df):
 
     # Ensure program_df is a Pandas DataFrame
     if not isinstance(program_df, pd.DataFrame):
-        logging.warning("⚠️ program_df was passed as a dict, converting to DataFrame...")
+        # logging.warning("⚠️ program_df was passed as a dict, converting to DataFrame...")
         program_df = pd.DataFrame(program_df)
 
     # Ensure required columns exist
@@ -61,7 +61,7 @@ def fit_exercise_multipliers(program_df):
     missing_columns = [col for col in required_columns if col not in program_df.columns]
     
     if missing_columns:
-        logging.error(f"❌ ERROR: Missing required columns in program_df: {missing_columns}")
+        # logging.error(f"❌ ERROR: Missing required columns in program_df: {missing_columns}")
         return {}  # Return an empty dictionary instead of None to prevent TypeError
 
     exercises = program_df["Code"].unique()

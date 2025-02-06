@@ -56,7 +56,7 @@ def run_simulation(input_data):
     expanded_df["Simulated Weight"] = valid_assigned_weights_df["Assigned Weight"].apply(simulate_weights).explode().values
 
     # Ensure data is properly formatted
-    logging.info(f"✅ Simulated Data Shape: {expanded_df.shape}")
+    # logging.info(f"✅ Simulated Data Shape: {expanded_df.shape}")
 
     # Save locally for debugging
     simulated_data_path = os.path.join(project_root, "data/simulated_data.pkl")

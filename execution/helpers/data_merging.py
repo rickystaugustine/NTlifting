@@ -11,7 +11,7 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(
 # Dynamically add the NTlifting root directory
 ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "../.."))
 sys.path.insert(0, ROOT_DIR)
-logging.info(f"✅ Root directory added to sys.path: {ROOT_DIR}")
+# logging.info(f"✅ Root directory added to sys.path: {ROOT_DIR}")
 
 # Import necessary functions
 from execution.helpers.data_loading import load_data
@@ -46,8 +46,8 @@ for exercise, params in multiplier_fits.items():
 # Ensure 'NRM' values remain labeled correctly
 if "Tested Max" in merged_df.columns:
     merged_df["M_assigned"] = merged_df["M_assigned"].astype(object)
-else:
-    logging.error("❌ ERROR: 'Tested Max' column not found in merged_df!")
+# else:
+    # logging.error("❌ ERROR: 'Tested Max' column not found in merged_df!")
 
 # Validate assigned multipliers
 validation_errors = [
@@ -60,7 +60,7 @@ validation_errors = [
 os.makedirs("data", exist_ok=True)
 pkl_path = "data/repeated_program.pkl"
 merged_df.to_pickle(pkl_path)
-logging.info(f"✅ Saved repeated program to {pkl_path}")
+# logging.info(f"✅ Saved repeated program to {pkl_path}")
 
 # Log validation errors if any exist
 if validation_errors:
@@ -74,23 +74,23 @@ def merge_data(repeated_program_df, flattened_core_maxes_df, multiplier_fits):
     logging.info("🔄 Running merge_data() function...")
 
     # Debugging: Log before merge
-    logging.info(f"🔍 Columns in repeated_program_df BEFORE merging: {list(repeated_program_df.columns)}")
-    logging.info(f"🔍 Columns in flattened_core_maxes_df BEFORE merging: {list(flattened_core_maxes_df.columns)}")
+    # logging.info(f"🔍 Columns in repeated_program_df BEFORE merging: {list(repeated_program_df.columns)}")
+    # logging.info(f"🔍 Columns in flattened_core_maxes_df BEFORE merging: {list(flattened_core_maxes_df.columns)}")
 
     # Perform the merge
     merged_df = repeated_program_df.merge(flattened_core_maxes_df, on=["Player", "Relevant Core"], how="left")
 
     # Fix: Check for duplicate `Tested Max` columns and rename properly
     if "Tested Max_x" in merged_df.columns and "Tested Max_y" in merged_df.columns:
-        logging.warning("⚠️ Detected duplicate `Tested Max` columns! Resolving issue...")
+        # logging.warning("⚠️ Detected duplicate `Tested Max` columns! Resolving issue...")
 
         # Use the `Tested Max_y` column and drop the other
         merged_df["Tested Max"] = merged_df["Tested Max_y"].fillna(merged_df["Tested Max_x"])
         merged_df.drop(columns=["Tested Max_x", "Tested Max_y"], inplace=True)
 
     # Debugging: Ensure `Tested Max` is present after merge
-    if "Tested Max" not in merged_df.columns:
-        logging.error("❌ ERROR: 'Tested Max' column missing after merge!")
+    # if "Tested Max" not in merged_df.columns:
+        # logging.error("❌ ERROR: 'Tested Max' column missing after merge!")
 
     logging.info(f"✅ Merged successfully, 'Tested Max' available in merged_data.")
 

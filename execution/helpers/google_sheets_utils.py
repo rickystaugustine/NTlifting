@@ -35,13 +35,13 @@ def read_google_sheets(sheet_name, worksheet_name):
 
         # Print ALL sheet data before calling get_all_records()
         raw_values = worksheet.get_all_values()
-        print("✅ DEBUG: Raw Google Sheets Data:")
-        for row in raw_values:
-            print(row)
+        # print("✅ DEBUG: Raw Google Sheets Data:")
+        # for row in raw_values:
+            # print(row)
 
         # Now call get_all_records()
         records = worksheet.get_all_records()
-        print(f"✅ DEBUG: Retrieved records: {records}")
+        # print(f"✅ DEBUG: Retrieved records: {records}")
 
         if not records:
             logging.warning(f"⚠️ WARNING: No data found in '{sheet_name}' -> '{worksheet_name}'. Returning empty DataFrame.")
@@ -63,7 +63,7 @@ def write_to_google_sheet(sheet_name, worksheet_name, dataframe):
             worksheet = sheet.worksheet(worksheet_name)
             worksheet.clear()  # ✅ Clear existing worksheet
         except gspread.exceptions.WorksheetNotFound:
-            logging.warning(f"⚠️ Worksheet '{worksheet_name}' not found in '{sheet_name}'. Creating a new one.")
+            # logging.warning(f"⚠️ Worksheet '{worksheet_name}' not found in '{sheet_name}'. Creating a new one.")
             worksheet = sheet.add_worksheet(title=worksheet_name, rows="100", cols="20")
 
         # ✅ Ensure `append_rows()` is always executed
