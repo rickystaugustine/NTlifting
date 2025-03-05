@@ -28,7 +28,8 @@ def assign_weights(merged_data, flattened_core_maxes_df, exercise_functions):
         logging.error("❌ ERROR: merged_data is empty. Check data preprocessing.")
         return pd.DataFrame()
 
-    assigned_df = merged_data.copy()
+    # assigned_df = merged_data.copy()
+    assigned_df = merged_data
 
     # Ensure "Assigned Weight" column exists
     assigned_df["Assigned Weight"] = np.nan
