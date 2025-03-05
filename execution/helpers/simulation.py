@@ -43,8 +43,9 @@ def run_simulation(input_data):
     logging.info("🚀 Running simulation on assigned weights dataset...")
 
     # Filter out 'NRM' rows before simulation
-    valid_assigned_weights_df = assigned_weights_df[assigned_weights_df["Assigned Weight"] != "NRM"].copy()
-    
+    # valid_assigned_weights_df = assigned_weights_df[assigned_weights_df["Assigned Weight"] != "NRM"].copy()
+    valid_assigned_weights_df = assigned_weights_df[assigned_weights_df["Assigned Weight"] != "NRM"]
+
     if valid_assigned_weights_df.empty:
         logging.warning("⚠️ No valid assigned weights available for simulation.")
         return pd.DataFrame()
