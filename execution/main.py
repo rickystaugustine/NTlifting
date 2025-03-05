@@ -3,9 +3,13 @@ import pickle
 import logging
 import numpy as np
 import time
+import sys
 
 start_func_import_time = time.time()
 print(f"Beginning helper function import...")
+
+# Add the execution directory to sys.path
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 from helpers.data_loading import load_data
 from helpers.data_processing import preprocess_data
 from helpers.multiplier_fitting import fit_multipliers
