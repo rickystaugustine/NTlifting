@@ -50,7 +50,8 @@ def run_simulation(input_data):
         logging.warning("⚠️ No valid assigned weights available for simulation.")
         return pd.DataFrame()
 
-    expanded_df = valid_assigned_weights_df.loc[valid_assigned_weights_df.index.repeat(SIMULATION_ROUNDS)].copy()
+    # expanded_df = valid_assigned_weights_df.loc[valid_assigned_weights_df.index.repeat(SIMULATION_ROUNDS)].copy()
+    expanded_df = valid_assigned_weights_df.loc[valid_assigned_weights_df.index.repeat(SIMULATION_ROUNDS)]
     expanded_df["Simulation Round"] = np.tile(np.arange(1, SIMULATION_ROUNDS + 1), len(valid_assigned_weights_df))
 
     expanded_df["Simulated Reps"] = valid_assigned_weights_df["# of Reps"].apply(simulate_reps).explode().values
