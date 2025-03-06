@@ -4,6 +4,7 @@ import logging
 import numpy as np
 import time
 import sys
+import pandas as pd
 
 start_func_import_time = time.time()
 print(f"Beginning helper function import...")
@@ -70,7 +71,25 @@ if __name__ == "__main__":
     # logging.info(f"🔍 Sample flattened_core_maxes_df: \n{flattened_core_maxes_df.head()}")
 
     start_merge_data_time = time.time()
+
     merged_data = merge_data(repeated_program_df, flattened_core_maxes_df, multiplier_fits)
+
+    # ✅ Apply memory optimizations before analyzing usage
+    merged_data["Exercise"] = merged_data["Exercise"].astype("category")
+    merged_data["Relevant Core"] = merged_data["Relevant Core"].astype("category")
+    merged_data["Player"] = merged_data["Player"].astype("category")
+    merged_data["Tested Max"] = merged_data["Tested Max"].astype("category")  # If categorical, otherwise convert to numeric
+
+    merged_data["Code"] = pd.to_numeric(merged_data["Code"], downcast="integer")
+    merged_data["Week #"] = pd.to_numeric(merged_data["Week #"], downcast="integer")
+    merged_data["Set #"] = pd.to_numeric(merged_data["Set #"], downcast="integer")
+    merged_data["# of Reps"] = pd.to_numeric(merged_data["# of Reps"], downcast="integer")
+
+    merged_data["Multiplier of Max"] = pd.to_numeric(merged_data["Multiplier of Max"], downcast="float")
+
+    # ✅ Run memory analysis after optimizations
+    print(merged_data.info(memory_usage="deep"))
+
     merge_data_time = time.time() - start_merge_data_time
     print(f"Merging data took {merge_data_time:.2f} seconds")
     # logging.info(f"🔍 DEBUG: Columns in merged_data before assign_weights: {list(merged_data.columns)}")
@@ -78,6 +97,12 @@ if __name__ == "__main__":
     # Step 5: Calculate Assigned Weights
     start_assign_weights_time = time.time()
     assigned_weights_df = assign_weights(merged_data, flattened_core_maxes_df, exercise_functions)
+    # Ensure categorical columns allow "NRM" as a category before filling NaN values
+    for col in assigned_weights_df.select_dtypes(include="category").columns:
+        assigned_weights_df[col] = assigned_weights_df[col].cat.add_categories("NRM")
+
+    # Now safely replace NaN values with "NRM"
+    assigned_weights_df = assigned_weights_df.fillna("NRM").astype(str)
     assigned_weights_time = time.time() - start_assign_weights_time
     print(f"Assigning weights took {assigned_weights_time:.2f} seconds")
 
