@@ -48,9 +48,21 @@ def simulate_reps(assigned_reps):
 
     return int(round(new_reps))  # Convert to integer reps
 
-def simulate_weights(weight):
-    """ Simulate weight variations using a normal distribution around the assigned weight. """
-    return np.round(norm.rvs(loc=weight, scale=2, size=SIMULATION_ROUNDS), 1)
+def simulate_weights(assigned_weight):
+    """
+    Simulates the weight a player actually lifts.
+    
+    - Almost always less than assigned weight.
+    - Lifted weight falls between 60% and 150% of the assigned weight.
+    """
+    
+    # Define the probability distribution
+    if np.random.rand() < 0.95:  # 95% chance of lifting less than assigned weight
+        simulated_weight = np.random.uniform(0.60, 1.00) * assigned_weight
+    else:  # 5% chance of lifting above assigned weight
+        simulated_weight = np.random.uniform(1.00, 1.50) * assigned_weight
+
+    return round(simulated_weight, 2)  # Round to 2 decimal places
 
 def run_simulation(input_data, maxes_df):
     """Simulate exercise performance based on input data."""
@@ -79,7 +91,7 @@ def run_simulation(input_data, maxes_df):
     expanded_df["Simulation Round"] = np.tile(np.arange(1, SIMULATION_ROUNDS + 1), len(valid_assigned_weights_df))
 
     expanded_df["Simulated Reps"] = expanded_df["# of Reps"].apply(simulate_reps)
-    expanded_df["Simulated Weight"] = valid_assigned_weights_df["Assigned Weight"].apply(simulate_weights).explode().values
+    expanded_df["Simulated Weight"] = expanded_df["Assigned Weight"].apply(simulate_weights)
 
     # Ensure data is properly formatted
     # logging.info(f"✅ Simulated Data Shape: {expanded_df.shape}")
