@@ -12,11 +12,11 @@ def fit_multipliers(repeated_program_df):
     missing_columns = [col for col in required_columns if col not in repeated_program_df.columns]
 
     # Debugging: Log available columns
-    logging.info(f"🔍 Available columns in repeated_program_df: {list(repeated_program_df.columns)}")
+    # logging.info(f"🔍 Available columns in repeated_program_df: {list(repeated_program_df.columns)}")
 
-    if missing_columns:
-        logging.error(f"❌ ERROR: Missing required columns in program_df: {missing_columns}")
-        return {}  # Return empty multipliers
+    # if missing_columns:
+        # logging.error(f"❌ ERROR: Missing required columns in program_df: {missing_columns}")
+        # return {}  # Return empty multipliers
 
     exercise_functions = {}
     unique_exercises = repeated_program_df["Exercise"].unique()
@@ -45,7 +45,7 @@ def fit_percentage_curve(program_df):
     
     try:
         popt, _ = curve_fit(rep_to_percentage, reps, percentages, maxfev=2000)
-        print("Fitted Equation Parameters: a={}, b={}, c={}".format(*popt))
+        # print("Fitted Equation Parameters: a={}, b={}, c={}".format(*popt))
         return lambda reps: rep_to_percentage(reps, *popt)
     except RuntimeError as e:
         print(f"Curve fitting failed: {e}")

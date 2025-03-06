@@ -28,7 +28,8 @@ def assign_weights(merged_data, flattened_core_maxes_df, exercise_functions):
         logging.error("❌ ERROR: merged_data is empty. Check data preprocessing.")
         return pd.DataFrame()
 
-    assigned_df = merged_data.copy()
+    # assigned_df = merged_data.copy()
+    assigned_df = merged_data
 
     # Ensure "Assigned Weight" column exists
     assigned_df["Assigned Weight"] = np.nan
@@ -60,7 +61,7 @@ def assign_weights(merged_data, flattened_core_maxes_df, exercise_functions):
         # Debugging: Check number of valid weights before calculation
         valid_mask = mask & (~assigned_df["Tested Max"].isna()) & (~assigned_df["Multiplier of Max"].isna())
         valid_count = valid_mask.sum()
-        logging.info(f"✅ Valid weights for {exercise}: {valid_count}")
+        # logging.info(f"✅ Valid weights for {exercise}: {valid_count}")
 
         if function is not None and valid_count > 0:
             assigned_df.loc[valid_mask, "Assigned Weight"] = (

@@ -18,7 +18,7 @@ def preprocess_data(program_df, maxes_df):
 
     # Flatten core maxes for merging
     flattened_core_maxes_df = maxes_df.melt(id_vars=["Player"], var_name="Relevant Core", value_name="Tested Max")
-    logging.info(f"✅ Flattened core maxes shape: {flattened_core_maxes_df.shape}")
+    # logging.info(f"✅ Flattened core maxes shape: {flattened_core_maxes_df.shape}")
 
     # Expand program_df to apply to every player
     num_players = maxes_df["Player"].nunique()
@@ -32,6 +32,6 @@ def preprocess_data(program_df, maxes_df):
     # 🚨 Fix: Merge `Tested Max` early so it's available for multipliers
     merged_data = expanded_program_df.merge(flattened_core_maxes_df, on=["Player", "Relevant Core"], how="left")
 
-    logging.info(f"✅ Merged Tested Max into repeated program data. Columns now: {list(merged_data.columns)}")
+    # logging.info(f"✅ Merged Tested Max into repeated program data. Columns now: {list(merged_data.columns)}")
 
     return flattened_core_maxes_df, merged_data

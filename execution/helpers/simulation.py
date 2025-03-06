@@ -43,20 +43,22 @@ def run_simulation(input_data):
     logging.info("🚀 Running simulation on assigned weights dataset...")
 
     # Filter out 'NRM' rows before simulation
-    valid_assigned_weights_df = assigned_weights_df[assigned_weights_df["Assigned Weight"] != "NRM"].copy()
-    
+    # valid_assigned_weights_df = assigned_weights_df[assigned_weights_df["Assigned Weight"] != "NRM"].copy()
+    valid_assigned_weights_df = assigned_weights_df[assigned_weights_df["Assigned Weight"] != "NRM"]
+
     if valid_assigned_weights_df.empty:
         logging.warning("⚠️ No valid assigned weights available for simulation.")
         return pd.DataFrame()
 
-    expanded_df = valid_assigned_weights_df.loc[valid_assigned_weights_df.index.repeat(SIMULATION_ROUNDS)].copy()
+    # expanded_df = valid_assigned_weights_df.loc[valid_assigned_weights_df.index.repeat(SIMULATION_ROUNDS)].copy()
+    expanded_df = valid_assigned_weights_df.loc[valid_assigned_weights_df.index.repeat(SIMULATION_ROUNDS)]
     expanded_df["Simulation Round"] = np.tile(np.arange(1, SIMULATION_ROUNDS + 1), len(valid_assigned_weights_df))
 
     expanded_df["Simulated Reps"] = valid_assigned_weights_df["# of Reps"].apply(simulate_reps).explode().values
     expanded_df["Simulated Weight"] = valid_assigned_weights_df["Assigned Weight"].apply(simulate_weights).explode().values
 
     # Ensure data is properly formatted
-    logging.info(f"✅ Simulated Data Shape: {expanded_df.shape}")
+    # logging.info(f"✅ Simulated Data Shape: {expanded_df.shape}")
 
     # Save locally for debugging
     simulated_data_path = os.path.join(project_root, "data/simulated_data.pkl")
