@@ -134,7 +134,7 @@ if __name__ == "__main__":
 
     # Step 6: Simulate Lifting Performance
     start_simulation_time = time.time()
-    simulated_data = run_simulation(assigned_weights_df)
+    simulated_data = run_simulation(assigned_weights_df, maxes_df)
     simulation_time = time.time() - start_simulation_time
     print(f"Running simulation took {simulation_time:.2f} seconds")
 

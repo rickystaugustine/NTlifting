@@ -28,15 +28,31 @@ if not required_columns.issubset(assigned_weights_df.columns):
 
 SIMULATION_ROUNDS = 5
 
-def simulate_reps(reps):
-    """ Simulate repetitions using a normal distribution around the assigned reps. """
-    return np.round(norm.rvs(loc=reps, scale=1, size=SIMULATION_ROUNDS)).astype(int)
+def simulate_reps(assigned_reps):
+    """ Simulates executed reps based on an asymmetric probability distribution. """
+    
+    # Define rep variation bounds
+    delta_r_min = -0.9 * assigned_reps
+    delta_r_max = 5.0 * assigned_reps
+
+    # Compute standard deviations for left and right variations
+    sigma_L = (0.997 * -delta_r_min) / 3
+    sigma_R = (0.997 * delta_r_max) / 3
+
+    # Generate a deviation within allowed limits
+    while True:
+        delta_r = np.random.normal(0, sigma_L if np.random.rand() < 0.5 else sigma_R)
+        new_reps = assigned_reps + delta_r
+        if delta_r_min <= new_reps - assigned_reps <= delta_r_max:
+            break  # Ensure only valid values are returned
+
+    return int(round(new_reps))  # Convert to integer reps
 
 def simulate_weights(weight):
     """ Simulate weight variations using a normal distribution around the assigned weight. """
     return np.round(norm.rvs(loc=weight, scale=2, size=SIMULATION_ROUNDS), 1)
 
-def run_simulation(input_data):
+def run_simulation(input_data, maxes_df):
     """Simulate exercise performance based on input data."""
     # Function logic
     """ Runs the full simulation on the assigned weights dataset. """
@@ -44,7 +60,15 @@ def run_simulation(input_data):
 
     # Filter out 'NRM' rows before simulation
     # valid_assigned_weights_df = assigned_weights_df[assigned_weights_df["Assigned Weight"] != "NRM"].copy()
-    valid_assigned_weights_df = assigned_weights_df[assigned_weights_df["Assigned Weight"] != "NRM"]
+    # Ensure only players from the Maxes tab are included
+    active_players = assigned_weights_df["Player"].unique()  # Get players in Assigned Weights
+    maxes_players = maxes_df["Player"].unique()  # Get players in Maxes tab
+
+    # Filter assigned_weights_df to include only active players
+    valid_assigned_weights_df = assigned_weights_df[
+        (assigned_weights_df["Assigned Weight"] != "NRM") &
+        (assigned_weights_df["Player"].isin(maxes_players))
+    ]
 
     if valid_assigned_weights_df.empty:
         logging.warning("⚠️ No valid assigned weights available for simulation.")
@@ -54,7 +78,7 @@ def run_simulation(input_data):
     expanded_df = valid_assigned_weights_df.loc[valid_assigned_weights_df.index.repeat(SIMULATION_ROUNDS)]
     expanded_df["Simulation Round"] = np.tile(np.arange(1, SIMULATION_ROUNDS + 1), len(valid_assigned_weights_df))
 
-    expanded_df["Simulated Reps"] = valid_assigned_weights_df["# of Reps"].apply(simulate_reps).explode().values
+    expanded_df["Simulated Reps"] = expanded_df["# of Reps"].apply(simulate_reps)
     expanded_df["Simulated Weight"] = valid_assigned_weights_df["Assigned Weight"].apply(simulate_weights).explode().values
 
     # Ensure data is properly formatted
