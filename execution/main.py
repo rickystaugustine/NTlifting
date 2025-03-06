@@ -88,7 +88,7 @@ if __name__ == "__main__":
     merged_data["Multiplier of Max"] = pd.to_numeric(merged_data["Multiplier of Max"], downcast="float")
 
     # ✅ Run memory analysis after optimizations
-    print(merged_data.info(memory_usage="deep"))
+    # print(merged_data.info(memory_usage="deep"))
 
     merge_data_time = time.time() - start_merge_data_time
     print(f"Merging data took {merge_data_time:.2f} seconds")
