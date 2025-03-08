@@ -11,7 +11,7 @@ DATA_DIR = "data"  # Ensure this directory exists
 def preprocess_data(program_df, maxes_df):
     """Preprocess program and maxes data."""
 
-    logging.info("🚀 Running preprocess_data()...")
+    # logging.info("🚀 Running preprocess_data()...")
 
     # Ensure missing values in Maxes are replaced with 'NRM'
     maxes_df.fillna("NRM", inplace=True)
@@ -27,7 +27,7 @@ def preprocess_data(program_df, maxes_df):
     # Add Player column by repeating all players for each row
     expanded_program_df["Player"] = np.tile(maxes_df["Player"].values, len(program_df))
 
-    logging.info(f"✅ Expanded program generated with {len(expanded_program_df)} records.")
+    # logging.info(f"✅ Expanded program generated with {len(expanded_program_df)} records.")
 
     # 🚨 Fix: Merge `Tested Max` early so it's available for multipliers
     merged_data = expanded_program_df.merge(flattened_core_maxes_df, on=["Player", "Relevant Core"], how="left")

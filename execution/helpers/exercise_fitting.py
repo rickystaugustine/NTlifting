@@ -13,7 +13,6 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(
 # Dynamically add the NTlifting root directory
 ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "../.."))
 sys.path.insert(0, ROOT_DIR)
-# logging.info(f"✅ Root directory added to sys.path: {ROOT_DIR}")
 
 from scipy.optimize import curve_fit, OptimizeWarning
 from typing import Tuple, Union, List, Dict
@@ -32,67 +31,83 @@ def fit_single_exercise_global(code: int, program_records: List[Dict]) -> Tuple[
     multipliers = exercise_df['Multiplier of Max'].values
 
     if len(set(multipliers)) == 1:
-        # logging.info(f"Exercise {code} has a constant multiplier: {multipliers[0]}")
         return code, ConstantMultiplier(multipliers[0])
 
-    initial_guess = np.polyfit(weeks + sets + np.log(reps + 1), multipliers, 1).tolist() + [multipliers.mean()]
-    bounds = ([0, 0, 0, 0], [np.inf, np.inf, np.inf, np.inf])
+    if len(weeks) == 0 or len(sets) == 0 or len(reps) == 0:
+        logging.error(f"❌ ERROR: Missing data for {code}. Cannot perform curve fitting.")
+        return code, ConstantMultiplier(multipliers.mean())
+
+    initial_guess = np.polyfit(weeks + sets + np.log(reps + 1), multipliers, 1).tolist()
+    while len(initial_guess) < 4:
+        initial_guess.append(multipliers.mean())  # Ensure p0 has at least 4 elements
+    bounds = ([0] * len(initial_guess), [np.inf] * len(initial_guess))
 
     try:
         with warnings.catch_warnings():
             warnings.filterwarnings("error", category=OptimizeWarning)
             popt, _ = curve_fit(m_func, (weeks, sets, reps), multipliers, p0=initial_guess, bounds=bounds, maxfev=10000)
-        # logging.info(f"Exercise {code} fitted successfully with coefficients: {popt}")
         return code, FittedMultiplier(popt)
     except (OptimizeWarning, RuntimeError) as e:
-        logging.warning(f"Curve fitting failed for exercise {code}: {e}. Assigning mean multiplier.")
+        logging.error(f"❌ ERROR: Curve fitting failed for exercise {code}: {e}. Assigning mean multiplier.")
         return code, ConstantMultiplier(multipliers.mean())
 
 def fit_exercise_multipliers(program_df):
-    """ Fits multipliers for each exercise. """
+    """Fits multipliers for each exercise, classifies them as constant (2a) or dynamic (2b), 
+       and stores a backup linear model for additional calculations."""
 
     # Ensure program_df is a Pandas DataFrame
     if not isinstance(program_df, pd.DataFrame):
-        # logging.warning("⚠️ program_df was passed as a dict, converting to DataFrame...")
         program_df = pd.DataFrame(program_df)
 
     # Ensure required columns exist
-    required_columns = ["Code", "Week #", "Set #", "# of Reps", "Tested Max"]
+    required_columns = ["Code", "Week #", "Set #", "# of Reps", "Multiplier of Max", "Tested Max"]
     missing_columns = [col for col in required_columns if col not in program_df.columns]
-    
+
     if missing_columns:
-        # logging.error(f"❌ ERROR: Missing required columns in program_df: {missing_columns}")
-        return {}  # Return an empty dictionary instead of None to prevent TypeError
+        logging.error(f"❌ ERROR: Missing required columns in program_df: {missing_columns}")
+        return {}, {}  # Return empty dictionaries
 
     exercises = program_df["Code"].unique()
-    exercise_functions = {}
+    exercise_functions = {}  # Stores multiplier functions
+    constant_multiplier_exercises = {}  # Stores classification (2a vs 2b)
 
-    logging.info(f"🔍 Fitting multipliers for {len(exercises)} exercises...")
+    # logging.info(f"🔍 Fitting multipliers and classifying {len(exercises)} exercises...")
 
     for exercise in exercises:
         exercise_df = program_df[program_df["Code"] == exercise]
 
         if exercise_df.empty:
-            logging.warning(f"⚠️ No data available for exercise: {exercise}")
+            logging.error(f"❌ ERROR: No valid data available for exercise: {exercise}")
             continue
 
-        w = exercise_df["Week #"].values
-        s = exercise_df["Set #"].values
-        r = exercise_df["# of Reps"].values
-        maxes = exercise_df["Tested Max"].values
+        # Convert values to float to prevent TypeError
+        w = pd.to_numeric(exercise_df["Week #"], errors="coerce").values
+        s = pd.to_numeric(exercise_df["Set #"], errors="coerce").values
+        r = pd.to_numeric(exercise_df["# of Reps"], errors="coerce").values
+        maxes = pd.to_numeric(exercise_df["Tested Max"], errors="coerce").values
 
-        # Handle potential missing or non-numeric values
-        valid_mask = ~pd.isna(w) & ~pd.isna(s) & ~pd.isna(r) & ~pd.isna(maxes)
-        if not valid_mask.any():
-            logging.warning(f"⚠️ No valid numeric data for exercise: {exercise}")
-            continue
+        # Call fit_single_exercise_global() to determine multiplier type
+        code, multiplier_instance = fit_single_exercise_global(exercise, program_df.to_dict("records"))
 
-        # Fit a simple linear model
-        coeffs = np.polyfit(w[valid_mask] + s[valid_mask] + np.log(r[valid_mask] + 1), maxes[valid_mask], 1)
-        
         # Store the function for this exercise
-        exercise_functions[exercise] = lambda w, s, r: coeffs[0] * (w + s + np.log(r + 1)) + coeffs[1]
+        if isinstance(multiplier_instance, FittedMultiplier):
+            exercise_functions[exercise] = multiplier_instance  # Store function reference directly
+        elif isinstance(multiplier_instance, ConstantMultiplier):
+            exercise_functions[exercise] = lambda w, s, r: multiplier_instance  # Keep lambda only for constant cases
 
-        logging.info(f"✅ Fitted multipliers for {exercise}: {coeffs}")
+        # Extract classification based on the returned multiplier type
+        constant_multiplier_exercises[exercise] = "2a" if isinstance(multiplier_instance, ConstantMultiplier) else "2b"
 
-    return exercise_functions  # Ensure this always returns a dictionary
+    # logging.info(f"✅ Fitted multipliers successfully created for {len(exercise_functions)} exercises.")
+    # logging.info(f"✅ Exercises successfully classified as constant (2a) or fitted (2b).")
+
+    constant_multiplier_exercises = {
+        str(program_df.loc[program_df["Code"] == exercise, "Exercise"].iloc[0]).strip().upper(): value
+        for exercise, value in constant_multiplier_exercises.items()
+    }
+    exercise_functions = {
+        str(program_df.loc[program_df["Code"] == exercise, "Exercise"].iloc[0]).strip().upper(): value
+        for exercise, value in exercise_functions.items()
+    }
+
+    return exercise_functions, constant_multiplier_exercises  # Return both data structures

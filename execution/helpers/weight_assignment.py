@@ -22,7 +22,7 @@ core_maxes_path = os.path.join(ROOT_DIR, "data/flattened_core_maxes.pkl")
 def assign_weights(merged_data, flattened_core_maxes_df, exercise_functions):
     """ Assigns weights based on merged data, core maxes, and exercise multipliers. """
 
-    logging.info("🚀 Assigning weights using merged data and multipliers...")
+    # logging.info("🚀 Assigning weights using merged data and multipliers...")
 
     if merged_data.empty:
         logging.error("❌ ERROR: merged_data is empty. Check data preprocessing.")
@@ -46,8 +46,8 @@ def assign_weights(merged_data, flattened_core_maxes_df, exercise_functions):
     # Log valid vs. invalid rows
     num_valid = assigned_df["Tested Max"].notna().sum()
     num_invalid = assigned_df["Tested Max"].isna().sum()
-    logging.info(f"✅ Valid Tested Max entries: {num_valid}")
-    logging.warning(f"⚠️ Invalid Tested Max entries (will be 'NRM'): {num_invalid}")
+    # logging.info(f"✅ Valid Tested Max entries: {num_valid}")
+    # logging.warning(f"⚠️ Invalid Tested Max entries (will be 'NRM'): {num_invalid}")
 
     for exercise, function in exercise_functions.items():
         mask = assigned_df["Exercise"] == exercise
@@ -72,7 +72,7 @@ def assign_weights(merged_data, flattened_core_maxes_df, exercise_functions):
     assigned_df["Assigned Weight"] = assigned_df["Assigned Weight"].astype(object)
     assigned_df.loc[assigned_df["Tested Max"].isna(), "Assigned Weight"] = "NRM"
 
-    logging.info(f"✅ Assigned weights successfully calculated. Non-NRM count: {(assigned_df['Assigned Weight'] != 'NRM').sum()}")
+    # logging.info(f"✅ Assigned weights successfully calculated. Non-NRM count: {(assigned_df['Assigned Weight'] != 'NRM').sum()}")
 
     return assigned_df
 

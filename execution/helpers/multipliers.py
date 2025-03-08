@@ -49,9 +49,11 @@ class FittedMultiplier:
         return self.params[0] * w + self.params[1] * s + self.params[2] * np.log(r + 1) + self.params[3]
 
 # Define m_func as a wrapper for multiplier functions
-def m_func(w, s, r, coeffs):
-    """ Generalized multiplier function. """
-    return coeffs[0] * w + coeffs[1] * s + coeffs[2] * np.log(r + 1) + coeffs[3]
+def m_func(inputs, *params):
+    w, s, r = inputs
+    if len(params) < 4:
+        raise ValueError(f"❌ ERROR: Expected at least 4 parameters but got {len(params)}")
+    return params[0] * w + params[1] * s + params[2] * np.log(r + 1) + params[3]
 
 # Ensure these functions are available for import
 __all__ = ["ConstantMultiplier", "FittedMultiplier", "m_func", "multiplier_fits", "exercise_functions"]

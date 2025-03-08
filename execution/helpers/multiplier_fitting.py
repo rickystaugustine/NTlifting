@@ -1,12 +1,11 @@
 import logging
-from execution.helpers.exercise_fitting import fit_exercise_multipliers
 import numpy as np
 from scipy.optimize import curve_fit
 
 def fit_multipliers(repeated_program_df):
     """ Fits multipliers for each exercise in the repeated program dataframe. """
 
-    logging.info("Fitting multipliers for exercises...")
+    # logging.info("Fitting multipliers for exercises...")
 
     required_columns = ["Exercise", "Week #", "Set #", "# of Reps", "Multiplier of Max"]
     missing_columns = [col for col in required_columns if col not in repeated_program_df.columns]
@@ -23,14 +22,14 @@ def fit_multipliers(repeated_program_df):
 
     for exercise in unique_exercises:
         df_exercise = repeated_program_df[repeated_program_df["Exercise"] == exercise]
-        
+
         if df_exercise["Multiplier of Max"].isna().all():
             logging.warning(f"⚠️ No multiplier values found for {exercise}, skipping...")
             continue
-        
+
         exercise_functions[exercise] = lambda x: x["Multiplier of Max"]
 
-    logging.info(f"✅ Fitted multipliers for {len(exercise_functions)} exercises.")
+    # logging.info(f"✅ Fitted multipliers for {len(exercise_functions)} exercises.")
     return exercise_functions
 
 def rep_to_percentage(reps, a, b, c):
@@ -42,7 +41,7 @@ def fit_percentage_curve(program_df):
     grouped = program_df.groupby('# of Reps')['Multiplier of Max'].mean().reset_index()
     reps = grouped['# of Reps'].values
     percentages = grouped['Multiplier of Max'].values
-    
+
     try:
         popt, _ = curve_fit(rep_to_percentage, reps, percentages, maxfev=2000)
         # print("Fitted Equation Parameters: a={}, b={}, c={}".format(*popt))

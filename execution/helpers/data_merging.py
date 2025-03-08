@@ -18,19 +18,19 @@ from execution.helpers.data_processing import preprocess_data
 def merge_data(repeated_program_df, flattened_core_maxes_df, multiplier_fits):
     """ Merges expanded program data with core maxes and applies multipliers. """
 
-    logging.info("🔄 Running merge_data() function...")
+    # logging.info("🔄 Running merge_data() function...")
 
     # Perform the merge
     merged_df = repeated_program_df.merge(flattened_core_maxes_df, on=["Player", "Relevant Core"], how="left")
 
     # Fix: Check for duplicate `Tested Max` columns and rename properly
     if "Tested Max_x" in merged_df.columns and "Tested Max_y" in merged_df.columns:
-        logging.warning("⚠️ Detected duplicate `Tested Max` columns! Resolving issue...")
+        # logging.warning("⚠️ Detected duplicate `Tested Max` columns! Resolving issue...")
 
         # Use the `Tested Max_y` column and drop the other
         merged_df["Tested Max"] = merged_df["Tested Max_y"].fillna(merged_df["Tested Max_x"])
         merged_df.drop(columns=["Tested Max_x", "Tested Max_y"], inplace=True)
 
-    logging.info("✅ Merged successfully, 'Tested Max' available in merged_data.")
+    # logging.info("✅ Merged successfully, 'Tested Max' available in merged_data.")
 
     return merged_df

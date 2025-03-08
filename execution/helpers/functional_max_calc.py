@@ -1,65 +1,69 @@
-import pandas as pd
 import numpy as np
 import logging
-from concurrent.futures import ProcessPoolExecutor, as_completed
-from execution.helpers.google_sheets_utils import read_google_sheets, write_to_google_sheet
-from execution.helpers.exercise_fitting import fit_single_exercise_global
-from execution.helpers.simulation import simulate_iteration
-from execution.helpers.multipliers import ConstantMultiplier, FittedMultiplier
 import sys
 import os
 
-# Ensure execution/ is in Python's module search path
-sys.path.append(os.path.abspath(os.path.dirname(__file__) + "/.."))
-sys.path.append(os.path.abspath(os.path.dirname(__file__)))
-
-sys.path.append(os.path.abspath(os.path.dirname(__file__) + "/.."))
-sys.path.append(os.path.abspath(os.path.dirname(__file__) + "/helpers"))
-
 # Configure logging
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 
-from execution.helpers.data_loading import load_data
+# Add project root to sys.path
+project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "../.."))
+if project_root not in sys.path:
+    sys.path.insert(0, project_root)
 
-from execution.helpers.dynamic_fitting import dynamic_multiplier_adjustment
+def saturation_function(r_as, r_ac, k=1.2, c=0.2):
+    """
+    Limits extreme rep increases using a sigmoid-like function.
 
-def calculate_functional_maxes(simulated_data):
-    logging.info("Calculating functional maxes...")
+    - r_as: Assigned reps
+    - r_ac: Actual reps executed
+    - k: Max allowed multiplier adjustment
+    - c: Sensitivity factor (higher = more resistant to change)
+    
+    Returns:
+    - Adjustment factor for Functional Max calculation.
+    """
+    return k / (1 + np.exp(-c * (r_ac - r_as)))
 
-    # Iterate through the simulated data to handle each case
-    for index, row in simulated_data.iterrows():
-        r_assigned = row['# of Reps']  # Assigned reps
-        r_actual = row['Actual Reps']  # Actual reps
-        W_assigned = row['Assigned Weight']  # Assigned weight
-        W_actual = row['Actual Weight']  # Actual weight
+def update_functional_max(prev_xf, M_ac, alpha=0.2):
+    """
+    Uses a weighted moving average to smooth Functional Max changes.
 
-        # Debugging: Show the data for each row
-        logging.debug(f"Row {index} - r_assigned: {r_assigned}, r_actual: {r_actual}, W_assigned: {W_assigned}, W_actual: {W_actual}")
+    - prev_xf: Previous Functional Max
+    - M_ac: Newly calculated Functional Max adjustment
+    - alpha: Weighting factor (higher = faster updates, lower = smoother updates)
+    
+    Returns:
+    - Smoothed Functional Max estimate.
+    """
+    return alpha * M_ac + (1 - alpha) * prev_xf
 
-        # Case 1: r_actual ≠ r_assigned && W_actual = W_assigned
-        if r_actual != r_assigned and W_actual == W_assigned:
-            logging.debug(f"Row {index} falls into Case 1")
-            # Adjust the multiplier dynamically based on the actual vs assigned reps
-            M_assigned = row['Multiplier']  # Assigned multiplier
-            M_actual = dynamic_multiplier_adjustment(r_assigned, r_actual, M_assigned)
-            
-            # Calculate Functional Max using the adjusted multiplier
-            functional_max = W_actual / M_actual
-            simulated_data.at[index, 'Functional Max'] = functional_max
+def calculate_functional_max(prev_xf, tested_max, assigned_weight, actual_weight, assigned_reps, actual_reps, beta=1.4, gamma=0.15, decay_factor=0.1):
+    """
+    Computes Functional Max using a weight-dominant adjustment model.
+    """
+    # If first calculation, start with tested max to prevent overestimation
+    if prev_xf is None:
+        prev_xf = tested_max
 
-        # Case 2: r_actual = r_assigned && W_actual ≠ W_assigned
-        elif r_actual == r_assigned and W_actual != W_assigned:
-            # logging.debug(f"Row {index} falls into Case 2")
-            # Calculate Functional Max by dividing actual weight by the assigned multiplier
-            M_assigned = row['Multiplier']  # Assigned multiplier
-            functional_max = W_actual / M_assigned
-            simulated_data.at[index, 'Functional Max'] = functional_max
+    # Increase weight impact
+    weight_ratio = (actual_weight / assigned_weight) ** beta
+    
+    # Reduce rep sensitivity
+    rep_adjustment = (actual_reps / assigned_reps) ** gamma
 
-        # Case 3: r_actual ≠ r_assigned && W_actual ≠ W_assigned
-        elif r_actual != r_assigned and W_actual != W_assigned:
-            # logging.debug(f"Row {index} falls into Case 3")
-            # Handle Case 3 with combined iterative method (not implemented here)
-            pass
+    # Apply rep-effort decay
+    rep_decay = np.exp(-decay_factor * abs(actual_reps - assigned_reps))
+    adjusted_rep_ratio = rep_adjustment * rep_decay
 
-    logging.info("Functional maxes calculated successfully.")
-    return simulated_data
+    adjustment_factor = weight_ratio * adjusted_rep_ratio
+
+    # More aggressive drops for weight reductions
+    if prev_xf * adjustment_factor < prev_xf:
+        alpha = 0.5  # Faster updates for declines
+    else:
+        alpha = 0.2  # Slower updates for increases
+
+    updated_xf = alpha * (prev_xf * adjustment_factor) + (1 - alpha) * prev_xf
+    
+    return round(updated_xf, 2)
