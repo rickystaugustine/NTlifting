@@ -142,17 +142,37 @@ def calculate_adjusted_multiplier_iterative(row, k=10):
     }
     alpha, beta = alpha_beta_mapping.get(exercise_code, (0.5, 0.5))
 
-    # CONSTANT MULTIPLIER STRATEGY
+    # CONSTANT MULTIPLIER STRATEGY (Refined)
     if is_constant_multiplier(exercise_code, multiplier_fits):
         if sim_reps == 0:
             sim_reps = 1  # Avoid division by zero
 
-        rep_scaling = (assigned_reps / sim_reps) if sim_reps != 0 else 1
-        weight_scaling = (tested_max / sim_weight) if sim_weight != 0 else 1
+        # Per-exercise alpha/beta tuning
+        alpha_beta_mapping = {
+            1: (0.5, 0.5),
+            2: (0.5, 0.5),
+            3: (0.5, 0.5),
+            # Add or adjust entries as needed for your exercises
+        }
+        alpha, beta = alpha_beta_mapping.get(exercise_code, (0.5, 0.5))
 
-        # Blend rep and weight scaling based on alpha and beta
-        adj_multiplier = row["Multiplier of Max"] * ((alpha * rep_scaling) + (beta * weight_scaling))
-        # logging.debug(f"[Iterative Constant] Code: {exercise_code} | Multiplier of Max: {row['Multiplier of Max']:.4f} | Assigned Reps: {assigned_reps} | Sim Reps: {sim_reps} | Adj Multiplier: {adj_multiplier:.4f}")
+        # Refined rep scaling using log to flatten ratio
+        rep_scaling = np.log((assigned_reps + 1) / (sim_reps + 1) + 1)
+
+        # Refined weight scaling using relative intensities
+        assigned_intensity = assigned_weight / tested_max if tested_max != 0 else 0
+        sim_intensity = sim_weight / tested_max if tested_max != 0 else 0
+        weight_scaling = assigned_intensity / sim_intensity if sim_intensity != 0 else 1
+
+        # Multiplicative blending of rep and weight scaling
+        combined_scaling = (rep_scaling ** alpha) * (weight_scaling ** beta)
+
+        # Baseline multiplier uses assigned intensity rather than raw multiplier of max
+        baseline_multiplier = assigned_weight / tested_max if tested_max != 0 else 0
+
+        # Final adjusted multiplier
+        adj_multiplier = baseline_multiplier * combined_scaling
+
         return adj_multiplier
 
     # FITTED MULTIPLIER STRATEGY
