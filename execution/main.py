@@ -17,7 +17,6 @@ sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 from helpers.data_loading import load_data
 from helpers.data_processing import preprocess_data
 from helpers.multiplier_fitting import fit_multipliers
-from helpers.exercise_fitting import fit_exercise_multipliers
 from helpers.data_merging import merge_data
 from helpers.weight_assignment import assign_weights
 from helpers.simulation import run_simulation
@@ -27,11 +26,12 @@ step_time = time.time() - start_time
 logging.info(f"✅ Helper-function import completed in {step_time:.2f} seconds.")
 
 def upload_dataframe(df, sheet_name):
-    try:
-        write_to_google_sheet("After-School Lifting", sheet_name, df)
-        logging.info(f"✅ Successfully uploaded {sheet_name} to Google Sheets.")
-    except Exception as e:
-        logging.error(f"❌ ERROR: Failed to upload {sheet_name} to Google Sheets - {str(e)}")
+    if sheet_name == "SimulatedData" and "Functional Max" not in df.columns:
+        logging.error("❌ ERROR: 'Functional Max' is missing inside upload_dataframe().")
+        return
+
+    write_to_google_sheet("After-School Lifting", sheet_name, df)
+    logging.info(f"✅ Successfully uploaded {sheet_name} to Google Sheets.")
 
 if __name__ == "__main__":
     # Step 1: Load Data
@@ -52,8 +52,6 @@ if __name__ == "__main__":
     logging.info(f"Fitting multipliers...")
     step_start_time = time.time()
     exercise_functions = fit_multipliers(repeated_program_df)  # Now only returns multipliers
-    _, constant_multiplier_exercises = fit_exercise_multipliers(repeated_program_df)  # Get classification separately
-    constant_multiplier_exercises = {str(key).strip().upper(): value for key, value in constant_multiplier_exercises.items()}
     step_time = time.time() - step_start_time
     logging.info(f"✅ Multiplier fitting completed in {step_time:.2f} seconds.")
 
@@ -116,13 +114,29 @@ if __name__ == "__main__":
     # Step 6: Simulate Lifting Performance
     logging.info(f"Simulating lift data...")
     step_start_time = time.time()
-    simulated_data = run_simulation(assigned_weights_df, maxes_df, constant_multiplier_exercises)
+    simulated_data = run_simulation(assigned_weights_df, maxes_df, exercise_functions)
 
-    step_time = time.time() - step_start_time
-    logging.info(f"✅ Lift-data simulation completed in {step_time:.2f} seconds.")
+    if "Functional Max" not in simulated_data.columns:
+        logging.error("❌ ERROR: 'Functional Max' is missing immediately after run_simulation()!")
 
-    logging.info(f"Uploading Simulated Data to Google Sheets...")
-    upload_dataframe(simulated_data, "SimulatedData")
+    expected_columns = ["Exercise", "Code", "Week #", "Set #", "# of Reps", "Multiplier of Max",
+                        "Relevant Core", "Player", "Tested Max", "Assigned Weight", "Simulation Round",
+                        "Simulated Reps", "Simulated Weight", "Reps Match",
+                        "Weights Close", "Case", "Multiplier Type", "Method", "Adjusted Multiplier", "Functional Max"]
+
+    missing_columns = [col for col in expected_columns if col not in simulated_data.columns]
+    if missing_columns:
+        logging.error(f"❌ ERROR: Missing columns in simulated_data before upload: {missing_columns}")
+    else:
+        logging.info("✅ All expected columns are present before upload.")
+        # Ensure numeric conversion for critical columns before upload
+        simulated_data["Adjusted Multiplier"] = pd.to_numeric(simulated_data["Adjusted Multiplier"], errors="coerce").fillna(0)
+        simulated_data["Functional Max"] = pd.to_numeric(simulated_data["Functional Max"], errors="coerce").fillna(0)
+        # Log non-zero counts for critical columns
+        logging.info(f"🔎 Adjusted Multiplier non-zero count: {simulated_data['Adjusted Multiplier'].astype(float).gt(0).sum()}")
+        logging.info(f"🔎 Functional Max non-zero count: {simulated_data['Functional Max'].astype(float).gt(0).sum()}")
+        upload_dataframe(simulated_data[expected_columns], "SimulatedData")
+        logging.info(f"✅ Successfully uploaded Simulated Data to Google Sheets.")
 
     run_time = time.time() - start_time
     logging.info(f"🏁 Execution completed successfully in {run_time:.2f} seconds.")

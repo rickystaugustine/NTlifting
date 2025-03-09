@@ -69,7 +69,6 @@ def fit_exercise_multipliers(program_df):
 
     exercises = program_df["Code"].unique()
     exercise_functions = {}  # Stores multiplier functions
-    constant_multiplier_exercises = {}  # Stores classification (2a vs 2b)
 
     # logging.info(f"🔍 Fitting multipliers and classifying {len(exercises)} exercises...")
 
@@ -91,23 +90,21 @@ def fit_exercise_multipliers(program_df):
 
         # Store the function for this exercise
         if isinstance(multiplier_instance, FittedMultiplier):
-            exercise_functions[exercise] = multiplier_instance  # Store function reference directly
+            exercise_functions[exercise] = multiplier_instance  # Store full object
         elif isinstance(multiplier_instance, ConstantMultiplier):
-            exercise_functions[exercise] = lambda w, s, r: multiplier_instance  # Keep lambda only for constant cases
+            exercise_functions[exercise] = multiplier_instance  # Store full object
 
-        # Extract classification based on the returned multiplier type
-        constant_multiplier_exercises[exercise] = "2a" if isinstance(multiplier_instance, ConstantMultiplier) else "2b"
+
+    # logging.info(f"DEBUG: First 10 keys in exercise_functions: {list(exercise_functions.keys())[:10]}")
+    # for exercise, function in exercise_functions.items():
+        # logging.info(f"DEBUG: {exercise} → Stored Function: {repr(function)}")
 
     # logging.info(f"✅ Fitted multipliers successfully created for {len(exercise_functions)} exercises.")
     # logging.info(f"✅ Exercises successfully classified as constant (2a) or fitted (2b).")
 
-    constant_multiplier_exercises = {
-        str(program_df.loc[program_df["Code"] == exercise, "Exercise"].iloc[0]).strip().upper(): value
-        for exercise, value in constant_multiplier_exercises.items()
-    }
     exercise_functions = {
         str(program_df.loc[program_df["Code"] == exercise, "Exercise"].iloc[0]).strip().upper(): value
         for exercise, value in exercise_functions.items()
     }
 
-    return exercise_functions, constant_multiplier_exercises  # Return both data structures
+    return exercise_functions

@@ -15,7 +15,7 @@ def authorize_google_client():
         "https://spreadsheets.google.com/feeds",
         "https://www.googleapis.com/auth/drive"
     ]
-    
+
     credentials_path = "/Users/ricky.staugustine/.config/gspread/service_account.json"
 
     if not os.path.exists(credentials_path):
@@ -26,7 +26,7 @@ def authorize_google_client():
     client = gspread.authorize(creds)
     logging.info("✅ Google Sheets API authorization successful!")
     return client
-    
+
 def read_google_sheets(sheet_name, worksheet_name):
     try:
         client = gspread.service_account()
@@ -63,11 +63,27 @@ def write_to_google_sheet(sheet_name, worksheet_name, dataframe):
             worksheet = sheet.worksheet(worksheet_name)
             worksheet.clear()  # ✅ Clear existing worksheet
         except gspread.exceptions.WorksheetNotFound:
-            # logging.warning(f"⚠️ Worksheet '{worksheet_name}' not found in '{sheet_name}'. Creating a new one.")
             worksheet = sheet.add_worksheet(title=worksheet_name, rows="100", cols="20")
 
-        # ✅ Ensure `append_rows()` is always executed
-        worksheet.append_rows([dataframe.columns.tolist()] + dataframe.values.tolist())
+        dataframe.columns = dataframe.columns.str.strip()  # ✅ Removes extra spaces from column names
+
+        # ✅ Raise Exception If Critical Columns Are Missing
+        if worksheet_name == "SimulatedData" and "Functional Max" not in dataframe.columns:
+            error_message = "❌ ERROR: 'Functional Max' column is missing before writing to SimulatedData."
+            logging.error(error_message)
+            raise ValueError(error_message)
+
+        # Convert all data to string to prevent type issues in Google Sheets
+        dataframe_str = dataframe.astype(str)
+
+        # ✅ Implement Batch Uploading for Large DataFrames
+        max_rows = 5000  # Set batch size
+        rows = [dataframe_str.columns.tolist()] + dataframe_str.values.tolist()
+
+        for i in range(0, len(rows), max_rows):
+            batch = rows[i:i + max_rows]
+            worksheet.append_rows(batch)
+        logging.info(f"✅ Successfully uploaded data to {worksheet_name}")
 
     except Exception as e:
-        logging.error(f"❌ ERROR: Failed to write to Google Sheets - {e}")
+        logging.error(f"❌ ERROR: Failed to write {worksheet_name} to Google Sheets - {e}")
