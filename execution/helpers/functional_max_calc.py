@@ -95,13 +95,13 @@ def assign_cases(expanded_df):
     expanded_df.loc[(expanded_df["Reps Match"]) & (~expanded_df["Weights Close"]), "Case"] = 1
     expanded_df.loc[(~expanded_df["Reps Match"]) & (expanded_df["Weights Close"]), "Case"] = 2
 
-    # Assign "Method" Based on Case and Multiplier Type
-    expanded_df.loc[expanded_df["Case"] == 1, "Method"] = "Ratio"
-    expanded_df.loc[(expanded_df["Case"] == 2) & (expanded_df["Multiplier Type"] == "Constant"), "Method"] = "Ratio"
-    expanded_df.loc[(expanded_df["Case"] == 2) & (expanded_df["Multiplier Type"] == "Fitted"), "Method"] = "Function"
-
     # Determine if the exercise uses a Constant or Fitted multiplier using Exercise Code
     expanded_df["Multiplier Type"] = expanded_df["Code"].apply(lambda code: "Constant" if is_constant_multiplier(code, multiplier_fits) else "Fitted")
+
+    # Assign "Method" Based on Case and Multiplier Type
+    expanded_df.loc[expanded_df["Case"] == 1, "Method"] = "Ratio"
+    expanded_df.loc[(expanded_df["Case"] == 2) & (expanded_df["Multiplier Type"] == "Constant"), "Method"] = "Scale"
+    expanded_df.loc[(expanded_df["Case"] == 2) & (expanded_df["Multiplier Type"] == "Fitted"), "Method"] = "Function"
 
     # Ensure "Multiplier of Max" Column Exists Before Assigning Adjusted Multiplier
     if "Multiplier of Max" in expanded_df.columns:
@@ -114,17 +114,33 @@ def assign_cases(expanded_df):
             expanded_df.loc[mask_function, "Tested Max"].values /
             expanded_df.loc[mask_function, "Simulated Weight"].values
         )
+
+        # Ensure numeric types for reps columns to prevent TypeErrors
+        expanded_df["# of Reps"] = pd.to_numeric(expanded_df["# of Reps"], errors="coerce").fillna(0)
+        expanded_df["Simulated Reps"] = pd.to_numeric(expanded_df["Simulated Reps"], errors="coerce").fillna(1)
+        expanded_df["Simulated Reps"] = expanded_df["Simulated Reps"].replace(0, 1)
+
+        mask_scale = expanded_df["Method"] == "Scale"
+        expanded_df.loc[mask_scale, "Adjusted Multiplier"] = (
+            expanded_df.loc[mask_scale, "Multiplier of Max"].values *
+            (expanded_df.loc[mask_scale, "# of Reps"].values /
+             expanded_df.loc[mask_scale, "Simulated Reps"].values)
+        )
     else:
         logging.error("❌ ERROR: 'Multiplier of Max' column is missing from expanded_df.")
 
     # Calculate "Functional Max" Based on Method
     expanded_df.loc[expanded_df["Method"] == "Ratio", "Functional Max"] = (
-        expanded_df["Tested Max"].astype(np.float64) * 
+        expanded_df["Tested Max"].astype(np.float64) *
         (expanded_df["Simulated Weight"].astype(np.float64) / expanded_df["Assigned Weight"].astype(np.float64))
     )
     expanded_df.loc[expanded_df["Method"] == "Function", "Functional Max"] = (
-        expanded_df["Simulated Weight"].astype(np.float64) * 
+        expanded_df["Simulated Weight"].astype(np.float64) *
         expanded_df["Adjusted Multiplier"].astype(np.float64)
+    )
+    expanded_df.loc[expanded_df["Method"] == "Scale", "Functional Max"] = (
+        expanded_df.loc[expanded_df["Method"] == "Scale", "Simulated Weight"].astype(np.float64) /
+        expanded_df.loc[expanded_df["Method"] == "Scale", "Adjusted Multiplier"].astype(np.float64)
     )
     expanded_df.loc[expanded_df["Method"] == "Iterative", "Functional Max"] = 0
 
