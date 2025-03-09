@@ -73,9 +73,15 @@ def calculate_functional_max(row):
 
 def calculate_adjusted_multiplier_function(row, k=10):
     exercise_code = row["Code"]
-    week_num = row["Week #"]
-    set_num = row["Set #"]
-    sim_reps = row["Simulated Reps"]
+
+    # Explicit type conversions
+    try:
+        week_num = float(row["Week #"])
+        set_num = float(row["Set #"])
+        sim_reps = float(row["Simulated Reps"])
+    except Exception as e:
+        logging.error(f"❌ Error converting row values to float for exercise code {exercise_code}: {e}")
+        return 0
 
     coeffs = multiplier_fits.get(exercise_code)
     if coeffs is None:
@@ -161,7 +167,7 @@ def assign_cases(expanded_df):
         (expanded_df["Simulated Weight"].astype(np.float64) / expanded_df["Assigned Weight"].astype(np.float64))
     )
     expanded_df.loc[expanded_df["Method"] == "Function", "Functional Max"] = (
-        expanded_df["Simulated Weight"].astype(np.float64) *
+        expanded_df["Simulated Weight"].astype(np.float64) /
         expanded_df["Adjusted Multiplier"].astype(np.float64)
     )
     expanded_df.loc[expanded_df["Method"] == "Scale", "Functional Max"] = (
