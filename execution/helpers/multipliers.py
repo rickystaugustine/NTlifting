@@ -26,7 +26,7 @@ exercise_functions = {}
 for code, coeffs in multiplier_fits.items():
     if isinstance(coeffs, list):  # Ensure coefficients are stored as a list
         exercise_functions[code] = create_multiplier_function(coeffs)
-        logging.info(f"DEBUG: {code} -> {coeffs}")
+        # logging.info(f"DEBUG: {code} -> {coeffs}")
     else:
         exercise_functions[code] = lambda w, s, r, c=coeffs: c  # Wrap static values in a function
 
@@ -34,7 +34,7 @@ for code, coeffs in multiplier_fits.items():
 with open(multipliers_path, "wb") as f:
     pickle.dump(multiplier_fits, f)
 
-logging.info(f"Successfully saved multiplier_fits.pkl at {multipliers_path}.")
+# logging.info(f"Successfully saved multiplier_fits.pkl at {multipliers_path}.")
 
 # Ensure exercise_functions is available for import
 __all__ = ["multiplier_fits", "exercise_functions"]

@@ -122,21 +122,21 @@ if __name__ == "__main__":
     expected_columns = ["Exercise", "Code", "Week #", "Set #", "# of Reps", "Multiplier of Max",
                         "Relevant Core", "Player", "Tested Max", "Assigned Weight", "Simulation Round",
                         "Simulated Reps", "Simulated Weight", "Reps Match",
-                        "Weights Close", "Case", "Multiplier Type", "Method", "Adjusted Multiplier", "Functional Max"]
+                        "Weights Close", "Case", "Multiplier Type", "Method", "Adjusted Multiplier", "Functional Max", "Strength Change", "Expected Change", "Mismatch"]
 
     missing_columns = [col for col in expected_columns if col not in simulated_data.columns]
     if missing_columns:
         logging.error(f"❌ ERROR: Missing columns in simulated_data before upload: {missing_columns}")
     else:
-        logging.info("✅ All expected columns are present before upload.")
+        # logging.info("✅ All expected columns are present before upload.")
         # Ensure numeric conversion for critical columns before upload
         simulated_data["Adjusted Multiplier"] = pd.to_numeric(simulated_data["Adjusted Multiplier"], errors="coerce").fillna(0)
         simulated_data["Functional Max"] = pd.to_numeric(simulated_data["Functional Max"], errors="coerce").fillna(0)
         # Log non-zero counts for critical columns
-        logging.info(f"🔎 Adjusted Multiplier non-zero count: {simulated_data['Adjusted Multiplier'].astype(float).gt(0).sum()}")
-        logging.info(f"🔎 Functional Max non-zero count: {simulated_data['Functional Max'].astype(float).gt(0).sum()}")
+        # logging.info(f"🔎 Adjusted Multiplier non-zero count: {simulated_data['Adjusted Multiplier'].astype(float).gt(0).sum()}")
+        # logging.info(f"🔎 Functional Max non-zero count: {simulated_data['Functional Max'].astype(float).gt(0).sum()}")
         upload_dataframe(simulated_data[expected_columns], "SimulatedData")
-        logging.info(f"✅ Successfully uploaded Simulated Data to Google Sheets.")
+        # logging.info(f"✅ Successfully uploaded Simulated Data to Google Sheets.")
 
     run_time = time.time() - start_time
     logging.info(f"🏁 Execution completed successfully in {run_time:.2f} seconds.")

@@ -104,6 +104,8 @@ def run_simulation(input_data, maxes_df, exercise_functions):
 
     expanded_df = assign_cases(expanded_df)
 
+    iterative_df = expanded_df[expanded_df["Method"] == "Iterative"]
+
     expanded_df["Functional Max"] = expanded_df["Functional Max"].astype(np.float64)
     expanded_df["Adjusted Multiplier"] = expanded_df["Adjusted Multiplier"].astype(np.float64)
 
