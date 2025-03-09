@@ -97,12 +97,15 @@ def run_simulation(input_data, maxes_df, exercise_functions):
     expanded_df["Simulated Weight"] = expanded_df["Assigned Weight"].apply(simulate_weights)
 
     # Convert all relevant columns to numeric values
-    expanded_df["Simulated Weight"] = pd.to_numeric(expanded_df["Simulated Weight"], errors="coerce")
-    expanded_df["Assigned Weight"] = pd.to_numeric(expanded_df["Assigned Weight"], errors="coerce")
-    expanded_df["Tested Max"] = pd.to_numeric(expanded_df["Tested Max"], errors="coerce")
-    expanded_df["Multiplier of Max"] = pd.to_numeric(expanded_df["Multiplier of Max"], errors="coerce")
+    expanded_df["Simulated Weight"] = pd.to_numeric(expanded_df["Simulated Weight"], errors="coerce").astype(np.float64)
+    expanded_df["Assigned Weight"] = pd.to_numeric(expanded_df["Assigned Weight"], errors="coerce").astype(np.float64)
+    expanded_df["Tested Max"] = pd.to_numeric(expanded_df["Tested Max"], errors="coerce").astype(np.float64)
+    expanded_df["Multiplier of Max"] = pd.to_numeric(expanded_df["Multiplier of Max"], errors="coerce").astype(np.float64)
 
     expanded_df = assign_cases(expanded_df)
+
+    expanded_df["Functional Max"] = expanded_df["Functional Max"].astype(np.float64)
+    expanded_df["Adjusted Multiplier"] = expanded_df["Adjusted Multiplier"].astype(np.float64)
 
     expected_columns = ["Exercise", "Code", "Week #", "Set #", "# of Reps", "Multiplier of Max",
                         "Relevant Core", "Player", "Tested Max", "Assigned Weight", "Simulation Round",

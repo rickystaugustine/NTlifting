@@ -80,6 +80,9 @@ def assign_cases(expanded_df):
     expanded_df["Adjusted Multiplier"] = None  # Placeholder for Adjusted Multiplier
 
     expanded_df = expanded_df.reset_index(drop=True)
+    # Optional: Explicitly cast weight columns to np.float64 for precision
+    expanded_df["Simulated Weight"] = expanded_df["Simulated Weight"].astype(np.float64)
+    expanded_df["Assigned Weight"] = expanded_df["Assigned Weight"].astype(np.float64)
 
     # Calculate Reps Match and Weights Close before assigning cases
     expanded_df["Reps Match"] = expanded_df.apply(
@@ -116,19 +119,23 @@ def assign_cases(expanded_df):
 
     # Calculate "Functional Max" Based on Method
     expanded_df.loc[expanded_df["Method"] == "Ratio", "Functional Max"] = (
-        expanded_df["Tested Max"] * (expanded_df["Simulated Weight"] / expanded_df["Assigned Weight"])
+        expanded_df["Tested Max"].astype(np.float64) * 
+        (expanded_df["Simulated Weight"].astype(np.float64) / expanded_df["Assigned Weight"].astype(np.float64))
     )
     expanded_df.loc[expanded_df["Method"] == "Function", "Functional Max"] = (
-        expanded_df["Simulated Weight"] * expanded_df["Adjusted Multiplier"]
+        expanded_df["Simulated Weight"].astype(np.float64) * 
+        expanded_df["Adjusted Multiplier"].astype(np.float64)
     )
     expanded_df.loc[expanded_df["Method"] == "Iterative", "Functional Max"] = 0
 
-    # Convert to numeric and fill missing values
-    expanded_df["Adjusted Multiplier"] = pd.to_numeric(expanded_df["Adjusted Multiplier"], errors="coerce").fillna(0)
-    expanded_df["Functional Max"] = pd.to_numeric(expanded_df["Functional Max"], errors="coerce").fillna(0)
+    # Convert to numeric, fill missing values, and explicitly cast to np.float64
+    expanded_df["Adjusted Multiplier"] = pd.to_numeric(expanded_df["Adjusted Multiplier"], errors="coerce").fillna(0).astype(np.float64)
+    expanded_df["Functional Max"] = pd.to_numeric(expanded_df["Functional Max"], errors="coerce").fillna(0).astype(np.float64)
 
     # Ensure that Functional Max is not missing before upload
     if "Functional Max" not in expanded_df.columns:
         logging.error("❌ ERROR: 'Functional Max' column is missing from expanded_df after assignment.")
+
+    expanded_df["Functional Max"] = expanded_df["Functional Max"].astype(np.float64)
 
     return expanded_df
