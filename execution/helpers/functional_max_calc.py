@@ -71,6 +71,32 @@ def calculate_functional_max(row):
             return None  # Prevents division errors
     return None  # Placeholder for other methods
 
+def calculate_adjusted_multiplier_function(row, k=10):
+    exercise_code = row["Code"]
+    week_num = row["Week #"]
+    set_num = row["Set #"]
+    sim_reps = row["Simulated Reps"]
+
+    coeffs = multiplier_fits.get(exercise_code)
+    if coeffs is None:
+        logging.warning(f"⚠️ No coefficients found for exercise code {exercise_code}. Defaulting to 0.")
+        return 0
+
+    A, B, C, D = coeffs[:4]  # Extract coefficients
+
+    try:
+        adj_multiplier = (
+            A * week_num +
+            B * set_num +
+            C * np.log(k / (sim_reps + 1)) +
+            D
+        )
+        return adj_multiplier
+
+    except Exception as e:
+        logging.error(f"❌ Error calculating Adjusted Multiplier for exercise code {exercise_code}: {e}")
+        return 0
+
 def assign_cases(expanded_df):
     """Assigns Cases, Multiplier Type, Method, and Adjusted Multiplier."""
     expanded_df["Case"] = 3  # Default all to Case 3
@@ -110,9 +136,9 @@ def assign_cases(expanded_df):
         expanded_df.loc[mask_ratio, "Adjusted Multiplier"] = expanded_df.loc[mask_ratio, "Multiplier of Max"].values
 
         mask_function = expanded_df["Method"] == "Function"
-        expanded_df.loc[mask_function, "Adjusted Multiplier"] = (
-            expanded_df.loc[mask_function, "Tested Max"].values /
-            expanded_df.loc[mask_function, "Simulated Weight"].values
+        expanded_df.loc[mask_function, "Adjusted Multiplier"] = expanded_df[mask_function].apply(
+            lambda row: calculate_adjusted_multiplier_function(row, k=10),  # Adjust k if needed
+            axis=1
         )
 
         # Ensure numeric types for reps columns to prevent TypeErrors
