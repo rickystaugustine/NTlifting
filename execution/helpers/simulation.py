@@ -6,7 +6,7 @@ import sys
 import time
 from scipy.stats import norm
 from execution.helpers.google_sheets_utils import write_to_google_sheet
-from execution.helpers.functional_max_calc import assign_cases
+from execution.helpers.functional_max_calc import assign_cases, load_multiplier_fits
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
@@ -102,9 +102,8 @@ def run_simulation(input_data, maxes_df, exercise_functions):
     expanded_df["Tested Max"] = pd.to_numeric(expanded_df["Tested Max"], errors="coerce").astype(np.float64)
     expanded_df["Multiplier of Max"] = pd.to_numeric(expanded_df["Multiplier of Max"], errors="coerce").astype(np.float64)
 
-    expanded_df = assign_cases(expanded_df)
-
-    iterative_df = expanded_df[expanded_df["Method"] == "Iterative"]
+    multiplier_fits = load_multiplier_fits()
+    expanded_df, trend_summary_df = assign_cases(expanded_df, multiplier_fits)
 
     expanded_df["Functional Max"] = expanded_df["Functional Max"].astype(np.float64)
     expanded_df["Adjusted Multiplier"] = expanded_df["Adjusted Multiplier"].astype(np.float64)
@@ -122,4 +121,4 @@ def run_simulation(input_data, maxes_df, exercise_functions):
     simulated_data_path = os.path.join(project_root, "data/simulated_data.pkl")
     expanded_df.to_pickle(simulated_data_path)
 
-    return expanded_df
+    return expanded_df, trend_summary_df

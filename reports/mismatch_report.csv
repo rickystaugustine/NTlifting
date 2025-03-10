@@ -1,0 +1,1063 @@
+Exercise,Code,Week #,Set #,# of Reps,Multiplier of Max,Relevant Core,Player,Tested Max,Assigned Weight,Simulation Round,Simulated Reps,Simulated Weight,Case,Multiplier Type,Method,Adjusted Multiplier,Reps Match,Weights Close,Functional Max,Strength Change,Expected Change,Mismatch
+Barbell Squat,1,1,1,5,0.65,Barbell Squat,Bousman,285.0,185.2499932050705,3,3,199.04,3,Fitted,Iterative,1.1385079971574188,False,False,174.82529810678108,-1,1,True
+Barbell Squat,1,1,1,5,0.65,Barbell Squat,Ott,273.75,177.9374934732914,1,2,184.59,3,Fitted,Iterative,1.0794200572494492,False,False,171.00849549745033,-1,1,True
+Barbell Squat,1,1,1,5,0.65,Barbell Squat,Pearson,259.6,168.73999381065371,1,3,229.21,3,Fitted,Iterative,1.439360086700229,False,False,159.24437680182587,-1,1,True
+Barbell Squat,1,1,1,5,0.65,Barbell Squat,Marker,326.4,212.15999221801755,2,6,286.11,3,Fitted,Iterative,1.4819167198138283,False,False,193.06752948704414,-1,1,True
+Barbell Squat,1,1,1,5,0.65,Barbell Squat,Miears,364.0,236.59999132156372,1,4,234.82,3,Fitted,Iterative,1.0668560788451653,False,False,220.10466515238352,-1,0,True
+Barbell Squat,1,1,2,5,0.7,Barbell Squat,Bachman,152.5,106.74999818205832,4,22,149.61,3,Fitted,Iterative,1.611470760576685,False,False,92.84065442581173,-1,1,True
+Barbell Squat,1,1,2,5,0.7,Barbell Squat,Cole,217.5,152.24999740719795,2,4,197.91,3,Fitted,Iterative,1.3610393775506417,False,False,145.41092878309183,-1,1,True
+Barbell Squat,1,1,2,5,0.7,Barbell Squat,Wintrow,332.5,232.74999603629112,2,7,248.05,3,Fitted,Iterative,1.1474519154256435,False,False,216.1746358739457,-1,1,True
+Barbell Squat,1,1,2,5,0.7,Barbell Squat,Clark,288.0,201.5999965667725,5,7,296.91,3,Fitted,Iterative,1.5856935174850186,False,False,187.2429928772823,-1,1,True
+Barbell Squat,1,1,2,5,0.7,Barbell Squat,Brinkley,285.0,199.49999660253525,4,6,199.36,2,Fitted,Function,0.6553787598006284,False,True,304.19051124062514,1,0,True
+Barbell Squat,1,1,2,5,0.7,Barbell Squat,Gierzak,244.4,171.07999708652497,5,7,173.17,3,Fitted,Iterative,1.0898290219290003,False,False,158.8964842333604,-1,1,True
+Barbell Squat,1,1,2,5,0.7,Barbell Squat,Johnson,360.0,251.9999957084656,3,8,250.84,3,Fitted,Iterative,1.0793777270145213,False,False,232.3931592453782,-1,0,True
+Barbell Squat,1,1,3,10,0.8,Barbell Squat,Wolfe,95.0,76.00000113248825,1,21,87.87,3,Fitted,Iterative,1.3715015831975423,False,False,64.06846413923809,-1,1,True
+Barbell Squat,1,1,3,10,0.8,Barbell Squat,Wolfe,95.0,76.00000113248825,5,11,76.0,2,Fitted,Function,0.6981429324344408,False,True,108.86022971683781,1,0,True
+Barbell Squat,1,1,3,10,0.8,Barbell Squat,Adkins,173.9,139.12000207304956,3,1,179.22,3,Fitted,Iterative,1.341369565913902,False,False,133.60971096574255,-1,1,True
+Barbell Squat,1,1,3,10,0.8,Barbell Squat,Bachman,152.5,122.00000181794168,5,1,121.23,2,Fitted,Function,0.7683134615626369,False,True,157.7871611847539,1,-1,True
+Barbell Squat,1,1,3,10,0.8,Barbell Squat,Scott,195.0,156.00000232458115,3,13,160.81,3,Fitted,Iterative,1.191532418112968,False,False,134.96065869082696,-1,1,True
+Barbell Squat,1,1,3,10,0.8,Barbell Squat,Scott,195.0,156.00000232458115,5,4,180.86,3,Fitted,Iterative,1.2663171154728743,False,False,142.8236243434666,-1,1,True
+Barbell Squat,1,1,3,10,0.8,Barbell Squat,Roberts,225.0,180.000002682209,3,4,202.02,3,Fitted,Iterative,1.225875626702713,False,False,164.79648962707685,-1,1,True
+Barbell Squat,1,1,3,10,0.8,Barbell Squat,Hoblit,200.0,160.0000023841858,4,6,199.07,3,Fitted,Iterative,1.3838689947666858,False,False,143.85032163652335,-1,1,True
+Barbell Squat,1,2,1,3,0.675,Barbell Squat,Wolfe,95.0,64.12500113248825,1,1,63.62,2,Fitted,Function,0.6702928938191206,False,True,94.91373187251473,0,-1,True
+Barbell Squat,1,2,1,3,0.675,Barbell Squat,Bousman,285.0,192.37500339746475,4,3,191.83,3,Fitted,Iterative,1.046553091377431,True,True,183.2969598776122,-1,0,True
+Barbell Squat,1,2,1,3,0.675,Barbell Squat,Thomas,182.45,123.15375217497348,3,1,123.15,2,Fitted,Function,0.6702928938191206,False,True,183.72565356963517,1,0,True
+Barbell Squat,1,2,1,3,0.675,Barbell Squat,Hoblit,200.0,135.0000023841858,4,2,173.65,3,Fitted,Iterative,1.326760127297191,False,False,130.88273940953522,-1,1,True
+Barbell Squat,1,2,2,3,0.725,Barbell Squat,Adkins,173.9,126.07750414609907,4,5,174.85,3,Fitted,Iterative,1.4547872075045607,False,False,120.18939890179908,-1,1,True
+Barbell Squat,1,2,2,3,0.725,Barbell Squat,Bachman,152.5,110.56250363588332,2,2,127.48,3,Fitted,Iterative,1.1637896206582419,False,False,109.53869817802384,-1,1,True
+Barbell Squat,1,2,2,3,0.725,Barbell Squat,Scott,195.0,141.3750046491623,2,1,193.78,3,Fitted,Iterative,1.3535684554883183,False,False,143.16231972921622,-1,1,True
+Barbell Squat,1,2,2,3,0.725,Barbell Squat,Bousman,285.0,206.6250067949295,4,3,205.72,3,Fitted,Iterative,1.0209392715749415,True,True,201.5007216664789,-1,0,True
+Barbell Squat,1,2,2,3,0.725,Barbell Squat,Pearson,259.6,188.21000618934633,2,2,242.14,3,Fitted,Iterative,1.298566271333703,False,False,186.4671871935409,-1,1,True
+Barbell Squat,1,2,2,3,0.725,Barbell Squat,Pearson,259.6,188.21000618934633,3,4,239.52,3,Fitted,Iterative,1.3213163010889717,False,False,181.27377964125472,-1,1,True
+Barbell Squat,1,2,2,3,0.725,Barbell Squat,Pearson,259.6,188.21000618934633,5,4,254.92,3,Fitted,Iterative,1.4062706724849727,False,False,181.2737796412547,-1,1,True
+Barbell Squat,1,2,2,3,0.725,Barbell Squat,Clark,288.0,208.80000686645508,3,3,208.31,3,Fitted,Iterative,1.0230241483098348,True,True,203.62178189454713,-1,0,True
+Barbell Squat,1,2,2,3,0.725,Barbell Squat,Marker,326.4,236.6400077819824,4,6,235.79,2,Fitted,Function,0.6851038888210886,False,True,344.1667809034658,1,0,True
+Barbell Squat,1,2,2,3,0.725,Barbell Squat,Roberts,225.0,163.12500536441803,3,3,162.46,3,Fitted,Iterative,1.021250271288235,True,True,159.0795171051149,-1,0,True
+Barbell Squat,1,2,2,3,0.725,Barbell Squat,Hoblit,200.0,145.00000476837158,4,4,144.92,2,Fitted,Function,0.6982811234254802,False,True,207.53818933137134,1,0,True
+Barbell Squat,1,2,3,8,0.825,Barbell Squat,Adkins,173.9,143.46749792695047,3,7,168.86,3,Fitted,Iterative,1.3055749995672108,False,False,129.3376482055615,-1,1,True
+Barbell Squat,1,2,3,8,0.825,Barbell Squat,Bachman,152.5,125.81249818205832,3,7,125.55,2,Fitted,Function,0.7437472582263455,False,True,168.8073449835713,1,0,True
+Barbell Squat,1,2,3,8,0.825,Barbell Squat,Scott,195.0,160.87499767541885,3,5,238.74,3,Fitted,Iterative,1.6215701085932568,False,False,147.227676888489,-1,1,True
+Barbell Squat,1,2,3,8,0.825,Barbell Squat,Sullivan,250.0,206.24999701976776,5,1,206.18,2,Fitted,Function,0.7980385905830971,False,True,258.3584333300874,1,0,True
+Barbell Squat,1,2,3,8,0.825,Barbell Squat,Brinkley,285.0,235.12499660253525,1,7,287.13,3,Fitted,Iterative,1.3545914597562398,False,False,211.96796859450845,-1,1,True
+Barbell Squat,1,2,3,8,0.825,Barbell Squat,Thomas,182.45,150.5212478250265,3,22,218.14,3,Fitted,Iterative,1.702211986477473,False,False,128.15090114094133,-1,1,True
+Barbell Squat,1,2,3,8,0.825,Barbell Squat,Cane Bond,310.0,255.749996304512,5,18,254.25,3,Fitted,Iterative,1.1553659584340923,False,False,220.06014470479457,-1,0,True
+Barbell Squat,1,2,3,8,0.825,Barbell Squat,Hoblit,200.0,164.9999976158142,1,15,223.0,3,Fitted,Iterative,1.5559552370145469,False,False,143.3203184095939,-1,1,True
+Barbell Squat,1,2,3,8,0.825,Barbell Squat,Gierzak,244.4,201.62999708652495,1,3,204.47,3,Fitted,Iterative,1.085261348383825,False,False,188.4062307245139,-1,1,True
+Barbell Squat,1,2,3,8,0.825,Barbell Squat,Johnson,360.0,296.9999957084656,5,16,430.85,3,Fitted,Iterative,1.6756646847118528,False,False,257.1218477842952,-1,1,True
+Barbell Squat,1,3,1,5,0.7,Barbell Squat,Pearson,259.6,181.71999690532687,1,15,224.83,3,Fitted,Iterative,1.4000804099799906,False,False,160.5836339094361,-1,1,True
+Barbell Squat,1,3,1,5,0.7,Barbell Squat,Sullivan,250.0,174.99999701976776,2,7,228.65,3,Fitted,Iterative,1.4163887190664617,False,False,161.4316726207073,-1,1,True
+Barbell Squat,1,3,1,5,0.7,Barbell Squat,Roberts,225.0,157.499997317791,2,6,196.89,3,Fitted,Iterative,1.344278935697265,False,False,146.46513812840112,-1,1,True
+Barbell Squat,1,3,1,5,0.7,Barbell Squat,Cane Bond,310.0,216.999996304512,2,3,223.73,3,Fitted,Iterative,1.0725803642766376,False,False,208.59043056497353,-1,1,True
+Barbell Squat,1,3,2,3,0.75,Barbell Squat,Pearson,259.6,194.7,1,1,193.73,2,Fitted,Function,0.7638908712215691,False,True,253.60952368785144,-1,0,True
+Barbell Squat,1,3,2,3,0.75,Barbell Squat,Pearson,259.6,194.7,2,1,254.41,3,Fitted,Iterative,1.2829158471197282,False,False,198.30607016911935,-1,1,True
+Barbell Squat,1,3,2,3,0.75,Barbell Squat,Marker,326.4,244.8,3,2,269.43,3,Fitted,Iterative,1.1035383363907227,False,False,244.15101054052067,-1,1,True
+Barbell Squat,1,3,2,3,0.75,Barbell Squat,Miears,364.0,273.0,4,5,404.03,3,Fitted,Iterative,1.5397764837513255,False,False,262.3952270109166,-1,1,True
+Barbell Squat,1,3,2,3,0.75,Barbell Squat,Roberts,225.0,168.75,3,9,168.71,2,Fitted,Function,0.7008605862675645,False,True,240.7183444263369,1,0,True
+Barbell Squat,1,3,2,3,0.75,Barbell Squat,Gierzak,244.4,183.3,2,16,216.48,3,Fitted,Iterative,1.3024372457328817,False,False,166.21146293938074,-1,1,True
+Barbell Squat,1,3,2,3,0.75,Barbell Squat,Gierzak,244.4,183.3,3,2,271.09,3,Fitted,Iterative,1.482872871105919,False,False,182.81405323561046,-1,1,True
+Barbell Squat,1,3,3,7,0.85,Barbell Squat,Miears,364.0,309.4000086784363,1,6,307.69,3,Fitted,Iterative,1.0855273814889537,False,False,283.44747930536755,-1,0,True
+Barbell Squat,1,3,3,7,0.85,Barbell Squat,Cane Bond,310.0,263.50000739097595,5,1,262.49,3,Fitted,Iterative,1.0229270931195231,False,False,256.6067530771028,-1,0,True
+Barbell Front Squat,2,1,1,5,0.55,Barbell Squat,Wolfe,95.0,52.25000113248825,3,1,51.81,2,Fitted,Function,0.5370884845883386,False,True,96.4645519065834,1,0,True
+Barbell Front Squat,2,1,1,5,0.55,Barbell Squat,Wolfe,95.0,52.25000113248825,5,1,51.55,2,Fitted,Function,0.5370884845883386,False,True,95.98046035098193,0,-1,True
+Barbell Front Squat,2,1,1,5,0.55,Barbell Squat,Bousman,285.0,156.75000339746475,4,7,164.72,3,Fitted,Iterative,1.148958174104923,False,False,143.36466175396018,-1,1,True
+Barbell Front Squat,2,1,1,5,0.55,Barbell Squat,Wintrow,332.5,182.87500396370888,4,7,182.22,2,Fitted,Function,0.5030339008910883,False,True,362.2419874231347,1,0,True
+Barbell Front Squat,2,1,1,5,0.55,Barbell Squat,Ott,273.75,150.5625032633543,4,3,215.41,3,Fitted,Iterative,1.5130639542694904,False,False,142.36675151249656,-1,1,True
+Barbell Front Squat,2,1,1,5,0.55,Barbell Squat,Brinkley,285.0,156.75000339746475,4,14,156.11,2,Fitted,Function,0.48759201004488867,False,True,320.16521350632513,1,0,True
+Barbell Front Squat,2,1,1,5,0.55,Barbell Squat,Thomas,182.45,100.34750217497349,2,5,99.61,3,Fitted,Iterative,1.0702938057175664,True,True,93.06790291402051,-1,0,True
+Barbell Front Squat,2,1,1,5,0.55,Barbell Squat,Gierzak,244.4,134.42000291347503,2,5,133.97,3,Fitted,Iterative,1.074608559190137,True,True,124.66865153294937,-1,0,True
+Barbell Front Squat,2,1,2,5,0.575,Barbell Squat,Ott,273.75,157.4062467366457,1,1,181.29,3,Fitted,Iterative,1.1531860393122504,False,False,157.20793854573517,-1,1,True
+Barbell Front Squat,2,1,2,5,0.575,Barbell Squat,Brinkley,285.0,163.87499660253525,3,3,223.45,3,Fitted,Iterative,1.4069762294347412,False,False,158.81576058308534,-1,1,True
+Barbell Front Squat,2,1,2,5,0.575,Barbell Squat,Miears,364.0,209.29999566078183,4,11,311.95,3,Fitted,Iterative,1.6161966240525778,False,False,193.01488157906937,-1,1,True
+Barbell Front Squat,2,1,2,5,0.575,Barbell Squat,Miears,364.0,209.29999566078183,5,5,208.16,1,Fitted,Ratio,0.575,True,False,362.0173988097108,-1,0,True
+Barbell Front Squat,2,1,2,5,0.575,Barbell Squat,Cane Bond,310.0,178.24999630451202,1,3,223.29,3,Fitted,Iterative,1.292584194300345,False,False,172.74696765177703,-1,1,True
+Barbell Front Squat,2,1,3,10,0.625,Barbell Squat,Cole,217.5,135.9375,2,11,199.55,3,Fitted,Iterative,1.6168383052131088,False,False,123.41988642686081,-1,1,True
+Barbell Front Squat,2,1,3,10,0.625,Barbell Squat,Cole,217.5,135.9375,5,28,174.22,3,Fitted,Iterative,1.4676677074885114,False,False,118.70534393519301,-1,1,True
+Barbell Front Squat,2,1,3,10,0.625,Barbell Squat,Wintrow,332.5,207.8125,2,27,207.73,2,Fitted,Function,0.5466337211750731,False,True,380.0168045861723,1,0,True
+Barbell Front Squat,2,1,3,10,0.625,Barbell Squat,Wintrow,332.5,207.8125,3,6,206.81,3,Fitted,Iterative,1.071116737132792,False,False,193.07886137004752,-1,0,True
+Barbell Front Squat,2,1,3,10,0.625,Barbell Squat,Sullivan,250.0,156.25,3,7,187.5,3,Fitted,Iterative,1.2989080423361832,False,False,144.35202022674926,-1,1,True
+Barbell Front Squat,2,1,3,10,0.625,Barbell Squat,Clark,288.0,180.0,1,1,210.57,3,Fitted,Iterative,1.195732586234922,False,False,176.10124740602322,-1,1,True
+Barbell Front Squat,2,1,3,10,0.625,Barbell Squat,Marker,326.4,204.0,2,24,204.0,2,Fitted,Function,0.549417661806534,False,True,371.30222448479344,1,0,True
+Barbell Front Squat,2,1,3,10,0.625,Barbell Squat,Marker,326.4,204.0,5,26,203.51,2,Fitted,Function,0.547527099246155,False,True,371.68936529387526,1,0,True
+Barbell Front Squat,2,1,3,10,0.625,Barbell Squat,Miears,364.0,227.5,5,9,239.56,3,Fitted,Iterative,1.150728018803198,False,False,208.18125229031247,-1,1,True
+Barbell Front Squat,2,1,3,10,0.625,Barbell Squat,Johnson,360.0,225.0,4,5,331.02,3,Fitted,Iterative,1.5732066014175117,False,False,210.41101639272293,-1,1,True
+Barbell Front Squat,2,2,1,3,0.5525,Barbell Squat,Wolfe,95.0,52.4875009059906,4,10,64.56,3,Fitted,Iterative,1.3199768668330023,False,False,48.90994806211847,-1,1,True
+Barbell Front Squat,2,2,1,3,0.5525,Barbell Squat,Scott,195.0,107.73750185966492,3,1,154.82,3,Fitted,Iterative,1.4261210620873548,False,False,108.5602086076734,-1,1,True
+Barbell Front Squat,2,2,1,3,0.5525,Barbell Squat,Scott,195.0,107.73750185966492,4,15,107.24,2,Fitted,Function,0.5056371429550139,False,True,212.088849670486,1,0,True
+Barbell Front Squat,2,2,1,3,0.5525,Barbell Squat,Bousman,285.0,157.4625027179718,2,2,157.35,2,Fitted,Function,0.5467586912806085,False,True,287.7869204629516,1,0,True
+Barbell Front Squat,2,2,1,3,0.5525,Barbell Squat,Sullivan,250.0,138.1250023841858,3,4,176.05,3,Fitted,Iterative,1.3182077929978875,False,False,133.55254075658627,-1,1,True
+Barbell Front Squat,2,2,1,3,0.5525,Barbell Squat,Hoblit,200.0,110.50000190734865,1,1,110.43,2,Fitted,Function,0.5567190185008892,False,True,198.3585908334181,-1,0,True
+Barbell Front Squat,2,2,2,3,0.5925,Barbell Squat,Bachman,152.5,90.35624563694,4,3,90.14,3,Fitted,Iterative,1.0246206831360596,True,True,87.97401954068333,-1,0,True
+Barbell Front Squat,2,2,2,3,0.5925,Barbell Squat,Cole,217.5,128.86874377727509,4,3,128.63,3,Fitted,Iterative,1.025175967241159,True,True,125.47114262359753,-1,0,True
+Barbell Front Squat,2,2,2,3,0.5925,Barbell Squat,Ott,273.75,162.19686716794968,2,2,237.41,3,Fitted,Iterative,1.4851569603581916,False,False,159.8551576277441,-1,1,True
+Barbell Front Squat,2,2,2,3,0.5925,Barbell Squat,Roberts,225.0,133.31249356269836,2,1,184.08,3,Fitted,Iterative,1.3775465879404254,False,False,133.6288744144898,-1,1,True
+Barbell Front Squat,2,2,2,3,0.5925,Barbell Squat,Roberts,225.0,133.31249356269836,4,2,187.8,3,Fitted,Iterative,1.4293564461153416,False,False,131.38780078992664,-1,1,True
+Barbell Front Squat,2,2,2,3,0.5925,Barbell Squat,Johnson,360.0,213.29998970031735,5,6,212.03,3,Fitted,Iterative,1.0458870832650196,False,False,202.72742955969107,-1,0,True
+Barbell Front Squat,2,2,3,8,0.6425,Barbell Squat,Bachman,152.5,97.98124745488168,1,1,117.51,3,Fitted,Iterative,1.220988245254667,False,False,96.24171277381168,-1,1,True
+Barbell Front Squat,2,2,3,8,0.6425,Barbell Squat,Scott,195.0,125.2874967455864,2,9,170.51,3,Fitted,Iterative,1.4781503400997311,False,False,115.35362498275761,-1,1,True
+Barbell Front Squat,2,2,3,8,0.6425,Barbell Squat,Scott,195.0,125.2874967455864,3,13,155.96,3,Fitted,Iterative,1.3711751455953907,False,False,113.74185165256856,-1,1,True
+Barbell Front Squat,2,2,3,8,0.6425,Barbell Squat,Wintrow,332.5,213.63124445080757,5,1,292.4,3,Fitted,Iterative,1.3934526600942196,False,False,209.8384885068353,-1,1,True
+Barbell Front Squat,2,2,3,8,0.6425,Barbell Squat,Ott,273.75,175.88437043130398,1,11,225.29,3,Fitted,Iterative,1.4018184394370354,False,False,160.71268123029935,-1,1,True
+Barbell Front Squat,2,2,3,8,0.6425,Barbell Squat,Clark,288.0,185.03999519348145,3,1,183.61,3,Fitted,Iterative,1.0102069293736065,False,False,181.75484117283779,-1,0,True
+Barbell Front Squat,2,2,3,8,0.6425,Barbell Squat,Brinkley,285.0,183.11249524354935,2,10,239.83,3,Fitted,Iterative,1.4281844778619608,False,False,167.9264854908894,-1,1,True
+Barbell Front Squat,2,2,3,8,0.6425,Barbell Squat,Cane Bond,310.0,199.17499482631683,3,1,198.92,2,Fitted,Function,0.6310931985167979,False,True,315.19908702471196,1,0,True
+Barbell Front Squat,2,2,3,8,0.6425,Barbell Squat,Hoblit,200.0,128.4999966621399,4,6,172.33,3,Fitted,Iterative,1.4353206068696687,False,False,120.06376775697478,-1,1,True
+Barbell Front Squat,2,2,3,8,0.6425,Barbell Squat,Gierzak,244.4,157.02699592113495,1,1,156.76,2,Fitted,Function,0.6310931985167979,False,True,248.39437402972976,1,0,True
+Barbell Front Squat,2,2,3,8,0.6425,Barbell Squat,Johnson,360.0,231.2999939918518,1,10,286.82,3,Fitted,Iterative,1.3521740341886237,False,False,212.11766588322874,-1,1,True
+Barbell Front Squat,2,3,1,5,0.575,Barbell Squat,Clark,288.0,165.59999656677246,3,6,189.18,3,Fitted,Iterative,1.2040045236870884,False,False,157.12565549227656,-1,1,True
+Barbell Front Squat,2,3,1,5,0.575,Barbell Squat,Brinkley,285.0,163.87499660253525,3,8,162.72,3,Fitted,Iterative,1.0584828853652553,False,False,153.72945774541222,-1,0,True
+Barbell Front Squat,2,3,1,5,0.575,Barbell Squat,Gierzak,244.4,140.52999708652496,1,1,155.79,3,Fitted,Iterative,1.1059930948767718,False,False,140.85983060984472,-1,1,True
+Barbell Front Squat,2,3,2,3,0.6,Barbell Squat,Cole,217.5,130.5000051856041,4,1,130.19,2,Fitted,Function,0.6135366424213942,False,True,212.1959651605973,-1,0,True
+Barbell Front Squat,2,3,2,3,0.6,Barbell Squat,Cole,217.5,130.5000051856041,5,2,171.56,3,Fitted,Iterative,1.3068465235130673,False,False,131.27784855624216,-1,1,True
+Barbell Front Squat,2,3,2,3,0.6,Barbell Squat,Ott,273.75,164.2500065267086,3,2,171.53,3,Fitted,Iterative,1.038134849769831,False,False,165.2290162863048,-1,1,True
+Barbell Front Squat,2,3,2,3,0.6,Barbell Squat,Clark,288.0,172.80000686645508,1,2,232.77,3,Fitted,Iterative,1.3390670679272136,False,False,173.82997877792067,-1,1,True
+Barbell Front Squat,2,3,2,3,0.6,Barbell Squat,Clark,288.0,172.80000686645508,5,7,209.78,3,Fitted,Iterative,1.25698935249439,False,False,166.89083291255346,-1,1,True
+Barbell Front Squat,2,3,2,3,0.6,Barbell Squat,Roberts,225.0,135.00000536441803,5,3,134.6,3,Fitted,Iterative,1.0028714917005215,True,True,134.21460387887302,-1,0,True
+Barbell Front Squat,2,3,2,3,0.6,Barbell Squat,Gierzak,244.4,146.64000582695007,4,4,145.83,2,Fitted,Function,0.5910277869468501,False,True,246.7396681183692,1,0,True
+Barbell Front Squat,2,3,3,7,0.675,Barbell Squat,Bachman,152.5,102.93750181794168,2,1,147.88,3,Fitted,Iterative,1.4901944860879517,False,False,99.23536919547566,-1,1,True
+Barbell Front Squat,2,3,3,7,0.675,Barbell Squat,Pearson,259.6,175.23000309467318,4,12,174.17,3,Fitted,Iterative,1.109425468820353,False,False,156.99116785663315,-1,0,True
+Barbell Front Squat,2,3,3,7,0.675,Barbell Squat,Clark,288.0,194.4000034332275,2,10,271.93,3,Fitted,Iterative,1.5508042531777864,False,False,175.34772647339753,-1,1,True
+Barbell Front Squat,2,3,3,7,0.675,Barbell Squat,Brinkley,285.0,192.37500339746475,1,6,282.24,3,Fitted,Iterative,1.597413971345403,False,False,176.685571218766,-1,1,True
+Barbell Front Squat,2,3,3,7,0.675,Barbell Squat,Johnson,360.0,243.0000042915344,1,6,241.87,3,Fitted,Iterative,1.0837354479250725,False,False,223.18177417107285,-1,0,True
+DB Reverse Lunge Step-up,3,1,1,3,0.192,Barbell Squat,Wolfe,95.0,18.240000158548355,2,4,26.86,3,Constant,Iterative,1.4725877192982366,False,False,18.240000000000112,-1,1,True
+DB Reverse Lunge Step-up,3,1,1,3,0.192,Barbell Squat,Cole,217.5,41.76000036299229,4,1,52.12,3,Constant,Iterative,1.2480842911877383,False,False,41.76000000000003,-1,1,True
+DB Reverse Lunge Step-up,3,1,1,3,0.192,Barbell Squat,Wintrow,332.5,63.84000055491924,1,2,70.99,3,Constant,Iterative,1.1119987468671644,False,False,63.840000000000195,-1,1,True
+DB Reverse Lunge Step-up,3,1,1,3,0.192,Barbell Squat,Clark,288.0,55.296000480651855,2,1,63.75,3,Constant,Iterative,1.1528862847222212,False,False,55.29600000000005,-1,1,True
+DB Reverse Lunge Step-up,3,1,1,3,0.192,Barbell Squat,Brinkley,285.0,54.720000475645065,4,10,53.53,3,Constant,Iterative,0.9782529239765977,False,False,54.72000000000059,-1,0,True
+DB Reverse Lunge Step-up,3,1,1,3,0.192,Barbell Squat,Miears,364.0,69.88800060749054,2,1,94.4,3,Constant,Iterative,1.3507326007325997,False,False,69.88800000000006,-1,1,True
+DB Reverse Lunge Step-up,3,1,1,3,0.192,Barbell Squat,Roberts,225.0,43.20000037550926,2,2,52.3,3,Constant,Iterative,1.2106481481481441,False,False,43.20000000000014,-1,1,True
+DB Reverse Lunge Step-up,3,1,1,3,0.192,Barbell Squat,Thomas,182.45,35.03040030449628,3,1,36.22,3,Constant,Iterative,1.0339590755458108,False,False,35.03040000000003,-1,1,True
+DB Reverse Lunge Step-up,3,1,1,3,0.192,Barbell Squat,Johnson,360.0,69.12000060081482,1,10,68.05,3,Constant,Iterative,0.9845196759259153,False,False,69.12000000000074,-1,0,True
+DB Reverse Lunge Step-up,3,1,1,3,0.192,Barbell Squat,Johnson,360.0,69.12000060081482,5,1,102.35,3,Constant,Iterative,1.4807581018518505,False,False,69.12000000000006,-1,1,True
+DB Reverse Lunge Step-up,3,1,2,3,0.192,Barbell Squat,Wolfe,95.0,18.240000158548355,4,4,22.79,3,Constant,Iterative,1.2494517543859585,False,False,18.240000000000094,-1,1,True
+DB Reverse Lunge Step-up,3,1,2,3,0.192,Barbell Squat,Adkins,173.9,33.38880029022694,5,2,42.54,3,Constant,Iterative,1.2740799309948214,False,False,33.38880000000008,-1,1,True
+DB Reverse Lunge Step-up,3,1,2,3,0.192,Barbell Squat,Scott,195.0,37.44000032544136,3,2,50.55,3,Constant,Iterative,1.350160256410253,False,False,37.44000000000009,-1,1,True
+DB Reverse Lunge Step-up,3,1,2,3,0.192,Barbell Squat,Cole,217.5,41.76000036299229,4,9,59.47,3,Constant,Iterative,1.4240900383141633,False,False,41.76000000000038,-1,1,True
+DB Reverse Lunge Step-up,3,1,2,3,0.192,Barbell Squat,Wintrow,332.5,63.84000055491924,3,3,62.84,1,Constant,Ratio,0.192,True,False,327.29166382173497,-1,0,True
+DB Reverse Lunge Step-up,3,1,2,3,0.192,Barbell Squat,Clark,288.0,55.296000480651855,5,2,66.96,3,Constant,Iterative,1.2109374999999971,False,False,55.29600000000013,-1,1,True
+DB Reverse Lunge Step-up,3,1,2,3,0.192,Barbell Squat,Marker,326.4,62.668800544738765,1,4,61.35,3,Constant,Iterative,0.9789560355392106,False,False,62.668800000000324,-1,0,True
+DB Reverse Lunge Step-up,3,1,2,3,0.192,Barbell Squat,Hoblit,200.0,38.40000033378601,5,5,37.93,2,Constant,Scale,0.1152,False,True,329.25347222222223,1,0,True
+DB Reverse Lunge Step-up,3,1,3,3,0.192,Barbell Squat,Wolfe,95.0,18.240000158548355,4,5,17.9,2,Constant,Scale,0.1152,False,True,155.38194444444443,1,0,True
+DB Reverse Lunge Step-up,3,1,3,3,0.192,Barbell Squat,Adkins,173.9,33.38880029022694,1,6,33.06,2,Constant,Scale,0.096,False,True,344.375,1,0,True
+DB Reverse Lunge Step-up,3,1,3,3,0.192,Barbell Squat,Bachman,152.5,29.280000254511833,1,3,28.75,3,Constant,Iterative,0.9818989071038222,True,True,29.280000000000086,-1,0,True
+DB Reverse Lunge Step-up,3,1,3,3,0.192,Barbell Squat,Cole,217.5,41.76000036299229,3,5,40.81,2,Constant,Scale,0.1152,False,True,354.25347222222223,1,0,True
+DB Reverse Lunge Step-up,3,1,3,3,0.192,Barbell Squat,Bousman,285.0,54.720000475645065,4,5,72.76,3,Constant,Iterative,1.3296783625730926,False,False,54.72000000000028,-1,1,True
+DB Reverse Lunge Step-up,3,1,3,3,0.192,Barbell Squat,Bousman,285.0,54.720000475645065,5,2,71.31,3,Constant,Iterative,1.303179824561402,False,False,54.72000000000007,-1,1,True
+DB Reverse Lunge Step-up,3,1,3,3,0.192,Barbell Squat,Wintrow,332.5,63.84000055491924,1,2,63.05,2,Constant,Scale,0.28800000000000003,False,True,218.9236111111111,-1,0,True
+DB Reverse Lunge Step-up,3,1,3,3,0.192,Barbell Squat,Ott,273.75,52.5600004568696,1,1,59.44,3,Constant,Iterative,1.1308980213089814,False,False,52.55999999999994,-1,1,True
+DB Reverse Lunge Step-up,3,1,3,3,0.192,Barbell Squat,Ott,273.75,52.5600004568696,3,4,51.99,2,Constant,Scale,0.14400000000000002,False,True,361.04166666666663,1,0,True
+DB Reverse Lunge Step-up,3,1,3,3,0.192,Barbell Squat,Marker,326.4,62.668800544738765,2,2,81.85,3,Constant,Iterative,1.3060725592320246,False,False,62.66880000000007,-1,1,True
+DB Reverse Lunge Step-up,3,1,3,3,0.192,Barbell Squat,Marker,326.4,62.668800544738765,5,1,62.05,2,Constant,Scale,0.5760000000000001,False,True,107.72569444444443,-1,0,True
+DB Reverse Lunge Step-up,3,1,3,3,0.192,Barbell Squat,Brinkley,285.0,54.720000475645065,3,2,63.08,3,Constant,Iterative,1.1527777777777763,False,False,54.72000000000007,-1,1,True
+DB Reverse Lunge Step-up,3,1,3,3,0.192,Barbell Squat,Roberts,225.0,43.20000037550926,4,1,60.88,3,Constant,Iterative,1.4092592592592605,False,False,43.19999999999996,-1,1,True
+DB Reverse Lunge Step-up,3,1,3,3,0.192,Barbell Squat,Roberts,225.0,43.20000037550926,5,3,42.93,3,Constant,Iterative,0.9937499999999971,True,True,43.200000000000124,-1,0,True
+DB Reverse Lunge Step-up,3,1,3,3,0.192,Barbell Squat,Thomas,182.45,35.03040030449628,3,3,34.4,3,Constant,Iterative,0.9820042020644897,True,True,35.0304000000001,-1,0,True
+DB Reverse Lunge Step-up,3,1,3,3,0.192,Barbell Squat,Cane Bond,310.0,59.52000051736832,5,7,67.7,3,Constant,Iterative,1.1374327956989168,False,False,59.52000000000042,-1,1,True
+DB Reverse Lunge Step-up,3,1,3,3,0.192,Barbell Squat,Gierzak,244.4,46.92480040788651,4,4,46.13,2,Constant,Scale,0.14400000000000002,False,True,320.34722222222223,1,0,True
+DB Reverse Lunge Step-up,3,1,3,3,0.192,Barbell Squat,Johnson,360.0,69.12000060081482,3,1,68.51,2,Constant,Scale,0.5760000000000001,False,True,118.94097222222221,-1,0,True
+DB Reverse Lunge Step-up,3,2,1,4,0.192,Barbell Squat,Adkins,173.9,33.38880029022694,2,3,32.64,2,Constant,Scale,0.256,False,True,127.5,-1,0,True
+DB Reverse Lunge Step-up,3,2,1,4,0.192,Barbell Squat,Adkins,173.9,33.38880029022694,4,3,32.94,2,Constant,Scale,0.256,False,True,128.671875,-1,0,True
+DB Reverse Lunge Step-up,3,2,1,4,0.192,Barbell Squat,Bachman,152.5,29.280000254511833,2,3,29.14,2,Constant,Scale,0.256,False,True,113.828125,-1,0,True
+DB Reverse Lunge Step-up,3,2,1,4,0.192,Barbell Squat,Scott,195.0,37.44000032544136,3,13,48.05,3,Constant,Iterative,1.2833867521367353,False,False,37.44000000000049,-1,1,True
+DB Reverse Lunge Step-up,3,2,1,4,0.192,Barbell Squat,Cole,217.5,41.76000036299229,2,7,59.48,3,Constant,Iterative,1.424329501915695,False,False,41.7600000000004,-1,1,True
+DB Reverse Lunge Step-up,3,2,1,4,0.192,Barbell Squat,Ott,273.75,52.5600004568696,2,1,64.25,3,Constant,Iterative,1.2224124809741226,False,False,52.560000000000095,-1,1,True
+DB Reverse Lunge Step-up,3,2,1,4,0.192,Barbell Squat,Marker,326.4,62.668800544738765,4,6,81.31,3,Constant,Iterative,1.2974558312908382,False,False,62.66880000000056,-1,1,True
+DB Reverse Lunge Step-up,3,2,1,4,0.192,Barbell Squat,Roberts,225.0,43.20000037550926,1,9,42.93,2,Constant,Scale,0.08533333333333333,False,True,503.0859375,1,0,True
+DB Reverse Lunge Step-up,3,2,1,4,0.192,Barbell Squat,Hoblit,200.0,38.40000033378601,3,4,37.66,3,Constant,Iterative,0.9807291666666595,True,True,38.400000000000276,-1,0,True
+DB Reverse Lunge Step-up,3,2,1,4,0.192,Barbell Squat,Johnson,360.0,69.12000060081482,5,1,89.07,3,Constant,Iterative,1.2886284722222199,False,False,69.12000000000012,-1,1,True
+DB Reverse Lunge Step-up,3,2,2,4,0.192,Barbell Squat,Wolfe,95.0,18.240000158548355,5,6,18.14,2,Constant,Scale,0.128,False,True,141.71875,1,0,True
+DB Reverse Lunge Step-up,3,2,2,4,0.192,Barbell Squat,Bachman,152.5,29.280000254511833,1,1,39.54,3,Constant,Iterative,1.3504098360655725,False,False,29.280000000000026,-1,1,True
+DB Reverse Lunge Step-up,3,2,2,4,0.192,Barbell Squat,Bachman,152.5,29.280000254511833,4,3,35.73,3,Constant,Iterative,1.2202868852458957,False,False,29.28000000000014,-1,1,True
+DB Reverse Lunge Step-up,3,2,2,4,0.192,Barbell Squat,Cole,217.5,41.76000036299229,3,2,41.1,2,Constant,Scale,0.384,False,True,107.03125,-1,0,True
+DB Reverse Lunge Step-up,3,2,2,4,0.192,Barbell Squat,Clark,288.0,55.296000480651855,1,2,54.43,2,Constant,Scale,0.384,False,True,141.74479166666666,-1,0,True
+DB Reverse Lunge Step-up,3,2,2,4,0.192,Barbell Squat,Clark,288.0,55.296000480651855,2,3,69.11,3,Constant,Iterative,1.2498191550925866,False,False,55.29600000000027,-1,1,True
+DB Reverse Lunge Step-up,3,2,2,4,0.192,Barbell Squat,Marker,326.4,62.668800544738765,2,14,82.34,3,Constant,Iterative,1.3138914419934478,False,False,62.66880000000078,-1,1,True
+DB Reverse Lunge Step-up,3,2,2,4,0.192,Barbell Squat,Brinkley,285.0,54.720000475645065,3,1,62.75,3,Constant,Iterative,1.1467470760233909,False,False,54.72000000000004,-1,1,True
+DB Reverse Lunge Step-up,3,2,2,4,0.192,Barbell Squat,Miears,364.0,69.88800060749054,1,6,68.21,3,Constant,Iterative,0.9759901556776478,False,False,69.88800000000056,-1,0,True
+DB Reverse Lunge Step-up,3,2,2,4,0.192,Barbell Squat,Thomas,182.45,35.03040030449628,3,4,34.21,3,Constant,Iterative,0.9765803416461072,True,True,35.03040000000021,-1,0,True
+DB Reverse Lunge Step-up,3,2,2,4,0.192,Barbell Squat,Cane Bond,310.0,59.52000051736832,5,10,79.74,3,Constant,Iterative,1.3397177419354696,False,False,59.520000000000636,-1,1,True
+DB Reverse Lunge Step-up,3,2,2,4,0.192,Barbell Squat,Gierzak,244.4,46.92480040788651,4,1,59.81,3,Constant,Iterative,1.274592539552645,False,False,46.92480000000004,-1,1,True
+DB Reverse Lunge Step-up,3,2,2,4,0.192,Barbell Squat,Johnson,360.0,69.12000060081482,5,6,82.5,3,Constant,Iterative,1.1935763888888795,False,False,69.12000000000054,-1,1,True
+DB Reverse Lunge Step-up,3,2,3,4,0.192,Barbell Squat,Bachman,152.5,29.280000254511833,4,7,28.65,2,Constant,Scale,0.10971428571428571,False,True,261.1328125,1,0,True
+DB Reverse Lunge Step-up,3,2,3,4,0.192,Barbell Squat,Bachman,152.5,29.280000254511833,5,11,28.75,2,Constant,Scale,0.06981818181818182,False,True,411.78385416666663,1,0,True
+DB Reverse Lunge Step-up,3,2,3,4,0.192,Barbell Squat,Scott,195.0,37.44000032544136,3,2,49.61,3,Constant,Iterative,1.3250534188034158,False,False,37.44000000000008,-1,1,True
+DB Reverse Lunge Step-up,3,2,3,4,0.192,Barbell Squat,Cole,217.5,41.76000036299229,1,19,41.64,2,Constant,Scale,0.04042105263157895,False,True,1030.15625,1,0,True
+DB Reverse Lunge Step-up,3,2,3,4,0.192,Barbell Squat,Cole,217.5,41.76000036299229,4,7,57.7,3,Constant,Iterative,1.3817049808429012,False,False,41.760000000000325,-1,1,True
+DB Reverse Lunge Step-up,3,2,3,4,0.192,Barbell Squat,Bousman,285.0,54.720000475645065,3,3,53.52,3,Constant,Iterative,0.9780701754385929,False,False,54.720000000000205,-1,0,True
+DB Reverse Lunge Step-up,3,2,3,4,0.192,Barbell Squat,Wintrow,332.5,63.84000055491924,5,3,63.47,2,Constant,Scale,0.256,False,True,247.9296875,-1,0,True
+DB Reverse Lunge Step-up,3,2,3,4,0.192,Barbell Squat,Sullivan,250.0,48.00000041723251,3,5,47.32,2,Constant,Scale,0.15360000000000001,False,True,308.07291666666663,1,0,True
+DB Reverse Lunge Step-up,3,2,3,4,0.192,Barbell Squat,Clark,288.0,55.296000480651855,1,7,74.14,3,Constant,Iterative,1.340784143518508,False,False,55.29600000000044,-1,1,True
+DB Reverse Lunge Step-up,3,2,3,4,0.192,Barbell Squat,Brinkley,285.0,54.720000475645065,3,6,53.5,3,Constant,Iterative,0.9777046783625661,False,False,54.72000000000039,-1,0,True
+DB Reverse Lunge Step-up,3,2,3,4,0.192,Barbell Squat,Miears,364.0,69.88800060749054,1,13,100.79,3,Constant,Iterative,1.4421646062270903,False,False,69.88800000000077,-1,1,True
+DB Reverse Lunge Step-up,3,2,3,4,0.192,Barbell Squat,Thomas,182.45,35.03040030449628,3,5,34.23,2,Constant,Scale,0.15360000000000001,False,True,222.85156249999997,1,0,True
+DB Reverse Lunge Step-up,3,2,3,4,0.192,Barbell Squat,Thomas,182.45,35.03040030449628,4,3,47.86,3,Constant,Iterative,1.3662418927560012,False,False,35.03040000000013,-1,1,True
+DB Reverse Lunge Step-up,3,2,3,4,0.192,Barbell Squat,Hoblit,200.0,38.40000033378601,2,9,49.46,3,Constant,Iterative,1.2880208333333214,False,False,38.400000000000354,-1,1,True
+DB Reverse Lunge Step-up,3,2,3,4,0.192,Barbell Squat,Hoblit,200.0,38.40000033378601,3,5,38.02,2,Constant,Scale,0.15360000000000001,False,True,247.52604166666666,1,0,True
+DB Reverse Lunge Step-up,3,2,3,4,0.192,Barbell Squat,Johnson,360.0,69.12000060081482,5,1,68.62,2,Constant,Scale,0.768,False,True,89.34895833333334,-1,0,True
+DB Reverse Lunge Step-up,3,3,1,5,0.192,Barbell Squat,Wolfe,95.0,18.240000158548355,3,7,18.08,2,Constant,Scale,0.13714285714285715,False,True,131.83333333333331,1,0,True
+DB Reverse Lunge Step-up,3,3,1,5,0.192,Barbell Squat,Cole,217.5,41.76000036299229,1,3,46.95,3,Constant,Iterative,1.1242816091953949,False,False,41.760000000000275,-1,1,True
+DB Reverse Lunge Step-up,3,3,1,5,0.192,Barbell Squat,Bousman,285.0,54.720000475645065,3,6,81.96,3,Constant,Iterative,1.4978070175438447,False,False,54.72000000000054,-1,1,True
+DB Reverse Lunge Step-up,3,3,1,5,0.192,Barbell Squat,Roberts,225.0,43.20000037550926,4,7,59.24,3,Constant,Iterative,1.3712962962962818,False,False,43.20000000000046,-1,1,True
+DB Reverse Lunge Step-up,3,3,1,5,0.192,Barbell Squat,Gierzak,244.4,46.92480040788651,4,7,45.9,3,Constant,Iterative,0.9781608019639831,False,False,46.924800000000495,-1,0,True
+DB Reverse Lunge Step-up,3,3,1,5,0.192,Barbell Squat,Johnson,360.0,69.12000060081482,2,7,68.65,2,Constant,Scale,0.13714285714285715,False,True,500.5729166666667,1,0,True
+DB Reverse Lunge Step-up,3,3,1,5,0.192,Barbell Squat,Johnson,360.0,69.12000060081482,4,4,69.47,2,Constant,Scale,0.24,False,True,289.4583333333333,-1,0,True
+DB Reverse Lunge Step-up,3,3,2,5,0.192,Barbell Squat,Bachman,152.5,29.280000254511833,1,7,28.5,2,Constant,Scale,0.13714285714285715,False,True,207.8125,1,-1,True
+DB Reverse Lunge Step-up,3,3,2,5,0.192,Barbell Squat,Cole,217.5,41.76000036299229,3,1,40.68,3,Constant,Iterative,0.974137931034481,False,False,41.760000000000076,-1,0,True
+DB Reverse Lunge Step-up,3,3,2,5,0.192,Barbell Squat,Wintrow,332.5,63.84000055491924,2,4,63.73,2,Constant,Scale,0.24,False,True,265.5416666666667,-1,0,True
+DB Reverse Lunge Step-up,3,3,2,5,0.192,Barbell Squat,Ott,273.75,52.5600004568696,5,10,51.35,3,Constant,Iterative,0.9769786910197757,False,False,52.5600000000006,-1,0,True
+DB Reverse Lunge Step-up,3,3,2,5,0.192,Barbell Squat,Marker,326.4,62.668800544738765,3,1,61.63,3,Constant,Iterative,0.9834239685457501,False,False,62.668800000000104,-1,0,True
+DB Reverse Lunge Step-up,3,3,2,5,0.192,Barbell Squat,Thomas,182.45,35.03040030449628,4,6,34.48,2,Constant,Scale,0.16,False,True,215.49999999999997,1,0,True
+DB Reverse Lunge Step-up,3,3,2,5,0.192,Barbell Squat,Hoblit,200.0,38.40000033378601,5,4,38.06,2,Constant,Scale,0.24,False,True,158.58333333333334,-1,0,True
+DB Reverse Lunge Step-up,3,3,2,5,0.192,Barbell Squat,Gierzak,244.4,46.92480040788651,2,1,65.55,3,Constant,Iterative,1.3969159165302758,False,False,46.92480000000008,-1,1,True
+DB Reverse Lunge Step-up,3,3,3,5,0.192,Barbell Squat,Bachman,152.5,29.280000254511833,5,4,38.09,3,Constant,Iterative,1.3008879781420688,False,False,29.280000000000175,-1,1,True
+DB Reverse Lunge Step-up,3,3,3,5,0.192,Barbell Squat,Scott,195.0,37.44000032544136,2,1,37.38,2,Constant,Scale,0.96,False,True,38.93750000000001,-1,0,True
+DB Reverse Lunge Step-up,3,3,3,5,0.192,Barbell Squat,Bousman,285.0,54.720000475645065,5,7,54.52,2,Constant,Scale,0.13714285714285715,False,True,397.5416666666667,1,0,True
+DB Reverse Lunge Step-up,3,3,3,5,0.192,Barbell Squat,Ott,273.75,52.5600004568696,5,5,51.38,1,Constant,Ratio,0.192,True,False,267.60416434055924,-1,0,True
+DB Reverse Lunge Step-up,3,3,3,5,0.192,Barbell Squat,Pearson,259.6,49.843200433254246,3,3,61.88,3,Constant,Iterative,1.2414933230611138,False,False,49.84320000000024,-1,1,True
+DB Reverse Lunge Step-up,3,3,3,5,0.192,Barbell Squat,Marker,326.4,62.668800544738765,5,4,62.15,2,Constant,Scale,0.24,False,True,258.9583333333333,-1,0,True
+DB Reverse Lunge Step-up,3,3,3,5,0.192,Barbell Squat,Brinkley,285.0,54.720000475645065,4,4,72.89,3,Constant,Iterative,1.3320540935672436,False,False,54.720000000000326,-1,1,True
+DB Reverse Lunge Step-up,3,3,3,5,0.192,Barbell Squat,Johnson,360.0,69.12000060081482,2,2,68.38,2,Constant,Scale,0.48,False,True,142.45833333333334,-1,0,True
+High-Hang Pull,4,1,1,5,0.7,Clean,Wolfe,85.0,59.49999898672104,5,11,38.99,3,Fitted,Iterative,0.44169706103783146,False,False,88.27317054903496,1,-1,True
+High-Hang Pull,4,1,1,5,0.7,Clean,Bachman,191.475,134.03249771744012,1,20,95.05,3,Fitted,Iterative,0.4375699970550806,False,False,217.2223887371219,1,-1,True
+High-Hang Pull,4,1,1,5,0.7,Clean,Scott,135.0,94.4999983906746,2,12,76.46,3,Fitted,Iterative,0.5382555052206954,False,False,142.0514964703424,1,-1,True
+High-Hang Pull,4,1,1,5,0.7,Clean,Cole,115.0,80.49999862909317,4,8,80.18,2,Fitted,Function,0.9891772637207629,False,True,81.05726136325168,-1,0,True
+High-Hang Pull,4,1,1,5,0.7,Clean,Cole,115.0,80.49999862909317,5,11,50.62,3,Fitted,Iterative,0.42385225744114485,False,False,119.42840721340023,1,-1,True
+High-Hang Pull,4,1,1,5,0.7,Clean,Bousman,165.0,115.49999803304672,3,9,70.61,3,Fitted,Iterative,0.4248616606811213,False,False,166.19527374346006,1,-1,True
+High-Hang Pull,4,1,1,5,0.7,Clean,Wintrow,165.0,115.49999803304672,1,6,139.08,3,Fitted,Iterative,0.890946405401208,False,False,156.1036658960086,-1,1,True
+High-Hang Pull,4,1,1,5,0.7,Clean,Wintrow,165.0,115.49999803304672,3,13,88.03,3,Fitted,Iterative,0.5009809196812586,False,False,175.71527485718966,1,-1,True
+High-Hang Pull,4,1,1,5,0.7,Clean,Ott,189.175,132.42249774485828,1,8,174.72,3,Fitted,Iterative,0.9336943974239098,False,False,187.12760886437533,-1,1,True
+High-Hang Pull,4,1,1,5,0.7,Clean,Pearson,166.25,116.37499801814556,3,22,104.26,3,Fitted,Iterative,0.5452962171325704,False,False,191.1988323488639,1,-1,True
+High-Hang Pull,4,1,1,5,0.7,Clean,Sullivan,185.0,129.49999779462814,1,11,115.86,3,Fitted,Iterative,0.6030481588219666,False,False,192.12395943025254,1,-1,True
+High-Hang Pull,4,1,1,5,0.7,Clean,Sullivan,185.0,129.49999779462814,2,1,128.6,2,Fitted,Function,0.7312638055184789,False,True,175.85992774361412,-1,0,True
+High-Hang Pull,4,1,1,5,0.7,Clean,Marker,228.0,159.5999972820282,3,1,159.19,2,Fitted,Function,0.7312638055184789,False,True,217.69161662135252,-1,0,True
+High-Hang Pull,4,1,1,5,0.7,Clean,Brinkley,185.0,129.49999779462814,1,13,97.18,3,Fitted,Iterative,0.4932641975747259,False,False,197.01409605200053,1,-1,True
+High-Hang Pull,4,1,1,5,0.7,Clean,Brinkley,185.0,129.49999779462814,2,12,113.51,3,Fitted,Iterative,0.5831098135521243,False,False,194.66316182972852,1,-1,True
+High-Hang Pull,4,1,1,5,0.7,Clean,Brinkley,185.0,129.49999779462814,3,7,131.04,3,Fitted,Iterative,0.7309997329880012,False,False,179.2613513884155,-1,1,True
+High-Hang Pull,4,1,1,5,0.7,Clean,Miears,231.0,161.6999972462654,2,15,145.64,3,Fitted,Iterative,0.5795678149082955,False,False,251.29069671172905,1,-1,True
+High-Hang Pull,4,1,1,5,0.7,Clean,Roberts,135.0,94.4999983906746,1,6,111.61,3,Fitted,Iterative,0.8738566223876881,False,False,127.72118118764341,-1,1,True
+High-Hang Pull,4,1,1,5,0.7,Clean,Cane Bond,115.0,80.49999862909317,1,14,70.44,3,Fitted,Iterative,0.5688501493449751,False,False,123.82874484802528,1,-1,True
+High-Hang Pull,4,1,1,5,0.7,Clean,Hoblit,115.0,80.49999862909317,1,14,68.54,3,Fitted,Iterative,0.5535063775710477,False,False,123.82874484802528,1,-1,True
+High-Hang Pull,4,1,1,5,0.7,Clean,Johnson,231.0,161.6999972462654,2,13,148.43,3,Fitted,Iterative,0.6033705872047614,False,False,246.00138480006552,1,-1,True
+High-Hang Pull,4,1,1,5,0.7,Clean,Johnson,231.0,161.6999972462654,3,7,176.94,3,Fitted,Iterative,0.7904949600550222,False,False,223.83444416607557,-1,1,True
+High-Hang Pull,4,2,1,4,0.77,Clean,Wolfe,85.0,65.44999837875366,5,10,64.36,3,Fitted,Iterative,0.7127549424790466,False,False,90.2975148459136,1,-1,True
+High-Hang Pull,4,2,1,4,0.77,Clean,Adkins,118.15,90.9754977464676,4,6,90.74,2,Fitted,Function,0.984819018093695,False,True,92.13875679984793,-1,0,True
+High-Hang Pull,4,2,1,4,0.77,Clean,Scott,135.0,103.94999742507936,2,9,92.76,3,Fitted,Iterative,0.656906373581521,False,False,141.20733749965456,1,-1,True
+High-Hang Pull,4,2,1,4,0.77,Clean,Scott,135.0,103.94999742507936,3,8,92.82,3,Fitted,Iterative,0.6688846712426744,False,False,138.7683168573084,1,-1,True
+High-Hang Pull,4,2,1,4,0.77,Clean,Bousman,165.0,127.04999685287476,2,15,113.08,3,Fitted,Iterative,0.608333675727307,False,False,185.88482688354324,1,-1,True
+High-Hang Pull,4,2,1,4,0.77,Clean,Wintrow,165.0,127.04999685287476,4,15,117.63,3,Fitted,Iterative,0.6328111980527337,False,False,185.88482688354324,1,-1,True
+High-Hang Pull,4,2,1,4,0.77,Clean,Wintrow,165.0,127.04999685287476,5,8,115.8,3,Fitted,Iterative,0.6827599893920934,False,False,169.60572060337694,1,-1,True
+High-Hang Pull,4,2,1,4,0.77,Clean,Ott,189.175,145.66474639177324,4,10,111.19,3,Fitted,Iterative,0.5532801832209713,False,False,200.96508671736123,1,-1,True
+High-Hang Pull,4,2,1,4,0.77,Clean,Pearson,166.25,128.0124968290329,3,11,122.96,3,Fitted,Iterative,0.6865751541609957,False,False,179.09182884757723,1,-1,True
+High-Hang Pull,4,2,1,4,0.77,Clean,Pearson,166.25,128.0124968290329,5,4,127.54,3,Fitted,Iterative,0.8274616072918921,True,True,154.13403942378864,-1,0,True
+High-Hang Pull,4,2,1,4,0.77,Clean,Marker,228.0,175.55999565124512,3,9,159.74,3,Fitted,Iterative,0.66981572212615,False,False,238.48350333274993,1,-1,True
+High-Hang Pull,4,2,1,4,0.77,Clean,Roberts,135.0,103.94999742507936,4,14,66.46,3,Fitted,Iterative,0.4413203180665151,False,False,150.59356498964374,1,-1,True
+High-Hang Pull,4,2,1,4,0.77,Clean,Cane Bond,115.0,88.54999780654907,1,9,58.03,3,Fitted,Iterative,0.4824265871680367,False,False,120.28773194415018,1,-1,True
+High-Hang Pull,4,2,1,4,0.77,Clean,Cane Bond,115.0,88.54999780654907,4,8,58.68,3,Fitted,Iterative,0.4964045032133459,False,False,118.21004769326271,1,-1,True
+High-Hang Pull,4,2,1,4,0.77,Clean,Hoblit,115.0,88.54999780654907,1,10,86.73,3,Fitted,Iterative,0.7099285369933602,False,False,122.16722596800074,1,-1,True
+High-Hang Pull,4,2,1,4,0.77,Clean,Hoblit,115.0,88.54999780654907,4,10,73.84,3,Fitted,Iterative,0.6044174238624435,False,False,122.16722596800072,1,-1,True
+High-Hang Pull,4,2,1,4,0.77,Clean,Johnson,231.0,177.86999559402466,1,7,147.32,3,Fitted,Iterative,0.6328654292220754,False,False,232.78250509130703,1,-1,True
+High-Hang Pull,4,3,1,3,0.847,Clean,Wolfe,85.0,71.99500024318695,1,5,44.23,3,Fitted,Iterative,0.5218548176079374,False,False,84.75537353998217,0,-1,True
+High-Hang Pull,4,3,1,3,0.847,Clean,Wolfe,85.0,71.99500024318695,5,1,71.07,2,Fitted,Function,0.8087361944815221,False,True,87.87785248756266,1,-1,True
+High-Hang Pull,4,3,1,3,0.847,Clean,Adkins,118.15,100.07305033802989,2,7,84.37,3,Fitted,Iterative,0.6823932685202733,False,False,123.63838257512566,1,-1,True
+High-Hang Pull,4,3,1,3,0.847,Clean,Adkins,118.15,100.07305033802989,5,7,76.65,3,Fitted,Iterative,0.6199531116757016,False,False,123.63838257512569,1,-1,True
+High-Hang Pull,4,3,1,3,0.847,Clean,Bachman,191.475,162.17932554781436,2,15,99.04,3,Fitted,Iterative,0.4438709714228701,False,False,223.12790512638838,1,-1,True
+High-Hang Pull,4,3,1,3,0.847,Clean,Scott,135.0,114.3450003862381,3,15,84.27,3,Fitted,Iterative,0.5356701123165097,False,False,157.31697188699533,1,-1,True
+High-Hang Pull,4,3,1,3,0.847,Clean,Bousman,165.0,139.7550004720688,2,6,131.72,3,Fitted,Iterative,0.7799315762307903,False,False,168.88661007491072,1,-1,True
+High-Hang Pull,4,3,1,3,0.847,Clean,Bousman,165.0,139.7550004720688,4,6,109.45,3,Fitted,Iterative,0.6480679548926511,False,False,168.88661007491072,1,-1,True
+High-Hang Pull,4,3,1,3,0.847,Clean,Bousman,165.0,139.7550004720688,5,10,120.1,3,Fitted,Iterative,0.6610710178770638,False,False,181.6748832609304,1,-1,True
+High-Hang Pull,4,3,1,3,0.847,Clean,Wintrow,165.0,139.7550004720688,4,6,120.29,3,Fitted,Iterative,0.7122530314667611,False,False,168.88661007491072,1,-1,True
+High-Hang Pull,4,3,1,3,0.847,Clean,Ott,189.175,160.23122554123404,2,6,138.75,3,Fitted,Iterative,0.7165689322097896,False,False,193.6310573389166,1,-1,True
+High-Hang Pull,4,3,1,3,0.847,Clean,Ott,189.175,160.23122554123404,5,9,106.86,3,Fitted,Iterative,0.5207570904964436,False,False,205.2012386391689,1,-1,True
+High-Hang Pull,4,3,1,3,0.847,Clean,Pearson,166.25,140.8137504756451,4,5,109.69,3,Fitted,Iterative,0.6616938008856977,False,False,165.77153942378865,0,-1,True
+High-Hang Pull,4,3,1,3,0.847,Clean,Sullivan,185.0,156.69500052928925,1,1,176.75,3,Fitted,Iterative,1.1813560613766179,False,False,149.6161959790816,-1,1,True
+High-Hang Pull,4,3,1,3,0.847,Clean,Sullivan,185.0,156.69500052928925,4,5,119.57,3,Fitted,Iterative,0.6481897875377959,False,False,184.46757770466706,0,-1,True
+High-Hang Pull,4,3,1,3,0.847,Clean,Clark,212.85,180.28395060896872,1,12,148.51,3,Fitted,Iterative,0.6176134212869074,False,False,240.4578574256903,1,-1,True
+High-Hang Pull,4,3,1,3,0.847,Clean,Brinkley,185.0,156.69500052928925,1,2,156.44,2,Fitted,Function,0.878263805518479,False,True,178.12415702096064,-1,0,True
+High-Hang Pull,4,3,1,3,0.847,Clean,Brinkley,185.0,156.69500052928925,4,6,116.85,3,Fitted,Iterative,0.6170860290306094,False,False,189.35771432641505,1,-1,True
+High-Hang Pull,4,3,1,3,0.847,Clean,Miears,231.0,195.6570006608963,1,5,138.24,3,Fitted,Iterative,0.6001688193083878,False,False,230.3351916204221,0,-1,True
+High-Hang Pull,4,3,1,3,0.847,Clean,Roberts,135.0,114.3450003862381,3,10,96.13,3,Fitted,Iterative,0.6467169270364914,False,False,148.6430863043976,1,-1,True
+High-Hang Pull,4,3,1,3,0.847,Clean,Cane Bond,115.0,97.40500032901764,1,8,67.66,3,Fitted,Iterative,0.5515848850713162,False,False,122.6647100586377,1,-1,True
+High-Hang Pull,4,3,1,3,0.847,Clean,Hoblit,115.0,97.40500032901764,3,5,83.85,3,Fitted,Iterative,0.7312348983664779,False,False,114.66903478938764,0,-1,True
+High-Hang Pull,4,3,1,3,0.847,Clean,Gierzak,219.6,186.00120062828063,4,6,136.66,3,Fitted,Iterative,0.6079919180302448,False,False,224.77272468151756,1,-1,True
+High-Hang Pull,4,3,1,3,0.847,Clean,Gierzak,219.6,186.00120062828063,5,6,132.76,3,Fitted,Iterative,0.5906410583762278,False,False,224.77272468151756,1,-1,True
+High-Hang Pull,4,1,2,5,0.7,Clean,Wolfe,85.0,59.49999898672104,4,13,58.1,3,Fitted,Iterative,0.6418471759659988,False,False,90.5199900779462,1,-1,True
+High-Hang Pull,4,1,2,5,0.7,Clean,Scott,135.0,94.4999983906746,2,7,104.7,3,Fitted,Iterative,0.800383220736167,False,False,130.81233749965457,-1,1,True
+High-Hang Pull,4,1,2,5,0.7,Clean,Cole,115.0,80.49999862909317,2,12,71.98,3,Fitted,Iterative,0.5948424548079773,False,False,121.00683032658802,1,-1,True
+High-Hang Pull,4,1,2,5,0.7,Clean,Wintrow,165.0,115.49999803304672,2,11,104.8,3,Fitted,Iterative,0.611600087003661,False,False,171.35380165400903,1,-1,True
+High-Hang Pull,4,1,2,5,0.7,Clean,Wintrow,165.0,115.49999803304672,5,11,91.96,3,Fitted,Iterative,0.536667404588327,False,False,171.35380165400903,1,-1,True
+High-Hang Pull,4,1,2,5,0.7,Clean,Pearson,166.25,116.37499801814556,1,17,73.11,3,Fitted,Iterative,0.3968820480536201,False,False,184.21090184991837,1,-1,True
+High-Hang Pull,4,1,2,5,0.7,Clean,Sullivan,185.0,129.49999779462814,4,24,99.0,3,Fitted,Iterative,0.4595935279055459,False,False,215.407733114001,1,-1,True
+High-Hang Pull,4,1,2,5,0.7,Clean,Marker,228.0,159.5999972820282,1,13,132.27,3,Fitted,Iterative,0.5447546356121423,False,False,242.80656162084392,1,-1,True
+High-Hang Pull,4,1,2,5,0.7,Clean,Brinkley,185.0,129.49999779462814,3,13,110.47,3,Fitted,Iterative,0.5607212997126976,False,False,197.01409605200058,1,-1,True
+High-Hang Pull,4,1,2,5,0.7,Clean,Miears,231.0,161.6999972462654,3,3,241.34,3,Fitted,Iterative,1.2289552012296978,False,False,196.37819162042211,-1,1,True
+High-Hang Pull,4,1,2,5,0.7,Clean,Miears,231.0,161.6999972462654,5,11,131.12,3,Fitted,Iterative,0.5465717244269359,False,False,239.89532231561265,1,-1,True
+High-Hang Pull,4,1,2,5,0.7,Clean,Roberts,135.0,94.4999983906746,2,4,130.91,3,Fitted,Iterative,1.0915343899251055,False,False,119.9320893673192,-1,1,True
+High-Hang Pull,4,1,2,5,0.7,Clean,Roberts,135.0,94.4999983906746,3,16,79.49,3,Fitted,Iterative,0.5361468606598409,False,False,148.26161604708628,1,-1,True
+High-Hang Pull,4,1,2,5,0.7,Clean,Cane Bond,115.0,80.49999862909317,4,16,69.09,3,Fitted,Iterative,0.5470441664965716,False,False,126.2969321882587,1,-1,True
+High-Hang Pull,4,1,2,5,0.7,Clean,Gierzak,219.6,153.719997382164,4,22,95.25,3,Fitted,Iterative,0.3771456186562677,False,False,252.55496892517607,1,-1,True
+High-Hang Pull,4,1,3,5,0.7,Clean,Wolfe,85.0,59.49999898672104,5,6,76.83,3,Fitted,Iterative,0.9553945282402714,False,False,80.41704000703476,-1,1,True
+High-Hang Pull,4,1,3,5,0.7,Clean,Adkins,118.15,82.70499859154225,3,10,68.28,3,Fitted,Iterative,0.5645921152249513,False,False,120.93686425782813,1,-1,True
+High-Hang Pull,4,1,3,5,0.7,Clean,Adkins,118.15,82.70499859154225,4,10,66.22,3,Fitted,Iterative,0.5475584339513222,False,False,120.93686425782812,1,-1,True
+High-Hang Pull,4,1,3,5,0.7,Clean,Scott,135.0,94.4999983906746,4,6,94.36,2,Fitted,Function,0.9460828236121737,False,True,99.73756804899024,-1,0,True
+High-Hang Pull,4,1,3,5,0.7,Clean,Scott,135.0,94.4999983906746,5,1,93.9,2,Fitted,Function,0.7312638055184791,False,True,128.40783215494062,-1,0,True
+High-Hang Pull,4,1,3,5,0.7,Clean,Wintrow,165.0,115.49999803304672,1,11,101.39,3,Fitted,Iterative,0.5916997406612708,False,False,171.35380165400906,1,-1,True
+High-Hang Pull,4,1,3,5,0.7,Clean,Marker,228.0,159.5999972820282,3,20,119.82,3,Fitted,Iterative,0.4632356356119624,False,False,258.6588569372702,1,-1,True
+High-Hang Pull,4,1,3,5,0.7,Clean,Marker,228.0,159.5999972820282,4,5,159.43,3,Fitted,Iterative,0.7603486653034488,True,True,209.6801208119078,-1,0,True
+High-Hang Pull,4,1,3,5,0.7,Clean,Brinkley,185.0,129.49999779462814,1,18,112.61,3,Fitted,Iterative,0.5447946212563959,False,False,206.7017470552495,1,-1,True
+High-Hang Pull,4,1,3,5,0.7,Clean,Miears,231.0,161.6999972462654,1,9,117.41,3,Fitted,Iterative,0.5046129400992417,False,False,232.67338324084415,1,-1,True
+High-Hang Pull,4,1,3,5,0.7,Clean,Miears,231.0,161.6999972462654,2,9,138.83,3,Fitted,Iterative,0.5966733197681436,False,False,232.67338324084412,1,-1,True
+High-Hang Pull,4,1,3,5,0.7,Clean,Miears,231.0,161.6999972462654,3,10,120.05,3,Fitted,Iterative,0.5077210935351539,False,False,236.44871471483958,1,-1,True
+High-Hang Pull,4,1,3,5,0.7,Clean,Roberts,135.0,94.4999983906746,1,11,84.07,3,Fitted,Iterative,0.599649504302773,False,False,140.19856498964378,1,-1,True
+High-Hang Pull,4,1,3,5,0.7,Clean,Cane Bond,115.0,80.49999862909317,1,3,117.51,3,Fitted,Iterative,1.2019757598297875,False,False,97.76403478938765,-1,1,True
+High-Hang Pull,4,1,3,5,0.7,Clean,Cane Bond,115.0,80.49999862909317,3,11,72.04,3,Fitted,Iterative,0.6032065710403017,False,False,119.42840721340026,1,-1,True
+High-Hang Pull,4,1,3,5,0.7,Clean,Cane Bond,115.0,80.49999862909317,5,20,55.29,3,Fitted,Iterative,0.42379540403363536,False,False,130.46389713941258,1,-1,True
+High-Hang Pull,4,1,3,5,0.7,Clean,Hoblit,115.0,80.49999862909317,3,1,100.82,3,Fitted,Iterative,1.1988774031449843,False,False,84.0953376346251,-1,1,True
+High-Hang Pull,4,1,3,5,0.7,Clean,Gierzak,219.6,153.719997382164,1,11,103.56,3,Fitted,Iterative,0.4540983313982725,False,False,228.0563323831539,1,-1,True
+High-Hang Pull,4,1,3,5,0.7,Clean,Johnson,231.0,161.6999972462654,4,11,138.16,3,Fitted,Iterative,0.5759178572820732,False,False,239.8953223156127,1,-1,True
+High-Hang Pull,4,1,3,5,0.7,Clean,Johnson,231.0,161.6999972462654,5,9,150.6,3,Fitted,Iterative,0.6472592520138473,False,False,232.67338324084412,1,-1,True
+High-Hang Pull,4,2,2,4,0.77,Clean,Wolfe,85.0,65.44999837875366,1,13,43.04,3,Fitted,Iterative,0.45878714926799596,False,False,93.81256660887554,1,-1,True
+High-Hang Pull,4,2,2,4,0.77,Clean,Wolfe,85.0,65.44999837875366,2,7,48.79,3,Fitted,Iterative,0.5696046614327441,False,False,85.65590014182294,0,-1,True
+High-Hang Pull,4,2,2,4,0.77,Clean,Adkins,118.15,90.9754977464676,1,9,72.96,3,Fitted,Iterative,0.5903745172703067,False,False,123.58256981914211,1,-1,True
+High-Hang Pull,4,2,2,4,0.77,Clean,Adkins,118.15,90.9754977464676,2,11,86.93,3,Fitted,Iterative,0.6830017811213618,False,False,127.27638844115037,1,-1,True
+High-Hang Pull,4,2,2,4,0.77,Clean,Adkins,118.15,90.9754977464676,3,11,65.5,3,Fitted,Iterative,0.5146280531858874,False,False,127.27638844115036,1,-1,True
+High-Hang Pull,4,2,2,4,0.77,Clean,Scott,135.0,103.94999742507936,3,14,88.51,3,Fitted,Iterative,0.5877409171240935,False,False,150.59356498964377,1,-1,True
+High-Hang Pull,4,2,2,4,0.77,Clean,Scott,135.0,103.94999742507936,5,11,82.32,3,Fitted,Iterative,0.5660534944999361,False,False,145.42795124464917,1,-1,True
+High-Hang Pull,4,2,2,4,0.77,Clean,Cole,115.0,88.54999780654907,5,3,88.23,2,Fitted,Function,0.8888582361283706,False,True,99.26217299206941,-1,0,True
+High-Hang Pull,4,2,2,4,0.77,Clean,Bousman,165.0,127.04999685287476,4,3,143.67,3,Fitted,Iterative,0.9796019627605955,False,False,146.66160896118114,-1,1,True
+High-Hang Pull,4,2,2,4,0.77,Clean,Wintrow,165.0,127.04999685287476,2,10,90.71,3,Fitted,Iterative,0.5175047621092828,False,False,175.28341117147932,1,-1,True
+High-Hang Pull,4,2,2,4,0.77,Clean,Wintrow,165.0,127.04999685287476,4,13,121.04,3,Fitted,Iterative,0.6646651045579659,False,False,182.10674694664075,1,-1,True
+High-Hang Pull,4,2,2,4,0.77,Clean,Ott,189.175,145.66474639177324,3,11,93.27,3,Fitted,Iterative,0.4576822994351349,False,False,203.78764945708525,1,-1,True
+High-Hang Pull,4,2,2,4,0.77,Clean,Pearson,166.25,128.0124968290329,5,8,126.22,3,Fitted,Iterative,0.7386011332516033,False,False,170.89061242612982,1,-1,True
+High-Hang Pull,4,2,2,4,0.77,Clean,Sullivan,185.0,142.44999647140503,1,6,146.95,3,Fitted,Iterative,0.8065688311562975,False,False,182.19151834733358,-1,1,True
+High-Hang Pull,4,2,2,4,0.77,Clean,Sullivan,185.0,142.44999647140503,2,11,110.26,3,Fitted,Iterative,0.5532636560673574,False,False,199.29015540933406,1,-1,True
+High-Hang Pull,4,2,2,4,0.77,Clean,Clark,212.85,163.89449594020843,2,8,119.69,3,Fitted,Iterative,0.5470508035127368,False,False,218.79137957835627,1,-1,True
+High-Hang Pull,4,2,2,4,0.77,Clean,Clark,212.85,163.89449594020843,4,7,131.54,3,Fitted,Iterative,0.613261675705791,False,False,214.49245111984723,1,-1,True
+High-Hang Pull,4,2,2,4,0.77,Clean,Brinkley,185.0,142.44999647140503,3,8,101.28,3,Fitted,Iterative,0.5325929484539583,False,False,190.16398976742266,1,-1,True
+High-Hang Pull,4,2,2,4,0.77,Clean,Miears,231.0,177.86999559402466,4,8,112.65,3,Fitted,Iterative,0.4744196447385845,False,False,237.44800884472775,1,-1,True
+High-Hang Pull,4,2,2,4,0.77,Clean,Roberts,135.0,103.94999742507936,1,8,95.73,3,Fitted,Iterative,0.6898548758679294,False,False,138.76831685730843,1,-1,True
+High-Hang Pull,4,2,2,4,0.77,Clean,Roberts,135.0,103.94999742507936,4,11,103.57,2,Fitted,Function,1.0772440832936976,False,True,96.14348466257752,-1,0,True
+High-Hang Pull,4,2,2,4,0.77,Clean,Cane Bond,115.0,88.54999780654907,2,7,67.85,3,Fitted,Iterative,0.5854821432845279,False,False,115.88739430952518,0,-1,True
+High-Hang Pull,4,2,2,4,0.77,Clean,Hoblit,115.0,88.54999780654907,4,16,68.63,3,Fitted,Iterative,0.524888436231256,False,False,130.75159455363368,1,-1,True
+High-Hang Pull,4,2,2,4,0.77,Clean,Johnson,231.0,177.86999559402466,4,15,147.76,3,Fitted,Iterative,0.5677862949458465,False,False,260.2387576369606,1,-1,True
+High-Hang Pull,4,2,2,4,0.77,Clean,Johnson,231.0,177.86999559402466,5,2,194.23,3,Fitted,Iterative,1.0015424147681737,False,False,193.93087814953725,-1,1,True
+High-Hang Pull,4,2,3,4,0.77,Clean,Wolfe,85.0,65.44999837875366,5,3,83.24,3,Fitted,Iterative,1.1017438752804978,False,False,75.55295007091149,-1,1,True
+High-Hang Pull,4,2,3,4,0.77,Clean,Adkins,118.15,90.9754977464676,5,9,88.09,3,Fitted,Iterative,0.7128027854487569,False,False,123.58256981914217,1,-1,True
+High-Hang Pull,4,2,3,4,0.77,Clean,Bachman,191.475,147.4357463479042,1,10,108.81,3,Fitted,Iterative,0.5349335784089001,False,False,203.40843123672127,1,-1,True
+High-Hang Pull,4,2,3,4,0.77,Clean,Bachman,191.475,147.4357463479042,5,7,97.66,3,Fitted,Iterative,0.5061348993488728,False,False,192.9525115253594,1,-1,True
+High-Hang Pull,4,2,3,4,0.77,Clean,Scott,135.0,103.94999742507936,2,8,94.8,3,Fitted,Iterative,0.6831530578949097,False,False,138.76831685730843,1,-1,True
+High-Hang Pull,4,2,3,4,0.77,Clean,Scott,135.0,103.94999742507936,4,9,84.62,3,Fitted,Iterative,0.5992606439464025,False,False,141.20733749965459,1,-1,True
+High-Hang Pull,4,2,3,4,0.77,Clean,Scott,135.0,103.94999742507936,5,9,63.17,3,Fitted,Iterative,0.4473563563944014,False,False,141.20733749965459,1,-1,True
+High-Hang Pull,4,2,3,4,0.77,Clean,Cole,115.0,88.54999780654907,4,8,80.02,3,Fitted,Iterative,0.676930612595977,False,False,118.21004769326274,1,-1,True
+High-Hang Pull,4,2,3,4,0.77,Clean,Cole,115.0,88.54999780654907,5,8,60.03,3,Fitted,Iterative,0.5078248522136528,False,False,118.21004769326274,1,-1,True
+High-Hang Pull,4,2,3,4,0.77,Clean,Wintrow,165.0,127.04999685287476,1,13,122.25,3,Fitted,Iterative,0.6713095590896507,False,False,182.10674694664075,1,-1,True
+High-Hang Pull,4,2,3,4,0.77,Clean,Ott,189.175,145.66474639177324,1,7,104.39,3,Fitted,Iterative,0.5475916249860286,False,False,190.63476363916894,1,-1,True
+High-Hang Pull,4,2,3,4,0.77,Clean,Ott,189.175,145.66474639177324,3,15,104.89,3,Fitted,Iterative,0.492164569125698,False,False,213.11977045875335,1,-1,True
+High-Hang Pull,4,2,3,4,0.77,Clean,Clark,212.85,163.89449594020843,2,19,123.71,3,Fitted,Iterative,0.4989596550342027,False,False,247.93587768437894,1,-1,True
+High-Hang Pull,4,2,3,4,0.77,Clean,Clark,212.85,163.89449594020843,3,8,154.73,3,Fitted,Iterative,0.7072033655904901,False,False,218.79137957835627,1,-1,True
+High-Hang Pull,4,2,3,4,0.77,Clean,Marker,228.0,175.55999565124512,1,7,118.64,3,Fitted,Iterative,0.5163663505744602,False,False,229.75935567453686,1,-1,True
+High-Hang Pull,4,2,3,4,0.77,Clean,Marker,228.0,175.55999565124512,3,7,145.98,3,Fitted,Iterative,0.6353604168649671,False,False,229.75935567453686,1,-1,True
+High-Hang Pull,4,2,3,4,0.77,Clean,Miears,231.0,177.86999559402466,3,17,168.69,3,Fitted,Iterative,0.6367960980114501,False,False,264.90426139038124,1,-1,True
+High-Hang Pull,4,2,3,4,0.77,Clean,Roberts,135.0,103.94999742507936,1,11,67.58,3,Fitted,Iterative,0.4646974630503605,False,False,145.4279512446492,1,-1,True
+High-Hang Pull,4,2,3,4,0.77,Clean,Cane Bond,115.0,88.54999780654907,1,14,57.76,3,Fitted,Iterative,0.45025308615256754,False,False,128.28340721340024,1,-1,True
+High-Hang Pull,4,2,3,4,0.77,Clean,Cane Bond,115.0,88.54999780654907,4,11,72.02,3,Fitted,Iterative,0.5813546616570042,False,False,123.88306957877525,1,-1,True
+High-Hang Pull,4,2,3,4,0.77,Clean,Hoblit,115.0,88.54999780654907,3,9,79.76,3,Fitted,Iterative,0.6630767636140376,False,False,120.28773194415021,1,-1,True
+High-Hang Pull,4,2,3,4,0.77,Clean,Gierzak,219.6,169.0919958114624,2,5,179.41,3,Fitted,Iterative,0.8524598213417343,False,False,210.46153203750595,-1,1,True
+High-Hang Pull,4,3,2,3,0.847,Clean,Wolfe,85.0,71.99500024318695,3,8,45.03,3,Fitted,Iterative,0.49666233383136393,False,False,90.66522047812353,1,-1,True
+High-Hang Pull,4,3,2,3,0.847,Clean,Bachman,191.475,162.17932554781436,3,5,128.31,3,Fitted,Iterative,0.6720477171941371,False,False,190.92394292433045,0,-1,True
+High-Hang Pull,4,3,2,3,0.847,Clean,Cole,115.0,97.40500032901764,1,9,72.91,3,Fitted,Iterative,0.5844845323321863,False,False,124.74239430952517,1,-1,True
+High-Hang Pull,4,3,2,3,0.847,Clean,Bousman,165.0,139.7550004720688,1,14,98.6,3,Fitted,Iterative,0.5177204425172733,False,False,190.4502737434601,1,-1,True
+High-Hang Pull,4,3,2,3,0.847,Clean,Pearson,166.25,140.8137504756451,2,13,105.52,3,Fitted,Iterative,0.5555841167990099,False,False,189.92623584697128,1,-1,True
+High-Hang Pull,4,3,2,3,0.847,Clean,Sullivan,185.0,156.69500052928925,4,9,128.14,3,Fitted,Iterative,0.6385527152617133,False,False,200.672547367497,1,-1,True
+High-Hang Pull,4,3,2,3,0.847,Clean,Clark,212.85,180.28395060896872,3,6,178.12,3,Fitted,Iterative,0.817575291010932,False,False,217.86372699663488,1,-1,True
+High-Hang Pull,4,3,2,3,0.847,Clean,Brinkley,185.0,156.69500052928925,2,5,141.27,3,Fitted,Iterative,0.7658256359075388,False,False,184.4675777046671,0,-1,True
+High-Hang Pull,4,3,2,3,0.847,Clean,Miears,231.0,195.6570006608963,4,11,188.52,3,Fitted,Iterative,0.7312888160809199,False,False,257.7914441660756,1,-1,True
+High-Hang Pull,4,3,2,3,0.847,Clean,Roberts,135.0,114.3450003862381,1,10,70.31,3,Fitted,Iterative,0.4730122452921639,False,False,148.6430863043976,1,-1,True
+High-Hang Pull,4,3,2,3,0.847,Clean,Roberts,135.0,114.3450003862381,5,6,72.6,3,Fitted,Iterative,0.5254018260771239,False,False,138.17995369765427,1,-1,True
+High-Hang Pull,4,3,2,3,0.847,Clean,Cane Bond,115.0,97.40500032901764,2,1,97.34,2,Fitted,Function,0.8087361944815222,False,True,120.36063263176234,1,0,True
+High-Hang Pull,4,3,2,3,0.847,Clean,Cane Bond,115.0,97.40500032901764,3,8,93.72,3,Fitted,Iterative,0.7640339259367979,False,False,122.66471005863772,1,-1,True
+High-Hang Pull,4,3,2,3,0.847,Clean,Cane Bond,115.0,97.40500032901764,4,4,96.87,2,Fitted,Function,0.9658582361283706,False,True,100.29422163267154,-1,0,True
+High-Hang Pull,4,3,2,3,0.847,Clean,Cane Bond,115.0,97.40500032901764,5,6,66.65,3,Fitted,Iterative,0.566227605771403,False,False,117.70884944614993,1,-1,True
+High-Hang Pull,4,3,2,3,0.847,Clean,Gierzak,219.6,186.00120062828063,2,8,153.62,3,Fitted,Iterative,0.6558335483761484,False,False,234.23626372936386,1,-1,True
+High-Hang Pull,4,3,2,3,0.847,Clean,Gierzak,219.6,186.00120062828063,4,5,155.73,3,Fitted,Iterative,0.7111998088952501,False,False,218.96800034564808,0,-1,True
+High-Hang Pull,4,3,3,3,0.847,Clean,Adkins,118.15,100.07305033802989,5,8,76.29,3,Fitted,Iterative,0.605357730306011,False,False,126.02465646459173,1,-1,True
+High-Hang Pull,4,3,3,3,0.847,Clean,Bachman,191.475,162.17932554781436,1,13,140.5,3,Fitted,Iterative,0.6423044619695942,False,False,218.74361509051928,1,-1,True
+High-Hang Pull,4,3,3,3,0.847,Clean,Bachman,191.475,162.17932554781436,5,11,107.12,3,Fitted,Iterative,0.5013049191514005,False,False,213.68232368701013,1,-1,True
+High-Hang Pull,4,3,3,3,0.847,Clean,Scott,135.0,114.3450003862381,5,8,93.84,3,Fitted,Iterative,0.6516770613126214,False,False,143.99770311231384,1,-1,True
+High-Hang Pull,4,3,3,3,0.847,Clean,Cole,115.0,97.40500032901764,4,6,80.53,3,Fitted,Iterative,0.6841456728097686,False,False,117.70884944614994,1,-1,True
+High-Hang Pull,4,3,3,3,0.847,Clean,Wintrow,165.0,139.7550004720688,2,7,92.43,3,Fitted,Iterative,0.5353150084923337,False,False,172.6646900118133,1,-1,True
+High-Hang Pull,4,3,3,3,0.847,Clean,Ott,189.175,160.23122554123404,2,8,104.08,3,Fitted,Iterative,0.515800483179554,False,False,201.78344804645906,1,-1,True
+High-Hang Pull,4,3,3,3,0.847,Clean,Pearson,166.25,140.8137504756451,1,10,118.84,3,Fitted,Iterative,0.6492172393253337,False,False,183.0512081341193,1,-1,True
+High-Hang Pull,4,3,3,3,0.847,Clean,Pearson,166.25,140.8137504756451,5,10,130.49,3,Fitted,Iterative,0.7128606324433087,False,False,183.0512081341193,1,-1,True
+High-Hang Pull,4,3,3,3,0.847,Clean,Sullivan,185.0,156.69500052928925,4,6,117.05,3,Fitted,Iterative,0.6181422310486333,False,False,189.35771432641513,1,-1,True
+High-Hang Pull,4,3,3,3,0.847,Clean,Clark,212.85,180.28395060896872,4,10,170.41,3,Fitted,Iterative,0.7271273432116029,False,False,234.36059940660024,1,-1,True
+High-Hang Pull,4,3,3,3,0.847,Clean,Marker,228.0,193.11600065231323,1,5,156.88,3,Fitted,Iterative,0.6900561282369989,False,False,227.34382549548167,0,-1,True
+High-Hang Pull,4,3,3,3,0.847,Clean,Marker,228.0,193.11600065231323,2,8,119.78,3,Fitted,Iterative,0.4925243034309744,False,False,243.19612081190783,1,-1,True
+High-Hang Pull,4,3,3,3,0.847,Clean,Brinkley,185.0,156.69500052928925,2,5,104.95,3,Fitted,Iterative,0.5689346675762453,False,False,184.46757770466715,0,-1,True
+High-Hang Pull,4,3,3,3,0.847,Clean,Miears,231.0,195.6570006608963,1,14,138.06,3,Fitted,Iterative,0.5177954527233753,False,False,266.6303832408442,1,-1,True
+High-Hang Pull,4,3,3,3,0.847,Clean,Miears,231.0,195.6570006608963,2,6,170.37,3,Fitted,Iterative,0.7205595345236634,False,False,236.44125410487507,1,-1,True
+High-Hang Pull,4,3,3,3,0.847,Clean,Cane Bond,115.0,97.40500032901764,1,5,80.55,3,Fitted,Iterative,0.7024564229388167,False,False,114.66903478938768,0,-1,True
+High-Hang Pull,4,3,3,3,0.847,Clean,Cane Bond,115.0,97.40500032901764,3,7,78.51,3,Fitted,Iterative,0.6523903793009954,False,False,120.34205667490016,1,-1,True
+High-Hang Pull,4,3,3,3,0.847,Clean,Hoblit,115.0,97.40500032901764,5,5,58.46,3,Fitted,Iterative,0.5098150525760797,False,False,114.6690347893877,0,-1,True
+High-Hang Pull,4,3,3,3,0.847,Clean,Gierzak,219.6,186.00120062828063,1,5,176.2,3,Fitted,Iterative,0.804683788141932,False,False,218.9680003456481,0,-1,True
+High-Hang Pull,4,3,3,3,0.847,Clean,Johnson,231.0,195.6570006608963,5,5,148.54,3,Fitted,Iterative,0.6448862588257226,False,False,230.3351916204222,0,-1,True
+Clean,5,1,1,5,0.65,Clean,Wolfe,85.0,55.24999797344208,2,6,82.06,3,Fitted,Iterative,1.7906411738962955,False,False,45.82716023526022,-1,1,True
+Clean,5,1,1,5,0.65,Clean,Bachman,191.475,124.45874543488026,4,1,174.83,3,Fitted,Iterative,1.4757485548083595,False,False,118.46869131625435,-1,1,True
+Clean,5,1,1,5,0.65,Clean,Ott,189.175,122.96374548971654,2,11,122.49,2,Fitted,Function,0.5049070059955211,False,True,242.59912923665507,1,0,True
+Clean,5,1,1,5,0.65,Clean,Pearson,166.25,108.06249603629112,4,6,158.7,3,Fitted,Iterative,1.770562461376992,False,False,89.63253398955308,-1,1,True
+Clean,5,1,1,5,0.65,Clean,Clark,212.85,138.35249492526054,3,4,205.45,3,Fitted,Iterative,1.7220475279113334,False,False,119.30565020420181,-1,1,True
+Clean,5,1,1,5,0.65,Clean,Brinkley,185.0,120.24999558925629,1,25,119.94,2,Fitted,Function,0.45579542185041116,False,True,263.1443719049979,1,0,True
+Clean,5,1,1,5,0.65,Clean,Brinkley,185.0,120.24999558925629,4,3,119.84,2,Fitted,Function,0.5746888159737225,False,True,208.53024570688646,1,0,True
+Clean,5,1,1,5,0.65,Clean,Johnson,231.0,150.14999449253082,3,6,149.0,3,Fitted,Iterative,1.1963830956441217,False,False,124.54204722758956,-1,0,True
+Clean,5,1,2,5,0.7,Clean,Wintrow,165.0,115.49999803304672,5,1,114.93,2,Fitted,Function,0.7315144631017299,False,True,157.1124096612933,-1,0,True
+Clean,5,1,2,5,0.7,Clean,Brinkley,185.0,129.49999779462814,2,3,169.19,3,Fitted,Iterative,1.3302658572952484,False,False,127.1851029417564,-1,1,True
+Clean,5,1,2,5,0.7,Clean,Brinkley,185.0,129.49999779462814,3,6,128.79,2,Fitted,Function,0.6519412885459873,False,True,197.5484637385645,1,0,True
+Clean,5,1,2,5,0.7,Clean,Miears,231.0,161.6999972462654,1,8,161.67,2,Fitted,Function,0.6359782633186439,False,True,254.2068012771036,1,0,True
+Clean,5,1,2,5,0.7,Clean,Gierzak,219.6,153.719997382164,2,1,186.8,3,Fitted,Iterative,1.1628444353127907,False,False,160.64057609713987,-1,1,True
+Clean,5,1,3,6,0.875,Clean,Pearson,166.25,145.46875,1,2,216.67,3,Fitted,Iterative,1.5921629468398715,False,False,136.08531741681784,-1,1,True
+Clean,5,1,3,6,0.875,Clean,Cane Bond,115.0,100.625,1,6,100.09,3,Fitted,Iterative,1.138097101621768,True,True,87.94504428257795,-1,0,True
+Clean,5,2,1,3,0.675,Clean,Scott,135.0,91.1250016093254,2,2,120.86,3,Fitted,Iterative,1.425166901559064,False,False,84.80410250040538,-1,1,True
+Clean,5,2,1,3,0.675,Clean,Cole,115.0,77.62500137090683,1,4,77.4,2,Fitted,Function,0.5957318431724061,False,True,129.9242283035058,1,0,True
+Clean,5,2,1,3,0.675,Clean,Cole,115.0,77.62500137090683,3,4,110.32,3,Fitted,Iterative,1.6102955697610108,False,False,68.5091619648267,-1,1,True
+Clean,5,2,1,3,0.675,Clean,Wintrow,165.0,111.37500196695328,4,4,110.5,2,Fitted,Function,0.5957318431724061,False,True,185.48613989066394,1,-1,True
+Clean,5,2,1,3,0.675,Clean,Wintrow,165.0,111.37500196695328,5,11,163.52,3,Fitted,Iterative,1.8348210032207646,False,False,89.12040995441198,-1,1,True
+Clean,5,2,1,3,0.675,Clean,Ott,189.175,127.69312725514176,3,3,127.03,3,Fitted,Iterative,1.1009814478924287,True,True,115.37887422460133,-1,0,True
+Clean,5,2,1,3,0.675,Clean,Brinkley,185.0,124.87500220537186,5,3,124.21,3,Fitted,Iterative,1.1008351261975264,True,True,112.83251873424739,-1,0,True
+Clean,5,2,2,3,0.725,Clean,Adkins,118.15,85.65875281691551,2,3,85.5,3,Fitted,Iterative,1.001318154800932,True,True,85.38744612794713,-1,0,True
+Clean,5,2,2,3,0.725,Clean,Cole,115.0,83.37500274181366,3,1,93.91,3,Fitted,Iterative,1.0650521915085696,False,False,88.1740826869557,-1,1,True
+Clean,5,2,2,3,0.725,Clean,Bousman,165.0,119.62500393390656,5,4,119.56,2,Fitted,Function,0.7085300701270967,False,True,168.74372033152133,1,0,True
+Clean,5,2,2,3,0.725,Clean,Wintrow,165.0,119.62500393390656,3,6,124.78,3,Fitted,Iterative,1.1005364808170754,False,False,113.38106657523893,-1,1,True
+Clean,5,2,2,3,0.725,Clean,Wintrow,165.0,119.62500393390656,4,4,118.93,2,Fitted,Function,0.7085300701270967,False,True,167.8545555288377,1,0,True
+Clean,5,2,2,3,0.725,Clean,Pearson,166.25,120.53125396370888,4,2,132.65,3,Fitted,Iterative,1.076814787741144,False,False,123.18738701412391,-1,1,True
+Clean,5,2,2,3,0.725,Clean,Sullivan,185.0,134.1250044107437,1,1,177.22,3,Fitted,Iterative,1.2493896213799929,False,False,141.84526345292875,-1,1,True
+Clean,5,2,2,3,0.725,Clean,Hoblit,115.0,83.37500274181366,1,7,91.09,3,Fitted,Iterative,1.1671056449454458,False,False,78.04777604709284,-1,1,True
+Clean,5,2,2,3,0.725,Clean,Gierzak,219.6,159.210005235672,1,10,158.25,2,Fitted,Function,0.6584487245383297,False,True,240.33762099084746,1,0,True
+Clean,5,2,2,3,0.725,Clean,Johnson,231.0,167.47500550746918,4,5,179.25,3,Fitted,Iterative,1.1133865507632386,False,False,160.99529842274652,-1,1,True
+Clean,5,2,3,4,0.9,Clean,Scott,135.0,121.49999678134918,4,4,121.33,3,Fitted,Iterative,1.0942527414847425,True,True,110.87932010604128,-1,0,True
+Clean,5,2,3,4,0.9,Clean,Cole,115.0,103.49999725818634,3,10,102.82,2,Fitted,Function,0.7712469514930202,False,True,133.31657233906162,1,-1,True
+Clean,5,2,3,4,0.9,Clean,Pearson,166.25,149.62499603629112,3,11,149.05,2,Fitted,Function,0.7657201506027871,False,True,194.65335982429806,1,0,True
+Clean,5,2,3,4,0.9,Clean,Clark,212.85,191.56499492526055,1,1,211.99,3,Fitted,Iterative,1.1323778576963937,False,False,187.2078286935539,-1,1,True
+Clean,5,2,3,4,0.9,Clean,Brinkley,185.0,166.4999955892563,5,3,165.9,2,Fitted,Function,0.8355019605809885,False,True,198.56326834306532,1,0,True
+Clean,5,2,3,4,0.9,Clean,Roberts,135.0,121.49999678134918,3,5,120.62,2,Fitted,Function,0.8097475707761039,False,True,148.96000229354385,1,-1,True
+Clean,5,3,1,5,0.7,Clean,Wolfe,85.0,59.49999898672104,1,10,58.59,2,Fitted,Function,0.5808671882815242,False,True,100.86643071256361,1,-1,True
+Clean,5,3,1,5,0.7,Clean,Bachman,191.475,134.03249771744012,2,1,152.25,3,Fitted,Iterative,1.1538031057626161,False,False,131.9549230190094,-1,1,True
+Clean,5,3,1,5,0.7,Clean,Ott,189.175,132.42249774485828,3,6,156.23,3,Fitted,Iterative,1.3547916607331558,False,False,115.31662360207837,-1,1,True
+Clean,5,3,1,5,0.7,Clean,Sullivan,185.0,129.49999779462814,5,4,159.68,3,Fitted,Iterative,1.3679961023771494,False,False,116.72547876600387,-1,1,True
+Clean,5,3,1,5,0.7,Clean,Clark,212.85,148.99499746263027,2,1,153.68,3,Fitted,Iterative,1.0476836776113938,False,False,146.68549609398696,-1,1,True
+Clean,5,3,1,5,0.7,Clean,Clark,212.85,148.99499746263027,5,1,148.6,2,Fitted,Function,0.6891496175428093,False,True,215.6280671385109,1,0,True
+Clean,5,3,2,3,0.75,Clean,Scott,135.0,101.25,5,1,100.93,2,Fitted,Function,0.8019478444974999,False,True,125.8560649455236,-1,0,True
+Clean,5,3,2,3,0.75,Clean,Sullivan,185.0,138.75,2,6,185.01,3,Fitted,Iterative,1.3843980079405125,False,False,133.6393139392251,-1,1,True
+Clean,5,3,2,3,0.75,Clean,Sullivan,185.0,138.75,5,5,158.71,3,Fitted,Iterative,1.1717176862146281,False,False,135.4507163860702,-1,1,True
+Clean,5,3,2,3,0.75,Clean,Clark,212.85,159.6375,4,4,159.27,2,Fitted,Function,0.7437467608249817,False,True,214.14547046004463,1,0,True
+Clean,5,3,2,3,0.75,Clean,Marker,228.0,171.0,2,1,197.21,3,Fitted,Iterative,1.0785690694048293,False,False,182.84410854542998,-1,1,True
+Clean,5,3,3,3,0.925,Clean,Bousman,165.0,152.62500196695328,5,4,152.28,2,Fitted,Function,0.8565449877796723,False,True,177.78400687947374,1,0,True
+Clean,5,3,3,3,0.925,Clean,Sullivan,185.0,171.12500220537186,5,5,170.48,2,Fitted,Function,0.844964261473989,False,True,201.76001255083614,1,0,True
+Clean,5,3,3,3,0.925,Clean,Marker,228.0,210.9000027179718,3,2,210.7,2,Fitted,Function,0.8889916816473059,False,True,237.01009171376256,1,0,True
+Clean,5,3,3,3,0.925,Clean,Gierzak,219.6,203.130002617836,5,1,268.49,3,Fitted,Iterative,1.336580824388594,False,False,200.87823729090096,-1,1,True
+Box Bench,6,1,1,5,0.6825,Bench,Davis,115.0,78.48750054836273,1,8,112.93,3,Fitted,Iterative,1.8306079417122088,False,False,61.68988860300368,-1,1,True
+Box Bench,6,1,1,5,0.6825,Bench,Cole,117.45,80.15962556004524,3,5,79.59,3,Fitted,Iterative,1.185629707497956,True,True,67.12888475775411,-1,0,True
+Box Bench,6,1,1,5,0.6825,Bench,Bousman,155.0,105.7875007390976,4,2,152.67,3,Fitted,Iterative,1.5595067026971583,False,False,97.89634102627328,-1,1,True
+Box Bench,6,1,1,5,0.6825,Bench,Marker,144.45,98.58712568879126,3,9,99.93,3,Fitted,Iterative,1.3119397946840825,False,False,76.16965382474989,-1,1,True
+Box Bench,6,1,1,5,0.6825,Bench,Vernon,174.15,118.85737583041193,4,6,157.37,3,Fitted,Iterative,1.618853991527913,False,False,97.21074341699615,-1,1,True
+Box Bench,6,1,1,5,0.6825,Bench,Johnson,185.0,126.26250088214874,4,1,155.67,3,Fitted,Iterative,1.2621102672156244,False,False,123.3410455834638,-1,1,True
+Box Bench,6,1,2,5,0.735,Bench,Adkins,96.9,71.22150138616563,1,3,103.14,3,Fitted,Iterative,1.6147475914880927,False,False,63.87375992612562,-1,1,True
+Box Bench,6,1,2,5,0.735,Bench,Wintrow,178.5,131.19750255346298,1,4,164.97,3,Fitted,Iterative,1.4444160356520195,False,False,114.21224628369028,-1,1,True
+Box Bench,6,1,2,5,0.735,Bench,Pearson,168.95,124.17825241684912,4,19,160.46,3,Fitted,Iterative,1.7228996422697065,False,False,93.13368931263685,-1,1,True
+Box Bench,6,1,2,5,0.735,Bench,Clark,185.4,136.26900265216827,3,4,135.84,2,Fitted,Function,0.6398445169954637,False,True,212.30157701103354,1,0,True
+Box Bench,6,1,2,5,0.735,Bench,Vernon,174.15,128.00025249123573,4,1,171.57,3,Fitted,Iterative,1.3698188835180583,False,False,125.25013493708214,-1,1,True
+Box Bench,6,1,2,5,0.735,Bench,Thomas,137.75,101.24625197052956,4,18,146.85,3,Fitted,Iterative,1.9338987487358332,False,False,75.93468897789717,-1,1,True
+Box Bench,6,1,2,5,0.735,Bench,Cane Bond,193.05,141.89175276160242,2,1,176.85,3,Fitted,Iterative,1.2737392583740923,False,False,138.84317283723058,-1,1,True
+Box Bench,6,1,3,10,0.84,Bench,Wolfe,85.0,71.39999777078629,5,7,93.34,3,Fitted,Iterative,1.6851716043093432,False,False,55.38901780762844,-1,1,True
+Box Bench,6,1,3,10,0.84,Bench,Adkins,96.9,81.39599745869637,3,9,95.67,3,Fitted,Iterative,1.5614326540151657,False,False,61.27065407143124,-1,1,True
+Box Bench,6,1,3,10,0.84,Bench,Scott,155.0,130.19999593496323,5,9,144.42,3,Fitted,Iterative,1.47355687509275,False,False,98.00775419062788,-1,1,True
+Box Bench,6,1,3,10,0.84,Bench,Cole,117.45,98.65799691975116,3,1,133.27,3,Fitted,Iterative,1.470368447524339,False,False,90.63714623663671,-1,1,True
+Box Bench,6,1,3,10,0.84,Bench,Clark,185.4,155.7359951376915,3,1,183.89,3,Fitted,Iterative,1.2852723984265175,False,False,143.07472892526562,-1,1,True
+Box Bench,6,1,3,10,0.84,Bench,Hoblit,324.0,272.15999150276184,4,13,309.61,3,Fitted,Iterative,1.516803888234778,False,False,204.1199936270714,-1,1,True
+Box Bench,6,1,3,10,0.84,Bench,Gierzak,185.6,155.90399513244628,4,1,205.82,3,Fitted,Iterative,1.4369987820441008,False,False,143.22907059616665,-1,1,True
+Bench,7,1,1,5,0.65,Bench,Wolfe,85.0,55.24999797344208,5,4,54.32,2,Fitted,Function,0.6046831460230316,False,True,89.83217137315584,1,-1,True
+Bench,7,1,1,5,0.65,Bench,Adkins,96.9,62.984997689723976,3,10,62.44,2,Fitted,Function,0.5738048550905896,False,True,108.81748288822384,1,-1,True
+Bench,7,1,1,5,0.65,Bench,Cole,117.45,76.34249719977379,1,8,105.13,3,Fitted,Iterative,1.538869095473129,False,False,68.31640216134012,-1,1,True
+Bench,7,1,1,5,0.65,Bench,Bousman,155.0,100.74999630451202,5,3,100.38,2,Fitted,Function,0.6134220986202845,False,True,163.63936060630314,1,0,True
+Bench,7,1,1,5,0.65,Bench,Clark,185.4,120.50999557971954,3,14,173.93,3,Fitted,Iterative,1.6702927618188612,False,False,104.13144568177339,-1,1,True
+Bench,7,1,1,5,0.65,Bench,Marker,144.45,93.8924965560436,3,5,93.78,3,Fitted,Iterative,1.0864846386625742,True,True,86.31507217206496,-1,0,True
+Bench,7,1,1,5,0.65,Bench,Roberts,155.0,100.74999630451202,1,17,120.17,3,Fitted,Iterative,1.398133637131017,False,False,85.95029602934805,-1,1,True
+Bench,7,1,1,5,0.65,Bench,Roberts,155.0,100.74999630451202,4,4,107.42,3,Fitted,Iterative,1.1461081107064945,False,False,93.7258876335699,-1,1,True
+Bench,7,1,1,5,0.65,Bench,Gierzak,185.6,120.63999557495116,1,17,177.68,3,Fitted,Iterative,1.7264137846762282,False,False,102.91854801965806,-1,1,True
+Bench,7,1,2,5,0.7,Bench,Wolfe,85.0,59.49999898672104,3,6,58.75,2,Fitted,Function,0.6553787598006284,False,True,89.64281969997354,1,-1,True
+Bench,7,1,2,5,0.7,Bench,Scott,155.0,108.499998152256,2,1,131.82,3,Fitted,Iterative,1.2072722625450525,False,False,109.18829504300054,-1,1,True
+Bench,7,1,2,5,0.7,Bench,Bousman,155.0,108.499998152256,1,1,146.78,3,Fitted,Iterative,1.344283285513297,False,False,109.18829504300055,-1,1,True
+Bench,7,1,2,5,0.7,Bench,Hoblit,324.0,226.79999613761905,1,18,328.49,3,Fitted,Iterative,1.645143098348455,False,False,199.67260010984353,-1,1,True
+Bench,7,1,2,5,0.7,Bench,Gierzak,185.6,129.91999778747558,1,4,129.47,2,Fitted,Function,0.6685559944050199,False,True,193.65618001110224,1,0,True
+Bench,7,1,2,5,0.7,Bench,Gierzak,185.6,129.91999778747558,5,1,129.56,2,Fitted,Function,0.7044406131806487,False,True,183.91898135318795,-1,0,True
+Bench,7,1,3,10,0.8,Bench,Davis,115.0,92.00000137090684,2,12,91.96,2,Fitted,Function,0.6950082264391515,False,True,132.31498060268092,1,0,True
+Bench,7,1,3,10,0.8,Bench,Bachman,113.4,90.72000135183336,1,12,114.56,3,Fitted,Iterative,1.4535500997906388,False,False,78.81393287819978,-1,1,True
+Bench,7,1,3,10,0.8,Bench,Cole,117.45,93.96000140011311,3,8,114.26,3,Fitted,Iterative,1.3713372047899244,False,False,83.32013424626916,-1,1,True
+Bench,7,1,3,10,0.8,Bench,Marker,144.45,115.56000172197818,3,7,115.11,2,Fitted,Function,0.7140221292058853,False,True,161.2134908592007,1,0,True
+Bench,7,1,3,10,0.8,Bench,Miears,225.0,180.000002682209,5,12,247.0,3,Fitted,Iterative,1.5795176747794786,False,False,156.37685094880908,-1,1,True
+Bench,7,1,3,10,0.8,Bench,Thomas,137.75,110.20000164210796,2,1,131.86,3,Fitted,Iterative,1.2458995282517324,False,False,105.83517933025324,-1,1,True
+Bench,7,1,3,10,0.8,Bench,Gierzak,185.6,148.4800022125244,4,8,148.38,2,Fitted,Function,0.7094094018413721,False,True,209.15990063686607,1,0,True
+Bench,7,1,3,10,0.8,Bench,Johnson,185.0,148.00000220537186,3,11,197.54,3,Fitted,Iterative,1.529462999876539,False,False,129.15644250037155,-1,1,True
+Bench,7,2,1,3,0.675,Bench,Miears,225.0,151.875002682209,5,4,177.47,3,Fitted,Iterative,1.2432932964209562,False,False,142.74186188478566,-1,1,True
+Bench,7,2,1,3,0.675,Bench,Roberts,155.0,104.625001847744,2,2,139.77,3,Fitted,Iterative,1.3779386641080287,False,False,101.4341230423898,-1,1,True
+Bench,7,2,1,3,0.675,Bench,Vernon,174.15,117.55125207602978,2,1,171.96,3,Fitted,Iterative,1.473124126842854,False,False,116.73150745859985,-1,1,True
+Bench,7,2,1,3,0.675,Bench,Vernon,174.15,117.55125207602978,3,2,133.49,3,Fitted,Iterative,1.1713127578436102,False,False,113.9661453408528,-1,1,True
+Bench,7,2,2,3,0.725,Bench,Davis,115.0,83.37500274181366,4,5,102.75,3,Fitted,Iterative,1.2927585210087245,False,False,79.48120111389818,-1,1,True
+Bench,7,2,2,3,0.725,Bench,Scott,155.0,112.37500369548798,1,5,149.56,3,Fitted,Iterative,1.3961020897095962,False,False,107.12683628394973,-1,1,True
+Bench,7,2,2,3,0.725,Bench,Vernon,174.15,126.25875415205957,1,4,139.23,3,Fitted,Iterative,1.1449302828242454,False,False,121.60565764454738,-1,1,True
+Bench,7,2,2,3,0.725,Bench,Vernon,174.15,126.25875415205957,5,2,125.28,2,Fitted,Function,0.7182865454296644,False,True,174.4150726435507,0,-1,True
+Bench,7,2,2,3,0.725,Bench,Thomas,137.75,99.86875328421591,2,3,99.85,3,Fitted,Iterative,1.0252380497102649,True,True,97.39201547213145,-1,0,True
+Bench,7,2,2,3,0.725,Bench,Thomas,137.75,99.86875328421591,3,2,99.78,2,Fitted,Function,0.7182865454296644,False,True,138.9139204052801,1,0,True
+Bench,7,2,2,3,0.725,Bench,Hoblit,324.0,234.90000772476196,4,1,339.79,3,Fitted,Iterative,1.428471130724534,False,False,237.86970047315927,-1,1,True
+Bench,7,2,2,3,0.725,Bench,Gierzak,185.6,134.56000442504882,5,4,186.1,3,Fitted,Iterative,1.4359459705833617,False,False,129.60097650776913,-1,1,True
+Bench,7,2,3,8,0.825,Bench,Vernon,174.15,143.67374792397024,1,1,175.53,3,Fitted,Iterative,1.2630018337040414,False,False,138.97842055004637,-1,1,True
+Bench,7,2,3,8,0.825,Bench,Cane Bond,193.05,159.26624769866467,4,25,159.25,2,Fitted,Function,0.6975876892812358,False,True,228.28671211799096,1,0,True
+Bench,7,3,1,5,0.7,Bench,Adkins,96.9,67.82999884486199,4,1,78.06,3,Fitted,Iterative,1.1507885927710824,False,False,67.83174641315539,-1,1,True
+Bench,7,3,1,5,0.7,Bench,Cole,117.45,82.2149985998869,2,4,95.93,3,Fitted,Iterative,1.229832876852802,False,False,78.00246830731118,-1,1,True
+Bench,7,3,1,5,0.7,Bench,Bousman,155.0,108.499998152256,1,9,108.42,2,Fitted,Function,0.6369877378855763,False,True,170.20735808807007,1,0,True
+Bench,7,3,1,5,0.7,Bench,Pearson,168.95,118.26499798595904,3,5,118.22,3,Fitted,Iterative,1.0650546942162893,True,True,110.99899436337502,-1,0,True
+Bench,7,3,1,5,0.7,Bench,Clark,185.4,129.77999778985978,5,7,174.21,3,Fitted,Iterative,1.4551729497852781,False,False,119.71772841551653,-1,1,True
+Bench,7,3,1,5,0.7,Bench,Miears,225.0,157.499997317791,3,2,163.48,3,Fitted,Iterative,1.0620326607591406,False,False,153.93123586533068,-1,1,True
+Bench,7,3,1,5,0.7,Bench,Miears,225.0,157.499997317791,4,9,156.64,2,Fitted,Function,0.6369877378855763,False,True,245.90740242497043,1,0,True
+Bench,7,3,1,5,0.7,Bench,Thomas,137.75,96.42499835789204,2,14,97.74,3,Fitted,Iterative,1.142386930018807,False,False,85.55770153847166,-1,1,True
+Bench,7,3,1,5,0.7,Bench,Thomas,137.75,96.42499835789204,5,4,96.32,2,Fitted,Function,0.6641334040639522,False,True,145.0311028034436,1,0,True
+Bench,7,3,2,3,0.75,Bench,Bousman,155.0,116.25,1,4,149.91,3,Fitted,Iterative,1.3285068460238247,False,False,112.84096912912077,-1,1,True
+Bench,7,3,2,3,0.75,Bench,Wintrow,178.5,133.875,1,4,133.44,2,Fitted,Function,0.7280062524459404,False,True,183.29512906197033,1,0,True
+Bench,7,3,2,3,0.75,Bench,Ott,135.0,101.25,2,1,101.06,2,Fitted,Function,0.7638908712215691,False,True,132.29638395650787,-1,0,True
+Bench,7,3,2,3,0.75,Bench,Clark,185.4,139.05,3,5,187.72,3,Fitted,Iterative,1.4045793153510042,False,False,133.64855793358225,-1,1,True
+Bench,7,3,2,3,0.75,Bench,Vernon,174.15,130.6125,4,1,151.78,3,Fitted,Iterative,1.1409319699226534,False,False,133.03159522323625,-1,1,True
+Bench,7,3,3,7,0.85,Bench,Wolfe,85.0,72.25000202655792,4,1,71.78,2,Fitted,Function,0.8277637196035574,False,True,86.71556665273727,1,-1,True
+Bench,7,3,3,7,0.85,Bench,Ott,135.0,114.75000321865082,4,1,114.61,2,Fitted,Function,0.8277637196035574,False,True,138.45738498286732,1,0,True
+Bench,7,3,3,7,0.85,Bench,Roberts,155.0,131.75000369548798,4,7,131.34,3,Fitted,Iterative,1.0955204771121283,True,True,119.88822002325489,-1,0,True
+Bench,7,3,3,7,0.85,Bench,Vernon,174.15,148.02750415205955,4,14,189.58,3,Fitted,Iterative,1.4536898170720385,False,False,130.4129655264726,-1,1,True
+Bench,7,3,3,7,0.85,Bench,Cane Bond,193.05,164.0925046026707,5,3,245.03,3,Fitted,Iterative,1.5853460508747848,False,False,154.55931521373134,-1,1,True
+Bench,7,3,3,7,0.85,Bench,Johnson,185.0,157.2500044107437,2,2,160.91,3,Fitted,Iterative,1.0713146504501647,False,False,150.19863672394087,-1,1,True
+DB Tricep Extensions,8,1,1,5,0.4,Bench,Davis,115.0,46.000000685453415,5,4,65.35,3,Constant,Iterative,1.4206521739130369,False,False,46.000000000000206,-1,1,True
+DB Tricep Extensions,8,1,1,5,0.4,Bench,Vernon,174.15,69.6600010380149,4,1,87.18,3,Constant,Iterative,1.2515073212747558,False,False,69.66000000000041,-1,1,True
+DB Tricep Extensions,8,1,1,5,0.4,Bench,Cane Bond,193.05,77.22000115066767,3,1,84.06,3,Constant,Iterative,1.0885780885780822,False,False,77.22000000000045,-1,1,True
+DB Tricep Extensions,8,1,1,5,0.4,Bench,Cane Bond,193.05,77.22000115066767,4,8,76.5,2,Constant,Scale,0.25,False,True,306.0,1,0,True
+DB Tricep Extensions,8,1,2,5,0.4,Bench,Wolfe,85.0,34.00000050663948,2,8,43.14,3,Constant,Iterative,1.2688235294117636,False,False,34.00000000000003,-1,1,True
+DB Tricep Extensions,8,1,2,5,0.4,Bench,Wolfe,85.0,34.00000050663948,3,4,33.62,2,Constant,Scale,0.5,False,True,67.24,-1,0,True
+DB Tricep Extensions,8,1,2,5,0.4,Bench,Davis,115.0,46.000000685453415,4,18,67.12,3,Constant,Iterative,1.459130434782609,False,False,45.99999999999999,-1,1,True
+DB Tricep Extensions,8,1,2,5,0.4,Bench,Wintrow,178.5,71.40000106394291,1,13,105.4,3,Constant,Iterative,1.4761904761904758,False,False,71.40000000000002,-1,1,True
+DB Tricep Extensions,8,1,2,5,0.4,Bench,Clark,185.4,74.16000110507012,1,10,73.83,2,Constant,Scale,0.2,False,True,369.15,1,0,True
+DB Tricep Extensions,8,1,2,5,0.4,Bench,Marker,144.45,57.78000086098909,4,3,68.48,3,Constant,Iterative,1.1851851851851831,False,False,57.7800000000001,-1,1,True
+DB Tricep Extensions,8,1,2,5,0.4,Bench,Miears,225.0,90.00000134110451,5,24,118.39,3,Constant,Iterative,1.315444444444445,False,False,89.99999999999996,-1,1,True
+DB Tricep Extensions,8,1,2,5,0.4,Bench,Hoblit,324.0,129.6000019311905,1,6,139.3,3,Constant,Iterative,1.0748456790123444,False,False,129.60000000000016,-1,1,True
+DB Tricep Extensions,8,1,2,5,0.4,Bench,Johnson,185.0,74.00000110268593,1,7,73.21,2,Constant,Scale,0.28571428571428575,False,True,256.23499999999996,1,0,True
+DB Tricep Extensions,8,1,3,5,0.4,Bench,Wolfe,85.0,34.00000050663948,5,27,46.47,3,Constant,Iterative,1.3667647058823575,False,False,33.999999999999886,-1,1,True
+DB Tricep Extensions,8,1,3,5,0.4,Bench,Scott,155.0,62.000000923871994,2,1,68.22,3,Constant,Iterative,1.1003225806451609,False,False,62.00000000000002,-1,1,True
+DB Tricep Extensions,8,1,3,5,0.4,Bench,Cole,117.45,46.98000070005656,1,12,67.36,3,Constant,Iterative,1.433801617709667,False,False,46.97999999999989,-1,1,True
+DB Tricep Extensions,8,1,3,5,0.4,Bench,Clark,185.4,74.16000110507012,1,4,77.29,3,Constant,Iterative,1.0422060409924496,False,False,74.15999999999994,-1,1,True
+DB Tricep Extensions,8,1,3,5,0.4,Bench,Clark,185.4,74.16000110507012,3,6,87.64,3,Constant,Iterative,1.181769147788567,False,False,74.1599999999999,-1,1,True
+DB Tricep Extensions,8,1,3,5,0.4,Bench,Marker,144.45,57.78000086098909,3,10,73.84,3,Constant,Iterative,1.2779508480443087,False,False,57.77999999999988,-1,1,True
+DB Tricep Extensions,8,1,3,5,0.4,Bench,Miears,225.0,90.00000134110451,1,9,89.7,2,Constant,Scale,0.22222222222222224,False,True,403.65,1,0,True
+DB Tricep Extensions,8,1,3,5,0.4,Bench,Miears,225.0,90.00000134110451,2,6,89.38,2,Constant,Scale,0.33333333333333337,False,True,268.13999999999993,1,0,True
+DB Tricep Extensions,8,1,3,5,0.4,Bench,Cane Bond,193.05,77.22000115066767,1,7,109.92,3,Constant,Iterative,1.4234654234654256,False,False,77.21999999999989,-1,1,True
+DB Tricep Extensions,8,1,3,5,0.4,Bench,Hoblit,324.0,129.6000019311905,3,4,150.69,3,Constant,Iterative,1.1627314814814826,False,False,129.59999999999988,-1,1,True
+DB Tricep Extensions,8,1,3,5,0.4,Bench,Hoblit,324.0,129.6000019311905,4,2,160.99,3,Constant,Iterative,1.2422067901234572,False,False,129.59999999999997,-1,1,True
+DB Tricep Extensions,8,2,1,6,0.4,Bench,Adkins,96.9,38.76000057756901,1,1,38.82,2,Constant,Scale,2.4000000000000004,False,True,16.174999999999997,-1,0,True
+DB Tricep Extensions,8,2,1,6,0.4,Bench,Bachman,113.4,45.36000067591667,4,1,51.87,3,Constant,Iterative,1.1435185185185153,False,False,45.36000000000013,-1,1,True
+DB Tricep Extensions,8,2,1,6,0.4,Bench,Scott,155.0,62.000000923871994,1,2,61.79,2,Constant,Scale,1.2000000000000002,False,True,51.49166666666666,-1,0,True
+DB Tricep Extensions,8,2,1,6,0.4,Bench,Scott,155.0,62.000000923871994,5,3,74.75,3,Constant,Iterative,1.2056451612903203,False,False,62.00000000000012,-1,1,True
+DB Tricep Extensions,8,2,1,6,0.4,Bench,Ott,135.0,54.000000804662704,2,5,70.14,3,Constant,Iterative,1.2988888888888872,False,False,54.00000000000007,-1,1,True
+DB Tricep Extensions,8,2,1,6,0.4,Bench,Ott,135.0,54.000000804662704,3,16,53.48,2,Constant,Scale,0.15000000000000002,False,True,356.53333333333325,1,0,True
+DB Tricep Extensions,8,2,1,6,0.4,Bench,Pearson,168.95,67.58000100702047,4,3,81.89,3,Constant,Iterative,1.211749038176973,False,False,67.58000000000013,-1,1,True
+DB Tricep Extensions,8,2,1,6,0.4,Bench,Miears,225.0,90.00000134110451,5,7,89.77,2,Constant,Scale,0.34285714285714286,False,True,261.82916666666665,1,0,True
+DB Tricep Extensions,8,2,1,6,0.4,Bench,Thomas,137.75,55.10000082105398,3,7,61.65,3,Constant,Iterative,1.1188747731397448,False,False,55.10000000000005,-1,1,True
+DB Tricep Extensions,8,2,1,6,0.4,Bench,Hoblit,324.0,129.6000019311905,2,4,146.79,3,Constant,Iterative,1.1326388888888872,False,False,129.6000000000002,-1,1,True
+DB Tricep Extensions,8,2,1,6,0.4,Bench,Hoblit,324.0,129.6000019311905,4,13,167.45,3,Constant,Iterative,1.2920524691358022,False,False,129.60000000000002,-1,1,True
+DB Tricep Extensions,8,2,1,6,0.4,Bench,Hoblit,324.0,129.6000019311905,5,8,129.42,2,Constant,Scale,0.30000000000000004,False,True,431.3999999999999,1,0,True
+DB Tricep Extensions,8,2,2,6,0.4,Bench,Wolfe,85.0,34.00000050663948,4,12,33.69,2,Constant,Scale,0.2,False,True,168.45,1,0,True
+DB Tricep Extensions,8,2,2,6,0.4,Bench,Adkins,96.9,38.76000057756901,3,4,38.45,2,Constant,Scale,0.6000000000000001,False,True,64.08333333333333,-1,0,True
+DB Tricep Extensions,8,2,2,6,0.4,Bench,Bachman,113.4,45.36000067591667,3,8,45.13,2,Constant,Scale,0.30000000000000004,False,True,150.4333333333333,1,0,True
+DB Tricep Extensions,8,2,2,6,0.4,Bench,Wintrow,178.5,71.40000106394291,4,2,70.87,2,Constant,Scale,1.2000000000000002,False,True,59.05833333333333,-1,0,True
+DB Tricep Extensions,8,2,2,6,0.4,Bench,Cane Bond,193.05,77.22000115066767,2,1,105.01,3,Constant,Iterative,1.3598808598808598,False,False,77.22000000000001,-1,1,True
+DB Tricep Extensions,8,2,2,6,0.4,Bench,Cane Bond,193.05,77.22000115066767,4,5,96.18,3,Constant,Iterative,1.2455322455322473,False,False,77.2199999999999,-1,1,True
+DB Tricep Extensions,8,2,2,6,0.4,Bench,Johnson,185.0,74.00000110268593,1,7,103.38,3,Constant,Iterative,1.3970270270270293,False,False,73.99999999999987,-1,1,True
+DB Tricep Extensions,8,2,3,6,0.4,Bench,Wolfe,85.0,34.00000050663948,1,1,48.46,3,Constant,Iterative,1.4252941176470624,False,False,33.999999999999915,-1,1,True
+DB Tricep Extensions,8,2,3,6,0.4,Bench,Adkins,96.9,38.76000057756901,1,9,45.01,3,Constant,Iterative,1.1612487100103255,False,False,38.75999999999981,-1,1,True
+DB Tricep Extensions,8,2,3,6,0.4,Bench,Bachman,113.4,45.36000067591667,5,9,54.41,3,Constant,Iterative,1.1995149911816634,False,False,45.359999999999786,-1,1,True
+DB Tricep Extensions,8,2,3,6,0.4,Bench,Cole,117.45,46.98000070005656,5,7,46.72,2,Constant,Scale,0.34285714285714286,False,True,136.26666666666665,1,0,True
+DB Tricep Extensions,8,2,3,6,0.4,Bench,Wintrow,178.5,71.40000106394291,1,1,76.37,3,Constant,Iterative,1.0696078431372575,False,False,71.39999999999984,-1,1,True
+DB Tricep Extensions,8,2,3,6,0.4,Bench,Wintrow,178.5,71.40000106394291,5,1,91.79,3,Constant,Iterative,1.28557422969188,False,False,71.39999999999982,-1,1,True
+DB Tricep Extensions,8,2,3,6,0.4,Bench,Pearson,168.95,67.58000100702047,3,11,91.48,3,Constant,Iterative,1.3536549274933483,False,False,67.57999999999966,-1,1,True
+DB Tricep Extensions,8,2,3,6,0.4,Bench,Clark,185.4,74.16000110507012,2,12,73.66,2,Constant,Scale,0.2,False,True,368.29999999999995,1,0,True
+DB Tricep Extensions,8,2,3,6,0.4,Bench,Marker,144.45,57.78000086098909,1,7,57.62,2,Constant,Scale,0.34285714285714286,False,True,168.05833333333334,1,0,True
+DB Tricep Extensions,8,2,3,6,0.4,Bench,Marker,144.45,57.78000086098909,5,5,61.24,3,Constant,Iterative,1.0598823122187653,False,False,57.77999999999976,-1,1,True
+DB Tricep Extensions,8,3,1,7,0.4,Bench,Davis,115.0,46.000000685453415,4,1,66.95,3,Constant,Iterative,1.4554347826086957,False,False,46.0,-1,1,True
+DB Tricep Extensions,8,3,1,7,0.4,Bench,Bousman,155.0,62.000000923871994,1,15,68.38,3,Constant,Iterative,1.1029032258064546,False,False,61.99999999999983,-1,1,True
+DB Tricep Extensions,8,3,1,7,0.4,Bench,Thomas,137.75,55.10000082105398,1,4,79.85,3,Constant,Iterative,1.4491833030853014,False,False,55.09999999999992,-1,1,True
+DB Tricep Extensions,8,3,2,7,0.4,Bench,Wolfe,85.0,34.00000050663948,2,8,38.51,3,Constant,Iterative,1.132647058823535,False,False,33.99999999999984,-1,1,True
+DB Tricep Extensions,8,3,2,7,0.4,Bench,Bachman,113.4,45.36000067591667,5,6,44.81,2,Constant,Scale,0.46666666666666673,False,True,96.02142857142856,-1,0,True
+DB Tricep Extensions,8,3,2,7,0.4,Bench,Ott,135.0,54.000000804662704,2,10,65.06,3,Constant,Iterative,1.204814814814821,False,False,53.99999999999972,-1,1,True
+DB Tricep Extensions,8,3,2,7,0.4,Bench,Ott,135.0,54.000000804662704,3,8,53.94,2,Constant,Scale,0.35000000000000003,False,True,154.1142857142857,1,0,True
+DB Tricep Extensions,8,3,2,7,0.4,Bench,Hoblit,324.0,129.6000019311905,3,8,191.45,3,Constant,Iterative,1.4772376543209949,False,False,129.59999999999937,-1,1,True
+DB Tricep Extensions,8,3,2,7,0.4,Bench,Hoblit,324.0,129.6000019311905,4,9,128.96,2,Constant,Scale,0.3111111111111111,False,True,414.51428571428573,1,0,True
+DB Tricep Extensions,8,3,2,7,0.4,Bench,Gierzak,185.6,74.2400011062622,1,1,74.0,2,Constant,Scale,2.8000000000000003,False,True,26.428571428571427,-1,0,True
+DB Tricep Extensions,8,3,2,7,0.4,Bench,Johnson,185.0,74.00000110268593,2,2,73.55,2,Constant,Scale,1.4000000000000001,False,True,52.53571428571428,-1,0,True
+DB Tricep Extensions,8,3,3,7,0.4,Bench,Adkins,96.9,38.76000057756901,5,1,38.39,2,Constant,Scale,2.8000000000000003,False,True,13.710714285714285,-1,0,True
+DB Tricep Extensions,8,3,3,7,0.4,Bench,Bachman,113.4,45.36000067591667,1,6,63.52,3,Constant,Iterative,1.400352733686077,False,False,45.35999999999968,-1,1,True
+DB Tricep Extensions,8,3,3,7,0.4,Bench,Bachman,113.4,45.36000067591667,2,1,52.97,3,Constant,Iterative,1.1677689594356324,False,False,45.35999999999975,-1,1,True
+DB Tricep Extensions,8,3,3,7,0.4,Bench,Bachman,113.4,45.36000067591667,3,6,49.62,3,Constant,Iterative,1.0939153439153515,False,False,45.35999999999968,-1,1,True
+DB Tricep Extensions,8,3,3,7,0.4,Bench,Wintrow,178.5,71.40000106394291,3,8,73.58,3,Constant,Iterative,1.0305322128851617,False,False,71.39999999999947,-1,1,True
+DB Tricep Extensions,8,3,3,7,0.4,Bench,Ott,135.0,54.000000804662704,5,7,53.98,3,Constant,Iterative,0.9996296296296368,True,True,53.99999999999961,-1,0,True
+DB Tricep Extensions,8,3,3,7,0.4,Bench,Miears,225.0,90.00000134110451,3,1,108.92,3,Constant,Iterative,1.2102222222222287,False,False,89.99999999999952,-1,1,True
+DB Tricep Extensions,8,3,3,7,0.4,Bench,Gierzak,185.6,74.2400011062622,2,6,87.68,3,Constant,Iterative,1.1810344827586292,False,False,74.23999999999947,-1,1,True
+Barbell Push Press,9,1,1,5,0.675,Bench,Bachman,113.4,76.54500135183335,3,4,107.55,3,Fitted,Iterative,1.4789792100625516,False,False,72.71907493239969,-1,1,True
+Barbell Push Press,9,1,1,5,0.675,Bench,Cole,117.45,79.27875140011311,1,11,79.23,2,Fitted,Function,0.6189973445098887,False,True,127.99731808661139,1,0,True
+Barbell Push Press,9,1,1,5,0.675,Bench,Cole,117.45,79.27875140011311,3,4,109.22,3,Fitted,Iterative,1.450153115966878,False,False,75.31618475141396,-1,1,True
+Barbell Push Press,9,1,1,5,0.675,Bench,Cole,117.45,79.27875140011311,5,3,117.43,3,Fitted,Iterative,1.545483490908692,False,False,75.98269453590548,-1,1,True
+Barbell Push Press,9,1,1,5,0.675,Bench,Bousman,155.0,104.625001847744,1,5,105.42,3,Fitted,Iterative,1.0683354078580773,True,True,98.67687546868659,-1,1,True
+Barbell Push Press,9,1,1,5,0.675,Bench,Clark,185.4,125.14500221014023,3,6,175.71,3,Fitted,Iterative,1.4979097829998036,False,False,117.3034597905574,-1,1,True
+Barbell Push Press,9,1,1,5,0.675,Bench,Thomas,137.75,92.98125164210796,2,5,92.8,3,Fitted,Iterative,1.0582119887320018,True,True,87.69509416652633,-1,0,True
+Barbell Push Press,9,1,2,5,0.725,Bench,Pearson,168.95,122.48875402808189,3,24,134.26,3,Fitted,Iterative,1.1894417188694888,False,False,112.87648471554212,-1,1,True
+Barbell Push Press,9,1,2,5,0.725,Bench,Pearson,168.95,122.48875402808189,5,17,122.02,2,Fitted,Function,0.676460155185139,False,True,180.3801732662356,1,0,True
+Barbell Push Press,9,1,2,5,0.725,Bench,Thomas,137.75,99.86875328421591,5,4,118.91,3,Fitted,Iterative,1.2174705846732703,False,False,97.66971087183317,-1,1,True
+Barbell Push Press,9,1,2,5,0.725,Bench,Gierzak,185.6,134.56000442504882,5,6,134.2,2,Fitted,Function,0.7004790752457847,False,True,191.58316749563403,1,0,True
+Barbell Push Press,9,1,3,10,0.825,Bench,Bachman,113.4,93.55499864816666,5,1,134.61,3,Fitted,Iterative,1.4835870354054297,False,False,90.73279611345097,-1,1,True
+Barbell Push Press,9,1,3,10,0.825,Bench,Thomas,137.75,113.64374835789204,1,11,113.57,2,Fitted,Function,0.7545460042726835,False,True,150.51434817347098,1,0,True
+Barbell Push Press,9,2,1,3,0.7,Bench,Wolfe,85.0,59.49999898672104,2,4,59.11,2,Fitted,Function,0.6734967208555567,False,True,87.76583191809955,1,0,True
+Barbell Push Press,9,2,1,3,0.7,Bench,Davis,115.0,80.49999862909317,2,1,112.06,3,Fitted,Iterative,1.3984441394127818,False,False,80.13191005759795,-1,1,True
+Barbell Push Press,9,2,1,3,0.7,Bench,Adkins,96.9,67.82999884486199,4,1,88.47,3,Fitted,Iterative,1.3102814591800218,False,False,67.51984421374992,-1,1,True
+Barbell Push Press,9,2,1,3,0.7,Bench,Bachman,113.4,79.37999864816666,4,5,83.41,3,Fitted,Iterative,1.0996888357719523,False,False,75.84872855551761,-1,1,True
+Barbell Push Press,9,2,1,3,0.7,Bench,Cole,117.45,82.2149985998869,1,4,107.73,3,Fitted,Iterative,1.3619091985260958,False,False,79.10218986448513,-1,1,True
+Barbell Push Press,9,2,1,3,0.7,Bench,Cole,117.45,82.2149985998869,3,7,83.49,3,Fitted,Iterative,1.07454045353707,False,False,77.69833115651957,-1,1,True
+Barbell Push Press,9,2,1,3,0.7,Bench,Ott,135.0,94.4999983906746,2,4,97.36,3,Fitted,Iterative,1.070807270255227,False,False,90.92205731550015,-1,1,True
+Barbell Push Press,9,2,1,3,0.7,Bench,Ott,135.0,94.4999983906746,3,5,127.28,3,Fitted,Iterative,1.409584603936284,False,False,90.29610542323525,-1,1,True
+Barbell Push Press,9,2,1,3,0.7,Bench,Marker,144.45,101.1149982780218,3,2,100.29,2,Fitted,Function,0.6864876986860089,False,True,146.09147431478073,1,-1,True
+Barbell Push Press,9,2,1,3,0.7,Bench,Miears,225.0,157.499997317791,1,8,168.69,3,Fitted,Iterative,1.1384633166188218,False,False,148.17341721734235,-1,1,True
+Barbell Push Press,9,2,1,3,0.7,Bench,Cane Bond,193.05,135.13499769866468,4,3,134.27,3,Fitted,Iterative,1.024070112941715,True,True,131.11406953797314,-1,0,True
+Barbell Push Press,9,2,1,3,0.7,Bench,Johnson,185.0,129.49999779462814,4,5,167.09,3,Fitted,Iterative,1.3503410802606446,False,False,123.7391074318409,-1,1,True
+Barbell Push Press,9,2,2,3,0.75,Bench,Davis,115.0,86.25,4,5,100.21,3,Fitted,Iterative,1.1829359853037087,False,False,84.7129525561537,-1,1,True
+Barbell Push Press,9,2,2,3,0.75,Bench,Bousman,155.0,116.25,3,1,115.58,2,Fitted,Function,0.7645735477735534,False,True,151.16923719970464,-1,0,True
+Barbell Push Press,9,2,2,3,0.75,Bench,Vernon,174.15,130.6125,2,1,183.2,3,Fitted,Iterative,1.3758868567201765,False,False,133.15048334476433,-1,1,True
+Barbell Push Press,9,2,2,3,0.75,Bench,Vernon,174.15,130.6125,4,6,184.4,3,Fitted,Iterative,1.445116572764717,False,False,127.6021626734348,-1,1,True
+Barbell Push Press,9,2,3,8,0.85,Bench,Bousman,155.0,131.75000369548798,3,11,130.99,2,Fitted,Function,0.7867810414210119,False,True,166.48850582802282,1,0,True
+Barbell Push Press,9,2,3,8,0.85,Bench,Miears,225.0,191.25000536441803,2,12,195.62,3,Fitted,Iterative,1.10790349140798,False,False,176.56772590489464,-1,1,True
+Barbell Push Press,9,2,3,8,0.85,Bench,Johnson,185.0,157.2500044107437,2,11,157.83,2,Fitted,Function,0.7867810414210119,False,True,200.6021900514302,1,0,True
+Barbell Push Press,9,3,1,5,0.725,Bench,Wolfe,85.0,61.62500202655792,1,1,68.24,3,Fitted,Iterative,1.1012150991000862,False,False,61.96791167844118,-1,1,True
+Barbell Push Press,9,3,1,5,0.725,Bench,Cole,117.45,85.15125280022622,1,5,84.86,3,Fitted,Iterative,1.030559541413756,True,True,82.34361683128586,-1,0,True
+Barbell Push Press,9,3,1,5,0.725,Bench,Cole,117.45,85.15125280022622,3,6,84.7,2,Fitted,Function,0.6971748196610441,False,True,121.49033156587592,1,0,True
+Barbell Push Press,9,3,1,5,0.725,Bench,Clark,185.4,134.41500442028047,4,1,133.93,2,Fitted,Function,0.7290342550404845,False,True,183.70878881756065,-1,0,True
+Barbell Push Press,9,3,1,5,0.725,Bench,Marker,144.45,104.72625344395637,2,4,104.54,2,Fitted,Function,0.7057317580038851,False,True,148.12993579272157,1,0,True
+Barbell Push Press,9,3,1,5,0.725,Bench,Marker,144.45,104.72625344395637,3,6,116.44,3,Fitted,Iterative,1.1562266029253652,False,False,100.7069027000378,-1,1,True
+Barbell Push Press,9,3,2,3,0.8,Bench,Davis,115.0,92.00000137090684,2,5,126.48,3,Fitted,Iterative,1.4304458945234144,False,False,88.41998182821148,-1,1,True
+Barbell Push Press,9,3,2,3,0.8,Bench,Pearson,168.95,135.16000201404094,5,1,174.37,3,Fitted,Iterative,1.2952677929413892,False,False,134.62081042255193,-1,1,True
+Barbell Push Press,9,3,2,3,0.8,Bench,Cane Bond,193.05,154.44000230133534,5,5,212.93,3,Fitted,Iterative,1.434545961443041,False,False,148.43023906031502,-1,1,True
+Barbell Push Press,9,3,2,3,0.8,Bench,Hoblit,324.0,259.200003862381,3,11,328.8,3,Fitted,Iterative,1.3508498650230858,False,False,243.40232657489355,-1,1,True
+Barbell Push Press,9,3,3,7,0.875,Bench,Davis,115.0,100.625,3,8,110.02,3,Fitted,Iterative,1.1577615291725374,False,False,95.02820505586524,-1,1,True
+Barbell Push Press,9,3,3,7,0.875,Bench,Roberts,155.0,135.625,5,8,143.08,3,Fitted,Iterative,1.117101275035669,False,False,128.0814937709488,-1,1,True
+Barbell Push Press,9,3,3,7,0.875,Bench,Hoblit,324.0,283.5,3,6,313.58,3,Fitted,Iterative,1.1622579764923733,False,False,269.8024073333238,-1,1,True
+Barbell Push Press,9,3,3,7,0.875,Bench,Hoblit,324.0,283.5,5,6,283.09,2,Fitted,Function,0.832723479423839,False,True,339.9567887720301,1,0,True
+1-Arm DB Row,10,1,1,5,0.425,Bench,Adkins,96.9,41.18250115513802,2,6,40.88,2,Constant,Scale,0.3541666666666667,False,True,115.42588235294117,1,0,True
+1-Arm DB Row,10,1,1,5,0.425,Bench,Adkins,96.9,41.18250115513802,4,13,40.44,2,Constant,Scale,0.16346153846153846,False,True,247.3976470588235,1,-1,True
+1-Arm DB Row,10,1,1,5,0.425,Bench,Bachman,113.4,48.19500135183335,3,6,61.24,3,Constant,Iterative,1.2706712314555408,False,False,48.195000000000164,-1,1,True
+1-Arm DB Row,10,1,1,5,0.425,Bench,Bachman,113.4,48.19500135183335,4,2,51.4,3,Constant,Iterative,1.0665006743438061,False,False,48.19500000000025,-1,1,True
+1-Arm DB Row,10,1,1,5,0.425,Bench,Ott,135.0,57.37500160932541,5,5,58.15,3,Constant,Iterative,1.0135076252723274,True,True,57.37500000000021,-1,1,True
+1-Arm DB Row,10,1,1,5,0.425,Bench,Marker,144.45,61.391251721978186,2,8,91.03,3,Constant,Iterative,1.4827845987823955,False,False,61.39125000000018,-1,1,True
+1-Arm DB Row,10,1,1,5,0.425,Bench,Marker,144.45,61.391251721978186,4,10,75.35,3,Constant,Iterative,1.2273736078024116,False,False,61.39125000000016,-1,1,True
+1-Arm DB Row,10,1,1,5,0.425,Bench,Roberts,155.0,65.87500184774399,3,6,65.38,2,Constant,Scale,0.3541666666666667,False,True,184.60235294117643,1,0,True
+1-Arm DB Row,10,1,1,5,0.425,Bench,Cane Bond,193.05,82.04625230133534,2,1,102.83,3,Constant,Iterative,1.253317488611599,False,False,82.04625000000047,-1,1,True
+1-Arm DB Row,10,1,1,5,0.425,Bench,Hoblit,324.0,137.70000386238098,3,4,136.99,2,Constant,Scale,0.53125,False,True,257.8635294117647,-1,0,True
+1-Arm DB Row,10,1,2,5,0.425,Bench,Wolfe,85.0,36.12500101327896,4,8,35.3,2,Constant,Scale,0.265625,False,True,132.8941176470588,1,-1,True
+1-Arm DB Row,10,1,2,5,0.425,Bench,Bachman,113.4,48.19500135183335,5,6,64.43,3,Constant,Iterative,1.3368606701940027,False,False,48.195000000000036,-1,1,True
+1-Arm DB Row,10,1,2,5,0.425,Bench,Clark,185.4,78.79500221014023,3,1,80.02,3,Constant,Iterative,1.0155466717431276,False,False,78.79500000000026,-1,1,True
+1-Arm DB Row,10,1,2,5,0.425,Bench,Roberts,155.0,65.87500184774399,4,7,65.52,2,Constant,Scale,0.30357142857142855,False,True,215.83058823529413,1,0,True
+1-Arm DB Row,10,1,2,5,0.425,Bench,Hoblit,324.0,137.70000386238098,1,2,162.31,3,Constant,Iterative,1.1787218591140132,False,False,137.70000000000033,-1,1,True
+1-Arm DB Row,10,1,3,5,0.425,Bench,Wolfe,85.0,36.12500101327896,5,5,35.81,3,Constant,Iterative,0.9912802768166106,True,True,36.12499999999994,-1,0,True
+1-Arm DB Row,10,1,3,5,0.425,Bench,Davis,115.0,48.87500137090683,4,6,57.36,3,Constant,Iterative,1.173606138107419,False,False,48.874999999999915,-1,1,True
+1-Arm DB Row,10,1,3,5,0.425,Bench,Scott,155.0,65.87500184774399,3,15,89.48,3,Constant,Iterative,1.3583301707779931,False,False,65.87499999999979,-1,1,True
+1-Arm DB Row,10,1,3,5,0.425,Bench,Scott,155.0,65.87500184774399,5,7,65.14,2,Constant,Scale,0.30357142857142855,False,True,214.57882352941178,1,0,True
+1-Arm DB Row,10,1,3,5,0.425,Bench,Cole,117.45,49.916251400113104,1,2,52.48,3,Constant,Iterative,1.0513610297247893,False,False,49.916249999999984,-1,1,True
+1-Arm DB Row,10,1,3,5,0.425,Bench,Wintrow,178.5,75.86250212788582,3,5,75.6,3,Constant,Iterative,0.9965397923875448,True,True,75.86249999999988,-1,0,True
+1-Arm DB Row,10,1,3,5,0.425,Bench,Miears,225.0,95.625002682209,3,4,126.59,3,Constant,Iterative,1.3238169934640538,False,False,95.6249999999999,-1,1,True
+1-Arm DB Row,10,1,3,5,0.425,Bench,Miears,225.0,95.625002682209,5,8,119.7,3,Constant,Iterative,1.2517647058823558,False,False,95.62499999999979,-1,1,True
+1-Arm DB Row,10,1,3,5,0.425,Bench,Vernon,174.15,74.01375207602977,3,6,73.1,2,Constant,Scale,0.3541666666666667,False,True,206.39999999999998,1,-1,True
+1-Arm DB Row,10,1,3,5,0.425,Bench,Thomas,137.75,58.54375164210797,4,6,62.93,3,Constant,Iterative,1.074922600619197,False,False,58.543749999999896,-1,1,True
+1-Arm DB Row,10,1,3,5,0.425,Bench,Hoblit,324.0,137.70000386238098,5,2,136.17,3,Constant,Iterative,0.988888888888889,False,False,137.69999999999996,-1,0,True
+1-Arm DB Row,10,2,1,6,0.425,Bench,Wolfe,85.0,36.12500101327896,1,18,39.18,3,Constant,Iterative,1.0845674740484443,False,False,36.12499999999995,-1,1,True
+1-Arm DB Row,10,2,1,6,0.425,Bench,Adkins,96.9,41.18250115513802,4,19,59.69,3,Constant,Iterative,1.4494020518424107,False,False,41.18249999999995,-1,1,True
+1-Arm DB Row,10,2,1,6,0.425,Bench,Scott,155.0,65.87500184774399,5,1,65.38,2,Constant,Scale,2.55,False,True,25.63921568627451,-1,0,True
+1-Arm DB Row,10,2,1,6,0.425,Bench,Wintrow,178.5,75.86250212788582,3,5,75.72,2,Constant,Scale,0.51,False,True,148.47058823529412,-1,0,True
+1-Arm DB Row,10,2,1,6,0.425,Bench,Ott,135.0,57.37500160932541,1,9,63.42,3,Constant,Iterative,1.1053594771241833,False,False,57.374999999999986,-1,1,True
+1-Arm DB Row,10,2,1,6,0.425,Bench,Roberts,155.0,65.87500184774399,1,7,70.74,3,Constant,Iterative,1.0738519924098668,False,False,65.87500000000001,-1,1,True
+1-Arm DB Row,10,2,1,6,0.425,Bench,Roberts,155.0,65.87500184774399,4,7,88.83,3,Constant,Iterative,1.3484629981024665,False,False,65.87500000000001,-1,1,True
+1-Arm DB Row,10,2,1,6,0.425,Bench,Vernon,174.15,74.01375207602977,3,4,73.16,2,Constant,Scale,0.6375,False,True,114.7607843137255,-1,0,True
+1-Arm DB Row,10,2,1,6,0.425,Bench,Gierzak,185.6,78.88000221252442,4,14,82.22,3,Constant,Iterative,1.0423427991886418,False,False,78.87999999999994,-1,1,True
+1-Arm DB Row,10,2,2,6,0.425,Bench,Marker,144.45,61.391251721978186,5,9,60.62,2,Constant,Scale,0.2833333333333333,False,True,213.95294117647057,1,-1,True
+1-Arm DB Row,10,2,2,6,0.425,Bench,Thomas,137.75,58.54375164210797,3,19,86.25,3,Constant,Iterative,1.4732571794598115,False,False,58.54374999999977,-1,1,True
+1-Arm DB Row,10,2,2,6,0.425,Bench,Hoblit,324.0,137.70000386238098,2,8,137.09,2,Constant,Scale,0.31875,False,True,430.08627450980396,1,0,True
+1-Arm DB Row,10,2,2,6,0.425,Bench,Johnson,185.0,78.62500220537186,2,1,108.95,3,Constant,Iterative,1.3856915739268678,False,False,78.62500000000001,-1,1,True
+1-Arm DB Row,10,2,3,6,0.425,Bench,Adkins,96.9,41.18250115513802,5,8,41.02,2,Constant,Scale,0.31875,False,True,128.6901960784314,1,0,True
+1-Arm DB Row,10,2,3,6,0.425,Bench,Cole,117.45,49.916251400113104,3,10,49.56,2,Constant,Scale,0.255,False,True,194.35294117647058,1,0,True
+1-Arm DB Row,10,2,3,6,0.425,Bench,Bousman,155.0,65.87500184774399,1,9,88.47,3,Constant,Iterative,1.3429981024668003,False,False,65.87499999999964,-1,1,True
+1-Arm DB Row,10,2,3,6,0.425,Bench,Bousman,155.0,65.87500184774399,5,10,65.77,2,Constant,Scale,0.255,False,True,257.92156862745094,1,0,True
+1-Arm DB Row,10,2,3,6,0.425,Bench,Pearson,168.95,71.80375201404094,1,6,71.65,3,Constant,Iterative,0.9978587469317459,True,True,71.80374999999965,-1,0,True
+1-Arm DB Row,10,2,3,6,0.425,Bench,Miears,225.0,95.625002682209,1,13,94.89,2,Constant,Scale,0.19615384615384615,False,True,483.7529411764706,1,0,True
+1-Arm DB Row,10,2,3,6,0.425,Bench,Miears,225.0,95.625002682209,3,5,94.98,2,Constant,Scale,0.51,False,True,186.23529411764707,-1,0,True
+1-Arm DB Row,10,2,3,6,0.425,Bench,Roberts,155.0,65.87500184774399,3,8,90.35,3,Constant,Iterative,1.3715370018975401,False,False,65.87499999999966,-1,1,True
+1-Arm DB Row,10,2,3,6,0.425,Bench,Vernon,174.15,74.01375207602977,5,20,97.28,3,Constant,Iterative,1.314350374085905,False,False,74.0137499999995,-1,1,True
+1-Arm DB Row,10,2,3,6,0.425,Bench,Hoblit,324.0,137.70000386238098,4,10,184.1,3,Constant,Iterative,1.3369644153957951,False,False,137.69999999999925,-1,1,True
+1-Arm DB Row,10,2,3,6,0.425,Bench,Gierzak,185.6,78.88000221252442,5,7,78.39,2,Constant,Scale,0.36428571428571427,False,True,215.18823529411765,1,0,True
+1-Arm DB Row,10,3,1,7,0.425,Bench,Wolfe,85.0,36.12500101327896,5,1,41.88,3,Constant,Iterative,1.159307958477509,False,False,36.12499999999999,-1,1,True
+1-Arm DB Row,10,3,1,7,0.425,Bench,Davis,115.0,48.87500137090683,1,11,65.96,3,Constant,Iterative,1.3495652173913086,False,False,48.87499999999984,-1,1,True
+1-Arm DB Row,10,3,1,7,0.425,Bench,Cole,117.45,49.916251400113104,5,1,65.39,3,Constant,Iterative,1.3099942403525908,False,False,49.91624999999999,-1,1,True
+1-Arm DB Row,10,3,1,7,0.425,Bench,Ott,135.0,57.37500160932541,5,11,61.04,3,Constant,Iterative,1.0638779956427051,False,False,57.37499999999981,-1,1,True
+1-Arm DB Row,10,3,1,7,0.425,Bench,Clark,185.4,78.79500221014023,4,17,78.01,2,Constant,Scale,0.175,False,True,445.7714285714286,1,0,True
+1-Arm DB Row,10,3,1,7,0.425,Bench,Roberts,155.0,65.87500184774399,2,10,65.7,2,Constant,Scale,0.2975,False,True,220.8403361344538,1,0,True
+1-Arm DB Row,10,3,1,7,0.425,Bench,Cane Bond,193.05,82.04625230133534,2,6,81.24,2,Constant,Scale,0.49583333333333335,False,True,163.8453781512605,-1,0,True
+1-Arm DB Row,10,3,1,7,0.425,Bench,Johnson,185.0,78.62500220537186,2,7,78.4,3,Constant,Iterative,0.9971383147853764,True,True,78.62499999999979,-1,0,True
+1-Arm DB Row,10,3,2,7,0.425,Bench,Adkins,96.9,41.18250115513802,3,8,40.7,2,Constant,Scale,0.371875,False,True,109.44537815126051,1,0,True
+1-Arm DB Row,10,3,2,7,0.425,Bench,Bachman,113.4,48.19500135183335,4,24,65.12,3,Constant,Iterative,1.351177508040263,False,False,48.19499999999965,-1,1,True
+1-Arm DB Row,10,3,2,7,0.425,Bench,Bousman,155.0,65.87500184774399,1,3,69.35,3,Constant,Iterative,1.052751423149909,False,False,65.87499999999974,-1,1,True
+1-Arm DB Row,10,3,2,7,0.425,Bench,Gierzak,185.6,78.88000221252442,1,1,91.68,3,Constant,Iterative,1.162271805273837,False,False,78.87999999999978,-1,1,True
+1-Arm DB Row,10,3,3,7,0.425,Bench,Bachman,113.4,48.19500135183335,1,4,47.88,2,Constant,Scale,0.74375,False,True,64.37647058823529,-1,0,True
+1-Arm DB Row,10,3,3,7,0.425,Bench,Bachman,113.4,48.19500135183335,3,1,47.96,2,Constant,Scale,2.975,False,True,16.121008403361344,-1,0,True
+1-Arm DB Row,10,3,3,7,0.425,Bench,Scott,155.0,65.87500184774399,5,25,65.07,2,Constant,Scale,0.11900000000000001,False,True,546.8067226890755,1,-1,True
+1-Arm DB Row,10,3,3,7,0.425,Bench,Cole,117.45,49.916251400113104,1,24,49.11,2,Constant,Scale,0.12395833333333334,False,True,396.181512605042,1,-1,True
+1-Arm DB Row,10,3,3,7,0.425,Bench,Cole,117.45,49.916251400113104,4,1,54.54,3,Constant,Iterative,1.0926301555104856,False,False,49.91624999999975,-1,1,True
+1-Arm DB Row,10,3,3,7,0.425,Bench,Bousman,155.0,65.87500184774399,3,8,87.57,3,Constant,Iterative,1.3293358633776196,False,False,65.87499999999947,-1,1,True
+1-Arm DB Row,10,3,3,7,0.425,Bench,Wintrow,178.5,75.86250212788582,1,9,91.68,3,Constant,Iterative,1.2085022244191896,False,False,75.86249999999937,-1,1,True
+1-Arm DB Row,10,3,3,7,0.425,Bench,Ott,135.0,57.37500160932541,4,3,72.4,3,Constant,Iterative,1.261873638344235,False,False,57.374999999999616,-1,1,True
+1-Arm DB Row,10,3,3,7,0.425,Bench,Clark,185.4,78.79500221014023,4,8,81.97,3,Constant,Iterative,1.0402944349260823,False,False,78.79499999999936,-1,1,True
+1-Arm DB Row,10,3,3,7,0.425,Bench,Roberts,155.0,65.87500184774399,2,5,81.7,3,Constant,Iterative,1.2402277039848288,False,False,65.87499999999952,-1,1,True
+1-Arm DB Row,10,3,3,7,0.425,Bench,Hoblit,324.0,137.70000386238098,1,6,180.93,3,Constant,Iterative,1.3139433551198356,False,False,137.69999999999897,-1,1,True
+1-Arm DB Row,10,3,3,7,0.425,Bench,Johnson,185.0,78.62500220537186,3,6,93.89,3,Constant,Iterative,1.1941494435612174,False,False,78.6249999999994,-1,1,True
+3-Way DB Shoulder Raise,11,1,1,7,0.135,Bench,Wolfe,85.0,11.475000455975533,3,10,10.74,2,Constant,Scale,0.0945,False,True,113.65079365079366,1,-1,True
+3-Way DB Shoulder Raise,11,1,1,7,0.135,Bench,Adkins,96.9,13.081500519812108,3,14,12.64,2,Constant,Scale,0.0675,False,True,187.25925925925927,1,0,True
+3-Way DB Shoulder Raise,11,1,1,7,0.135,Bench,Adkins,96.9,13.081500519812108,5,1,12.93,2,Constant,Scale,0.9450000000000001,False,True,13.682539682539682,-1,0,True
+3-Way DB Shoulder Raise,11,1,1,7,0.135,Bench,Bachman,113.4,15.309000608325006,2,8,22.52,3,Constant,Iterative,1.471030113005425,False,False,15.308999999999964,-1,1,True
+3-Way DB Shoulder Raise,11,1,1,7,0.135,Bench,Bachman,113.4,15.309000608325006,4,6,21.06,3,Constant,Iterative,1.3756613756613778,False,False,15.308999999999974,-1,1,True
+3-Way DB Shoulder Raise,11,1,1,7,0.135,Bench,Scott,155.0,20.925000831484795,1,13,20.67,2,Constant,Scale,0.0726923076923077,False,True,284.3492063492064,1,0,True
+3-Way DB Shoulder Raise,11,1,1,7,0.135,Bench,Scott,155.0,20.925000831484795,5,20,20.03,2,Constant,Scale,0.04725,False,True,423.91534391534395,1,-1,True
+3-Way DB Shoulder Raise,11,1,1,7,0.135,Bench,Bousman,155.0,20.925000831484795,4,22,20.31,2,Constant,Scale,0.042954545454545454,False,True,472.8253968253968,1,0,True
+3-Way DB Shoulder Raise,11,1,1,7,0.135,Bench,Clark,185.4,25.029000994563106,1,18,24.21,2,Constant,Scale,0.052500000000000005,False,True,461.1428571428571,1,0,True
+3-Way DB Shoulder Raise,11,1,1,7,0.135,Bench,Clark,185.4,25.029000994563106,3,5,26.0,2,Constant,Scale,0.189,False,True,137.56613756613757,-1,1,True
+3-Way DB Shoulder Raise,11,1,1,7,0.135,Bench,Vernon,174.15,23.5102509342134,3,1,26.1,3,Constant,Iterative,1.110154081730307,False,False,23.510250000000045,-1,1,True
+3-Way DB Shoulder Raise,11,1,1,7,0.135,Bench,Cane Bond,193.05,26.061751035600903,1,10,25.68,2,Constant,Scale,0.0945,False,True,271.74603174603175,1,0,True
+3-Way DB Shoulder Raise,11,1,2,7,0.135,Bench,Bachman,113.4,15.309000608325006,1,1,21.22,3,Constant,Iterative,1.3861127441374352,False,False,15.309000000000003,-1,1,True
+3-Way DB Shoulder Raise,11,1,2,7,0.135,Bench,Scott,155.0,20.925000831484795,4,19,20.71,2,Constant,Scale,0.049736842105263156,False,True,416.39153439153444,1,0,True
+3-Way DB Shoulder Raise,11,1,2,7,0.135,Bench,Bousman,155.0,20.925000831484795,5,1,20.49,2,Constant,Scale,0.9450000000000001,False,True,21.68253968253968,-1,0,True
+3-Way DB Shoulder Raise,11,1,2,7,0.135,Bench,Wintrow,178.5,24.09750095754862,4,9,23.57,2,Constant,Scale,0.10500000000000001,False,True,224.47619047619045,1,0,True
+3-Way DB Shoulder Raise,11,1,2,7,0.135,Bench,Miears,225.0,30.375001206994057,5,3,42.68,3,Constant,Iterative,1.4051028806584387,False,False,30.374999999999947,-1,1,True
+3-Way DB Shoulder Raise,11,1,2,7,0.135,Bench,Thomas,137.75,18.596250738948584,2,2,18.55,2,Constant,Scale,0.47250000000000003,False,True,39.25925925925926,-1,0,True
+3-Way DB Shoulder Raise,11,1,2,7,0.135,Bench,Thomas,137.75,18.596250738948584,4,1,18.59,2,Constant,Scale,0.9450000000000001,False,True,19.67195767195767,-1,0,True
+3-Way DB Shoulder Raise,11,1,2,7,0.135,Bench,Cane Bond,193.05,26.061751035600903,1,5,25.2,2,Constant,Scale,0.189,False,True,133.33333333333334,-1,0,True
+3-Way DB Shoulder Raise,11,1,2,7,0.135,Bench,Johnson,185.0,24.975000992417336,4,1,24.75,2,Constant,Scale,0.9450000000000001,False,True,26.19047619047619,-1,0,True
+3-Way DB Shoulder Raise,11,1,3,7,0.135,Bench,Wolfe,85.0,11.475000455975533,1,8,11.24,2,Constant,Scale,0.11812500000000001,False,True,95.15343915343915,1,0,True
+3-Way DB Shoulder Raise,11,1,3,7,0.135,Bench,Davis,115.0,15.525000616908072,1,10,22.33,3,Constant,Iterative,1.4383252818035523,False,False,15.524999999999894,-1,1,True
+3-Way DB Shoulder Raise,11,1,3,7,0.135,Bench,Cole,117.45,15.855750630050895,2,7,16.67,3,Constant,Iterative,1.051353609889163,True,True,15.855749999999912,-1,1,True
+3-Way DB Shoulder Raise,11,1,3,7,0.135,Bench,Ott,135.0,18.22500072419643,1,28,17.79,2,Constant,Scale,0.03375,False,True,527.1111111111111,1,0,True
+3-Way DB Shoulder Raise,11,1,3,7,0.135,Bench,Miears,225.0,30.375001206994057,4,5,41.45,3,Constant,Iterative,1.3646090534979491,False,False,30.37499999999985,-1,1,True
+3-Way DB Shoulder Raise,11,1,3,7,0.135,Bench,Roberts,155.0,20.925000831484795,3,6,20.3,2,Constant,Scale,0.15750000000000003,False,True,128.88888888888886,-1,0,True
+3-Way DB Shoulder Raise,11,1,3,7,0.135,Bench,Vernon,174.15,23.5102509342134,4,4,26.9,3,Constant,Iterative,1.1441817930477183,False,False,23.510249999999896,-1,1,True
+3-Way DB Shoulder Raise,11,1,3,7,0.135,Bench,Cane Bond,193.05,26.061751035600903,4,3,27.61,3,Constant,Iterative,1.0594069853329153,False,False,26.0617499999999,-1,1,True
+3-Way DB Shoulder Raise,11,1,3,7,0.135,Bench,Cane Bond,193.05,26.061751035600903,5,5,25.17,2,Constant,Scale,0.189,False,True,133.1746031746032,-1,0,True
+3-Way DB Shoulder Raise,11,1,3,7,0.135,Bench,Gierzak,185.6,25.056000995635987,5,18,24.53,2,Constant,Scale,0.052500000000000005,False,True,467.23809523809524,1,0,True
+3-Way DB Shoulder Raise,11,2,1,8,0.135,Bench,Wolfe,85.0,11.475000455975533,1,9,10.92,2,Constant,Scale,0.12,False,True,91.0,1,-1,True
+3-Way DB Shoulder Raise,11,2,1,8,0.135,Bench,Davis,115.0,15.525000616908072,3,1,15.03,2,Constant,Scale,1.08,False,True,13.916666666666664,-1,0,True
+3-Way DB Shoulder Raise,11,2,1,8,0.135,Bench,Bachman,113.4,15.309000608325006,4,16,18.87,3,Constant,Iterative,1.2326082696453147,False,False,15.308999999999902,-1,1,True
+3-Way DB Shoulder Raise,11,2,1,8,0.135,Bench,Cole,117.45,15.855750630050895,1,1,15.62,2,Constant,Scale,1.08,False,True,14.462962962962962,-1,0,True
+3-Way DB Shoulder Raise,11,2,1,8,0.135,Bench,Bousman,155.0,20.925000831484795,4,6,20.51,2,Constant,Scale,0.18,False,True,113.94444444444446,-1,0,True
+3-Way DB Shoulder Raise,11,2,1,8,0.135,Bench,Wintrow,178.5,24.09750095754862,1,3,24.01,2,Constant,Scale,0.36,False,True,66.69444444444446,-1,0,True
+3-Way DB Shoulder Raise,11,2,1,8,0.135,Bench,Pearson,168.95,22.808250906318424,2,7,24.1,3,Constant,Iterative,1.056635208751224,False,False,22.8082499999999,-1,1,True
+3-Way DB Shoulder Raise,11,2,1,8,0.135,Bench,Marker,144.45,19.500750774890182,1,12,19.48,2,Constant,Scale,0.09,False,True,216.44444444444446,1,0,True
+3-Way DB Shoulder Raise,11,2,1,8,0.135,Bench,Roberts,155.0,20.925000831484795,4,8,20.67,3,Constant,Iterative,0.9878136200716894,True,True,20.9249999999999,-1,0,True
+3-Way DB Shoulder Raise,11,2,1,8,0.135,Bench,Roberts,155.0,20.925000831484795,5,10,26.32,3,Constant,Iterative,1.2578255675029932,False,False,20.924999999999894,-1,1,True
+3-Way DB Shoulder Raise,11,2,1,8,0.135,Bench,Vernon,174.15,23.5102509342134,4,16,23.2,2,Constant,Scale,0.0675,False,True,343.7037037037037,1,0,True
+3-Way DB Shoulder Raise,11,2,1,8,0.135,Bench,Thomas,137.75,18.596250738948584,2,10,18.04,2,Constant,Scale,0.10800000000000001,False,True,167.037037037037,1,0,True
+3-Way DB Shoulder Raise,11,2,1,8,0.135,Bench,Cane Bond,193.05,26.061751035600903,2,1,26.04,2,Constant,Scale,1.08,False,True,24.111111111111107,-1,0,True
+3-Way DB Shoulder Raise,11,2,1,8,0.135,Bench,Johnson,185.0,24.975000992417336,3,7,36.5,3,Constant,Iterative,1.4614614614614676,False,False,24.974999999999895,-1,1,True
+3-Way DB Shoulder Raise,11,2,2,8,0.135,Bench,Wolfe,85.0,11.475000455975533,4,19,10.69,2,Constant,Scale,0.056842105263157895,False,True,188.0648148148148,1,-1,True
+3-Way DB Shoulder Raise,11,2,2,8,0.135,Bench,Davis,115.0,15.525000616908072,2,5,15.41,2,Constant,Scale,0.21600000000000003,False,True,71.34259259259258,-1,0,True
+3-Way DB Shoulder Raise,11,2,2,8,0.135,Bench,Scott,155.0,20.925000831484795,1,9,27.09,3,Constant,Iterative,1.2946236559139872,False,False,20.92499999999986,-1,1,True
+3-Way DB Shoulder Raise,11,2,2,8,0.135,Bench,Scott,155.0,20.925000831484795,2,15,22.44,3,Constant,Iterative,1.072401433691765,False,False,20.92499999999983,-1,1,True
+3-Way DB Shoulder Raise,11,2,2,8,0.135,Bench,Bousman,155.0,20.925000831484795,4,2,25.23,3,Constant,Iterative,1.2057347670250935,False,False,20.924999999999933,-1,1,True
+3-Way DB Shoulder Raise,11,2,2,8,0.135,Bench,Ott,135.0,18.22500072419643,4,10,25.8,3,Constant,Iterative,1.4156378600823147,False,False,18.22499999999987,-1,1,True
+3-Way DB Shoulder Raise,11,2,2,8,0.135,Bench,Pearson,168.95,22.808250906318424,2,9,27.7,3,Constant,Iterative,1.2144728332949783,False,False,22.808249999999845,-1,1,True
+3-Way DB Shoulder Raise,11,2,2,8,0.135,Bench,Clark,185.4,25.029000994563106,5,10,24.25,2,Constant,Scale,0.10800000000000001,False,True,224.537037037037,1,0,True
+3-Way DB Shoulder Raise,11,2,2,8,0.135,Bench,Miears,225.0,30.375001206994057,1,16,29.74,2,Constant,Scale,0.0675,False,True,440.59259259259255,1,0,True
+3-Way DB Shoulder Raise,11,2,2,8,0.135,Bench,Miears,225.0,30.375001206994057,3,6,31.3,2,Constant,Scale,0.18,False,True,173.88888888888889,-1,0,True
+3-Way DB Shoulder Raise,11,2,2,8,0.135,Bench,Roberts,155.0,20.925000831484795,2,5,21.84,2,Constant,Scale,0.21600000000000003,False,True,101.1111111111111,-1,1,True
+3-Way DB Shoulder Raise,11,2,2,8,0.135,Bench,Roberts,155.0,20.925000831484795,3,10,20.82,2,Constant,Scale,0.10800000000000001,False,True,192.77777777777777,1,0,True
+3-Way DB Shoulder Raise,11,2,2,8,0.135,Bench,Cane Bond,193.05,26.061751035600903,4,1,25.79,2,Constant,Scale,1.08,False,True,23.879629629629626,-1,0,True
+3-Way DB Shoulder Raise,11,2,2,8,0.135,Bench,Hoblit,324.0,43.74000173807144,5,1,57.93,3,Constant,Iterative,1.3244170096021977,False,False,43.7399999999999,-1,1,True
+3-Way DB Shoulder Raise,11,2,2,8,0.135,Bench,Johnson,185.0,24.975000992417336,4,2,30.73,3,Constant,Iterative,1.2304304304304343,False,False,24.97499999999992,-1,1,True
+3-Way DB Shoulder Raise,11,2,3,8,0.135,Bench,Wolfe,85.0,11.475000455975533,5,14,10.64,2,Constant,Scale,0.07714285714285714,False,True,137.92592592592595,1,-1,True
+3-Way DB Shoulder Raise,11,2,3,8,0.135,Bench,Davis,115.0,15.525000616908072,4,46,18.39,3,Constant,Iterative,1.184541062801948,False,False,15.524999999999796,-1,1,True
+3-Way DB Shoulder Raise,11,2,3,8,0.135,Bench,Adkins,96.9,13.081500519812108,1,13,12.32,2,Constant,Scale,0.08307692307692309,False,True,148.29629629629628,1,-1,True
+3-Way DB Shoulder Raise,11,2,3,8,0.135,Bench,Bachman,113.4,15.309000608325006,2,5,20.51,3,Constant,Iterative,1.3397347965249295,False,False,15.308999999999893,-1,1,True
+3-Way DB Shoulder Raise,11,2,3,8,0.135,Bench,Scott,155.0,20.925000831484795,2,7,20.51,2,Constant,Scale,0.15428571428571428,False,True,132.9351851851852,-1,0,True
+3-Way DB Shoulder Raise,11,2,3,8,0.135,Bench,Ott,135.0,18.22500072419643,1,10,17.62,2,Constant,Scale,0.10800000000000001,False,True,163.14814814814815,1,0,True
+3-Way DB Shoulder Raise,11,2,3,8,0.135,Bench,Ott,135.0,18.22500072419643,2,10,20.42,3,Constant,Iterative,1.1204389574760045,False,False,18.224999999999838,-1,1,True
+3-Way DB Shoulder Raise,11,2,3,8,0.135,Bench,Clark,185.4,25.029000994563106,5,1,25.01,2,Constant,Scale,1.08,False,True,23.15740740740741,-1,0,True
+3-Way DB Shoulder Raise,11,2,3,8,0.135,Bench,Marker,144.45,19.500750774890182,2,15,18.86,2,Constant,Scale,0.07200000000000001,False,True,261.9444444444444,1,0,True
+3-Way DB Shoulder Raise,11,2,3,8,0.135,Bench,Marker,144.45,19.500750774890182,4,13,19.33,2,Constant,Scale,0.08307692307692309,False,True,232.67592592592587,1,0,True
+3-Way DB Shoulder Raise,11,2,3,8,0.135,Bench,Roberts,155.0,20.925000831484795,1,27,20.56,2,Constant,Scale,0.04,False,True,514.0,1,0,True
+3-Way DB Shoulder Raise,11,2,3,8,0.135,Bench,Vernon,174.15,23.5102509342134,5,11,22.69,2,Constant,Scale,0.09818181818181819,False,True,231.10185185185185,1,0,True
+3-Way DB Shoulder Raise,11,2,3,8,0.135,Bench,Thomas,137.75,18.596250738948584,4,39,17.85,2,Constant,Scale,0.027692307692307693,False,True,644.5833333333334,1,-1,True
+3-Way DB Shoulder Raise,11,2,3,8,0.135,Bench,Thomas,137.75,18.596250738948584,5,6,27.35,3,Constant,Iterative,1.4707266249916089,False,False,18.59624999999986,-1,1,True
+3-Way DB Shoulder Raise,11,2,3,8,0.135,Bench,Cane Bond,193.05,26.061751035600903,4,7,25.89,2,Constant,Scale,0.15428571428571428,False,True,167.80555555555557,-1,0,True
+3-Way DB Shoulder Raise,11,2,3,8,0.135,Bench,Hoblit,324.0,43.74000173807144,1,1,43.59,2,Constant,Scale,1.08,False,True,40.361111111111114,-1,0,True
+3-Way DB Shoulder Raise,11,2,3,8,0.135,Bench,Johnson,185.0,24.975000992417336,2,5,36.3,3,Constant,Iterative,1.4534534534534638,False,False,24.97499999999982,-1,1,True
+3-Way DB Shoulder Raise,11,3,1,10,0.135,Bench,Davis,115.0,15.525000616908072,2,1,15.06,2,Constant,Scale,1.35,False,True,11.155555555555555,-1,0,True
+3-Way DB Shoulder Raise,11,3,1,10,0.135,Bench,Adkins,96.9,13.081500519812108,1,1,17.79,3,Constant,Iterative,1.3599357871803726,False,False,13.081499999999968,-1,1,True
+3-Way DB Shoulder Raise,11,3,1,10,0.135,Bench,Adkins,96.9,13.081500519812108,2,22,12.1,2,Constant,Scale,0.06136363636363636,False,True,197.1851851851852,1,-1,True
+3-Way DB Shoulder Raise,11,3,1,10,0.135,Bench,Adkins,96.9,13.081500519812108,3,14,13.03,2,Constant,Scale,0.09642857142857143,False,True,135.1259259259259,1,0,True
+3-Way DB Shoulder Raise,11,3,1,10,0.135,Bench,Bachman,113.4,15.309000608325006,5,9,15.22,2,Constant,Scale,0.15000000000000002,False,True,101.46666666666665,-1,0,True
+3-Way DB Shoulder Raise,11,3,1,10,0.135,Bench,Scott,155.0,20.925000831484795,1,11,22.07,3,Constant,Iterative,1.0547192353644048,False,False,20.924999999999837,-1,1,True
+3-Way DB Shoulder Raise,11,3,1,10,0.135,Bench,Cole,117.45,15.855750630050895,3,9,17.41,3,Constant,Iterative,1.0980243760150181,False,False,15.855749999999887,-1,1,True
+3-Way DB Shoulder Raise,11,3,1,10,0.135,Bench,Bousman,155.0,20.925000831484795,3,9,20.53,2,Constant,Scale,0.15000000000000002,False,True,136.86666666666665,-1,0,True
+3-Way DB Shoulder Raise,11,3,1,10,0.135,Bench,Bousman,155.0,20.925000831484795,4,29,20.63,2,Constant,Scale,0.04655172413793104,False,True,443.1629629629629,1,0,True
+3-Way DB Shoulder Raise,11,3,1,10,0.135,Bench,Wintrow,178.5,24.09750095754862,3,33,23.27,2,Constant,Scale,0.040909090909090916,False,True,568.8222222222221,1,0,True
+3-Way DB Shoulder Raise,11,3,1,10,0.135,Bench,Ott,135.0,18.22500072419643,3,14,18.2,2,Constant,Scale,0.09642857142857143,False,True,188.74074074074073,1,0,True
+3-Way DB Shoulder Raise,11,3,1,10,0.135,Bench,Ott,135.0,18.22500072419643,4,9,18.14,2,Constant,Scale,0.15000000000000002,False,True,120.93333333333332,-1,0,True
+3-Way DB Shoulder Raise,11,3,1,10,0.135,Bench,Pearson,168.95,22.808250906318424,5,21,22.19,2,Constant,Scale,0.0642857142857143,False,True,345.17777777777775,1,0,True
+3-Way DB Shoulder Raise,11,3,1,10,0.135,Bench,Clark,185.4,25.029000994563106,3,2,37.35,3,Constant,Iterative,1.4922689679971286,False,False,25.02899999999991,-1,1,True
+3-Way DB Shoulder Raise,11,3,1,10,0.135,Bench,Marker,144.45,19.500750774890182,3,10,19.2,3,Constant,Iterative,0.9845775162493824,True,True,19.500749999999854,-1,0,True
+3-Way DB Shoulder Raise,11,3,1,10,0.135,Bench,Hoblit,324.0,43.74000173807144,2,10,42.49,1,Constant,Ratio,0.135,True,False,314.7407282340679,-1,0,True
+3-Way DB Shoulder Raise,11,3,1,10,0.135,Bench,Hoblit,324.0,43.74000173807144,4,4,42.27,3,Constant,Iterative,0.9663923182441752,False,False,43.739999999999775,-1,0,True
+3-Way DB Shoulder Raise,11,3,2,10,0.135,Bench,Wolfe,85.0,11.475000455975533,1,12,11.0,2,Constant,Scale,0.11250000000000002,False,True,97.77777777777776,1,-1,True
+3-Way DB Shoulder Raise,11,3,2,10,0.135,Bench,Wolfe,85.0,11.475000455975533,2,11,11.34,2,Constant,Scale,0.12272727272727273,False,True,92.4,1,0,True
+3-Way DB Shoulder Raise,11,3,2,10,0.135,Bench,Wolfe,85.0,11.475000455975533,4,11,11.47,2,Constant,Scale,0.12272727272727273,False,True,93.45925925925927,1,0,True
+3-Way DB Shoulder Raise,11,3,2,10,0.135,Bench,Cole,117.45,15.855750630050895,2,1,16.4,2,Constant,Scale,1.35,False,True,12.148148148148147,-1,0,True
+3-Way DB Shoulder Raise,11,3,2,10,0.135,Bench,Bousman,155.0,20.925000831484795,3,9,20.25,2,Constant,Scale,0.15000000000000002,False,True,134.99999999999997,-1,0,True
+3-Way DB Shoulder Raise,11,3,2,10,0.135,Bench,Ott,135.0,18.22500072419643,3,32,18.65,2,Constant,Scale,0.0421875,False,True,442.074074074074,1,0,True
+3-Way DB Shoulder Raise,11,3,2,10,0.135,Bench,Marker,144.45,19.500750774890182,1,12,25.36,3,Constant,Iterative,1.300462802712729,False,False,19.500749999999808,-1,1,True
+3-Way DB Shoulder Raise,11,3,2,10,0.135,Bench,Roberts,155.0,20.925000831484795,2,35,20.78,2,Constant,Scale,0.03857142857142857,False,True,538.7407407407408,1,0,True
+3-Way DB Shoulder Raise,11,3,2,10,0.135,Bench,Vernon,174.15,23.5102509342134,2,9,22.79,2,Constant,Scale,0.15000000000000002,False,True,151.9333333333333,-1,0,True
+3-Way DB Shoulder Raise,11,3,2,10,0.135,Bench,Thomas,137.75,18.596250738948584,3,16,17.97,2,Constant,Scale,0.084375,False,True,212.97777777777776,1,0,True
+3-Way DB Shoulder Raise,11,3,3,10,0.135,Bench,Davis,115.0,15.525000616908072,2,32,14.59,2,Constant,Scale,0.0421875,False,True,345.837037037037,1,-1,True
+3-Way DB Shoulder Raise,11,3,3,10,0.135,Bench,Adkins,96.9,13.081500519812108,3,13,12.24,2,Constant,Scale,0.10384615384615385,False,True,117.86666666666666,1,-1,True
+3-Way DB Shoulder Raise,11,3,3,10,0.135,Bench,Bachman,113.4,15.309000608325006,3,15,14.75,2,Constant,Scale,0.09,False,True,163.88888888888889,1,0,True
+3-Way DB Shoulder Raise,11,3,3,10,0.135,Bench,Cole,117.45,15.855750630050895,4,11,15.54,2,Constant,Scale,0.12272727272727273,False,True,126.62222222222222,1,0,True
+3-Way DB Shoulder Raise,11,3,3,10,0.135,Bench,Bousman,155.0,20.925000831484795,3,9,20.33,2,Constant,Scale,0.15000000000000002,False,True,135.5333333333333,-1,0,True
+3-Way DB Shoulder Raise,11,3,3,10,0.135,Bench,Bousman,155.0,20.925000831484795,5,40,28.26,3,Constant,Iterative,1.3505376344086224,False,False,20.924999999999688,-1,1,True
+3-Way DB Shoulder Raise,11,3,3,10,0.135,Bench,Wintrow,178.5,24.09750095754862,1,41,23.98,2,Constant,Scale,0.032926829268292684,False,True,728.2814814814815,1,0,True
+3-Way DB Shoulder Raise,11,3,3,10,0.135,Bench,Wintrow,178.5,24.09750095754862,5,8,29.17,3,Constant,Iterative,1.210499014420596,False,False,24.097499999999744,-1,1,True
+3-Way DB Shoulder Raise,11,3,3,10,0.135,Bench,Marker,144.45,19.500750774890182,2,11,19.48,2,Constant,Scale,0.12272727272727273,False,True,158.72592592592594,1,0,True
+3-Way DB Shoulder Raise,11,3,3,10,0.135,Bench,Marker,144.45,19.500750774890182,3,18,19.35,2,Constant,Scale,0.07500000000000001,False,True,258.0,1,0,True
+3-Way DB Shoulder Raise,11,3,3,10,0.135,Bench,Miears,225.0,30.375001206994057,1,1,29.92,2,Constant,Scale,1.35,False,True,22.16296296296296,-1,0,True
+3-Way DB Shoulder Raise,11,3,3,10,0.135,Bench,Miears,225.0,30.375001206994057,2,28,29.65,2,Constant,Scale,0.048214285714285716,False,True,614.9629629629629,1,0,True
+3-Way DB Shoulder Raise,11,3,3,10,0.135,Bench,Roberts,155.0,20.925000831484795,4,2,26.78,3,Constant,Iterative,1.2798088410991735,False,False,20.92499999999984,-1,1,True
+3-Way DB Shoulder Raise,11,3,3,10,0.135,Bench,Thomas,137.75,18.596250738948584,4,27,17.87,2,Constant,Scale,0.05,False,True,357.4,1,-1,True
+3-Way DB Shoulder Raise,11,3,3,10,0.135,Bench,Hoblit,324.0,43.74000173807144,2,7,43.45,2,Constant,Scale,0.19285714285714287,False,True,225.2962962962963,-1,0,True
+Bar RDL,12,1,1,5,0.7,Hex-Bar Deadlift,Adkins,263.25,184.27499686181545,4,1,183.23,3,Constant,Iterative,0.9943291276624545,False,False,184.2750000000012,-1,0,True
+Bar RDL,12,1,1,5,0.7,Hex-Bar Deadlift,Cole,379.75,265.82499547302723,3,1,290.77,3,Constant,Iterative,1.0938399322862715,False,False,265.8250000000017,-1,1,True
+Bar RDL,12,1,1,5,0.7,Hex-Bar Deadlift,Cole,379.75,265.82499547302723,5,8,264.32,3,Constant,Iterative,0.9943383805134886,False,False,265.8250000000019,-1,0,True
+Bar RDL,12,1,1,5,0.7,Hex-Bar Deadlift,Bousman,275.0,192.49999672174457,1,4,259.82,3,Constant,Iterative,1.3497142857142763,False,False,192.50000000000134,-1,1,True
+Bar RDL,12,1,1,5,0.7,Hex-Bar Deadlift,Bousman,275.0,192.49999672174457,4,4,191.37,3,Constant,Iterative,0.9941298701298632,False,False,192.50000000000134,-1,0,True
+Bar RDL,12,1,1,5,0.7,Hex-Bar Deadlift,Clark,343.2,240.23999590873717,3,10,255.02,3,Constant,Iterative,1.0615218115218037,False,False,240.24000000000177,-1,1,True
+Bar RDL,12,1,1,5,0.7,Hex-Bar Deadlift,Clark,343.2,240.23999590873717,4,7,299.27,3,Constant,Iterative,1.2457126207126117,False,False,240.24000000000171,-1,1,True
+Bar RDL,12,1,1,5,0.7,Hex-Bar Deadlift,Hoblit,245.0,171.4999970793724,1,10,177.96,3,Constant,Iterative,1.0376676384839574,False,False,171.50000000000128,-1,1,True
+Bar RDL,12,1,1,5,0.7,Hex-Bar Deadlift,Hoblit,245.0,171.4999970793724,3,8,184.03,3,Constant,Iterative,1.0730612244897881,False,False,171.50000000000125,-1,1,True
+Bar RDL,12,1,1,5,0.7,Hex-Bar Deadlift,Hoblit,245.0,171.4999970793724,5,8,171.04,2,Constant,Scale,0.4375,False,True,390.9485714285714,1,0,True
+Bar RDL,12,1,1,5,0.7,Hex-Bar Deadlift,Johnson,435.0,304.4999948143959,2,8,424.01,3,Constant,Iterative,1.39247947454843,False,False,304.5000000000022,-1,1,True
+Bar RDL,12,1,2,5,0.7,Hex-Bar Deadlift,Scott,275.0,192.49999672174457,4,1,205.68,3,Constant,Iterative,1.0684675324675286,False,False,192.5000000000007,-1,1,True
+Bar RDL,12,1,2,5,0.7,Hex-Bar Deadlift,Wintrow,245.0,171.4999970793724,3,6,189.8,3,Constant,Iterative,1.1067055393585956,False,False,171.50000000000077,-1,1,True
+Bar RDL,12,1,2,5,0.7,Hex-Bar Deadlift,Clark,343.2,240.23999590873717,1,1,333.54,3,Constant,Iterative,1.3883616383616333,False,False,240.2400000000009,-1,1,True
+Bar RDL,12,1,2,5,0.7,Hex-Bar Deadlift,Vernon,445.0,311.4999946951866,4,4,430.08,3,Constant,Iterative,1.3806741573033647,False,False,311.50000000000136,-1,1,True
+Bar RDL,12,1,2,5,0.7,Hex-Bar Deadlift,Thomas,253.0,177.09999698400495,4,6,213.22,3,Constant,Iterative,1.203952569169955,False,False,177.1000000000008,-1,1,True
+Bar RDL,12,1,3,5,0.7,Hex-Bar Deadlift,Wolfe,135.0,94.4999983906746,5,12,130.73,3,Constant,Iterative,1.38338624338624,False,False,94.50000000000021,-1,1,True
+Bar RDL,12,1,3,5,0.7,Hex-Bar Deadlift,Bousman,275.0,192.49999672174457,2,2,192.35,2,Constant,Scale,1.75,False,True,109.91428571428571,-1,0,True
+Bar RDL,12,1,3,5,0.7,Hex-Bar Deadlift,Bousman,275.0,192.49999672174457,4,3,226.04,3,Constant,Iterative,1.1742337662337643,False,False,192.5000000000003,-1,1,True
+Bar RDL,12,1,3,5,0.7,Hex-Bar Deadlift,Clark,343.2,240.23999590873717,1,14,245.05,3,Constant,Iterative,1.0200216450216428,False,False,240.24000000000052,-1,1,True
+Bar RDL,12,1,3,5,0.7,Hex-Bar Deadlift,Marker,394.12,275.8839953017235,4,7,384.67,3,Constant,Iterative,1.3943179017268101,False,False,275.8840000000005,-1,1,True
+Bar RDL,12,1,3,5,0.7,Hex-Bar Deadlift,Roberts,225.0,157.499997317791,4,6,231.72,3,Constant,Iterative,1.4712380952380923,False,False,157.5000000000003,-1,1,True
+Bar RDL,12,1,3,5,0.7,Hex-Bar Deadlift,Hoblit,245.0,171.4999970793724,2,4,176.06,3,Constant,Iterative,1.0265889212827972,False,False,171.50000000000028,-1,1,True
+Bar RDL,12,1,3,5,0.7,Hex-Bar Deadlift,Gierzak,263.9,184.72999685406683,5,4,183.62,3,Constant,Iterative,0.9939912304444308,False,False,184.7300000000003,-1,0,True
+Bar RDL,12,2,1,6,0.7,Hex-Bar Deadlift,Wolfe,135.0,94.4999983906746,5,3,93.89,2,Constant,Scale,1.4,False,True,67.06428571428572,-1,0,True
+Bar RDL,12,2,1,6,0.7,Hex-Bar Deadlift,Bachman,264.6,185.21999684572225,2,4,233.62,3,Constant,Iterative,1.2613108735557657,False,False,185.22000000000085,-1,1,True
+Bar RDL,12,2,1,6,0.7,Hex-Bar Deadlift,Wintrow,245.0,171.4999970793724,5,4,228.42,3,Constant,Iterative,1.3318950437317725,False,False,171.50000000000077,-1,1,True
+Bar RDL,12,2,1,6,0.7,Hex-Bar Deadlift,Clark,343.2,240.23999590873717,4,2,331.37,3,Constant,Iterative,1.3793290043289985,False,False,240.240000000001,-1,1,True
+Bar RDL,12,2,1,6,0.7,Hex-Bar Deadlift,Marker,394.12,275.8839953017235,2,5,348.26,3,Constant,Iterative,1.262342143799562,False,False,275.88400000000127,-1,1,True
+Bar RDL,12,2,1,6,0.7,Hex-Bar Deadlift,Marker,394.12,275.8839953017235,3,1,300.58,3,Constant,Iterative,1.0895158834872585,False,False,275.8840000000011,-1,1,True
+Bar RDL,12,2,2,6,0.7,Hex-Bar Deadlift,Scott,275.0,192.49999672174457,3,4,208.2,3,Constant,Iterative,1.0815584415584396,False,False,192.50000000000034,-1,1,True
+Bar RDL,12,2,2,6,0.7,Hex-Bar Deadlift,Wintrow,245.0,171.4999970793724,1,10,217.55,3,Constant,Iterative,1.2685131195335249,False,False,171.5000000000004,-1,1,True
+Bar RDL,12,2,2,6,0.7,Hex-Bar Deadlift,Ott,358.435,250.90449572712183,3,7,249.73,3,Constant,Iterative,0.995318936089227,False,False,250.90450000000055,-1,0,True
+Bar RDL,12,2,2,6,0.7,Hex-Bar Deadlift,Roberts,225.0,157.499997317791,1,1,199.03,3,Constant,Iterative,1.263682539682538,False,False,157.50000000000023,-1,1,True
+Bar RDL,12,2,2,6,0.7,Hex-Bar Deadlift,Hoblit,245.0,171.4999970793724,5,1,176.87,3,Constant,Iterative,1.0313119533527684,False,False,171.50000000000023,-1,1,True
+Bar RDL,12,2,3,6,0.7,Hex-Bar Deadlift,Sullivan,335.0,234.4999960064888,2,7,233.56,2,Constant,Scale,0.6,False,True,389.2666666666667,1,0,True
+Bar RDL,12,2,3,6,0.7,Hex-Bar Deadlift,Sullivan,335.0,234.4999960064888,4,6,233.54,3,Constant,Iterative,0.9959061833688704,True,True,234.4999999999999,-1,0,True
+Bar RDL,12,2,3,6,0.7,Hex-Bar Deadlift,Brinkley,385.0,269.49999541044235,5,11,300.51,3,Constant,Iterative,1.1150649350649353,False,False,269.49999999999994,-1,1,True
+Bar RDL,12,3,1,7,0.7,Hex-Bar Deadlift,Adkins,263.25,184.27499686181545,4,1,193.25,3,Constant,Iterative,1.0487043820377138,False,False,184.2750000000003,-1,1,True
+Bar RDL,12,3,1,7,0.7,Hex-Bar Deadlift,Bachman,264.6,185.21999684572225,1,5,226.63,3,Constant,Iterative,1.2235719684699249,False,False,185.22000000000043,-1,1,True
+Bar RDL,12,3,1,7,0.7,Hex-Bar Deadlift,Ott,358.435,250.90449572712183,4,8,295.26,3,Constant,Iterative,1.1767824012721944,False,False,250.9045000000006,-1,1,True
+Bar RDL,12,3,1,7,0.7,Hex-Bar Deadlift,Pearson,408.0,285.599995136261,5,10,284.7,2,Constant,Scale,0.48999999999999994,False,True,581.0204081632654,1,0,True
+Bar RDL,12,3,1,7,0.7,Hex-Bar Deadlift,Thomas,253.0,177.09999698400495,1,19,186.78,3,Constant,Iterative,1.0546583850931648,False,False,177.10000000000048,-1,1,True
+Bar RDL,12,3,1,7,0.7,Hex-Bar Deadlift,Hoblit,245.0,171.4999970793724,1,6,224.35,3,Constant,Iterative,1.3081632653061195,False,False,171.5000000000004,-1,1,True
+Bar RDL,12,3,1,7,0.7,Hex-Bar Deadlift,Gierzak,263.9,184.72999685406683,2,11,215.83,3,Constant,Iterative,1.168353813674008,False,False,184.73000000000044,-1,1,True
+Bar RDL,12,3,1,7,0.7,Hex-Bar Deadlift,Gierzak,263.9,184.72999685406683,4,6,234.6,3,Constant,Iterative,1.2699615655280652,False,False,184.73000000000042,-1,1,True
+Bar RDL,12,3,2,7,0.7,Hex-Bar Deadlift,Scott,275.0,192.49999672174457,2,18,191.87,2,Constant,Scale,0.2722222222222222,False,True,704.8285714285715,1,0,True
+Bar RDL,12,3,2,7,0.7,Hex-Bar Deadlift,Cole,379.75,265.82499547302723,2,6,264.42,3,Constant,Iterative,0.9947145678547922,False,False,265.8249999999999,-1,0,True
+Bar RDL,12,3,2,7,0.7,Hex-Bar Deadlift,Cole,379.75,265.82499547302723,3,10,342.99,3,Constant,Iterative,1.2902849619110317,False,False,265.825,-1,1,True
+Bar RDL,12,3,2,7,0.7,Hex-Bar Deadlift,Sullivan,335.0,234.4999960064888,1,6,347.8,3,Constant,Iterative,1.48315565031983,False,False,234.49999999999991,-1,1,True
+Bar RDL,12,3,2,7,0.7,Hex-Bar Deadlift,Johnson,435.0,304.4999948143959,1,6,322.16,3,Constant,Iterative,1.0579967159277508,False,False,304.4999999999999,-1,1,True
+Bar RDL,12,3,2,7,0.7,Hex-Bar Deadlift,Johnson,435.0,304.4999948143959,4,8,323.93,3,Constant,Iterative,1.063809523809524,False,False,304.49999999999994,-1,1,True
+Bar RDL,12,3,3,7,0.7,Hex-Bar Deadlift,Adkins,263.25,184.27499686181545,2,8,183.27,3,Constant,Iterative,0.9945461945461973,False,False,184.2749999999995,-1,0,True
+Bar RDL,12,3,3,7,0.7,Hex-Bar Deadlift,Adkins,263.25,184.27499686181545,5,9,251.05,3,Constant,Iterative,1.3623660290326995,False,False,184.2749999999995,-1,1,True
+Bar RDL,12,3,3,7,0.7,Hex-Bar Deadlift,Bousman,275.0,192.49999672174457,1,4,196.89,3,Constant,Iterative,1.022805194805198,False,False,192.4999999999994,-1,1,True
+Bar RDL,12,3,3,7,0.7,Hex-Bar Deadlift,Ott,358.435,250.90449572712183,2,9,249.72,3,Constant,Iterative,0.9952790802875225,False,False,250.9044999999993,-1,0,True
+Bar RDL,12,3,3,7,0.7,Hex-Bar Deadlift,Brinkley,385.0,269.49999541044235,5,6,318.46,3,Constant,Iterative,1.1816697588126193,False,False,269.4999999999992,-1,1,True
+Bar RDL,12,3,3,7,0.7,Hex-Bar Deadlift,Miears,374.1,261.8699955403805,4,14,335.67,3,Constant,Iterative,1.281819223278729,False,False,261.8699999999994,-1,1,True
+Bar RDL,12,3,3,7,0.7,Hex-Bar Deadlift,Roberts,225.0,157.499997317791,2,28,157.19,2,Constant,Scale,0.175,False,True,898.2285714285715,1,0,True
+Bar RDL,12,3,3,7,0.7,Hex-Bar Deadlift,Vernon,445.0,311.4999946951866,4,8,310.69,2,Constant,Scale,0.6124999999999999,False,True,507.2489795918368,1,0,True
+Bar RDL,12,3,3,7,0.7,Hex-Bar Deadlift,Hoblit,245.0,171.4999970793724,1,5,173.94,3,Constant,Iterative,1.0142274052478166,False,False,171.49999999999946,-1,1,True
+Hex-Bar Jump,13,1,1,3,0.5,Hex-Bar Deadlift,Cole,379.75,189.875,1,2,188.49,3,Constant,Iterative,0.9927057274522699,False,False,189.87500000000026,-1,0,True
+Hex-Bar Jump,13,1,1,3,0.5,Hex-Bar Deadlift,Bousman,275.0,137.5,1,3,137.11,3,Constant,Iterative,0.9971636363636355,True,True,137.50000000000014,-1,0,True
+Hex-Bar Jump,13,1,1,3,0.5,Hex-Bar Deadlift,Clark,343.2,171.6,1,2,232.2,3,Constant,Iterative,1.3531468531468513,False,False,171.60000000000022,-1,1,True
+Hex-Bar Jump,13,1,1,3,0.5,Hex-Bar Deadlift,Marker,394.12,197.06,2,3,195.42,1,Constant,Ratio,0.5,True,False,390.84,-1,0,True
+Hex-Bar Jump,13,1,1,3,0.5,Hex-Bar Deadlift,Brinkley,385.0,192.5,5,4,190.89,3,Constant,Iterative,0.9916363636363626,False,False,192.50000000000017,-1,0,True
+Hex-Bar Jump,13,1,1,3,0.5,Hex-Bar Deadlift,Miears,374.1,187.05,2,3,187.04,3,Constant,Iterative,0.9999465383587265,True,True,187.0500000000002,-1,0,True
+Hex-Bar Jump,13,1,1,3,0.5,Hex-Bar Deadlift,Cane Bond,245.0,122.5,2,5,144.07,3,Constant,Iterative,1.17608163265306,False,False,122.50000000000011,-1,1,True
+Hex-Bar Jump,13,1,1,3,0.5,Hex-Bar Deadlift,Hoblit,245.0,122.5,3,7,148.6,3,Constant,Iterative,1.213061224489795,False,False,122.5000000000001,-1,1,True
+Hex-Bar Jump,13,1,2,3,0.5,Hex-Bar Deadlift,Bousman,275.0,137.5,5,1,137.19,2,Constant,Scale,1.5,False,True,91.46,-1,0,True
+Hex-Bar Jump,13,1,2,3,0.5,Hex-Bar Deadlift,Cane Bond,245.0,122.5,1,3,122.38,3,Constant,Iterative,0.9990204081632648,True,True,122.50000000000006,-1,0,True
+Hex-Bar Jump,13,1,2,3,0.5,Hex-Bar Deadlift,Hoblit,245.0,122.5,5,5,137.24,3,Constant,Iterative,1.1203265306122447,False,False,122.50000000000003,-1,1,True
+Hex-Bar Jump,13,1,3,3,0.5,Hex-Bar Deadlift,Wintrow,245.0,122.5,1,2,145.82,3,Constant,Iterative,1.1903673469387757,False,False,122.49999999999999,-1,1,True
+Hex-Bar Jump,13,1,3,3,0.5,Hex-Bar Deadlift,Pearson,408.0,204.0,1,2,263.8,3,Constant,Iterative,1.293137254901961,False,False,203.99999999999997,-1,1,True
+Hex-Bar Jump,13,1,3,3,0.5,Hex-Bar Deadlift,Vernon,445.0,222.5,2,4,329.58,3,Constant,Iterative,1.4812584269662927,False,False,222.4999999999999,-1,1,True
+Hex-Bar Jump,13,1,3,3,0.5,Hex-Bar Deadlift,Thomas,253.0,126.5,5,1,160.39,3,Constant,Iterative,1.2679051383399205,False,False,126.50000000000004,-1,1,True
+Hex-Bar Jump,13,1,3,3,0.5,Hex-Bar Deadlift,Hoblit,245.0,122.5,4,3,121.8,3,Constant,Iterative,0.9942857142857147,True,True,122.49999999999996,-1,0,True
+Hex-Bar Jump,13,1,3,3,0.5,Hex-Bar Deadlift,Gierzak,263.9,131.95,5,8,131.42,2,Constant,Scale,0.1875,False,True,700.9066666666666,1,0,True
+Hex-Bar Jump,13,1,3,3,0.5,Hex-Bar Deadlift,Johnson,435.0,217.5,5,5,215.97,3,Constant,Iterative,0.9929655172413798,False,False,217.4999999999999,-1,0,True
+Hex-Bar Jump,13,2,1,4,0.5,Hex-Bar Deadlift,Scott,275.0,137.5,2,2,155.92,3,Constant,Iterative,1.1339636363636354,False,False,137.5000000000001,-1,1,True
+Hex-Bar Jump,13,2,1,4,0.5,Hex-Bar Deadlift,Pearson,408.0,204.0,4,9,203.76,2,Constant,Scale,0.2222222222222222,False,True,916.92,1,0,True
+Hex-Bar Jump,13,2,1,4,0.5,Hex-Bar Deadlift,Pearson,408.0,204.0,5,6,249.61,3,Constant,Iterative,1.2235784313725488,False,False,204.00000000000003,-1,1,True
+Hex-Bar Jump,13,2,1,4,0.5,Hex-Bar Deadlift,Vernon,445.0,222.5,4,6,320.32,3,Constant,Iterative,1.4396404494382018,False,False,222.50000000000006,-1,1,True
+Hex-Bar Jump,13,2,1,4,0.5,Hex-Bar Deadlift,Johnson,435.0,217.5,4,9,229.19,3,Constant,Iterative,1.0537471264367817,False,False,217.49999999999997,-1,1,True
+Hex-Bar Jump,13,2,2,4,0.5,Hex-Bar Deadlift,Pearson,408.0,204.0,2,5,285.58,3,Constant,Iterative,1.399901960784314,False,False,203.99999999999994,-1,1,True
+Hex-Bar Jump,13,2,2,4,0.5,Hex-Bar Deadlift,Pearson,408.0,204.0,5,5,290.53,3,Constant,Iterative,1.424166666666667,False,False,203.99999999999994,-1,1,True
+Hex-Bar Jump,13,2,2,4,0.5,Hex-Bar Deadlift,Sullivan,335.0,167.5,2,5,197.41,3,Constant,Iterative,1.178567164179105,False,False,167.49999999999994,-1,1,True
+Hex-Bar Jump,13,2,2,4,0.5,Hex-Bar Deadlift,Marker,394.12,197.06,2,2,195.86,3,Constant,Iterative,0.9939104841165125,False,False,197.06000000000006,-1,0,True
+Hex-Bar Jump,13,2,2,4,0.5,Hex-Bar Deadlift,Marker,394.12,197.06,4,16,233.65,3,Constant,Iterative,1.185679488480667,False,False,197.0599999999998,-1,1,True
+Hex-Bar Jump,13,2,2,4,0.5,Hex-Bar Deadlift,Brinkley,385.0,192.5,5,6,287.07,3,Constant,Iterative,1.491272727272728,False,False,192.49999999999991,-1,1,True
+Hex-Bar Jump,13,2,2,4,0.5,Hex-Bar Deadlift,Roberts,225.0,112.5,3,4,111.61,3,Constant,Iterative,0.992088888888889,True,True,112.49999999999999,-1,0,True
+Hex-Bar Jump,13,2,2,4,0.5,Hex-Bar Deadlift,Vernon,445.0,222.5,4,1,302.74,3,Constant,Iterative,1.3606292134831457,False,False,222.50000000000006,-1,1,True
+Hex-Bar Jump,13,2,2,4,0.5,Hex-Bar Deadlift,Thomas,253.0,126.5,1,3,137.25,3,Constant,Iterative,1.0849802371541502,False,False,126.5,-1,1,True
+Hex-Bar Jump,13,2,2,4,0.5,Hex-Bar Deadlift,Gierzak,263.9,131.95,2,1,150.13,3,Constant,Iterative,1.1377794619173924,False,False,131.95000000000005,-1,1,True
+Hex-Bar Jump,13,2,2,4,0.5,Hex-Bar Deadlift,Johnson,435.0,217.5,3,3,231.71,3,Constant,Iterative,1.0653333333333335,False,False,217.49999999999997,-1,1,True
+Hex-Bar Jump,13,2,3,4,0.5,Hex-Bar Deadlift,Wolfe,135.0,67.5,2,3,87.93,3,Constant,Iterative,1.3026666666666675,False,False,67.49999999999996,-1,1,True
+Hex-Bar Jump,13,2,3,4,0.5,Hex-Bar Deadlift,Wolfe,135.0,67.5,5,8,72.19,3,Constant,Iterative,1.0694814814814828,False,False,67.49999999999991,-1,1,True
+Hex-Bar Jump,13,2,3,4,0.5,Hex-Bar Deadlift,Bousman,275.0,137.5,1,1,136.36,3,Constant,Iterative,0.9917090909090912,False,False,137.49999999999997,-1,0,True
+Hex-Bar Jump,13,2,3,4,0.5,Hex-Bar Deadlift,Wintrow,245.0,122.5,2,5,122.25,2,Constant,Scale,0.4,False,True,305.625,1,0,True
+Hex-Bar Jump,13,2,3,4,0.5,Hex-Bar Deadlift,Marker,394.12,197.06,3,5,282.67,3,Constant,Iterative,1.434436212321122,False,False,197.0599999999998,-1,1,True
+Hex-Bar Jump,13,2,3,4,0.5,Hex-Bar Deadlift,Marker,394.12,197.06,5,4,196.95,3,Constant,Iterative,0.9994417943773478,True,True,197.05999999999983,-1,0,True
+Hex-Bar Jump,13,2,3,4,0.5,Hex-Bar Deadlift,Brinkley,385.0,192.5,1,9,240.51,3,Constant,Iterative,1.249402597402599,False,False,192.49999999999974,-1,1,True
+Hex-Bar Jump,13,2,3,4,0.5,Hex-Bar Deadlift,Miears,374.1,187.05,3,12,226.21,3,Constant,Iterative,1.2093557872226695,False,False,187.04999999999973,-1,1,True
+Hex-Bar Jump,13,2,3,4,0.5,Hex-Bar Deadlift,Cane Bond,245.0,122.5,4,12,121.86,2,Constant,Scale,0.16666666666666666,False,True,731.1600000000001,1,0,True
+Hex-Bar Jump,13,3,1,5,0.5,Hex-Bar Deadlift,Wolfe,135.0,67.5,1,7,67.37,2,Constant,Scale,0.35714285714285715,False,True,188.636,1,0,True
+Hex-Bar Jump,13,3,1,5,0.5,Hex-Bar Deadlift,Cole,379.75,189.875,3,10,200.04,3,Constant,Iterative,1.0535352205398292,False,False,189.87499999999994,-1,1,True
+Hex-Bar Jump,13,3,1,5,0.5,Hex-Bar Deadlift,Sullivan,335.0,167.5,3,6,166.16,3,Constant,Iterative,0.9920000000000001,False,False,167.49999999999997,-1,0,True
+Hex-Bar Jump,13,3,1,5,0.5,Hex-Bar Deadlift,Miears,374.1,187.05,4,8,185.82,3,Constant,Iterative,0.9934242181234965,False,False,187.04999999999998,-1,0,True
+Hex-Bar Jump,13,3,1,5,0.5,Hex-Bar Deadlift,Roberts,225.0,112.5,2,7,151.68,3,Constant,Iterative,1.3482666666666672,False,False,112.49999999999996,-1,1,True
+Hex-Bar Jump,13,3,1,5,0.5,Hex-Bar Deadlift,Thomas,253.0,126.5,4,2,149.65,3,Constant,Iterative,1.1830039525691696,False,False,126.50000000000004,-1,1,True
+Hex-Bar Jump,13,3,1,5,0.5,Hex-Bar Deadlift,Gierzak,263.9,131.95,2,6,141.47,3,Constant,Iterative,1.0721485411140588,False,False,131.94999999999996,-1,1,True
+Hex-Bar Jump,13,3,2,5,0.5,Hex-Bar Deadlift,Bachman,264.6,132.3,2,6,193.56,3,Constant,Iterative,1.4630385487528357,False,False,132.2999999999999,-1,1,True
+Hex-Bar Jump,13,3,2,5,0.5,Hex-Bar Deadlift,Wintrow,245.0,122.5,5,1,177.11,3,Constant,Iterative,1.445795918367347,False,False,122.5,-1,1,True
+Hex-Bar Jump,13,3,2,5,0.5,Hex-Bar Deadlift,Clark,343.2,171.6,1,1,170.12,3,Constant,Iterative,0.9913752913752915,False,False,171.6,-1,0,True
+Hex-Bar Jump,13,3,2,5,0.5,Hex-Bar Deadlift,Marker,394.12,197.06,4,4,241.92,3,Constant,Iterative,1.2276464021110327,False,False,197.05999999999992,-1,1,True
+Hex-Bar Jump,13,3,2,5,0.5,Hex-Bar Deadlift,Brinkley,385.0,192.5,1,3,267.25,3,Constant,Iterative,1.3883116883116888,False,False,192.49999999999991,-1,1,True
+Hex-Bar Jump,13,3,2,5,0.5,Hex-Bar Deadlift,Vernon,445.0,222.5,3,6,221.85,2,Constant,Scale,0.4166666666666667,False,True,532.4399999999999,1,0,True
+Hex-Bar Jump,13,3,2,5,0.5,Hex-Bar Deadlift,Thomas,253.0,126.5,4,15,125.69,2,Constant,Scale,0.16666666666666666,False,True,754.14,1,0,True
+Hex-Bar Jump,13,3,3,5,0.5,Hex-Bar Deadlift,Wolfe,135.0,67.5,1,7,79.86,3,Constant,Iterative,1.1831111111111128,False,False,67.4999999999999,-1,1,True
+Hex-Bar Jump,13,3,3,5,0.5,Hex-Bar Deadlift,Adkins,263.25,131.625,4,13,131.23,2,Constant,Scale,0.19230769230769232,False,True,682.396,1,0,True
+Hex-Bar Jump,13,3,3,5,0.5,Hex-Bar Deadlift,Bachman,264.6,132.3,2,2,158.62,3,Constant,Iterative,1.1989417989417999,False,False,132.2999999999999,-1,1,True
+Hex-Bar Jump,13,3,3,5,0.5,Hex-Bar Deadlift,Cole,379.75,189.875,4,1,189.62,2,Constant,Scale,2.5,False,True,75.848,-1,0,True
+Hex-Bar Jump,13,3,3,5,0.5,Hex-Bar Deadlift,Bousman,275.0,137.5,4,1,196.09,3,Constant,Iterative,1.4261090909090919,False,False,137.49999999999991,-1,1,True
+Hex-Bar Jump,13,3,3,5,0.5,Hex-Bar Deadlift,Roberts,225.0,112.5,1,23,154.17,3,Constant,Iterative,1.370400000000003,False,False,112.49999999999974,-1,1,True
+Hex-Bar Jump,13,3,3,5,0.5,Hex-Bar Deadlift,Cane Bond,245.0,122.5,2,6,122.34,2,Constant,Scale,0.4166666666666667,False,True,293.616,1,0,True
+Hex-Bar Jump,13,3,3,5,0.5,Hex-Bar Deadlift,Gierzak,263.9,131.95,3,6,169.14,3,Constant,Iterative,1.2818491852974632,False,False,131.9499999999998,-1,1,True
+Hex-Bar Jump,13,3,3,5,0.5,Hex-Bar Deadlift,Johnson,435.0,217.5,3,1,216.07,3,Constant,Iterative,0.9934252873563223,False,False,217.4999999999999,-1,0,True
+Hex-Bar Jump,13,3,3,5,0.5,Hex-Bar Deadlift,Johnson,435.0,217.5,5,7,317.05,3,Constant,Iterative,1.4577011494252896,False,False,217.49999999999966,-1,1,True
+Hex-Bar Deadlift,14,1,1,5,0.65,Hex-Bar Deadlift,Bachman,264.6,171.98999369144445,3,1,171.54,2,Fitted,Function,0.6405677647986603,False,True,267.7936815223874,1,0,True
+Hex-Bar Deadlift,14,1,1,5,0.65,Hex-Bar Deadlift,Cole,379.75,246.8374909460545,1,7,352.53,3,Fitted,Iterative,1.5834190368575827,False,False,222.63847521981484,-1,1,True
+Hex-Bar Deadlift,14,1,1,5,0.65,Hex-Bar Deadlift,Bousman,275.0,178.74999344348907,2,5,177.84,3,Fitted,Iterative,1.0822501733181025,True,True,164.32429800843104,-1,0,True
+Hex-Bar Deadlift,14,1,1,5,0.65,Hex-Bar Deadlift,Wintrow,245.0,159.2499941587448,1,4,180.38,3,Fitted,Iterative,1.2175713889190174,False,False,148.14737077564274,-1,1,True
+Hex-Bar Deadlift,14,1,1,5,0.65,Hex-Bar Deadlift,Sullivan,335.0,217.7499920129776,1,1,217.36,2,Fitted,Function,0.6405677647986603,False,True,339.3239746747472,1,0,True
+Hex-Bar Deadlift,14,1,1,5,0.65,Hex-Bar Deadlift,Sullivan,335.0,217.7499920129776,5,17,258.02,3,Fitted,Iterative,1.388970062638736,False,False,185.76354303117162,-1,1,True
+Hex-Bar Deadlift,14,1,1,5,0.65,Hex-Bar Deadlift,Brinkley,385.0,250.2499908208847,1,6,288.71,3,Fitted,Iterative,1.267774487828174,False,False,227.72977589617648,-1,1,True
+Hex-Bar Deadlift,14,1,1,5,0.65,Hex-Bar Deadlift,Brinkley,385.0,250.2499908208847,4,1,350.01,3,Fitted,Iterative,1.419236079421873,False,False,246.6185894474842,-1,1,True
+Hex-Bar Deadlift,14,1,1,5,0.65,Hex-Bar Deadlift,Miears,374.1,243.16499108076096,4,9,242.45,2,Fitted,Function,0.5775374798446558,False,True,419.7995947643319,1,0,True
+Hex-Bar Deadlift,14,1,1,5,0.65,Hex-Bar Deadlift,Gierzak,263.9,171.53499370813367,3,7,227.25,3,Fitted,Iterative,1.4687979753800364,False,False,154.71835052141967,-1,1,True
+Hex-Bar Deadlift,14,1,2,5,0.7,Hex-Bar Deadlift,Cole,379.75,265.82499547302723,3,5,265.76,3,Fitted,Iterative,1.0580770635042727,True,True,251.17263115015706,-1,0,True
+Hex-Bar Deadlift,14,1,2,5,0.7,Hex-Bar Deadlift,Bousman,275.0,192.49999672174457,1,6,270.35,3,Fitted,Iterative,1.5000347423373521,False,False,180.22915894517283,-1,1,True
+Hex-Bar Deadlift,14,1,2,5,0.7,Hex-Bar Deadlift,Ott,358.435,250.90449572712183,2,9,355.96,3,Fitted,Iterative,1.5482990195987782,False,False,229.9039109979172,-1,1,True
+Hex-Bar Deadlift,14,1,2,5,0.7,Hex-Bar Deadlift,Marker,394.12,275.8839953017235,4,1,384.08,3,Fitted,Iterative,1.3834033799110828,False,False,277.63413446675725,-1,1,True
+Hex-Bar Deadlift,14,1,2,5,0.7,Hex-Bar Deadlift,Brinkley,385.0,269.49999541044235,1,4,354.42,3,Fitted,Iterative,1.376954864327691,False,False,257.39405784593265,-1,1,True
+Hex-Bar Deadlift,14,1,2,5,0.7,Hex-Bar Deadlift,Thomas,253.0,177.09999698400495,5,1,204.15,3,Fitted,Iterative,1.1454719971412308,False,False,178.2234751347041,-1,1,True
+Hex-Bar Deadlift,14,1,2,5,0.7,Hex-Bar Deadlift,Gierzak,263.9,184.72999685406683,4,1,237.88,3,Fitted,Iterative,1.2795997694676848,False,False,185.90187781837315,-1,1,True
+Hex-Bar Deadlift,14,1,3,10,0.8,Hex-Bar Deadlift,Wolfe,135.0,108.0000016093254,1,31,143.94,3,Fitted,Iterative,1.6161474154526163,False,False,89.06365757463303,-1,1,True
+Hex-Bar Deadlift,14,1,3,10,0.8,Hex-Bar Deadlift,Bachman,264.6,211.6800031542778,3,13,292.66,3,Fitted,Iterative,1.598088957287038,False,False,183.13123225432213,-1,1,True
+Hex-Bar Deadlift,14,1,3,10,0.8,Hex-Bar Deadlift,Pearson,408.0,326.400004863739,1,1,330.16,3,Fitted,Iterative,1.0532363765027413,False,False,313.47189231755584,-1,1,True
+Hex-Bar Deadlift,14,1,3,10,0.8,Hex-Bar Deadlift,Clark,343.2,274.5600040912628,5,11,307.25,3,Fitted,Iterative,1.2823313696363337,False,False,239.60265441150005,-1,1,True
+Hex-Bar Deadlift,14,1,3,10,0.8,Hex-Bar Deadlift,Brinkley,385.0,308.00000458955765,3,40,437.5,3,Fitted,Iterative,1.7481850227448672,False,False,250.25955165378934,-1,1,True
+Hex-Bar Deadlift,14,2,1,3,0.675,Hex-Bar Deadlift,Bachman,264.6,178.60500315427782,3,7,177.68,2,Fitted,Function,0.6160015614623688,False,True,288.4408272897769,1,0,True
+Hex-Bar Deadlift,14,2,1,3,0.675,Hex-Bar Deadlift,Roberts,225.0,151.875002682209,1,4,199.03,3,Fitted,Iterative,1.3943351822091785,False,False,142.74186188478566,-1,1,True
+Hex-Bar Deadlift,14,2,2,3,0.725,Hex-Bar Deadlift,Wintrow,245.0,177.6250058412552,4,1,222.62,3,Fitted,Iterative,1.2376674761481639,False,False,179.87060683927166,-1,1,True
+Hex-Bar Deadlift,14,2,2,3,0.725,Hex-Bar Deadlift,Pearson,408.0,295.800009727478,1,1,295.34,2,Fitted,Function,0.7341657422011089,False,True,402.2797347020558,-1,0,True
+Hex-Bar Deadlift,14,2,2,3,0.725,Hex-Bar Deadlift,Clark,343.2,248.82000818252564,3,6,319.83,3,Fitted,Iterative,1.360239825830206,False,False,235.12765464339762,-1,1,True
+Hex-Bar Deadlift,14,2,2,3,0.725,Hex-Bar Deadlift,Marker,394.12,285.73700939655305,2,1,384.83,3,Fitted,Iterative,1.3299837391035103,False,False,289.34940231630105,-1,1,True
+Hex-Bar Deadlift,14,2,2,3,0.725,Hex-Bar Deadlift,Vernon,445.0,322.62501060962677,2,9,345.8,3,Fitted,Iterative,1.157856649196947,False,False,298.65527847496145,-1,1,True
+Hex-Bar Deadlift,14,2,2,3,0.725,Hex-Bar Deadlift,Hoblit,245.0,177.6250058412552,1,1,262.86,3,Fitted,Iterative,1.4613838504191283,False,False,179.87060683927166,-1,1,True
+Hex-Bar Deadlift,14,2,2,3,0.725,Hex-Bar Deadlift,Gierzak,263.9,191.32750629186629,3,1,190.96,2,Fitted,Function,0.7341657422011089,False,True,260.1047543126721,-1,0,True
+Hex-Bar Deadlift,14,2,3,8,0.825,Hex-Bar Deadlift,Wolfe,135.0,111.3749983906746,2,1,110.6,2,Fitted,Function,0.7980385905830971,False,True,138.58978914689914,1,-1,True
+Hex-Bar Deadlift,14,2,3,8,0.825,Hex-Bar Deadlift,Wolfe,135.0,111.3749983906746,4,6,123.04,3,Fitted,Iterative,1.2168701137646805,False,False,101.11185952241539,-1,1,True
+Hex-Bar Deadlift,14,2,3,8,0.825,Hex-Bar Deadlift,Wintrow,245.0,202.1249970793724,2,6,210.13,3,Fitted,Iterative,1.1451269802992643,False,False,183.49930061475385,-1,1,True
+Hex-Bar Deadlift,14,2,3,8,0.825,Hex-Bar Deadlift,Ott,358.435,295.70887072712185,5,17,367.21,3,Fitted,Iterative,1.4389009112600137,False,False,255.20172871281477,-1,1,True
+Hex-Bar Deadlift,14,2,3,8,0.825,Hex-Bar Deadlift,Sullivan,335.0,276.3749960064888,1,9,361.52,3,Fitted,Iterative,1.4682339925136252,False,False,246.22778238574605,-1,1,True
+Hex-Bar Deadlift,14,2,3,8,0.825,Hex-Bar Deadlift,Sullivan,335.0,276.3749960064888,5,9,349.04,3,Fitted,Iterative,1.4175492164941244,False,False,246.22778238574602,-1,1,True
+Hex-Bar Deadlift,14,2,3,8,0.825,Hex-Bar Deadlift,Roberts,225.0,185.624997317791,5,7,273.54,3,Fitted,Iterative,1.6346054656155087,False,False,167.34313310092773,-1,1,True
+Hex-Bar Deadlift,14,2,3,8,0.825,Hex-Bar Deadlift,Hoblit,245.0,202.1249970793724,5,20,269.56,3,Fitted,Iterative,1.558526775104894,False,False,172.9582091920479,-1,1,True
+Hex-Bar Deadlift,14,2,3,8,0.825,Hex-Bar Deadlift,Gierzak,263.9,217.71749685406684,3,28,259.57,3,Fitted,Iterative,1.41868813638327,False,False,182.9648062482106,-1,1,True
+Hex-Bar Deadlift,14,2,3,8,0.825,Hex-Bar Deadlift,Johnson,435.0,358.8749948143959,3,10,436.48,3,Fitted,Iterative,1.3721258960094616,False,False,318.1049211806365,-1,1,True
+Hex-Bar Deadlift,14,3,1,5,0.7,Hex-Bar Deadlift,Cole,379.75,265.82499547302723,3,5,264.23,1,Fitted,Ratio,0.7,True,False,377.4714349997288,-1,0,True
+Hex-Bar Deadlift,14,3,1,5,0.7,Hex-Bar Deadlift,Bousman,275.0,192.49999672174457,2,4,245.4,3,Fitted,Iterative,1.3436511864982281,False,False,182.63668611758683,-1,1,True
+Hex-Bar Deadlift,14,3,1,5,0.7,Hex-Bar Deadlift,Clark,343.2,240.23999590873717,4,4,327.58,3,Fitted,Iterative,1.43719194614591,False,False,227.93058427474838,-1,1,True
+Hex-Bar Deadlift,14,3,1,5,0.7,Hex-Bar Deadlift,Cane Bond,245.0,171.4999970793724,3,1,244.34,3,Fitted,Iterative,1.424686350793466,False,False,171.5044155956973,-1,1,True
+Hex-Bar Deadlift,14,3,1,5,0.7,Hex-Bar Deadlift,Cane Bond,245.0,171.4999970793724,5,9,182.41,3,Fitted,Iterative,1.1688303682521435,False,False,156.06199578196617,-1,1,True
+Hex-Bar Deadlift,14,3,1,5,0.7,Hex-Bar Deadlift,Gierzak,263.9,184.72999685406683,3,1,186.58,3,Fitted,Iterative,1.0099886118363326,False,False,184.73475622736532,-1,1,True
+Hex-Bar Deadlift,14,3,2,3,0.75,Hex-Bar Deadlift,Cole,379.75,284.8125,4,7,355.99,3,Fitted,Iterative,1.3210726192061986,False,False,269.4704248839144,-1,1,True
+Hex-Bar Deadlift,14,3,2,3,0.75,Hex-Bar Deadlift,Pearson,408.0,306.0,4,1,315.63,3,Fitted,Iterative,1.0127139494930348,False,False,311.66747545840025,-1,1,True
+Hex-Bar Deadlift,14,3,2,3,0.75,Hex-Bar Deadlift,Hoblit,245.0,183.75,3,1,205.62,3,Fitted,Iterative,1.0986717314481655,False,False,187.15326344928442,-1,1,True
+Hex-Bar Deadlift,14,3,3,7,0.85,Hex-Bar Deadlift,Wolfe,135.0,114.75000321865082,4,6,114.52,2,Fitted,Function,0.7787018662235372,False,True,147.06526973588302,1,0,True
+Hex-Bar Deadlift,14,3,3,7,0.85,Hex-Bar Deadlift,Cole,379.75,322.78750905394554,3,1,322.04,2,Fitted,Function,0.8277637196035574,False,True,389.04821795552397,1,0,True
+Hex-Bar Deadlift,14,3,3,7,0.85,Hex-Bar Deadlift,Clark,343.2,291.72000818252565,2,1,360.16,3,Fitted,Iterative,1.267773912487792,False,False,284.0885085679409,-1,1,True
+Hex-Bar Deadlift,14,3,3,7,0.85,Hex-Bar Deadlift,Brinkley,385.0,327.2500091791153,2,8,488.85,3,Fitted,Iterative,1.651459071132238,False,False,296.01096905468273,-1,1,True
+Hex-Bar Deadlift,14,3,3,7,0.85,Hex-Bar Deadlift,Vernon,445.0,378.2500106096268,1,18,411.42,3,Fitted,Iterative,1.2500589799963613,False,False,329.12047078066473,-1,1,True
+Hex-Bar Deadlift,14,3,3,7,0.85,Hex-Bar Deadlift,Hoblit,245.0,208.2500058412552,5,1,283.55,3,Fitted,Iterative,1.3981609864827138,False,False,202.80211130287154,-1,1,True
+Hex-Bar Deadlift,14,3,3,7,0.85,Hex-Bar Deadlift,Gierzak,263.9,224.3150062918663,5,1,317.86,3,Fitted,Iterative,1.4550908213942346,False,False,218.4468456033788,-1,1,True
+Hex-Bar Deadlift,14,3,3,7,0.85,Hex-Bar Deadlift,Johnson,435.0,369.7500103712082,4,10,431.7,3,Fitted,Iterative,1.3040903244764523,False,False,331.03535230453673,-1,1,True
+Incline Bench,15,2,1,3,0.61,Bench,Wolfe,85.0,51.85000121593475,3,1,61.74,3,Fitted,Iterative,1.1644778380180683,False,False,53.01947189057799,-1,1,True
+Incline Bench,15,2,1,3,0.61,Bench,Bachman,113.4,69.17400162220001,4,2,80.43,3,Fitted,Iterative,1.184549810569856,False,False,67.89921308695936,-1,1,True
+Incline Bench,15,2,1,3,0.61,Bench,Cole,117.45,71.64450168013573,4,5,71.04,2,Fitted,Function,0.5560207105465436,False,True,127.76502502968074,1,-1,True
+Incline Bench,15,2,1,3,0.61,Bench,Ott,135.0,82.35000193119049,1,1,82.19,2,Fitted,Function,0.6237584928303292,False,True,131.7657409794287,-1,0,True
+Incline Bench,15,2,1,3,0.61,Bench,Marker,144.45,88.11450206637382,2,3,87.69,3,Fitted,Iterative,1.044818637021239,True,True,83.92844163844816,-1,0,True
+Incline Bench,15,2,1,3,0.61,Bench,Hoblit,324.0,197.6400046348572,4,4,280.29,3,Fitted,Iterative,1.525031221143969,False,False,183.7929585400531,-1,1,True
+Incline Bench,15,2,1,3,0.61,Bench,Gierzak,185.6,113.2160026550293,2,2,112.64,2,Fitted,Function,0.5987584928303294,False,True,188.12259257910662,1,0,True
+Incline Bench,15,2,2,3,0.66,Bench,Wintrow,178.5,117.8100046813488,2,1,116.97,2,Fitted,Function,0.6737584928303297,False,True,173.60820122449448,-1,0,True
+Incline Bench,15,2,2,3,0.66,Bench,Wintrow,178.5,117.8100046813488,3,7,117.41,2,Fitted,Function,0.5882829282627577,False,True,199.58083833355536,1,0,True
+Incline Bench,15,2,2,3,0.66,Bench,Thomas,137.75,90.91500361263752,4,5,97.81,3,Fitted,Iterative,1.1716669646827953,False,False,83.47935287778644,-1,1,True
+Incline Bench,15,2,2,3,0.66,Bench,Hoblit,324.0,213.84000849723816,4,7,213.18,2,Fitted,Function,0.5882829282627577,False,True,362.3766554462766,1,0,True
+Incline Bench,15,2,2,3,0.66,Bench,Gierzak,185.6,122.49600486755372,4,4,169.69,3,Fitted,Iterative,1.481182536368553,False,False,114.56386760812926,-1,1,True
+Incline Bench,15,2,3,8,0.76,Bench,Adkins,96.9,73.6439990758896,1,1,73.58,2,Fitted,Function,0.7237584928303301,False,True,101.66374657968854,1,0,True
+Incline Bench,15,2,3,8,0.76,Bench,Bousman,155.0,117.7999985218048,2,6,117.39,2,Fitted,Function,0.6465161516619032,False,True,181.57318993229006,1,0,True
+Incline Bench,15,2,3,8,0.76,Bench,Wintrow,178.5,135.65999829769137,3,8,135.15,3,Fitted,Iterative,1.1998700589194207,True,True,112.63719683255822,-1,0,True
+Incline Bench,15,2,3,8,0.76,Bench,Roberts,155.0,117.7999985218048,5,10,147.69,3,Fitted,Iterative,1.5401956467348097,False,False,95.89041516452825,-1,1,True
+Close-Grip Bench,16,3,1,5,0.6675,Bench,Wolfe,85.0,56.73750162124634,1,1,81.0,3,Fitted,Iterative,1.4365562743971751,False,False,56.38484300518626,-1,1,True
+Close-Grip Bench,16,3,1,5,0.6675,Bench,Bachman,113.4,75.69450216293335,1,3,75.1,2,Fitted,Function,0.6475778503393753,False,True,115.97061258448298,1,-1,True
+Close-Grip Bench,16,3,1,5,0.6675,Bench,Cole,117.45,78.39787724018097,1,4,110.2,3,Fitted,Iterative,1.4603449104097612,False,False,75.461625,-1,1,True
+Close-Grip Bench,16,3,1,5,0.6675,Bench,Hoblit,324.0,216.27000617980957,5,9,269.42,3,Fitted,Iterative,1.3268034302070042,False,False,203.05946899607116,-1,1,True
+Close-Grip Bench,16,3,2,3,0.7175,Bench,Davis,115.0,82.51249670982361,2,4,98.98,3,Fitted,Iterative,1.2265395962424894,False,False,80.69857695848202,-1,1,True
+Close-Grip Bench,16,3,2,3,0.7175,Bench,Bachman,113.4,81.36449675559997,4,2,118.28,3,Fitted,Iterative,1.4621601035057006,False,False,80.89401407986021,-1,1,True
+Close-Grip Bench,16,3,2,3,0.7175,Bench,Cole,117.45,84.27037163972855,4,2,121.01,3,Fitted,Iterative,1.4443249319284148,False,False,83.7830860112838,-1,1,True
+Close-Grip Bench,16,3,2,3,0.7175,Bench,Cole,117.45,84.27037163972855,5,5,103.75,3,Fitted,Iterative,1.2663168971850907,False,False,81.93051852235959,-1,1,True
+Close-Grip Bench,16,3,2,3,0.7175,Bench,Roberts,155.0,111.21249556541444,4,3,111.71,3,Fitted,Iterative,1.0196731469933686,True,True,109.55471400751371,-1,0,True
+Close-Grip Bench,16,3,2,3,0.7175,Bench,Thomas,137.75,98.83562105894087,5,5,98.16,2,Fitted,Function,0.6975778503393749,False,True,140.71547706430857,1,0,True
+Close-Grip Bench,16,3,3,7,0.7925,Bench,Davis,115.0,91.13750219345091,3,8,90.94,2,Fitted,Function,0.7475778503393746,False,True,121.64619371576669,1,0,True
+Close-Grip Bench,16,3,3,7,0.7925,Bench,Davis,115.0,91.13750219345091,5,1,128.25,3,Fitted,Iterative,1.4264656181764537,False,False,89.90752974751018,-1,1,True
+Close-Grip Bench,16,3,3,7,0.7925,Bench,Scott,155.0,122.83750295639038,1,8,122.24,2,Fitted,Function,0.7475778503393746,False,True,163.51474290538067,1,0,True
+Close-Grip Bench,16,3,3,7,0.7925,Bench,Cole,117.45,93.07912724018097,1,5,96.5,3,Fitted,Iterative,1.0856517215516956,False,False,88.88670103343537,-1,1,True
+Close-Grip Bench,16,3,3,7,0.7925,Bench,Wintrow,178.5,141.4612534046173,4,5,140.95,2,Fitted,Function,0.7568046065000883,False,True,186.24358095788565,1,0,True
+Close-Grip Bench,16,3,3,7,0.7925,Bench,Marker,144.45,114.4766277551651,4,1,164.61,3,Fitted,Iterative,1.4576069947065733,False,False,112.93167540893778,-1,1,True
+Close-Grip Bench,16,3,3,7,0.7925,Bench,Roberts,155.0,122.83750295639038,3,4,175.53,3,Fitted,Iterative,1.488200783052406,False,False,117.94779440982113,-1,1,True
+Close-Grip Bench,16,3,3,7,0.7925,Bench,Thomas,137.75,109.16687762737274,2,9,138.08,3,Fitted,Iterative,1.345172016329558,False,False,102.64858198341479,-1,1,True
+Close-Grip Bench,16,3,3,7,0.7925,Bench,Johnson,185.0,146.61250352859497,2,4,152.76,3,Fitted,Iterative,1.0851250652759212,False,False,140.77639977946393,-1,1,True

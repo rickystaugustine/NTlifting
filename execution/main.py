@@ -20,18 +20,10 @@ from helpers.multiplier_fitting import fit_multipliers
 from helpers.data_merging import merge_data
 from helpers.weight_assignment import assign_weights
 from helpers.simulation import run_simulation
-from helpers.google_sheets_utils import write_to_google_sheet  # Ensure this function exists
+from helpers.google_sheets_utils import upload_all_dataframes
 
 step_time = time.time() - start_time
 logging.info(f"✅ Helper-function import completed in {step_time:.2f} seconds.")
-
-def upload_dataframe(df, sheet_name):
-    if sheet_name == "SimulatedData" and "Functional Max" not in df.columns:
-        logging.error("❌ ERROR: 'Functional Max' is missing inside upload_dataframe().")
-        return
-
-    write_to_google_sheet("After-School Lifting", sheet_name, df)
-    logging.info(f"✅ Successfully uploaded {sheet_name} to Google Sheets.")
 
 if __name__ == "__main__":
     # Step 1: Load Data
@@ -104,17 +96,13 @@ if __name__ == "__main__":
     assigned_weights_df["Assigned Weight"] = assigned_weights_df["Assigned Weight"].astype(object)
     assigned_weights_df = assigned_weights_df.fillna("NRM").astype(str)
 
-    # Upload to Google Sheets
-    logging.info(f"Uploading Assigned Weights to Google Sheets...")
-    upload_dataframe(assigned_weights_df, "AssignedWeights")
-
     step_time = time.time() - step_start_time
     logging.info(f"✅ Weight assignment completed in {step_time:.2f} seconds.")
 
     # Step 6: Simulate Lifting Performance
     logging.info(f"Simulating lift data...")
     step_start_time = time.time()
-    simulated_data = run_simulation(assigned_weights_df, maxes_df, exercise_functions)
+    simulated_data, trend_summary_df = run_simulation(assigned_weights_df, maxes_df, exercise_functions)
 
     if "Functional Max" not in simulated_data.columns:
         logging.error("❌ ERROR: 'Functional Max' is missing immediately after run_simulation()!")
@@ -128,15 +116,16 @@ if __name__ == "__main__":
     if missing_columns:
         logging.error(f"❌ ERROR: Missing columns in simulated_data before upload: {missing_columns}")
     else:
-        # logging.info("✅ All expected columns are present before upload.")
         # Ensure numeric conversion for critical columns before upload
         simulated_data["Adjusted Multiplier"] = pd.to_numeric(simulated_data["Adjusted Multiplier"], errors="coerce").fillna(0)
         simulated_data["Functional Max"] = pd.to_numeric(simulated_data["Functional Max"], errors="coerce").fillna(0)
-        # Log non-zero counts for critical columns
-        # logging.info(f"🔎 Adjusted Multiplier non-zero count: {simulated_data['Adjusted Multiplier'].astype(float).gt(0).sum()}")
-        # logging.info(f"🔎 Functional Max non-zero count: {simulated_data['Functional Max'].astype(float).gt(0).sum()}")
-        upload_dataframe(simulated_data[expected_columns], "SimulatedData")
-        # logging.info(f"✅ Successfully uploaded Simulated Data to Google Sheets.")
+
+    # Gather all dataframes and upload them at once
+    upload_all_dataframes("After-School Lifting", {
+        "AssignedWeights": assigned_weights_df,
+        "SimulatedData": simulated_data[expected_columns],
+                          "TrendEstimates": trend_summary_df
+    })
 
     run_time = time.time() - start_time
     logging.info(f"🏁 Execution completed successfully in {run_time:.2f} seconds.")

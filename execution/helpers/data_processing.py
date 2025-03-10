@@ -35,3 +35,42 @@ def preprocess_data(program_df, maxes_df):
     # logging.info(f"✅ Merged Tested Max into repeated program data. Columns now: {list(merged_data.columns)}")
 
     return flattened_core_maxes_df, merged_data
+
+def preprocess_expanded_df(expanded_df):
+    """Clean and validate expanded_df before processing."""
+    import numpy as np
+    import pandas as pd
+    import logging
+
+    # Ensure expected columns exist
+    required_columns = [
+        "Code", "Week #", "Set #", "Player",
+        "Tested Max", "# of Reps", "Assigned Weight",
+        "Simulated Reps", "Simulated Weight"
+    ]
+
+    missing_columns = [col for col in required_columns if col not in expanded_df.columns]
+    if missing_columns:
+        logging.error(f"❌ Missing columns in expanded_df: {missing_columns}")
+        raise ValueError(f"Missing columns: {missing_columns}")
+
+    # Cast numeric columns
+    numeric_cols = [
+        "Code", "Week #", "Set #", "Tested Max", "# of Reps",
+        "Assigned Weight", "Simulated Reps", "Simulated Weight"
+    ]
+    for col in numeric_cols:
+        expanded_df[col] = pd.to_numeric(expanded_df[col], errors="coerce")
+
+    # Replace nulls and edge cases
+    expanded_df["# of Reps"] = expanded_df["# of Reps"].fillna(0)
+    expanded_df["Simulated Reps"] = expanded_df["Simulated Reps"].replace(0, 1).fillna(1)
+
+    # Set types explicitly for performance
+    expanded_df["Code"] = expanded_df["Code"].astype(int)
+    expanded_df["Week #"] = expanded_df["Week #"].astype(int)
+    expanded_df["Set #"] = expanded_df["Set #"].astype(int)
+
+    logging.info("✅ expanded_df successfully preprocessed and validated.")
+
+    return expanded_df

@@ -87,3 +87,16 @@ def write_to_google_sheet(sheet_name, worksheet_name, dataframe):
 
     except Exception as e:
         logging.error(f"❌ ERROR: Failed to write {worksheet_name} to Google Sheets - {e}")
+
+def upload_all_dataframes(sheet_name, dataframes_dict):
+    """
+    Upload multiple dataframes to different tabs in a single Google Sheet.
+    
+    Args:
+        sheet_name (str): Name of the target Google Sheet.
+        dataframes_dict (dict): Dictionary with tab names as keys and DataFrames as values.
+    """
+    for tab_name, df in dataframes_dict.items():
+        logging.info(f"Uploading {tab_name} to Google Sheet...")
+        write_to_google_sheet(sheet_name, tab_name, df)
+        logging.info(f"✅ Successfully uploaded {tab_name} to Google Sheet.")
