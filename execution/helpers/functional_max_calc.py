@@ -114,97 +114,63 @@ def calculate_adjusted_multiplier_iterative(row, k=10):
         assigned_weight = float(row["Assigned Weight"])
         tested_max = float(row["Tested Max"])
     except Exception as e:
-        logging.error(f"❌ Error converting row values to float for exercise code {exercise_code}: {e}")
+        logging.error(f"❌ Error converting row values for exercise code {exercise_code}: {e}")
         return 0
 
     coeffs = multiplier_fits.get(exercise_code)
     if coeffs is None:
-        # logging.warning(f"⚠️ No coefficients found for exercise code {exercise_code}. Defaulting to 0.")
+        logging.error(f"❌ No coefficients found for exercise code {exercise_code}.")
         return 0
 
-    alpha_beta_mapping = {
-        1: (0.5, 0.5),
-        2: (0.5, 0.5),
-        3: (0.5, 0.5),
-        4: (0.5, 0.5),
-        5: (0.5, 0.5),
-        6: (0.5, 0.5),
-        7: (0.5, 0.5),
-        8: (0.5, 0.5),
-        9: (0.5, 0.5),
-        10: (0.5, 0.5),
-        11: (0.5, 0.5),
-        12: (0.5, 0.5),
-        13: (0.5, 0.5),
-        14: (0.5, 0.5),
-        15: (0.5, 0.5),
-        16: (0.5, 0.5)
-    }
-    alpha, beta = alpha_beta_mapping.get(exercise_code, (0.5, 0.5))
+    A, B, C, D = coeffs[:4]
 
-    # CONSTANT MULTIPLIER STRATEGY (Refined)
-    if is_constant_multiplier(exercise_code, multiplier_fits):
-        if sim_reps == 0:
-            sim_reps = 1  # Avoid division by zero
+    try:
+        expected_multiplier = (
+            A * week_num +
+            B * set_num +
+            C * np.log(k / (sim_reps + 1)) +
+            D
+        )
+    except Exception as e:
+        logging.error(f"❌ Error calculating expected multiplier for exercise code {exercise_code}: {e}")
+        return 0
 
-        # Per-exercise alpha/beta tuning
-        alpha_beta_mapping = {
-            1: (0.5, 0.5),
-            2: (0.5, 0.5),
-            3: (0.5, 0.5),
-            # Add or adjust entries as needed for your exercises
-        }
-        alpha, beta = alpha_beta_mapping.get(exercise_code, (0.5, 0.5))
+    if tested_max == 0:
+        logging.error(f"❌ Tested Max is zero for exercise code {exercise_code}. Cannot calculate expected weight.")
+        return 0
 
-        # Refined rep scaling using log to flatten ratio
-        rep_scaling = np.log((assigned_reps + 1) / (sim_reps + 1) + 1)
 
-        # Refined weight scaling using relative intensities
-        assigned_intensity = assigned_weight / tested_max if tested_max != 0 else 0
-        sim_intensity = sim_weight / tested_max if tested_max != 0 else 0
-        weight_scaling = assigned_intensity / sim_intensity if sim_intensity != 0 else 1
+    # Minimum expected multiplier floor calculation
+    # If simulated weights can be up to 150% of assigned weight, we expect the model to account for this by providing a minimum expected weight floor
+    max_sim_weight_factor = 1.5  # 150%
+    min_expected_multiplier = (assigned_weight * 0.75) / tested_max if tested_max > 0 else 0
+    # The 0.75 factor provides a safety margin (inverse of 150% max sim weight)
 
-        # Multiplicative blending of rep and weight scaling
-        combined_scaling = (rep_scaling ** alpha) * (weight_scaling ** beta)
+    # Apply the floor to the expected multiplier
+    expected_multiplier = max(expected_multiplier, min_expected_multiplier)
 
-        # Baseline multiplier uses assigned intensity rather than raw multiplier of max
-        baseline_multiplier = assigned_weight / tested_max if tested_max != 0 else 0
+    # Apply scaling factor to better align expected weights with simulation variance
+    expected_weight = expected_multiplier * tested_max
 
-        # Final adjusted multiplier
-        adj_multiplier = baseline_multiplier * combined_scaling
+    if expected_weight == 0:
+        logging.error(f"❌ Expected weight is zero for exercise code {exercise_code}. Cannot calculate adjusted multiplier.")
+        return 0
 
-        return adj_multiplier
+    adj_multiplier = sim_weight / expected_weight
 
-    # FITTED MULTIPLIER STRATEGY
-    else:
-        A, B, C, D = coeffs[:4]
-        try:
-            func_multiplier = (
-                A * week_num +
-                B * set_num +
-                C * np.log(k / (sim_reps + 1)) +
-                D
-            )
-        except Exception as e:
-            logging.error(f"❌ Error in function multiplier calculation for exercise code {exercise_code}: {e}")
-            func_multiplier = 0
+    # Debug log for investigation if Adjusted Multiplier > 1
+    if adj_multiplier > 1:
+        logging.warning(
+            f"⚠️ High Adjusted Multiplier: {adj_multiplier:.3f} "
+            f"| Exercise Code: {exercise_code} "
+            f"| Sim Weight: {sim_weight:.2f} "
+            f"| Expected Weight: {expected_weight:.2f} "
+            f"| Tested Max: {tested_max:.2f} "
+            f"| Assigned Weight: {assigned_weight:.2f} "
+            f"| Week: {week_num} | Set: {set_num} | Reps: {sim_reps}"
+        )
 
-        if sim_weight == 0:
-            sim_weight = 1  # Avoid division by zero
-        ratio_component = tested_max / sim_weight
-
-        # Normalize func_multiplier by expected multiplier (assigned_weight / tested_max)
-        expected_multiplier = assigned_weight / tested_max if tested_max != 0 else 1
-        func_norm = func_multiplier / expected_multiplier if expected_multiplier != 0 else 1
-
-        # ratio_component is already a ratio: tested_max / sim_weight
-        ratio_norm = ratio_component
-
-        # Blend with alpha and beta (try 0.5 / 0.5 again)
-        adj_multiplier = (alpha * func_norm) + (beta * ratio_norm)
-
-        # logging.debug(f"[Iterative Fitted] Code: {exercise_code} | Func Norm: {func_norm:.4f} | Ratio Norm: {ratio_norm:.4f} | Adj Multiplier: {adj_multiplier:.4f}")
-        return adj_multiplier
+    return adj_multiplier
 
 def assign_cases(expanded_df):
     """Assigns Cases, Multiplier Type, Method, and Adjusted Multiplier."""
