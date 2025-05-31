@@ -127,7 +127,7 @@ if __name__ == "__main__":
 
     # Upload to Google Sheets
     start_AssignedWeight_time = time.time()
-    write_to_google_sheet("After-School Lifting", "AssignedWeights", assigned_weights_df)
+    write_to_google_sheet("Lifting", "AssignedWeights", assigned_weights_df)
     logging.info("✅ Assigned weights successfully uploaded to Google Sheets!")
     AssignedWeight_time = time.time() - start_AssignedWeight_time
     print(f"Writing to AssignedWeights took {AssignedWeight_time:.2f} seconds")
@@ -146,7 +146,7 @@ if __name__ == "__main__":
 
     # Write Simulated Data to Google Sheets
     start_SimulatedData_time = time.time()
-    write_to_google_sheet("After-School Lifting", "SimulatedData", simulated_data)
+    write_to_google_sheet("Lifting", "SimulatedData", simulated_data)
     logging.info("✅ Simulated data successfully uploaded to Google Sheets!")
     SimulatedData_time = time.time() - start_SimulatedData_time
     print(f"Writing to SimulatedData took {SimulatedData_time:.2f} seconds")

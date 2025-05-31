@@ -1,0 +1,451 @@
+Lift,Week,Set,Reps,Multiplier,Prescribed Weight
+Barbell Squat,1,1,3,0.6311,189.3
+Barbell Squat,1,1,5,0.648,194.4
+Barbell Squat,1,1,8,0.6575,197.2
+Barbell Squat,1,1,10,0.6607,198.2
+Barbell Squat,1,1,12,0.6628,198.8
+Barbell Squat,1,2,3,0.6984,209.5
+Barbell Squat,1,2,5,0.7153,214.6
+Barbell Squat,1,2,8,0.7248,217.4
+Barbell Squat,1,2,10,0.728,218.4
+Barbell Squat,1,2,12,0.7301,219.0
+Barbell Squat,1,3,3,0.7657,229.7
+Barbell Squat,1,3,5,0.7826,234.8
+Barbell Squat,1,3,8,0.7921,237.6
+Barbell Squat,1,3,10,0.7953,238.6
+Barbell Squat,1,3,12,0.7974,239.2
+Barbell Squat,2,1,3,0.6598,198.0
+Barbell Squat,2,1,5,0.6767,203.0
+Barbell Squat,2,1,8,0.6862,205.9
+Barbell Squat,2,1,10,0.6894,206.8
+Barbell Squat,2,1,12,0.6915,207.4
+Barbell Squat,2,2,3,0.7271,218.1
+Barbell Squat,2,2,5,0.744,223.2
+Barbell Squat,2,2,8,0.7535,226.0
+Barbell Squat,2,2,10,0.7567,227.0
+Barbell Squat,2,2,12,0.7588,227.6
+Barbell Squat,2,3,3,0.7944,238.3
+Barbell Squat,2,3,5,0.8113,243.4
+Barbell Squat,2,3,8,0.8208,246.2
+Barbell Squat,2,3,10,0.8239,247.2
+Barbell Squat,2,3,12,0.8261,247.8
+Barbell Squat,3,1,3,0.6885,206.6
+Barbell Squat,3,1,5,0.7054,211.6
+Barbell Squat,3,1,8,0.7149,214.5
+Barbell Squat,3,1,10,0.7181,215.4
+Barbell Squat,3,1,12,0.7202,216.0
+Barbell Squat,3,2,3,0.7558,226.8
+Barbell Squat,3,2,5,0.7727,231.8
+Barbell Squat,3,2,8,0.7822,234.7
+Barbell Squat,3,2,10,0.7853,235.6
+Barbell Squat,3,2,12,0.7875,236.2
+Barbell Squat,3,3,3,0.8231,246.9
+Barbell Squat,3,3,5,0.84,252.0
+Barbell Squat,3,3,8,0.8495,254.8
+Barbell Squat,3,3,10,0.8527,255.8
+Barbell Squat,3,3,12,0.8548,256.4
+Front Squat,1,1,3,0.53,132.5
+Front Squat,1,1,5,0.5424,135.6
+Front Squat,1,1,8,0.5494,137.3
+Front Squat,1,1,10,0.5517,137.9
+Front Squat,1,1,12,0.5533,138.3
+Front Squat,1,2,3,0.5685,142.1
+Front Squat,1,2,5,0.5809,145.2
+Front Squat,1,2,8,0.5879,147.0
+Front Squat,1,2,10,0.5902,147.6
+Front Squat,1,2,12,0.5918,147.9
+Front Squat,1,3,3,0.607,151.8
+Front Squat,1,3,5,0.6194,154.9
+Front Squat,1,3,8,0.6264,156.6
+Front Squat,1,3,10,0.6287,157.2
+Front Squat,1,3,12,0.6303,157.6
+Front Squat,2,1,3,0.5494,137.4
+Front Squat,2,1,5,0.5618,140.5
+Front Squat,2,1,8,0.5688,142.2
+Front Squat,2,1,10,0.5711,142.8
+Front Squat,2,1,12,0.5727,143.2
+Front Squat,2,2,3,0.5879,147.0
+Front Squat,2,2,5,0.6003,150.1
+Front Squat,2,2,8,0.6073,151.8
+Front Squat,2,2,10,0.6096,152.4
+Front Squat,2,2,12,0.6112,152.8
+Front Squat,2,3,3,0.6264,156.6
+Front Squat,2,3,5,0.6388,159.7
+Front Squat,2,3,8,0.6458,161.4
+Front Squat,2,3,10,0.6481,162.0
+Front Squat,2,3,12,0.6497,162.4
+Front Squat,3,1,3,0.5688,142.2
+Front Squat,3,1,5,0.5812,145.3
+Front Squat,3,1,8,0.5882,147.0
+Front Squat,3,1,10,0.5905,147.6
+Front Squat,3,1,12,0.5921,148.0
+Front Squat,3,2,3,0.6073,151.8
+Front Squat,3,2,5,0.6197,154.9
+Front Squat,3,2,8,0.6267,156.7
+Front Squat,3,2,10,0.629,157.3
+Front Squat,3,2,12,0.6306,157.6
+Front Squat,3,3,3,0.6458,161.5
+Front Squat,3,3,5,0.6582,164.6
+Front Squat,3,3,8,0.6652,166.3
+Front Squat,3,3,10,0.6675,166.9
+Front Squat,3,3,12,0.6691,167.3
+Push Press,1,1,3,0.659,131.8
+Push Press,1,1,5,0.669,133.8
+Push Press,1,1,8,0.6747,134.9
+Push Press,1,1,10,0.6766,135.3
+Push Press,1,1,12,0.6778,135.6
+Push Press,1,2,3,0.7294,145.9
+Push Press,1,2,5,0.7394,147.9
+Push Press,1,2,8,0.7451,149.0
+Push Press,1,2,10,0.747,149.4
+Push Press,1,2,12,0.7482,149.6
+Push Press,1,3,3,0.7998,160.0
+Push Press,1,3,5,0.8098,162.0
+Push Press,1,3,8,0.8155,163.1
+Push Press,1,3,10,0.8174,163.5
+Push Press,1,3,12,0.8186,163.7
+Push Press,2,1,3,0.6904,138.1
+Push Press,2,1,5,0.7004,140.1
+Push Press,2,1,8,0.7061,141.2
+Push Press,2,1,10,0.708,141.6
+Push Press,2,1,12,0.7092,141.8
+Push Press,2,2,3,0.7608,152.2
+Push Press,2,2,5,0.7708,154.2
+Push Press,2,2,8,0.7765,155.3
+Push Press,2,2,10,0.7784,155.7
+Push Press,2,2,12,0.7796,155.9
+Push Press,2,3,3,0.8312,166.2
+Push Press,2,3,5,0.8412,168.2
+Push Press,2,3,8,0.8469,169.4
+Push Press,2,3,10,0.8488,169.8
+Push Press,2,3,12,0.85,170.0
+Push Press,3,1,3,0.7218,144.4
+Push Press,3,1,5,0.7318,146.4
+Push Press,3,1,8,0.7375,147.5
+Push Press,3,1,10,0.7394,147.9
+Push Press,3,1,12,0.7406,148.1
+Push Press,3,2,3,0.7922,158.4
+Push Press,3,2,5,0.8022,160.4
+Push Press,3,2,8,0.8079,161.6
+Push Press,3,2,10,0.8098,162.0
+Push Press,3,2,12,0.811,162.2
+Push Press,3,3,3,0.8626,172.5
+Push Press,3,3,5,0.8726,174.5
+Push Press,3,3,8,0.8783,175.7
+Push Press,3,3,10,0.8802,176.0
+Push Press,3,3,12,0.8814,176.3
+Bench Press,1,1,3,0.6311,157.8
+Bench Press,1,1,5,0.648,162.0
+Bench Press,1,1,8,0.6575,164.4
+Bench Press,1,1,10,0.6607,165.2
+Bench Press,1,1,12,0.6628,165.7
+Bench Press,1,2,3,0.6984,174.6
+Bench Press,1,2,5,0.7153,178.8
+Bench Press,1,2,8,0.7248,181.2
+Bench Press,1,2,10,0.728,182.0
+Bench Press,1,2,12,0.7301,182.5
+Bench Press,1,3,3,0.7657,191.4
+Bench Press,1,3,5,0.7826,195.7
+Bench Press,1,3,8,0.7921,198.0
+Bench Press,1,3,10,0.7953,198.8
+Bench Press,1,3,12,0.7974,199.3
+Bench Press,2,1,3,0.6598,165.0
+Bench Press,2,1,5,0.6767,169.2
+Bench Press,2,1,8,0.6862,171.5
+Bench Press,2,1,10,0.6894,172.3
+Bench Press,2,1,12,0.6915,172.9
+Bench Press,2,2,3,0.7271,181.8
+Bench Press,2,2,5,0.744,186.0
+Bench Press,2,2,8,0.7535,188.4
+Bench Press,2,2,10,0.7567,189.2
+Bench Press,2,2,12,0.7588,189.7
+Bench Press,2,3,3,0.7944,198.6
+Bench Press,2,3,5,0.8113,202.8
+Bench Press,2,3,8,0.8208,205.2
+Bench Press,2,3,10,0.8239,206.0
+Bench Press,2,3,12,0.8261,206.5
+Bench Press,3,1,3,0.6885,172.1
+Bench Press,3,1,5,0.7054,176.3
+Bench Press,3,1,8,0.7149,178.7
+Bench Press,3,1,10,0.7181,179.5
+Bench Press,3,1,12,0.7202,180.0
+Bench Press,3,2,3,0.7558,189.0
+Bench Press,3,2,5,0.7727,193.2
+Bench Press,3,2,8,0.7822,195.5
+Bench Press,3,2,10,0.7853,196.3
+Bench Press,3,2,12,0.7875,196.9
+Bench Press,3,3,3,0.8231,205.8
+Bench Press,3,3,5,0.84,210.0
+Bench Press,3,3,8,0.8495,212.4
+Bench Press,3,3,10,0.8527,213.2
+Bench Press,3,3,12,0.8548,213.7
+Clean,1,1,3,0.6042,136.0
+Clean,1,1,5,0.6309,141.9
+Clean,1,1,8,0.6459,145.3
+Clean,1,1,10,0.6509,146.4
+Clean,1,1,12,0.6542,147.2
+Clean,1,2,3,0.7173,161.4
+Clean,1,2,5,0.7439,167.4
+Clean,1,2,8,0.7589,170.8
+Clean,1,2,10,0.7639,171.9
+Clean,1,2,12,0.7672,172.6
+Clean,1,3,3,0.8303,186.8
+Clean,1,3,5,0.857,192.8
+Clean,1,3,8,0.872,196.2
+Clean,1,3,10,0.877,197.3
+Clean,1,3,12,0.8803,198.1
+Clean,2,1,3,0.6392,143.8
+Clean,2,1,5,0.6659,149.8
+Clean,2,1,8,0.6809,153.2
+Clean,2,1,10,0.6859,154.3
+Clean,2,1,12,0.6892,155.1
+Clean,2,2,3,0.7523,169.3
+Clean,2,2,5,0.7789,175.3
+Clean,2,2,8,0.7939,178.6
+Clean,2,2,10,0.7989,179.8
+Clean,2,2,12,0.8022,180.5
+Clean,2,3,3,0.8653,194.7
+Clean,2,3,5,0.892,200.7
+Clean,2,3,8,0.907,204.1
+Clean,2,3,10,0.912,205.2
+Clean,2,3,12,0.9153,205.9
+Clean,3,1,3,0.6742,151.7
+Clean,3,1,5,0.7009,157.7
+Clean,3,1,8,0.7158,161.1
+Clean,3,1,10,0.7208,162.2
+Clean,3,1,12,0.7242,162.9
+Clean,3,2,3,0.7873,177.1
+Clean,3,2,5,0.8139,183.1
+Clean,3,2,8,0.8289,186.5
+Clean,3,2,10,0.8339,187.6
+Clean,3,2,12,0.8372,188.4
+Clean,3,3,3,0.9003,202.6
+Clean,3,3,5,0.927,208.6
+Clean,3,3,8,0.9419,211.9
+Clean,3,3,10,0.9469,213.1
+Clean,3,3,12,0.9503,213.8
+Hex-Bar Deadlift,1,1,3,0.6311,220.9
+Hex-Bar Deadlift,1,1,5,0.648,226.8
+Hex-Bar Deadlift,1,1,8,0.6575,230.1
+Hex-Bar Deadlift,1,1,10,0.6607,231.2
+Hex-Bar Deadlift,1,1,12,0.6628,232.0
+Hex-Bar Deadlift,1,2,3,0.6984,244.5
+Hex-Bar Deadlift,1,2,5,0.7153,250.4
+Hex-Bar Deadlift,1,2,8,0.7248,253.7
+Hex-Bar Deadlift,1,2,10,0.728,254.8
+Hex-Bar Deadlift,1,2,12,0.7301,255.5
+Hex-Bar Deadlift,1,3,3,0.7657,268.0
+Hex-Bar Deadlift,1,3,5,0.7826,273.9
+Hex-Bar Deadlift,1,3,8,0.7921,277.2
+Hex-Bar Deadlift,1,3,10,0.7953,278.3
+Hex-Bar Deadlift,1,3,12,0.7974,279.1
+Hex-Bar Deadlift,2,1,3,0.6598,230.9
+Hex-Bar Deadlift,2,1,5,0.6767,236.8
+Hex-Bar Deadlift,2,1,8,0.6862,240.2
+Hex-Bar Deadlift,2,1,10,0.6894,241.3
+Hex-Bar Deadlift,2,1,12,0.6915,242.0
+Hex-Bar Deadlift,2,2,3,0.7271,254.5
+Hex-Bar Deadlift,2,2,5,0.744,260.4
+Hex-Bar Deadlift,2,2,8,0.7535,263.7
+Hex-Bar Deadlift,2,2,10,0.7567,264.8
+Hex-Bar Deadlift,2,2,12,0.7588,265.6
+Hex-Bar Deadlift,2,3,3,0.7944,278.1
+Hex-Bar Deadlift,2,3,5,0.8113,284.0
+Hex-Bar Deadlift,2,3,8,0.8208,287.3
+Hex-Bar Deadlift,2,3,10,0.8239,288.4
+Hex-Bar Deadlift,2,3,12,0.8261,289.1
+Hex-Bar Deadlift,3,1,3,0.6885,241.0
+Hex-Bar Deadlift,3,1,5,0.7054,246.9
+Hex-Bar Deadlift,3,1,8,0.7149,250.2
+Hex-Bar Deadlift,3,1,10,0.7181,251.3
+Hex-Bar Deadlift,3,1,12,0.7202,252.1
+Hex-Bar Deadlift,3,2,3,0.7558,264.5
+Hex-Bar Deadlift,3,2,5,0.7727,270.4
+Hex-Bar Deadlift,3,2,8,0.7822,273.8
+Hex-Bar Deadlift,3,2,10,0.7853,274.9
+Hex-Bar Deadlift,3,2,12,0.7875,275.6
+Hex-Bar Deadlift,3,3,3,0.8231,288.1
+Hex-Bar Deadlift,3,3,5,0.84,294.0
+Hex-Bar Deadlift,3,3,8,0.8495,297.3
+Hex-Bar Deadlift,3,3,10,0.8527,298.4
+Hex-Bar Deadlift,3,3,12,0.8548,299.2
+High-Hang Pull,1,1,3,0.728,145.6
+High-Hang Pull,1,1,5,0.7,140.0
+High-Hang Pull,1,1,8,0.6843,136.8
+High-Hang Pull,1,1,10,0.679,135.8
+High-Hang Pull,1,1,12,0.6755,135.1
+High-Hang Pull,1,2,3,0.728,145.6
+High-Hang Pull,1,2,5,0.7,140.0
+High-Hang Pull,1,2,8,0.6843,136.8
+High-Hang Pull,1,2,10,0.679,135.8
+High-Hang Pull,1,2,12,0.6755,135.1
+High-Hang Pull,1,3,3,0.728,145.6
+High-Hang Pull,1,3,5,0.7,140.0
+High-Hang Pull,1,3,8,0.6843,136.8
+High-Hang Pull,1,3,10,0.679,135.8
+High-Hang Pull,1,3,12,0.6755,135.1
+High-Hang Pull,2,1,3,0.7875,157.5
+High-Hang Pull,2,1,5,0.7595,151.9
+High-Hang Pull,2,1,8,0.7438,148.8
+High-Hang Pull,2,1,10,0.7385,147.7
+High-Hang Pull,2,1,12,0.735,147.0
+High-Hang Pull,2,2,3,0.7875,157.5
+High-Hang Pull,2,2,5,0.7595,151.9
+High-Hang Pull,2,2,8,0.7438,148.8
+High-Hang Pull,2,2,10,0.7385,147.7
+High-Hang Pull,2,2,12,0.735,147.0
+High-Hang Pull,2,3,3,0.7875,157.5
+High-Hang Pull,2,3,5,0.7595,151.9
+High-Hang Pull,2,3,8,0.7438,148.8
+High-Hang Pull,2,3,10,0.7385,147.7
+High-Hang Pull,2,3,12,0.735,147.0
+High-Hang Pull,3,1,3,0.847,169.4
+High-Hang Pull,3,1,5,0.819,163.8
+High-Hang Pull,3,1,8,0.8033,160.7
+High-Hang Pull,3,1,10,0.798,159.6
+High-Hang Pull,3,1,12,0.7945,158.9
+High-Hang Pull,3,2,3,0.847,169.4
+High-Hang Pull,3,2,5,0.819,163.8
+High-Hang Pull,3,2,8,0.8033,160.7
+High-Hang Pull,3,2,10,0.798,159.6
+High-Hang Pull,3,2,12,0.7945,158.9
+High-Hang Pull,3,3,3,0.847,169.4
+High-Hang Pull,3,3,5,0.819,163.8
+High-Hang Pull,3,3,8,0.8033,160.7
+High-Hang Pull,3,3,10,0.798,159.6
+High-Hang Pull,3,3,12,0.7945,158.9
+Box Bench Press,1,1,3,0.6592,164.8
+Box Bench Press,1,1,5,0.6768,169.2
+Box Bench Press,1,1,8,0.6867,171.7
+Box Bench Press,1,1,10,0.69,172.5
+Box Bench Press,1,1,12,0.6923,173.1
+Box Bench Press,1,2,3,0.7295,182.4
+Box Bench Press,1,2,5,0.7471,186.8
+Box Bench Press,1,2,8,0.757,189.3
+Box Bench Press,1,2,10,0.7603,190.1
+Box Bench Press,1,2,12,0.7625,190.6
+Box Bench Press,1,3,3,0.7998,200.0
+Box Bench Press,1,3,5,0.8174,204.4
+Box Bench Press,1,3,8,0.8273,206.8
+Box Bench Press,1,3,10,0.8306,207.7
+Box Bench Press,1,3,12,0.8328,208.2
+Box Bench Press,2,1,3,0.6892,172.3
+Box Bench Press,2,1,5,0.7068,176.7
+Box Bench Press,2,1,8,0.7167,179.2
+Box Bench Press,2,1,10,0.72,180.0
+Box Bench Press,2,1,12,0.7222,180.6
+Box Bench Press,2,2,3,0.7595,189.9
+Box Bench Press,2,2,5,0.7771,194.3
+Box Bench Press,2,2,8,0.787,196.8
+Box Bench Press,2,2,10,0.7903,197.6
+Box Bench Press,2,2,12,0.7925,198.1
+Box Bench Press,2,3,3,0.8298,207.4
+Box Bench Press,2,3,5,0.8474,211.9
+Box Bench Press,2,3,8,0.8573,214.3
+Box Bench Press,2,3,10,0.8606,215.2
+Box Bench Press,2,3,12,0.8628,215.7
+Box Bench Press,3,1,3,0.7192,179.8
+Box Bench Press,3,1,5,0.7368,184.2
+Box Bench Press,3,1,8,0.7467,186.7
+Box Bench Press,3,1,10,0.75,187.5
+Box Bench Press,3,1,12,0.7522,188.1
+Box Bench Press,3,2,3,0.7895,197.4
+Box Bench Press,3,2,5,0.8071,201.8
+Box Bench Press,3,2,8,0.817,204.2
+Box Bench Press,3,2,10,0.8203,205.1
+Box Bench Press,3,2,12,0.8225,205.6
+Box Bench Press,3,3,3,0.8598,214.9
+Box Bench Press,3,3,5,0.8774,219.3
+Box Bench Press,3,3,8,0.8873,221.8
+Box Bench Press,3,3,10,0.8906,222.6
+Box Bench Press,3,3,12,0.8928,223.2
+Close-Grip Bench Press,1,1,3,0.6311,157.8
+Close-Grip Bench Press,1,1,5,0.648,162.0
+Close-Grip Bench Press,1,1,8,0.6575,164.4
+Close-Grip Bench Press,1,1,10,0.6607,165.2
+Close-Grip Bench Press,1,1,12,0.6628,165.7
+Close-Grip Bench Press,1,2,3,0.6984,174.6
+Close-Grip Bench Press,1,2,5,0.7153,178.8
+Close-Grip Bench Press,1,2,8,0.7248,181.2
+Close-Grip Bench Press,1,2,10,0.728,182.0
+Close-Grip Bench Press,1,2,12,0.7301,182.5
+Close-Grip Bench Press,1,3,3,0.7657,191.4
+Close-Grip Bench Press,1,3,5,0.7826,195.7
+Close-Grip Bench Press,1,3,8,0.7921,198.0
+Close-Grip Bench Press,1,3,10,0.7953,198.8
+Close-Grip Bench Press,1,3,12,0.7974,199.3
+Close-Grip Bench Press,2,1,3,0.6598,165.0
+Close-Grip Bench Press,2,1,5,0.6767,169.2
+Close-Grip Bench Press,2,1,8,0.6862,171.5
+Close-Grip Bench Press,2,1,10,0.6894,172.3
+Close-Grip Bench Press,2,1,12,0.6915,172.9
+Close-Grip Bench Press,2,2,3,0.7271,181.8
+Close-Grip Bench Press,2,2,5,0.744,186.0
+Close-Grip Bench Press,2,2,8,0.7535,188.4
+Close-Grip Bench Press,2,2,10,0.7567,189.2
+Close-Grip Bench Press,2,2,12,0.7588,189.7
+Close-Grip Bench Press,2,3,3,0.7944,198.6
+Close-Grip Bench Press,2,3,5,0.8113,202.8
+Close-Grip Bench Press,2,3,8,0.8208,205.2
+Close-Grip Bench Press,2,3,10,0.8239,206.0
+Close-Grip Bench Press,2,3,12,0.8261,206.5
+Close-Grip Bench Press,3,1,3,0.6885,172.1
+Close-Grip Bench Press,3,1,5,0.7054,176.3
+Close-Grip Bench Press,3,1,8,0.7149,178.7
+Close-Grip Bench Press,3,1,10,0.7181,179.5
+Close-Grip Bench Press,3,1,12,0.7202,180.0
+Close-Grip Bench Press,3,2,3,0.7558,189.0
+Close-Grip Bench Press,3,2,5,0.7727,193.2
+Close-Grip Bench Press,3,2,8,0.7822,195.5
+Close-Grip Bench Press,3,2,10,0.7853,196.3
+Close-Grip Bench Press,3,2,12,0.7875,196.9
+Close-Grip Bench Press,3,3,3,0.8231,205.8
+Close-Grip Bench Press,3,3,5,0.84,210.0
+Close-Grip Bench Press,3,3,8,0.8495,212.4
+Close-Grip Bench Press,3,3,10,0.8527,213.2
+Close-Grip Bench Press,3,3,12,0.8548,213.7
+Incline Bench Press,1,1,3,0.5815,145.4
+Incline Bench Press,1,1,5,0.597,149.3
+Incline Bench Press,1,1,8,0.6057,151.4
+Incline Bench Press,1,1,10,0.6087,152.2
+Incline Bench Press,1,1,12,0.6106,152.6
+Incline Bench Press,1,2,3,0.6435,160.9
+Incline Bench Press,1,2,5,0.659,164.8
+Incline Bench Press,1,2,8,0.6677,166.9
+Incline Bench Press,1,2,10,0.6707,167.7
+Incline Bench Press,1,2,12,0.6726,168.2
+Incline Bench Press,1,3,3,0.7055,176.4
+Incline Bench Press,1,3,5,0.721,180.3
+Incline Bench Press,1,3,8,0.7298,182.4
+Incline Bench Press,1,3,10,0.7327,183.2
+Incline Bench Press,1,3,12,0.7346,183.7
+Incline Bench Press,2,1,3,0.6079,152.0
+Incline Bench Press,2,1,5,0.6234,155.9
+Incline Bench Press,2,1,8,0.6322,158.0
+Incline Bench Press,2,1,10,0.6351,158.8
+Incline Bench Press,2,1,12,0.637,159.3
+Incline Bench Press,2,2,3,0.6699,167.5
+Incline Bench Press,2,2,5,0.6854,171.4
+Incline Bench Press,2,2,8,0.6942,173.5
+Incline Bench Press,2,2,10,0.6971,174.3
+Incline Bench Press,2,2,12,0.699,174.8
+Incline Bench Press,2,3,3,0.7319,183.0
+Incline Bench Press,2,3,5,0.7475,186.9
+Incline Bench Press,2,3,8,0.7562,189.0
+Incline Bench Press,2,3,10,0.7591,189.8
+Incline Bench Press,2,3,12,0.761,190.3
+Incline Bench Press,3,1,3,0.6343,158.6
+Incline Bench Press,3,1,5,0.6499,162.5
+Incline Bench Press,3,1,8,0.6586,164.7
+Incline Bench Press,3,1,10,0.6615,165.4
+Incline Bench Press,3,1,12,0.6635,165.9
+Incline Bench Press,3,2,3,0.6963,174.1
+Incline Bench Press,3,2,5,0.7119,178.0
+Incline Bench Press,3,2,8,0.7206,180.2
+Incline Bench Press,3,2,10,0.7235,180.9
+Incline Bench Press,3,2,12,0.7255,181.4
+Incline Bench Press,3,3,3,0.7584,189.6
+Incline Bench Press,3,3,5,0.7739,193.5
+Incline Bench Press,3,3,8,0.7826,195.7
+Incline Bench Press,3,3,10,0.7855,196.4
+Incline Bench Press,3,3,12,0.7875,196.9

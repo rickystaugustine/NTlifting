@@ -20,8 +20,8 @@ def load_data():
     logging.info("📥 Loading raw data from Google Sheets...")
 
     # Retrieve Google Sheets Data
-    program_df = read_google_sheets("After-School Lifting", "CompleteProgram")
-    maxes_df = read_google_sheets("After-School Lifting", "Maxes")
+    program_df = read_google_sheets("Lifting", "CompleteProgram")
+    maxes_df = read_google_sheets("Lifting", "Maxes")
 
     logging.info(f"✅ Loaded {len(program_df)} rows from CompleteProgram")
     logging.info(f"✅ Loaded {len(maxes_df)} rows from Maxes")

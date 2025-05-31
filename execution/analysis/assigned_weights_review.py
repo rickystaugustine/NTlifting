@@ -99,5 +99,5 @@ def review_fitting_analysis(program_df, output_dir="execution/analysis/fitting_r
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
     from helpers.google_sheets_utils import read_google_sheets
-    program_df = read_google_sheets("After-School Lifting", "CompleteProgram")
+    program_df = read_google_sheets("Lifting", "CompleteProgram")
     review_fitting_analysis(program_df)
