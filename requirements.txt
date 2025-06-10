@@ -23,7 +23,7 @@ plotly==5.24.1
 protobuf==5.29.2
 python-dateutil==2.9.0.post0
 pytz==2024.2
-requests==2.32.3
+requests==2.32.4
 rsa==4.9
 scipy==1.15.1
 tenacity==9.0.0
