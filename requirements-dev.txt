@@ -1,6 +1,6 @@
 coverage==7.6.10
 exceptiongroup==1.2.2
-filelock==3.16.1
+filelock==3.20.1
 fonttools==4.55.4
 joblib==1.4.2
 mail-parser==4.1.2
