@@ -29,5 +29,5 @@ scipy==1.15.1
 tenacity==9.0.0
 tzdata==2024.2
 uritemplate==4.1.1
-urllib3==2.3.0
+urllib3==2.6.3
 
